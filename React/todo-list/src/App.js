@@ -3,6 +3,7 @@ import './App.css';
 
 function App() {
   return (
+    // that's all JSX NOT HTML it's javascript syntax extension
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
