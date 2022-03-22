@@ -4,6 +4,7 @@
 
 import React from 'react'
 import PropTypes from 'prop-types' // will import (PROPTYPES) for us
+import { propTypes } from 'react-bootstrap/esm/Image'
 
 // props is JS object which takes data from parent to child and we've to use PROPS wherever we wanted to use infomation or data or arguments form parent to child as their
 
@@ -37,3 +38,18 @@ export default function header(props) { // remeber THERE we've used export defau
   )
 }
 
+// proptypes can be of 2 types default and one which we define
+
+header.defaultProps = {
+
+    tittle: "Yours Tille Here!", // when we didn't use tittle then we'll use this default prop types which will tell the user that you've to insert tittle here
+
+    searchBar: fasle // if we want search bar false (HIDDEN) by default
+
+}
+
+header.PropTypes = {
+
+    tittle: propTypes.string // means tittle type is string but if we type int it'll give us error
+
+}

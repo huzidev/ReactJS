@@ -8,7 +8,7 @@ function App() {
     // that's all JSX NOT HTML it's javascript syntax extension
     // we've to wrap all the html written throught JSX in something if there is nothing then simply wrap it in empty as we did their
     <> 
-      <Header tittle = "My Todos List" searchBar={false}/>
+      <Header  searchBar={false}/>
     </>
   );
 }
