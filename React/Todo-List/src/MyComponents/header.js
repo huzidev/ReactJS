@@ -44,13 +44,13 @@ Header.defaultProps = {
 
     tittle: "Yours Tille Here!", // when we didn't use tittle then we'll use this default prop types which will tell the user that you've to insert tittle here
 
-    // searchBar: fasle // if we want search bar false (HIDDEN) by default
-
+    searchBar: true // if we want search bar true (AVAILABLE) by default
+    
 }
 
 Header.propTypes = {
 
     tittle: propTypes.string, // means tittle type is string but if we type int it'll give us error and we are using commas instead of semi-colon because we are in a complete single object
-    searchBar: propTypes.bool // means rather it'll be true or false and these are boolean values
-
+    // searchBar: propTypes.bool // means rather it'll be true or false and these are boolean values
+    
 }
