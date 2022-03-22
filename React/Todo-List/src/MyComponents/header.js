@@ -4,7 +4,7 @@
 
 import React from 'react'
 
-export default function header() {
+export default function header() { // remeber THERE we've used export default but when we uses export const then in the main (APP.JS) we've to use {} then use the name of the file where JSX is written
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light"> 
         <div className="container-fluid">
