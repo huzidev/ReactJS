@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './MyComponents/Header';
-
+// make sure to close the name of file in return like we did here in return
 
 function App() {
   return (
