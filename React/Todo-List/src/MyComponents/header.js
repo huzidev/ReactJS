@@ -40,15 +40,15 @@ export default function header(props) { // remeber THERE we've used export defau
 
 // proptypes can be of 2 types default and one which we define
 
-header.defaultProps = {
+Header.defaultProps = {
 
     tittle: "Yours Tille Here!", // when we didn't use tittle then we'll use this default prop types which will tell the user that you've to insert tittle here
 
-    searchBar: fasle // if we want search bar false (HIDDEN) by default
+    // searchBar: fasle // if we want search bar false (HIDDEN) by default
 
 }
 
-header.PropTypes = {
+Header.PropTypes = {
 
     tittle: propTypes.string, // means tittle type is string but if we type int it'll give us error and we are using commas instead of semi-colon because we are in a complete single object
     searchBar: propTypes.bool // means rather it'll be true or false and these are boolean values
