@@ -50,6 +50,6 @@ header.defaultProps = {
 
 header.PropTypes = {
 
-    tittle: propTypes.string // means tittle type is string but if we type int it'll give us error
-
+    tittle: propTypes.string, // means tittle type is string but if we type int it'll give us error and we are using commas instead of semi-colon because we are in a complete single object
+    searchBar: propTypes.bool // means rather it'll be true or false and these are boolean values
 }
