@@ -26,10 +26,11 @@ export default function header(props) { // remeber THERE we've used export defau
                 <a className="nav-link" href="#">Link</a>
               </li>
             </ul>
-            <form className="d-flex">
+            {/* "?" is Turnary operator it'll check if condition is (TRUE) then print the search bar else empty as we did after semi-colon we just pass empty string */}
+            {props.searchBar? <form className="d-flex">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                 <button className="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form>: " "} 
           </div>
         </div>
       </nav>
