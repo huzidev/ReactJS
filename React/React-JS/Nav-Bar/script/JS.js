@@ -39,9 +39,19 @@ function NavBar() {
     )
 }
 
-ReactDOM.render(
-    
-    <NavBar />,
-    document.getElementById("root")
+function Heading() {
+    return (
+        <h1>hello</h1>
+    )
+}
 
+
+ReactDOM.render(
+    // IMPORTANT!!!
+    // make sure that FIRST Word Should've to be CAPITAL when we are passing functions like NavBar first word is capital and same is the case for Heading
+    <div>
+        <NavBar /> 
+        <Heading />
+    </div>,
+    document.getElementById("root")
 )
