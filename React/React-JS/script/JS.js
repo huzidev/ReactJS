@@ -5,3 +5,7 @@
 // will render (print, play) h1 inside div called (ROOT)
 
 ReactDOM.render(<h1>Hello, World</h1>, document.getElementById("root"))
+
+// remeber we select documnet.gebID so we can tell that where we wanted to add ours paragraph
+
+ReactDOM.render(<p>Hello, This Is ReactJS</p>, document.getElementById("para"))
