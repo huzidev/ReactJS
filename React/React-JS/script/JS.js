@@ -7,5 +7,10 @@
 ReactDOM.render(<h1>Hello, World</h1>, document.getElementById("root"))
 
 // remeber we select documnet.gebID so we can tell that where we wanted to add ours paragraph
-    
+
 ReactDOM.render(<p>Hello, This Is ReactJS</p>, document.getElementById("para"))
+
+ReactDOM.render(<ul>
+    <li>1</li>
+    <li>2</li>
+</ul>,)
