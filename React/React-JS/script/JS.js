@@ -2,5 +2,6 @@
 
 // REACTDOM is a global variable
 
-// will render (print) h1 inside div called (ROOT)
+// will render (print, play) h1 inside div called (ROOT)
+
 ReactDOM.render(<h1>Hello, World</h1>, document.getElementById("root"))
