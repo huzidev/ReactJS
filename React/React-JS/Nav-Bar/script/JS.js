@@ -41,7 +41,7 @@ function NavBar() {
 
 function Heading() {
     return (
-        <h1>hello</h1>
+        <h1>Learing React</h1>
     )
 }
 
