@@ -10,7 +10,7 @@ ReactDOM.render(<h1>Hello, World</h1>, document.getElementById("root"))
 
 ReactDOM.render(<p>Hello, This Is ReactJS</p>, document.getElementById("para"))
 
-ReactDOM.render(<ul>
-    <li>1</li>
-    <li>2</li>
-</ul>,)
+ReactDOM.render(
+    <ul><li>hello</li><li>asdasdsadas</li></ul>, 
+    document.getElementById("list")
+)
