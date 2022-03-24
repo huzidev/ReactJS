@@ -44,17 +44,16 @@ function Footer() {
 }
 
 function Fact() {
-    // our function will (RETURN) whatever is written inside of it whenever the function is called
+// our function will (RETURN) whatever is written inside of it whenever the function is called
     return(
-
         <div>
             <Head />
             <img src="/assets/react.png" alt="React-Logo"/>
             <Ol />
             <Footer />
         </div>
-
     )
+    
 }
 
 ReactDOM.render(
