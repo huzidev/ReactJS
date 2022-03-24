@@ -1,5 +1,4 @@
 const nav = (
-
     <nav>
         <h1>
             Nav-Bar-JSX
@@ -15,5 +14,4 @@ const nav = (
 ReactDOM.render(
     nav,
     document.getElementById("head")
-
 )
