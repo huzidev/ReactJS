@@ -19,7 +19,7 @@ function Fact() {
                 <li>It can help me to craete Single-Page Applications!</li>
             </ol>
             <footer>
-                All Rights Are Reseverd &copy;
+                All Rights Are Reseverd 2021-22 &copy;
             </footer>
         </div>
 
