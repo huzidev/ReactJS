@@ -12,6 +12,7 @@ ReactDOM.render(
 
 const main = (
     // their there is one main parent wrapping 2 diff components
+    // This all in main is nothing but just javascript OBJECT
     <div> 
         <h1>Hello, World</h1>
         <p>I'm learning ReactJS!</p>
