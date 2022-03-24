@@ -23,13 +23,15 @@ function Head() {
 function Ol() {
 
     return(
-        <ol>
-            <li>It is really interesting</li>
-            <li>It is highly demandable</li>
-            <li>It has functions similar to JS, HTML</li>
-            <li>It is really easy to learn</li>
-            <li>It can help me to craete Single-Page Applications!</li>
-        </ol>
+        <div>
+            <ol>
+                <li>It is really interesting</li>
+                <li>It is highly demandable</li>
+                <li>It has functions similar to JS, HTML</li>
+                <li>It is really easy to learn</li>
+                <li>It can help me to craete Single-Page Applications!</li>
+            </ol>
+        </div>
     )
 
 }
