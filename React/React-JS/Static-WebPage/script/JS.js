@@ -8,10 +8,15 @@ const page = (
             <li>It's Declarative</li>
             <li>It's really easy to learn</li>
             <li>It's function are simple and understandable</li>
-            <li>I personally really like to code with ReactJS</li>
+            <li>I personally really like to code in ReactJS</li>
         </ol>
     </div>
 
 )
 
-ReactDOM
+ReactDOM.render(
+
+    page,
+    document.getElementById("head")
+
+)
