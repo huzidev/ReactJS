@@ -7,7 +7,9 @@ const element = <h1 className="header">Hello, This Is JSX(Javascript XML)</h1>
 ReactDOM.render(element, document.getElementById("head"))
 
 ReactDOM.render(
-    <div>
+    // their div is ours main parent which is actually wrapping two other components h1 and para
+    // THEREFORE we are not VIOLATING the rule of JSX that we've to return only sigle parent
+    <div> 
         <h1>Hello</h1>
         <p>Hello</p>
     </div>, 
