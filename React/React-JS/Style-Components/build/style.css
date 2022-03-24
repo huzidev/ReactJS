@@ -61,3 +61,10 @@ header {
   font-size: 19px;
   margin: 5px 0px;
 }
+
+footer {
+  background-color: grey;
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 20px;
+}

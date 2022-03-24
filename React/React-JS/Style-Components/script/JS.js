@@ -42,12 +42,22 @@ function Ul() {
 
 }
 
+function Footer() {
+
+    return(
+        <footer>
+            All Rights Are Reserved 2021-22 &copy;
+        </footer>
+    )
+
+}
 function Main() {
     return(
         <div>
             <Nav />
             <Head />
             <Ul />
+            <Footer />
         </div>
     )
 }
