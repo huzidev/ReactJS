@@ -1,12 +1,15 @@
 const nav = (
 
-    <div>
+    <nav>
+        <h1>
+            Nav-Bar-JSX
+        </h1>
         <ul>
             <li>First</li>
             <li>Second</li>
             <li>Third</li>
         </ul>
-    </div>
+    </nav>
 )
 
 ReactDOM.render(
