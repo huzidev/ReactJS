@@ -43,4 +43,16 @@ header {
 
 .items {
   text-align: center;
+  width: 1000px;
+  margin: auto;
+}
+.items h1 {
+  margin: 20px auto;
+}
+.items ul {
+  list-style: none;
+}
+.items ul li {
+  font-size: 19px;
+  margin: 5px 0px;
 }
