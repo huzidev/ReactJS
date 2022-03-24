@@ -2,7 +2,7 @@ function Nav() {
 
     return(
         <nav>
-            <img src="../assets/react.png" alt="" />
+            <img src="../assets/react.png" alt="React-Logo" />
             <ul>
                 <li>Home</li>
                 <li>About</li>
