@@ -19,6 +19,29 @@ function Head() {
 
 }
 
+function Ol() {
+
+    return(
+        <ol>
+            <li>It is really interesting</li>
+            <li>It is highly demandable</li>
+            <li>It has functions similar to JS, HTML</li>
+            <li>It is really easy to learn</li>
+            <li>It can help me to craete Single-Page Applications!</li>
+        </ol>
+    )
+
+}
+
+function Footer() {
+
+    return(
+        <footer>
+            All Rights Are Reseverd 2021-22 &copy;
+        </footer>
+    )
+
+}
 
 function Fact() {
     // our function will (RETURN) whatever is written inside of it whenever the function is called
@@ -27,16 +50,8 @@ function Fact() {
         <div>
             <Head />
             <img src="/assets/react.png" alt="React-Logo"/>
-            <ol>
-                <li>It is really interesting</li>
-                <li>It is highly demandable</li>
-                <li>It has functions similar to JS, HTML</li>
-                <li>It is really easy to learn</li>
-                <li>It can help me to craete Single-Page Applications!</li>
-            </ol>
-            <footer>
-                All Rights Are Reseverd 2021-22 &copy;
-            </footer>
+            <Ol />
+            <Footer />
         </div>
 
     )
