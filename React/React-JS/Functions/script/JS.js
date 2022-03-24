@@ -6,7 +6,7 @@ function Fact() {
 
         <div>
             <h1>Reasons Why I Like To Code In React</h1>
-            <img src="/assets/react.png" alt="React-Logo" />
+            <img src="/assets/react.png" alt="React-Logo"/>
             <ol>
                 <li>It is really interesting</li>
                 <li>It is highly demandable</li>
@@ -14,6 +14,9 @@ function Fact() {
                 <li>It is really easy to learn</li>
                 <li>It can help me to craete Single-Page Applications!</li>
             </ol>
+            <footer>
+                All Rights Are Reseverd &copy;
+            </footer>
         </div>
 
     )
