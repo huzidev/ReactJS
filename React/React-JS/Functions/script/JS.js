@@ -19,7 +19,7 @@ function Fact() {
 }
 
 ReactDOM.render(
-    
+    // for rendering ours function we've to write them inside these brackets   
     <Fact />,
     document.getElementById("head")
 
