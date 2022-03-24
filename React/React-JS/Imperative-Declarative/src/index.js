@@ -1,4 +1,6 @@
 // IMPERATIVE way is describe below in which we've to tell or specify every single thing
+import React from 'react'   
+import ReactDOM  from 'react-dom'
 
 const h1 = document.createElement("h1")
 h1.textContent = "This Is Imperative Way Of Writing React!"
