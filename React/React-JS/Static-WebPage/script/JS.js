@@ -4,12 +4,14 @@ const page = (
         <h1>My React Web-Page</h1>
         <h3>Why i like react?</h3>
         <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>It's Composable</li>
+            <li>It's Declarative</li>
+            <li>It's really easy to learn</li>
+            <li>It's function are simple and understandable</li>
+            <li>I personally really like to code with ReactJS</li>
         </ol>
     </div>
 
 )
+
+ReactDOM
