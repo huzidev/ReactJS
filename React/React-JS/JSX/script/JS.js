@@ -4,7 +4,27 @@
 
 const element = <h1 className="header">Hello, This Is JSX(Javascript XML)</h1>
 
-ReactDOM.render(element, document.getElementById("head"))
+ReactDOM.render(
+    element, 
+    document.getElementById("head")
+)
+
+
+const main = (
+    // their there is one main parent wrapping 2 diff components
+    <div> 
+        <h1>Hello, World</h1>, 
+        <p>I'm learning ReactJS!</p>
+    </div>
+)
+
+
+ReactDOM.render(
+    // we've created a OBJECT called (MAIN)
+    main,
+    document.getElementById("mid")
+)
+
 
 ReactDOM.render(
     // their div is ours main parent which is actually wrapping two other components h1 and para
