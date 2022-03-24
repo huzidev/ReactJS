@@ -1,5 +1,5 @@
 //REMEMBER while creating fucntions make sure to write the first word Capital of that fucntion
-
+// why to use function is beacuse functions helps us to create different components so we can manipulate and design them seprately
 function Fact() {
     // our function will (RETURN) whatever is written inside of it whenever the function is called
     return(
