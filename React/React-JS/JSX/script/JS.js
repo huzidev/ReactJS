@@ -13,7 +13,7 @@ ReactDOM.render(
 const main = (
     // their there is one main parent wrapping 2 diff components
     <div> 
-        <h1>Hello, World</h1>, 
+        <h1>Hello, World</h1>
         <p>I'm learning ReactJS!</p>
     </div>
 )
