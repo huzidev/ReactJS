@@ -7,4 +7,5 @@ document.getElementById("root").append(h1) // append means add (MEANS) add h1 to
 
 
 // THIS IS DECLARATIVE WAY AND REACT BASICALLY WORKS ON DECLARATIVE WAY IN WHICH WE DON'T HAVE TO SPECIFY EVERY SINGLE THING RATHER COMPUTER WILL REALIZE WHAT TO DO AND HOW TO DO
+
 ReactDOM.render(<h1 className="head">Hello, This Is Declarative Way Of Writing React!</h1>, document.getElementById("head"))
