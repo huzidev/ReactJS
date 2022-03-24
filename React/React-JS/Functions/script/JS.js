@@ -13,6 +13,7 @@ function Head() {
         <header>
             <nav>
                 <h1>Reasons Why I Like To Code In React</h1>
+                <img src="/assets/react.png" alt="React-Logo"/>
             </nav>
         </header>
     )
@@ -48,12 +49,11 @@ function Fact() {
     return(
         <div>
             <Head />
-            <img src="/assets/react.png" alt="React-Logo"/>
             <Ol />
             <Footer />
         </div>
     )
-    
+
 }
 
 ReactDOM.render(
