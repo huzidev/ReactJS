@@ -2,7 +2,7 @@
 
 // why to use function is beacuse functions helps us to create different components so we can manipulate and design them seprately
 
-// BASICALLY ours function is like (REACT COMPONENTS) and we write JSX inside ours function which ULTIMATELY (RETURN) javascript object and that js object is convert into DOM elements which can be seen by user CALLED USER INTERFACE (UI)
+// BASICALLY ours function is like (REACT COMPONENTS) and we write JSX inside ours function which ULTIMATELY (RETURN) javascript object and that js object is convert into DOM elements which can be seen by user after RENDER CALLED USER INTERFACE (UI)
 
 function Fact() {
     // our function will (RETURN) whatever is written inside of it whenever the function is called
