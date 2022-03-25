@@ -7,6 +7,11 @@ export default function Nav() {
     <nav>
         <img src="{Logo}" alt="React-Logo" />
         <h3 className="react">ReactJS</h3>
+        <p>
+            <b>
+                ReactJS - Project 1
+            </b>
+        </p>
     </nav>
   )
 }
