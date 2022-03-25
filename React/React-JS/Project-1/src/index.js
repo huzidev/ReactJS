@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Nav from './MyComponents/Nav'
 import Header from './MyComponents/Header'
+import Ul from './MyComponents/Ul'
 import './styles/style.css'
 
 
@@ -11,6 +12,7 @@ function Main() {
         <div className="container">
             <Nav />
             <Header />
+            <Ul />
         </div>
 
     )
