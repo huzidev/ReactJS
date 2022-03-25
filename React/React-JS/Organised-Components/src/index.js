@@ -3,19 +3,10 @@ import ReactDOM from 'react-dom';
 import Nav from './MyComponents/Nav';
 import Header from './MyComponents/Header';
 import Ul from './MyComponents/Ul';
+import Footer from './MyComponents/Footer';
 
 
 
-
-function Footer() {
-
-    return(
-        <footer>
-            All Rights Are Reserved 2021-22 &copy;
-        </footer>
-    )
-
-}
 function Main() {
     return(
         <div>
