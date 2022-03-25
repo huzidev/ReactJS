@@ -3,4 +3,10 @@
   margin: 0px;
   padding: 0px;
   background-image: url(/src/assets/react-back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#head {
+  height: 10000px;
 }
