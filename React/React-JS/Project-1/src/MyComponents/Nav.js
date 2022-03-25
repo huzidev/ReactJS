@@ -5,8 +5,10 @@ import Logo from '../assets/react.png';
 export default function Nav() {
   return (
     <nav>
-        <img src={Logo} alt="React-Logo" />
-        <h3 className="react">ReactJS</h3>
+        <div className="left">
+            <img src={Logo} alt="React-Logo" />
+            <h3 className="text">ReactJS</h3>
+        </div>
         <p>
             <b>
                 ReactJS - Project 1
