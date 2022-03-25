@@ -1,14 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Nav from './MyComponents/Nav'
+import Header from './MyComponents/Header'
 import './styles/style.css'
 
 
 function Main() {
     return(
 
-        <div>
+        <div className="container">
             <Nav />
+            <Header />
         </div>
 
     )
