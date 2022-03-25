@@ -1,35 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Nav from './Nav';
+import Nav from './MyComponents/Nav';
+import Header from './MyComponents/Header';
+import Ul from './MyComponents/Ul';
 
-function Head() {
 
-    return(
-        <header>
-            <h1>ReactJS</h1>
-        </header>
-    )
 
-}
-
-function Ul() {
-
-    return(
-        <div className="items">
-            <h1>
-                Things About React!
-            </h1>
-            <ul>
-                <li>Really Interesting</li>
-                <li>Really Easy</li>
-                <li>Similar To JS, HTML</li>
-                <li>East To Learn</li>
-                <li>East to Code</li>
-            </ul>
-        </div>
-    )
-
-}
 
 function Footer() {
 
@@ -44,7 +20,7 @@ function Main() {
     return(
         <div>
             <Nav />
-            <Head />
+            <Header />
             <Ul />
             <Footer />
         </div>
