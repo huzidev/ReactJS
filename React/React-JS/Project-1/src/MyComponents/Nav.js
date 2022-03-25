@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Logo from './MyComponents/react.png';
+import Logo from '../assets/react.png';
 
 export default function Nav() {
   return (

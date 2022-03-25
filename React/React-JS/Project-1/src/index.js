@@ -6,9 +6,15 @@ import './styles/style.css'
 
 function Main() {
     return(
+
         <div>
             <Nav />
         </div>
 
     )
 }
+
+ReactDOM.render(
+    <Main />,
+    document.getElementById("head")
+)
