@@ -43,3 +43,8 @@ section .main-header {
 section .main-text {
   margin-top: 0px;
 }
+
+.card {
+  width: 175px;
+  font-size: 12px;
+}
