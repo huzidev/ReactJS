@@ -31,7 +31,8 @@ section {
 }
 section .main-img {
   height: 500px;
-  width: 1200px;
+  width: 1100px;
+  max-width: 1200px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
