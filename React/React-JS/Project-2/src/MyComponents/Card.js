@@ -10,9 +10,6 @@ export default function Card() {
                 5.0
             </span>
             <span>
-                (6) .
-            </span>
-            <span>
                 Japan
             </span>
             <p>
