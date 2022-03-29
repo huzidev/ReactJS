@@ -6,7 +6,7 @@ export default function Card() {
       <div className="card">
           <img src={Slide} alt="Slide-1" />
           <div className="card-1">
-              
+          <i className="fa-solid fa-star"></i>
           </div>
       </div>
   )
