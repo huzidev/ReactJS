@@ -9,12 +9,30 @@ export default function Card() {
         <div className="card">
           <div className="wrap">
             <img src={Slide} className="card-img" alt="Slide-1" />
+            <p>
+              <b>Goku</b>
+            </p>
+            <p>
+              Latest Transformation - <b> Ultra-Instinct </b>
+            </p>
           </div>
           <div className="wrap">
             <img src={Slide1} className="card-img" alt="Slide-2" />
+            <p>
+              <b>Vegeta</b>
+            </p>
+            <p>
+              Latest Transformation - <b> Super-Saiyan-Blue </b>
+            </p>
           </div>
           <div className="wrap">
             <img src={Slide2} className="card-img" alt="Slide-3" />
+            <p>
+              <b>Goku</b>
+            </p>
+            <p>
+              Latest Transformation - <b> Super-Saiyan-Blue </b>
+            </p>
           </div>
         </div>
      </>
