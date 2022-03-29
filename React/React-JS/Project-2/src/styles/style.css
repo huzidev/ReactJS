@@ -6,7 +6,9 @@
   font-family: sans-serif;
 }
 
-nav .nav-logo {
-  height: 100px;
-  width: 130px;
+nav {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
