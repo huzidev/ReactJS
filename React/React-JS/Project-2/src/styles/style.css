@@ -16,7 +16,7 @@ nav {
           box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
 }
 nav .nav-logo {
-  height: 11 0px;
+  height: 110px;
 }
 
 section {
@@ -36,4 +36,10 @@ section .main-img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+section .main-header {
+  margin-bottom: 16px;
+}
+section .main-text {
+  margin-top: 0px;
 }
