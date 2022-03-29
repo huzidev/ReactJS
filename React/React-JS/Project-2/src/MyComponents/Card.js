@@ -6,19 +6,19 @@ export default function Card() {
       <div className="card">
         <img src={Slide} className="card-img" alt="Slide-1" />
         <div className="card-1">
-            <span>
+            <span className="grey">
                 5.0
             </span>
-            <span>
+            <span className="grey">
                 Japan
             </span>
-            <p>
-                Kakarot
-            </p>
-            <p>
-                Latest Update - Ultra Instinct
-            </p>
         </div>
+        <p>
+            Kakarot
+        </p>
+        <p>
+            Latest Update - <span className="bold"> Ultra Instinct </span>
+        </p>
       </div>
   )
 }

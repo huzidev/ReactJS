@@ -48,3 +48,15 @@ section .main-text {
   width: 175px;
   font-size: 12px;
 }
+.card .card-img {
+  width: 100%;
+  border-radius: 9px;
+}
+.card .card-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
