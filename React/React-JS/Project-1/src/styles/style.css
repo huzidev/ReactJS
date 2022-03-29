@@ -63,3 +63,6 @@ ul {
 ul li {
   padding: 7px 0px;
 }
+ul li::marker {
+  color: #61DAFB;
+}
