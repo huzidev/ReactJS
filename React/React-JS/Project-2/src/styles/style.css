@@ -50,28 +50,9 @@ section .main-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: auto;
 }
 .card .card-img {
   width: 100%;
   height: 300px;
   border-radius: 9px;
-}
-.card .card-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.card .card-1 .color {
-  color: #918E9B;
-}
-.card .bold {
-  font-weight: bold;
 }
