@@ -7,9 +7,15 @@ export default function Card() {
   return (
     <>
         <div className="card">
+          <div className="wrap">
             <img src={Slide} className="card-img" alt="Slide-1" />
+          </div>
+          <div className="wrap">
             <img src={Slide1} className="card-img" alt="Slide-2" />
+          </div>
+          <div className="wrap">
             <img src={Slide2} className="card-img" alt="Slide-3" />
+          </div>
         </div>
      </>
   )
