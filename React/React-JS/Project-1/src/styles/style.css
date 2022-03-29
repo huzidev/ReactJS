@@ -64,5 +64,6 @@ ul li {
   padding: 7px 0px;
 }
 ul li::marker {
+  font-size: 1.4rem;
   color: #61DAFB;
 }
