@@ -60,3 +60,9 @@ section .main-text {
       -ms-flex-align: center;
           align-items: center;
 }
+.card .card-1 .color {
+  color: #918E9B;
+}
+.card .bold {
+  font-weight: bold;
+}
