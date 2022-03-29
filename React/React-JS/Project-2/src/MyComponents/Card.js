@@ -1,12 +1,11 @@
 import React from 'react';
-import Slide from '../assets/slider';
+import Slide from '../assets/slider.jpg';
 
 export default function Card() {
   return (
       <div className="card">
         <img src={Slide} alt="Slide-1" />
         <div className="card-1">
-            <i className="fa-solid fa-star"></i>
             <span>
                 5.0
             </span>
