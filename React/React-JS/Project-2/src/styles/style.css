@@ -38,7 +38,7 @@ section .main-img {
       align-self: center;
 }
 section .main-header {
-  margin-bottom: 16px;
+  margin: 16px 0px;
 }
 section .main-text {
   margin-top: 0px;
