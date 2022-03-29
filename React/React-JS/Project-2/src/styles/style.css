@@ -58,7 +58,10 @@ section .main-text {
   display: -ms-flexbox;
   display: flex;
 }
-.card .card-img {
+.card .wrap {
+  text-align: center;
+}
+.card .wrap .card-img {
   height: 200px;
   width: 250px;
   margin: 30px;
