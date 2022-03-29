@@ -5,3 +5,8 @@
   margin: 0px;
   font-family: sans-serif;
 }
+
+nav .nav-logo {
+  height: 100px;
+  width: 130px;
+}
