@@ -9,7 +9,7 @@ export default function Card() {
         <div className="card">
           <div className="wrap">
             <img src={Slide} className="card-img" alt="Slide-1" />
-            <p>
+            <p className="text">
               <b>Goku</b>
             </p>
             <p>
@@ -18,7 +18,7 @@ export default function Card() {
           </div>
           <div className="wrap">
             <img src={Slide1} className="card-img" alt="Slide-2" />
-            <p>
+            <p className="text">
               <b>Vegeta</b>
             </p>
             <p>
@@ -27,7 +27,7 @@ export default function Card() {
           </div>
           <div className="wrap">
             <img src={Slide2} className="card-img" alt="Slide-3" />
-            <p>
+            <p className="text">
               <b>Goku</b>
             </p>
             <p>

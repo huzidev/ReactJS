@@ -61,6 +61,9 @@ section .main-text {
 .card .wrap {
   text-align: center;
 }
+.card .wrap .text {
+  margin-bottom: 10px;
+}
 .card .wrap .card-img {
   height: 200px;
   width: 250px;
