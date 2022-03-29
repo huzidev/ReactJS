@@ -45,7 +45,6 @@ section .main-text {
 }
 
 .card {
-  background-color: aqua;
   width: 1200px;
   margin: auto;
   font-size: 12px;
@@ -62,5 +61,6 @@ section .main-text {
 .card .card-img {
   height: 200px;
   width: 250px;
+  margin: 30px;
   border-radius: 9px;
 }
