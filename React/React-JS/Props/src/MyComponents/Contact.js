@@ -1,10 +1,7 @@
 import React from "react"
 
 export default function Contact(props) {
-    /**
-     * Challenge: Fix the code below to use the `props`
-     * object values in place of the hardcoded values below
-     */
+   
     return (
         <div className="contact-card">
             <img src={props.img} alt="Img"/>
@@ -17,4 +14,5 @@ export default function Contact(props) {
             </div>
         </div>
     )
+    
 }
