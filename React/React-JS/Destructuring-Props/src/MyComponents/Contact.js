@@ -1,12 +1,11 @@
 import React from "react"
 
-// it is not mandatory to write exact props (Property) rather we can use whatever name we like to make props BUT it is good practice to write props cause it is short form of (PROPERTY)
 
-// by creating PROPS we can make ours components more and more reuseable as we did over there
+// we can use destructuring props rather than props in destructuring props we've to use {} than props name we use like there img, name etc 
 
-// and props basically receive a javascript object
+// but it is better to use props rather than destructuring props
 
-export default function Contact(props) {
+export default function Contact({img, name, status, info, bold}) {
    
     return (
         <div className="contact-card">
