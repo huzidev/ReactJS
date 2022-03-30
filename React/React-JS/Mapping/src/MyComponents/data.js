@@ -6,9 +6,9 @@
 export default [
     {
         title: "Learning ReactJS Mapping",
-        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+        description: "Hello, I've just started ReactJS and I'm really enjoying writing code in React it is really interesting library of JS",
         experience: "5+months",
-        coverImg: "../assets/main.jpg",
+        Img: "../assets/main.jpg",
         stats: {
             Languages: 7,    
             Favorites: 6
@@ -18,9 +18,9 @@ export default [
     },
     {
         title: "Learning ReactJS Mapping",
-        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+        description: "Hello, I've just started ReactJS and I'm really enjoying writing code in React it is really interesting library of JS",
         experience: "5+months",
-        coverImg: "../assets/main.jpg",
+        Img: "../assets/main.jpg",
         stats: {
             Languages: 7,    
             Favorites: 6
@@ -30,9 +30,9 @@ export default [
     },
     {
         title: "Learning ReactJS Mapping",
-        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+        description: "Hello, I've just started ReactJS and I'm really enjoying writing code in React it is really interesting library of JS",
         experience: "5+months",
-        coverImg: "../assets/main.jpg",
+        Img: "../assets/main.jpg",
         stats: {
             Languages: 7,    
             Favorites: 6

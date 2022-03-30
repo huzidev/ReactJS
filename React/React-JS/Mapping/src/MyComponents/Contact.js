@@ -11,7 +11,7 @@ export default function Contact(props) {
     return (
         <div className="contact-card">
 
-            <img src={props.Img} alt="Img"/>
+            <img src={props.img} alt="Img"/>
 
             <h3>{props.title}</h3>
 

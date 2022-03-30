@@ -7,12 +7,13 @@ export default function App() {
    const cards = Data.map(info => {
        return(
            <Contact
-                img = {info.coverImg}
-                rating = {info.stats.rating}
-                reviewCount= {info.stats.reviewCount}
-                location = {info.location}
+                img = {info.Img}
                 title = {info.title}
-                price = {info.price}
+                experience = {info.experience}
+                language = {info.stats.Languages}
+                fvrt= {info.stats.Favorites}
+                source = {info.Source}
+                hours = {info.HoursSpend}
             />
        )
    })
