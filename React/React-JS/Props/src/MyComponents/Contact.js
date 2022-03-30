@@ -12,13 +12,13 @@ export default function Contact(props) {
 
             <div className="info-group">
 
-                <p>{props.phone}</p>
+                <p>{props.status}</p>
 
             </div>
 
             <div className="info-group">
 
-                <p>{props.email}</p>
+                <p>{props.info}</p>
 
             </div>
         </div>

@@ -6,6 +6,7 @@ import Img2 from "../assets/slider2.webp"
 import Img3 from "../assets/slider3.jpg"
 
 function App() {
+
     return (
         <div className="contacts">
             <Contact 
@@ -34,6 +35,7 @@ function App() {
             />
         </div>
     )
+    
 }
 
 export default App
