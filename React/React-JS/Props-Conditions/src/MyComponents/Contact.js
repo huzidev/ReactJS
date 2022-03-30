@@ -14,6 +14,8 @@ import React from "react"
 
 // in the other condition we says something like if props.text ? (? means does exist) then display block : (: means else or does not exist) then display none
 
+// and we've also use {{}} double curly bracket one for jsx and other one is for object of JS
+
 export default function Contact(props) {
    
     return (
