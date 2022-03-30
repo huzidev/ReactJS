@@ -5,10 +5,10 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
     {
+        Img: "../assets/main.jpg",
         title: "Learning ReactJS Mapping",
         description: "Hello, I've just started ReactJS and I'm really enjoying writing code in React it is really interesting library of JS",
         experience: "5+months",
-        Img: "../assets/main.jpg",
         stats: {
             Languages: 7,    
             Favorites: 6
@@ -17,10 +17,10 @@ export default [
         HoursSpend: 5
     },
     {
+        Img: "../assets/main.jpg",
         title: "Learning ReactJS Mapping",
         description: "Hello, I've just started ReactJS and I'm really enjoying writing code in React it is really interesting library of JS",
         experience: "5+months",
-        Img: "../assets/main.jpg",
         stats: {
             Languages: 7,    
             Favorites: 6
@@ -29,10 +29,10 @@ export default [
         HoursSpend: 5
     },
     {
+        Img: "../assets/main.jpg",
         title: "Learning ReactJS Mapping",
         description: "Hello, I've just started ReactJS and I'm really enjoying writing code in React it is really interesting library of JS",
         experience: "5+months",
-        Img: "../assets/main.jpg",
         stats: {
             Languages: 7,    
             Favorites: 6
