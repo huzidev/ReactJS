@@ -26,6 +26,7 @@ export default function Contact(props) {
             <p style={{display: props.text ? "block" : "none"}}>
                 Text : {props.text}
             </p>
+            <hr />
         </div>
     )
 
