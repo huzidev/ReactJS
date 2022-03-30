@@ -10,19 +10,19 @@ export default function Contact({img, name, status, info, bold}) {
     return (
         <div className="contact-card">
 
-            <img src={props.img} alt="Img"/>
+            <img src={img} alt="Img"/>
 
-            <h3>{props.name}</h3>
+            <h3>{name}</h3>
 
             <div className="info-group">
 
-                <p>{props.status}</p>
+                <p>{status}</p>
 
             </div>
 
             <div className="info-group">
 
-                <p>{props.info} <b>{props.bold}</b></p>
+                <p>{info} <b>{bold}</b></p>
                 
             </div>
         </div>
