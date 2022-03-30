@@ -5,8 +5,8 @@ import Img1 from "../assets/slider.jpg"
 import Img2 from "../assets/slider2.webp"
 import Img3 from "../assets/slider3.jpg"
 
-function App() {
-
+export default function App() {
+    // we are just simply making props here and we'll link it in the main file which is CONTACT.js there we'll pass (props) as parameter then we'll link all the attribute there with {props/img}, {props.name} etc
     return (
         <div className="contacts">
             <Contact 
@@ -37,5 +37,3 @@ function App() {
     )
 
 }
-
-export default App
