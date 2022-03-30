@@ -23,8 +23,7 @@ export default function Contact(props) {
 
             <div className="info-group">
 
-                <p>{props.info}</p>
-
+                <p>{props.info} <b>{props.bold}</b></p>
             </div>
         </div>
     )

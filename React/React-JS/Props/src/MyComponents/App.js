@@ -15,25 +15,29 @@ export default function App() {
                 img={Img} 
                 name="Goku"
                 status="Saiyan"
-                info="Latest Form - Ultra Instinct"
+                info="Latest Form -"
+                bold="Ultra Instinct"
             />
             <Contact 
                 img={Img1}
                 name="Goku"
                 status="Saiyan"
-                info="Latest Form - Super Ultra Instinct"
+                info="Latest Form -"
+                bold="Super Ultra Instinct"
             />
             <Contact 
                 img={Img2}
                 name="Vegeta"
                 status="Prince "
-                info="Latest Form - Super Saiyan Blue"
+                info="Latest Form -"
+                bold="Super Saiyan Blue"
             />
             <Contact 
                 img={Img3}
                 name="Vegeta"
                 status="Prince "
-                info="Latest Form - Super Saiyan Blue"
+                info="Latest Form -"
+                bold="Super Saiyan Blue"
             />
         </div>
     )
