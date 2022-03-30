@@ -12,6 +12,8 @@ import React from "react"
 
 //  OR
 
+// in the other condition we says something like if props.text ? (? means does exist) then display block : (: means else or does not exist) then display none
+
 export default function Contact(props) {
    
     return (
@@ -19,7 +21,7 @@ export default function Contact(props) {
             {props.heading && <h3>
                 Heading : {props.heading}
             </h3>}
-            <p>
+            <p style={{display: props.text ? "block" : "none"}}>
                 Text : {props.text}
             </p>
         </div>
