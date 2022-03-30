@@ -6,6 +6,8 @@ import Contact from "./Contact"
 
 // like here we've remove heading part from the last three part of contact 
 
+// and we've also remove text form the last one so we can check another condition
+
 export default function App() {
 
     return (
@@ -21,7 +23,7 @@ export default function App() {
                 text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit rerum architecto cum fugit?"
             />
             <Contact 
-                text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit rerum architecto cum fugit?"
+                heading="Hello, World!"
             />
         </div>
     )
