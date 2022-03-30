@@ -10,6 +10,8 @@ import React from "react"
 
 // NOW as in Loop condition we add && means make sure both conditions are true if both conditions are true than print or run else not therefore we've created same condition in JSX therefore we've to cover h3 in {} then check if props.heading && inside h3 props.heading is present then run only
 
+//  OR
+
 export default function Contact(props) {
    
     return (
