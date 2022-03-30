@@ -6,6 +6,8 @@ import React from "react"
 
 // and props basically receive a javascript object
 
+// now if for some reason i dont wanna print heading in the first contact so we can simply create an if else type condition
+
 export default function Contact(props) {
    
     return (
