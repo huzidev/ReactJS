@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 
 // we can use destructuring props rather than props in destructuring props we've to use {} than props name we use like there img, name etc 
