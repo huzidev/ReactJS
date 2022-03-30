@@ -8,6 +8,8 @@ import React from "react"
 
 // now if for some reason i dont wanna print heading in the first contact so we can simply create an if else type condition
 
+// NOW as in Loop condition we add && means make sure both conditions are true if both conditions are true than print or run else not therefore we've created same condition in JSX therefore we've to cover h3 in {} then check if props.heading && inside h3 props.heading is present then run only
+
 export default function Contact(props) {
    
     return (
