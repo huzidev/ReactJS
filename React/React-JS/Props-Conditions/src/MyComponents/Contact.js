@@ -12,9 +12,9 @@ export default function Contact(props) {
    
     return (
         <div>
-            <h3>
+            {props.heading && <h3>
                 Heading : {props.heading}
-            </h3>
+            </h3>}
             <p>
                 Text : {props.text}
             </p>
