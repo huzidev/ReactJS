@@ -11,31 +11,31 @@ function App() {
         <div className="contacts">
             <Contact 
                 img={Img} 
-                name="Mr. Whiskerson"
-                phone="(212) 555-1234"
-                email="mr.whiskaz@catnap.meow"
+                name="Goku"
+                status="Saiyan"
+                info="Latest Form - Ultra Instinct"
             />
             <Contact 
                 img={Img1}
-                name="Fluffykins"
-                phone="(212) 555-2345"
-                email="fluff@me.com"
+                name="Goku"
+                status="Saiyan"
+                info="Latest Form - Super Ultra Instinct"
             />
             <Contact 
                 img={Img2}
-                name="Felix"
-                phone="(212) 555-4567"
-                email="thecat@hotmail.com"
+                name="Vegeta"
+                status="Prince "
+                info="Latest Form - Super Saiyan Blue"
             />
             <Contact 
                 img={Img3}
-                name="Pumpkin"
-                phone="(0800) CAT KING"
-                email="pumpkin@scrimba.com"
+                name="Vegeta"
+                status="Prince "
+                info="Latest Form - Super Saiyan Blue"
             />
         </div>
     )
-    
+
 }
 
 export default App
