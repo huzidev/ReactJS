@@ -2,6 +2,7 @@
 
 // for that we don't have to actually update each time again and again rather we'll simply use mapping
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
     {
         id: 1,
