@@ -17,14 +17,8 @@ export default function Contact(props) {
 
             <div className="info-group">
 
-                <p>{props.status}</p>
-
-            </div>
-
-            <div className="info-group">
-
-                <p>{props.info} <b>{props.bold}</b></p>
-                
+                <p>{props.des}</p>
+                <p>{props.experience}</p>
             </div>
         </div>
     )

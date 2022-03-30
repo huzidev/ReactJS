@@ -9,6 +9,7 @@ export default function App() {
            <Contact
                 img = {info.Img}
                 title = {info.title}
+                des = {info.description}
                 experience = {info.experience}
                 language = {info.stats.Languages}
                 fvrt= {info.stats.Favorites}
