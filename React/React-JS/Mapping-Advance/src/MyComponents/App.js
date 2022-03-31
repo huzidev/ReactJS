@@ -21,6 +21,7 @@ export default function App() {
 
        return(
            <Contact
+                id = {info.Id}
                 img = {info.Img}
                 title = {info.title}
                 des = {info.description}
