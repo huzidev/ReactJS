@@ -11,7 +11,7 @@ export default function Contact(props) {
    
     return (
         <div className="contact">
-            <div>
+            <div className="banner">
                 Maximum
             </div>
             <img src={`../assets/${props.img}`} alt="Img" className="card-img"/>
