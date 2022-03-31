@@ -12,17 +12,22 @@ export default function Contact(props) {
     // we created a variable called detail and we pass it in ours JSX in {detail} so ours badge will be updated according to the scenario
 
    let detail
+
    if( props.power === "Max" ){ // means if data says power is max then print Maximum in the badge
        detail = "Maximum"
+
    }
+
    else if( props.power === "Not-Max" ){
+
        detail = "Not-Maximum"
+
    }
 
     return (
         <div className="contact">
             <div className="banner">
-                {detail}
+                {detail} 
             </div>
             <img src={`../assets/${props.img}`} alt="Img" className="card-img"/>
             <h3>Tittle : {props.title}</h3>
