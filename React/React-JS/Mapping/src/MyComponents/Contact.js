@@ -11,6 +11,7 @@ export default function Contact(props) {
 
     // we created a variable called detail and we pass it in ours JSX in {detail} so ours badge will be updated according to the scenario
 
+    // it is better to use === instead of == because === check conditions more thoroughly
    let detail
 
    if( props.power === "Max" ){ // means if data says power is max then print Maximum in the badge
