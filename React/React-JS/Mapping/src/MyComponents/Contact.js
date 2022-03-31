@@ -27,7 +27,7 @@ export default function Contact(props) {
     return (
         <div className="contact">
             <div className="banner">
-                {detail} 
+                {detail}
             </div>
             <img src={`../assets/${props.img}`} alt="Img" className="card-img"/>
             <h3>Tittle : {props.title}</h3>
