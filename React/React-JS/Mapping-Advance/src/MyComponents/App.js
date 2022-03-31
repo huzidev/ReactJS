@@ -21,8 +21,8 @@ export default function App() {
 
        return(
            <Contact
-                id = {info.Id} // except id we'll shrink all the variables into just single variable BECAUSE id is something which is diff WHEN we use map
-                
+                key = {info.Id} // except id we'll shrink all the variables into just single variable BECAUSE id is something which is diff WHEN we use map
+
                 info = {info} // rather than creating every single variable for each element we simply just create a variable called info and assigned it all the info (Data) from Data
             />
        )
