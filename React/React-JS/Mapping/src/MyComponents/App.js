@@ -16,8 +16,9 @@ export default function App() {
     // Data is the name of ours component where all the user data is present 
 
     // info is basically parameter which will be receive in render
-    
+
    const cards = Data.map(info => {
+
        return(
            <Contact
                 img = {info.Img}
@@ -30,6 +31,7 @@ export default function App() {
                 hours = {info.HoursSpend}
             />
        )
+       
    })
 
    // like their we are returning {cards} which we've mapped above
