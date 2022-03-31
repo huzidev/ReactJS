@@ -2,10 +2,12 @@
 
 // for that we don't have to actually update each time again and again rather we'll simply use mapping
 
+// THIS IS THE COMPONENT WHERE WE'LL RECEIVE OURS USER INPUT DATA WE'LL LINK IT TO APP FORM WHERE IT'LL BE LINK WITH CONTACT THROUGH MAPPING SO WHEN WE RECEIVE MOR AND MORE USER DATA WE DONT HAVE TO UPDATE EACH TIME RATHER MAPPING WILL DO THIS FOR US
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
     {
-            Img: "react.png",
+        Img: "main.jpg",
         title: "Learning ReactJS Mapping",
         description: "Hello, I've just started ReactJS and I'm really enjoying writing code in React it is really interesting library of JS",
         experience: "5+months",
@@ -17,7 +19,7 @@ export default [
         HoursSpend: 5
     },
     {
-        Img: "react.png",
+        Img: "slider.jpg",
         title: "Learning ReactJS Mapping",
         description: "Hello, I've just started ReactJS and I'm really enjoying writing code in React it is really interesting library of JS",
         experience: "5+months",
@@ -29,7 +31,7 @@ export default [
         HoursSpend: 5
     },
     {
-        Img: "react.png",
+        Img: "slider3.jpg",
         title: "Learning ReactJS Mapping",
         description: "Hello, I've just started ReactJS and I'm really enjoying writing code in React it is really interesting library of JS",
         experience: "5+months",
