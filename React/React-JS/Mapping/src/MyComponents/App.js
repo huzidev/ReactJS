@@ -31,12 +31,12 @@ export default function App() {
                 hours = {info.HoursSpend}
             />
        )
-       
+
    })
 
    // like their we are returning {cards} which we've mapped above
     return (
-        <div>
+        <div className="card-list">
             {cards}
         </div>
     )
