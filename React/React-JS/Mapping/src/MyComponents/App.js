@@ -29,6 +29,7 @@ export default function App() {
                 fvrt = {info.stats.Favorites}
                 source = {info.Source}
                 hours = {info.HoursSpend}
+                power = {info.Power}
             />
        )
 
