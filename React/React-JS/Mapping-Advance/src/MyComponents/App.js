@@ -25,6 +25,7 @@ export default function App() {
 
                 info = {info} // rather than creating every single variable for each element we simply just create a variable called info and assigned it all the info (Data) from Data
             />
+            // REMEMBER when we assigned complete DATA to just single now we've to write exact name of variable as in ours DATA with props.info.Img... etc
        )
 
    })
