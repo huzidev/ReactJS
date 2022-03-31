@@ -16,7 +16,8 @@ export default [
             Favorites: 6
         },
         Source: "Self-Taught",
-        HoursSpend: 5
+        HoursSpend: 5,
+        Power = "Max"
     },
     {
         Img: "slider.jpg",
@@ -28,7 +29,8 @@ export default [
             Favorites: 6
         },
         Source: "Self-Taught",
-        HoursSpend: 5
+        HoursSpend: 5,
+        Power = "Not-Max"
     },
     {
         Img: "slider3.jpg",
@@ -40,6 +42,7 @@ export default [
             Favorites: 6
         },
         Source: "Self-Taught",
-        HoursSpend: 5
+        HoursSpend: 5,
+        Power = "Not-Max"
     }
 ]

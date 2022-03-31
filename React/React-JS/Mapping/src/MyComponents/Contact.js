@@ -8,11 +8,13 @@ import React from "react";
 // NOTE sometime if images fail to load then simply move yours image folder to public folder where HTML file is present because BY DEFAULT we've access to public folder therefore we've move ours assets folder to public now it'll works
 
 export default function Contact(props) {
-   
+   let detail
+   if(props.power === "max" )
+
     return (
         <div className="contact">
             <div className="banner">
-                Maximum
+                {detail}
             </div>
             <img src={`../assets/${props.img}`} alt="Img" className="card-img"/>
             <h3>Tittle : {props.title}</h3>
