@@ -17,7 +17,7 @@ export default [
         },
         Source: "Self-Taught",
         HoursSpend: 5,
-        Power = "Max"
+        Power: "Max"
     },
     {
         Img: "slider.jpg",
@@ -30,7 +30,7 @@ export default [
         },
         Source: "Self-Taught",
         HoursSpend: 5,
-        Power = "Not-Max"
+        Power: "Not-Max"
     },
     {
         Img: "slider3.jpg",
@@ -43,6 +43,6 @@ export default [
         },
         Source: "Self-Taught",
         HoursSpend: 5,
-        Power = "Not-Max"
+        Power: "Not-Max"
     }
 ]
