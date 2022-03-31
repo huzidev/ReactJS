@@ -9,7 +9,9 @@ import React from "react";
 
 export default function Contact(props) {
    let detail
-   if(props.power === "max" )
+   if(props.power === "Max" ){
+       detail = "Maximum"
+   }
 
     return (
         <div className="contact">
