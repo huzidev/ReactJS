@@ -2,6 +2,7 @@ import React from "react";
 import Data from "./data";
 import Contact from "./Contact";
 
+
 export default function App() {
     // we use map to make ours code more self-sustaining so when ever user insert any data from web-page it'll be store in Data component form where we've already link it there so it can update automatically called self-sustaining
 
@@ -21,7 +22,7 @@ export default function App() {
                 des = {info.description}
                 experience = {info.experience}
                 language = {info.stats.Languages} // info.stats.language means language is object in which multiple elements are present as of their in stats languages and favorites are in stats
-                fvrt= {info.stats.Favorites}
+                fvrt = {info.stats.Favorites}
                 source = {info.Source}
                 hours = {info.HoursSpend}
             />
