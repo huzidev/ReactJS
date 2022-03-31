@@ -22,14 +22,7 @@ export default function App() {
        return(
            <Contact
                 id = {info.Id}
-                img = {info.Img}
-                title = {info.title}
-                des = {info.description}
-                experience = {info.experience}
-                language = {info.stats.Languages} // info.stats.language means language is object in which multiple elements are present as of their in stats languages and favorites are in stats
-                fvrt = {info.stats.Favorites}
-                source = {info.Source}
-                hours = {info.HoursSpend}
+                info = {info} // rather than creating every single variable for each element we simply just create a variable called info and assigned it all the info (Data) from Data
             />
        )
 
