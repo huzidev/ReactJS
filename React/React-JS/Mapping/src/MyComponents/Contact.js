@@ -10,11 +10,8 @@ export default function Contact(props) {
    
     return (
         <div className="contact">
-
             <img src={props.img} alt="Img"/>
-
             <h3>Tittle : {props.title}</h3>
-
             <div className="info">
                 <p> <b> Description : </b> {props.des}</p>
                 <p> <b> Experience : </b> {props.experience}</p>
