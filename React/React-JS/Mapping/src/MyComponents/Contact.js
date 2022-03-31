@@ -15,6 +15,8 @@ export default function Contact(props) {
             <div className="info">
                 <p> <b> Description : </b> {props.des}</p>
                 <p> <b> Experience : </b> {props.experience}</p>
+                <p> <b> Stats-languages : </b> {props.language}</p>
+                <p> <b> Stats-Fvrt-languages : </b> {props.language}</p>
             </div>
         </div>
     )
