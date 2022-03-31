@@ -7,6 +7,7 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
     {
+        Id: 1,
         Img: "main.jpg",
         title: "Learning ReactJS Mapping",
         description: "Hello, I've just started ReactJS and I'm really enjoying writing code in React it is really interesting library of JS",
@@ -20,6 +21,7 @@ export default [
         Power: "Max"
     },
     {
+        Id: 2,
         Img: "slider.jpg",
         title: "Learning ReactJS Mapping",
         description: "Hello, I've just started ReactJS and I'm really enjoying writing code in React it is really interesting library of JS",
@@ -33,6 +35,7 @@ export default [
         Power: "Not-Max"
     },
     {
+        Id: 3,
         Img: "slider3.jpg",
         title: "Learning ReactJS Mapping",
         description: "Hello, I've just started ReactJS and I'm really enjoying writing code in React it is really interesting library of JS",

@@ -8,9 +8,28 @@ import React from "react";
 // NOTE sometime if images fail to load then simply move yours image folder to public folder where HTML file is present because BY DEFAULT we've access to public folder therefore we've move ours assets folder to public now it'll works
 
 export default function Contact(props) {
-   
+
+    // we created a variable called detail and we pass it in ours JSX in {detail} so ours badge will be updated according to the scenario
+
+    // it is better to use === instead of == because === check conditions more thoroughly
+   let detail
+
+   if( props.power === "Max" ){ // means if data says power is max then print Maximum in the badge
+       detail = "Maximum"
+
+   }
+
+   else if( props.power === "Not-Max" ){
+
+       detail = "Not-Maximum"
+
+   }
+
     return (
         <div className="contact">
+            <div className="banner">
+                {detail}
+            </div>
             <img src={`../assets/${props.img}`} alt="Img" className="card-img"/>
             <h3>Tittle : {props.title}</h3>
             <div>
