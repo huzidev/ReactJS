@@ -6,6 +6,7 @@ import React from "react"
 // and props basically receive a javascript object
 
 // NOTE sometime if images fail to load then simply move yours image folder to public folder where HTML file is present because BY DEFAULT we've access to public folder therefore we've move ours assets folder to public now it'll works
+
 export default function Contact(props) {
    
     return (

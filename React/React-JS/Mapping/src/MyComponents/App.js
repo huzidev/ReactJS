@@ -14,6 +14,9 @@ export default function App() {
     // info.img, info.tittle is basically from Data part and info is like props we can name it whatever we want than return
 
     // Data is the name of ours component where all the user data is present 
+
+    // info is basically parameter which will be receive in render
+    
    const cards = Data.map(info => {
        return(
            <Contact
