@@ -20,7 +20,7 @@ export default function App() {
                 title = {info.title}
                 des = {info.description}
                 experience = {info.experience}
-                language = {info.stats.Languages}
+                language = {info.stats.Languages} // info.stats.language means language is object in which multiple elements are present as of their in stats languages and favorites are in stats
                 fvrt= {info.stats.Favorites}
                 source = {info.Source}
                 hours = {info.HoursSpend}
@@ -28,6 +28,7 @@ export default function App() {
        )
    })
 
+   // like their we are returning {cards} which we've mapped above
     return (
         <div>
             {cards}
