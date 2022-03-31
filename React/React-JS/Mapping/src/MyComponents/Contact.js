@@ -11,9 +11,9 @@ export default function Contact(props) {
    
     return (
         <div className="contact">
-            <img src={`../assets/${props.img}`} alt="Img"/>
+            <img src={`../assets/${props.img}`} alt="Img" className="card-img"/>
             <h3>Tittle : {props.title}</h3>
-            <div className="info">
+            <div>
                 <p> <b> Description : </b> {props.des}</p>
                 <p> <b> Experience : </b> {props.experience}</p>
                 <p> <b> Stats-Languages : </b> {props.language}+</p>
