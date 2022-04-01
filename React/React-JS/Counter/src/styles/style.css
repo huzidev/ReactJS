@@ -38,6 +38,8 @@ body {
   background-color: #737373;
   color: #D9D9D9;
   font-size: 1.5rem;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
 }
 .Counter button:hover {
   background-color: #404040;
