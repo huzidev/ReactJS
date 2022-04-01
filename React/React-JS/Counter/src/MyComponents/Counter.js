@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Counter() {
+export default function Counter(props) {
   return (
       <div className="Counter">
           <button className="Minus" onClick={Add}>
@@ -8,7 +8,7 @@ export default function Counter() {
           </button>
           <div className="Count">
               <h1>
-                  0
+                  {props.Count}
               </h1> 
           </div>
           <button className="Plus">
