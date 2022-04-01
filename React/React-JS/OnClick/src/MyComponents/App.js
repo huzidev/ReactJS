@@ -19,7 +19,7 @@ export default function App() {
 
     const ThingsElement = Things.map(thing => {
         
-        return <p key={thing}>{thing}</p>
+        return <p key={thing}>{thing} <hr /></p>
     
     })
 
