@@ -12,11 +12,20 @@ export default function App() {
             return PrevCount + 1
 
         })
-        
+
     }
 
+    function Sub() {
+        
+        SetCount(PrevCount => {
+
+            return PrevCount - 1
+
+        })
+
+    }
     
   return (
-      <Counter />
+      <Counter add={Add} sub={Sub} count={Count}/>
   )
 }
