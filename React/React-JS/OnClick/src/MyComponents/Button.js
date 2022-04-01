@@ -4,8 +4,8 @@ export default function Button()
 {
   return (
     <div>
-        button
+        Add-Item
     </div>
   )
-  
+
 }
