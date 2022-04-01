@@ -7,8 +7,12 @@ export default function App() {
 
     function AddItem() {
         const NewThing = `Thing ${things.length + 1}`
-        
+        SetThings(PrevState => {
+            return [...PrevState, NewThing]
+        })
     }
+
+    
 
 
   return (
