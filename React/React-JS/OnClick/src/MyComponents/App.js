@@ -29,7 +29,6 @@ export default function App() {
    <div className="main">
 
         <Button click={AddItem}/>
-
         {ThingsElement}
 
    </div> 
