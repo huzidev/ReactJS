@@ -16,10 +16,10 @@ export default function App() {
     // basically when we uses useState there is 2 part of it is for Values and other on is function
 
     // therefore we've assign Things as to store value and SetThings For Manipulating Function when update is required
-    
+
     const[Things, SetThings] = React.useState(["Item-1", "Item-2"])
 
-    function AddItem() {
+    function AddItem() { // for inserting or Updating ours List
 
         const NewThing = `Item ${Things.length + 1}`
 
