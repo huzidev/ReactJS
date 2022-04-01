@@ -1,11 +1,15 @@
 import React from 'react';
 
-export default function Button() 
+export default function Button(props) 
+
 {
+
   return (
-    <div>
-        Add-Item
-    </div>
+
+      <button onClick={props.click}>
+          Add-Item
+      </button>
+
   )
 
 }
