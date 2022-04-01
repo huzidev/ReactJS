@@ -3,10 +3,17 @@ import Button from './Button';
 
 // state and props are bit similar but props is IMMUTABLE (CAN'T BE CHANGED) BUT STATE IS MUTABLE can be change within components
 
-// we use STATE only when we want to create something which should've to be update 
+// we use STATE only when we want to create something which should've to be update like their
+
+// their we've two strings of name things in an array and we wanted to UPDATE them onClick therefore we've to use state
+
+// useState is basically the part of react we can also import just useState property from import
 
 export default function App() {
+    
+    // what is Things and SetThings
 
+    // 
     const[Things, SetThings] = React.useState(["Item-1", "Item-2"])
 
     function AddItem() {
