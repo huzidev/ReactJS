@@ -13,7 +13,10 @@ export default function App() {
     
     // what is Things and SetThings
 
-    // 
+    // basically when we uses useState there is 2 part of it is for Values and other on is function
+
+    // therefore we've assign Things as to store value and SetThings For Manipulating Function when update is required
+    
     const[Things, SetThings] = React.useState(["Item-1", "Item-2"])
 
     function AddItem() {
