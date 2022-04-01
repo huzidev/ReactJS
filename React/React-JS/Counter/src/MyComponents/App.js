@@ -7,9 +7,9 @@ export default function App() {
 
     function Add() {
 
-        SetCount(PrevCount => {
+        SetCount(PrevCount => { // PrecCount is like parameter which will receive value from Count
         
-            return PrevCount + 1
+            return PrevCount + 1 // REMEMBER we can't do PrevCount++
 
         })
 
