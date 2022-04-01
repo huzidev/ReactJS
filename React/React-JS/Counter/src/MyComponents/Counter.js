@@ -3,7 +3,7 @@ import React from 'react'
 export default function Counter() {
   return (
       <div className="Counter">
-          <button className="Minus">
+          <button className="Minus" onClick={Add}>
               -
           </button>
           <div className="Count">
