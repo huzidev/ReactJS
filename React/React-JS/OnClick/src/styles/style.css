@@ -5,6 +5,8 @@
 
 body {
   font-family: sans-serif;
+  background-color: black;
+  color: white;
 }
 
 .main {
@@ -13,8 +15,10 @@ body {
   text-align: center;
 }
 .main .Btn {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
   border-radius: 10px;
   border: none;
   width: 200px;
