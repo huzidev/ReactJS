@@ -17,7 +17,7 @@ export default function App() {
 
     // therefore we've assign Things as to store value and SetThings For Manipulating Function when update is required
 
-    const[Things, SetThings] = React.useState(["Item-1", "Item-2"])
+    const[Things, SetThings] = React.useState(["Item-1", "Item-2"]) // these two are by default values OR beginning values
 
     function AddItem() { // for inserting or Updating ours List
 
