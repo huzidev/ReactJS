@@ -5,6 +5,16 @@ export default function App() {
 
     const [Count, SetCount] = React.useState(0); // 0 is the by default value or BEGINNING value
 
+    function Add() {
+
+        SetCount(PrevCount => {
+        
+            return PrevCount + 1
+
+        })
+        
+    }
+
     
   return (
       <Counter />
