@@ -1,6 +1,10 @@
 import React from 'react';
 import Button from './Button';
 
+// state and props are bit similar but props is IMMUTABLE (CAN'T BE CHANGED) BUT STATE IS MUTABLE can be change within components
+
+// we use STATE only when we want to create something which should've to be update 
+
 export default function App() {
 
     const[Things, SetThings] = React.useState(["Item-1", "Item-2"])
