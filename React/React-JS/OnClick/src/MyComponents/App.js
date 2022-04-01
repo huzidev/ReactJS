@@ -37,6 +37,8 @@ export default function App() {
         
     // Their all the updated item or values will be received which will be ultimately return to render where we'll use {ThingsElement} for printing all the updated value
 
+
+    // we've assigned key because we are using map at their therefore we've use key
         return <p key={Thing}>{Thing} <hr /></p>
     
     })
