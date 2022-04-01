@@ -21,11 +21,13 @@ export default function App() {
 
     function AddItem() { // for inserting or Updating ours List
 
-        const NewThing = `Item ${Things.length + 1}`
+        const NewThing = `Item ${Things.length + 1}` // just a method to print Item with updated number 
 
-        SetThings(PrevState => {
+        SetThings(PrevState => { // here SetThings which is the function part of ours useState PrevState is just a variable or SIMPLY a PARAMETER which will receive value from value part of useState 
 
-            return [...PrevState, NewThing]
+            return [...PrevState, NewThing] // here we've called call back function and returns [...prevstate] which will all the value which is present ByDefault at beginning and NewThing is the updated new item with updated numbers
+
+            //[...] is basically called array spread operator used to access all the values, data in the array
 
         })
 
