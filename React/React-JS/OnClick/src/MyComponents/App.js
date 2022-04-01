@@ -3,11 +3,11 @@ import Button from './Button';
 
 export default function App() {
 
-    const[Things, SetThings] = React.useState(["Thing-1", "Thing-2"])
+    const[Things, SetThings] = React.useState(["Item-1", "Item-2"])
 
     function AddItem() {
 
-        const NewThing = `Thing ${Things.length + 1}`
+        const NewThing = `Item ${Things.length + 1}`
 
         SetThings(PrevState => {
 
@@ -19,7 +19,7 @@ export default function App() {
 
     const ThingsElement = Things.map(thing => {
         
-        return <p>{thing}</p>
+        return <p key={thing}>{thing}</p>
     
     })
 
@@ -33,7 +33,7 @@ export default function App() {
         {ThingsElement}
 
    </div> 
-   
+
   )
 
 }
