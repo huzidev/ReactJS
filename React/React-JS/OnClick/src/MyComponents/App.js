@@ -33,9 +33,11 @@ export default function App() {
 
     }
 
-    const ThingsElement = Things.map(thing => {
+    const ThingsElement = Things.map(Thing => { // THINGS is the value part of useState Thing is just like variable
         
-        return <p key={thing}>{thing} <hr /></p>
+    // Their all the updated item or values will be received which will be ultimately return to render where we'll use {ThingsElement} for printing all the updated value
+    
+        return <p key={Thing}>{Thing} <hr /></p>
     
     })
 
