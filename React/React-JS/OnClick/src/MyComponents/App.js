@@ -36,7 +36,7 @@ export default function App() {
     const ThingsElement = Things.map(Thing => { // THINGS is the value part of useState Thing is just like variable
         
     // Their all the updated item or values will be received which will be ultimately return to render where we'll use {ThingsElement} for printing all the updated value
-    
+
         return <p key={Thing}>{Thing} <hr /></p>
     
     })
@@ -45,8 +45,8 @@ export default function App() {
   return (
 
    <div className="main">
-
-        <Button click={AddItem}/>
+    {/* click is the name of ours PROPS which will be use in BUTTON.js */}
+        <Button click={AddItem}/> 
         {ThingsElement}
 
    </div> 
