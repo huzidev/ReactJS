@@ -15,7 +15,7 @@ export default function App() {
     <div className="main">
 
         <div className="card">
-            <img src="../assets/main.jpg" alt="User-Img" />
+            <img src="../assets/main.jpg" alt="User-Img" className="user-img"/>
             <div className="card-info">
                 <img 
                 src={`../assets/StarE.png`}
@@ -24,10 +24,10 @@ export default function App() {
                 <h2 className="card-name">
                     {Contact.firstname} {Contact.nickname}
                 </h2>
-                <p>
+                <p className="card-contact">
                     {Contact.phone}
                 </p>
-                <p>
+                <p className="card-contact">
                     {Contact.email}
                 </p>
             </div>

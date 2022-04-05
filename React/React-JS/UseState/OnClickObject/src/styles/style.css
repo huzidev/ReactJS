@@ -8,3 +8,46 @@ body {
   font-family: "Inter", sans-serif;
   background-color: whitesmoke;
 }
+
+.main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .card {
+  width: 200px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  height: 350px;
+  box-shadow: 5px 5px 5px 1px rgba(120, 120, 120, 0.44);
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(120, 120, 120, 0.44);
+  -moz-box-shadow: 5px 5px 5px 1px rgba(120, 120, 120, 0.44);
+}
+.main .card .user-img {
+  width: 100%;
+  padding: 10%;
+  padding-bottom: 0;
+}
+.main .card .card-info {
+  padding: 10px;
+}
+.main .card .card-info .card-name {
+  margin-block: 13px;
+  color: #333333;
+}
+.main .card .card-info .fvr {
+  width: 25px;
+  cursor: pointer;
+}
+.main .card .card-info .card-contact {
+  font-size: 0.75rem;
+  color: gray;
+  margin-block: 7px;
+}
