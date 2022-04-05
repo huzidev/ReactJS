@@ -1,16 +1,20 @@
 import React from 'react';
 
+// THEIR we'll check how to use React.UseState in the case of object
+
 export default function App() {
 
     const [Contact, SetContact] = React.useState({
+
         firstname: "Huzi",
         nickname: "Dev",
         phone: "1234567",
         email: "huzi.iqdev@gmail.com",
         isFav: false
+
     })
 
-    let star = Contact.isFav ? "StarF.jpg" : "StarE.png"
+    let star = Contact.isFav ? "StarF.jpg" : "StarE.png" // as we know that ? and : are ternary operators ? means if true and : means else if false
 
     function Toggle() {
 
