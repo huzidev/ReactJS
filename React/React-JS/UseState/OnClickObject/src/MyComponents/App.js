@@ -12,6 +12,16 @@ export default function App() {
 
     let star = Contact.isFav ? "StarF.jpg" : "StarE.png"
 
+    function Toggle() {
+
+        SetContact(PrevContact => {
+
+            return 
+
+        })
+
+    }
+
   return (
 
     <div className="main">
