@@ -4,7 +4,7 @@ export default function App() {
 
     const [Contact, SetContact] = React.useState({
         firstname: "Huzi",
-        nickname: "Huzi-Dev",
+        nickname: "Dev",
         phone: "1234567",
         email: "huzi.iqdev@gmail.com",
         isFav: false
@@ -14,24 +14,29 @@ export default function App() {
 
     function Toggle() {
 
-        SetContact(PrevContact => {
+        SetContact(PrevContact => ({
 
-            return 
+            ...Contact,
+            isFav: !PrevContact.isFav
 
         })
 
-    }
+    )}
 
   return (
 
     <div className="main">
 
         <div className="card">
+
             <img src="../assets/main.jpg" alt="User-Img" className="user-img"/>
+
             <div className="card-info">
+
                 <img 
-                src={`../assets/StarE.png`}
+                src={`../assets/${star}`}
                 className="fvr" 
+                onClick={Toggle}
                 alt="Star-Img" />
                 <h2 className="card-name">
                     {Contact.firstname} {Contact.nickname}
@@ -42,6 +47,7 @@ export default function App() {
                 <p className="card-contact">
                     {Contact.email}
                 </p>
+
             </div>
         </div>
 
