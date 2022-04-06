@@ -12,13 +12,14 @@ export default function App() {
                 <h5>
                     You've No Messages
                 </h5> 
-                :
+                : // else
                 <div>
                     <h2>
                         Alert!
                     </h2>
-                    <h5>
-                        You've {message.length} Unread {message.length === 1 ? "Message" : "Messages"} 
+                    <h5> 
+                        {/* MEANS if message.length is 1 just one MESSAGE else MESSAGES */}
+                        You've {message.length} Unread {message.length === 1 ? "Message" : "Messages"}
                     </h5>
                 </div>
             }
