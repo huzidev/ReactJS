@@ -29,8 +29,8 @@ export default function Info(props) {
             }
             
             <button onClick={Toggle} className="btn">
-
-                {IsShow ? "Hide" : "Show" } PunchLine
+                {/* so it'll print hide PunchLine or Show PunchLine according to boolean value */}
+                {IsShow ? "Hide" : "Show" } PunchLine 
 
             </button>
 
