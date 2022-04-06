@@ -14,9 +14,11 @@ body {
 }
 
 .Main {
-  width: 500px;
-  margin: auto;
+  text-align: center;
 }
 .Main .Button {
   cursor: pointer;
+}
+.Main .Button h1 {
+  text-decoration: underline;
 }
