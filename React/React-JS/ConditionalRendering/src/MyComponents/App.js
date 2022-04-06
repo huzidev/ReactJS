@@ -19,10 +19,12 @@ export default function App() {
     })
 
   return (
+
       <div>
 
-          {InfoElements}
+        {InfoElements}
 
       </div>
   )
+  
 }
