@@ -4,18 +4,25 @@ import Info from './Info';
 
 export default function App() {
 
-    const JokeElements = Data.map(info => {
+    const InfoElements = Data.map(info => {
 
         return (
+
             <Info
                 key={info.id}
                 setup={info.setup}
                 punchline={info.punchline}   
             />
+            
         )
 
     })
 
   return (
+      <div>
+
+          {InfoElements}
+
+      </div>
   )
 }
