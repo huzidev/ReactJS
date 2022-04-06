@@ -20,7 +20,8 @@ export default function App() {
 
         SetContact(PrevContact => ({
 
-        // we didn't directly pass return because we are using use state for OBJECT therefore we've to cover ours curly braces into parentheses 
+        // we didn't directly pass return because we are using use state for (OBJECT) therefore we've to cover ours curly braces into parentheses as we did here just right after PrevContact => ({})
+
             ...Contact, // this is array spread operator which basically imports all the data of object
             isFav: !PrevContact.isFav // ! means not hence ! not prevcontact.isfav means previously it is false by default now every time we click make it ! or OPPOSITE IN BRIEF
 
