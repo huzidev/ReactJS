@@ -1,4 +1,5 @@
 import React from 'react';
+import Click from './Click';
 
 export default function App() {
 
@@ -12,19 +13,7 @@ export default function App() {
 
   return (
 
-      <div className="Main">
-
-          <div onClick={Changing} className="Button">
-
-              <h1>
-
-                  {Value ? "Click" : "Click-Again"}
-
-              </h1>
-
-          </div>
-
-      </div>
+      <Click />
 
   )
 }
