@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function App() {
 
-    const[Value, Function] = React.useState(True)
+    const[Value, Function] = React.useState(true)
 
     function Changing() {
         
