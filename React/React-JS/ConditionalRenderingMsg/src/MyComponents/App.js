@@ -8,16 +8,17 @@ export default function App() {
 
         <div>
             { 
-                message.length === 0 ?
+                message.length === 0 ? // means if length of messages if 0 means there is no message available
                 <h5>
                     You've No Messages
-                </h5> :
+                </h5> 
+                :
                 <div>
                     <h2>
                         Alert!
                     </h2>
                     <h5>
-                        You've {message.length} Unread 
+                        You've {message.length} Unread {message.length === 1 ? "Message" : "Messages"} 
                     </h5>
                 </div>
             }
