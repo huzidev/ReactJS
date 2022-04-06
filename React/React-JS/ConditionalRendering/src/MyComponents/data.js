@@ -1,6 +1,7 @@
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default[
+    
     {
         id: 1,
         setup: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni totam, esse voluptas natus, minus fuga impedit neque ullam quaerat eos ea veniam quo mollitia aut nostrum optio facere ipsum exercitationem!",
