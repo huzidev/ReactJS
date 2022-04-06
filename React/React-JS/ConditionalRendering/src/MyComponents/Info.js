@@ -14,16 +14,24 @@ export default function Info(props) {
 
         <div className="main">
 
-            <h3>
-                {props.setup}
-            </h3>
+            {
+                props.setup &&
+                <h3>
+                    {props.setup}
+                </h3>
+            }
 
-            <p>
-                {props.punchline}
-            </p>
+            { 
+                {IsShow} &&
+                <p>
+                    {props.punchline}
+                </p>
+            }
             
-            <button>
-                PunchLine
+            <button onClick={Toggle} >
+
+                {IsShow ? "Hide" : "Show" } PunchLine
+
             </button>
 
             <hr />
