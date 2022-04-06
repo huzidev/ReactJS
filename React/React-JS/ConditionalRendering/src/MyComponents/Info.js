@@ -4,6 +4,12 @@ export default function Info(props) {
 
     const [IsShow, Func] = React.useState(false)
 
+    function Toggle() {
+    
+        Func(PrevValue => !PrevValue)
+
+    }
+
     return (
 
         <div className="main">
