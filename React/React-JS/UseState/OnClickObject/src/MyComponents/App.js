@@ -38,6 +38,9 @@ export default function App() {
 
             <div className="card-info">
 
+                {/* WE CAN'T DIRECTLY PASS ONCLICK HERE AT <STAR /> ATTRIBUTE BECAUSE ONCLICK IS DOM ELEMENTS 
+                PROPERTY AND DOM ELEMENTS ARE BASICALLY THOSE WHICH STARTS WITH LOWERCASE LIKE img, a, p etc*/}
+                
                 <Star isFill={Contact.isFav} ToggleFunction={Toggle}/>
                 
                 <h2 className="card-name">
