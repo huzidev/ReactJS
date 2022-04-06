@@ -9,7 +9,8 @@ export default function App() {
         return (
             <Info
                 key={info.id}
-                
+                setup={info.setup}
+                punchline={info.punchline}   
             />
         )
 
