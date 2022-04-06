@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function App() {
-  return (
+    
+    const[message, function] = React.useState(["a", "b"])
+  
+    return (
     <div>App</div>
   )
 }
