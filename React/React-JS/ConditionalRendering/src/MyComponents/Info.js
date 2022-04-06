@@ -22,13 +22,13 @@ export default function Info(props) {
             }
 
             { 
-                {IsShow} &&
+                IsShow &&
                 <p>
                     {props.punchline}
                 </p>
             }
             
-            <button onClick={Toggle} >
+            <button onClick={Toggle} className="btn">
 
                 {IsShow ? "Hide" : "Show" } PunchLine
 

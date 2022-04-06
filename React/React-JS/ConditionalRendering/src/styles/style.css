@@ -8,3 +8,15 @@ body {
   font-family: "Inter", sans-serif;
   background-color: whitesmoke;
 }
+
+.main {
+  text-align: center;
+}
+.main .btn {
+  cursor: pointer;
+  background-color: black;
+  color: whitesmoke;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 7px;
+}
