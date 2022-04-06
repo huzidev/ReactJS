@@ -40,7 +40,7 @@ export default function App() {
 
             <div className="card-info">
 
-                
+                <Star />
                 
                 <h2 className="card-name">
 
