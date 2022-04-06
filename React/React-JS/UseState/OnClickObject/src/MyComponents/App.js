@@ -15,8 +15,6 @@ export default function App() {
 
     })
 
-    let star = Contact.isFav ? "StarF.jpg" : "StarE.png" // as we know that ? and : are ternary operators ? means if true and : means else if false we'll pass this variable for src portion in ours JSX
-
     function Toggle() {
 
         SetContact(PrevContact => ({
@@ -40,7 +38,7 @@ export default function App() {
 
             <div className="card-info">
 
-                <Star />
+                <Star isFill={Contact.isFav} ToggleFunction={Toggle}/>
                 
                 <h2 className="card-name">
 
