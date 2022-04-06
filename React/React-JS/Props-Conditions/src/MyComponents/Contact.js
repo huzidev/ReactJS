@@ -20,7 +20,8 @@ export default function Contact(props) {
    
     return (
         <div>
-            {props.heading && <h3>
+            {props.heading && 
+            <h3>
                 Heading : {props.heading}
             </h3>}
             <p style={{display: props.text ? "block" : "none"}}>
