@@ -1,4 +1,5 @@
 import React from 'react';
+import Star from './Star';
 
 // THEIR we'll check how to use React.UseState in the case of object
 
@@ -22,8 +23,8 @@ export default function App() {
 
         // we didn't directly pass return because we are using use state for (OBJECT) therefore we've to cover ours curly braces into parentheses as we did here just right after PrevContact => ({})
 
-            ...Contact, // this is array spread operator which basically imports all the data of object
-            isFav: !PrevContact.isFav // ! means not hence ! not prevcontact.isfav means previously it is false by default now every time we click make it ! or OPPOSITE IN BRIEF
+            ...Contact, // this is (array spread operator) which basically imports all the data of object
+            isFav: !PrevContact.isFav // ! means not hence ! not prevcontact.isfav means previously it is false by default now every time we click make it (! or OPPOSITE) IN BRIEF
 
         })
 
@@ -39,7 +40,7 @@ export default function App() {
 
             <div className="card-info">
 
-                <img src={`../assets/${star}`} className="fvr" onClick={Toggle} alt="Star-Img" />
+                
                 
                 <h2 className="card-name">
 
