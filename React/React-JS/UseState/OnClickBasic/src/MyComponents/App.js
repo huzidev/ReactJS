@@ -13,7 +13,7 @@ export default function App() {
 
   return (
 
-      <Click />
+      <Click val={Value} change={Changing} />
 
   )
 }

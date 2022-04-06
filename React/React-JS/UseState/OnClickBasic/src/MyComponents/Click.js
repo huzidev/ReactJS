@@ -5,11 +5,11 @@ export default function Click(props) {
 
     <div className="Main">
 
-          <div onClick={Changing} className="Button">
+          <div onClick={props.change} className="Button">
 
               <h1>
 
-                  {Value ? "Click" : "Click-Again"}
+                  {props.val ? "Click" : "Click-Again"}
 
               </h1>
 
