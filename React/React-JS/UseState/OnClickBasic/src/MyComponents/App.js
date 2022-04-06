@@ -9,18 +9,19 @@ export default function App() {
         Function(PrevValue => !PrevValue)
 
     }
+
   return (
 
       <div className="Main">
 
-          <div className="Button">
+          <div onClick={Changing} className="Button">
 
               <h1>
 
                   {Value ? "Click" : "Click-Again"}
 
               </h1>
-              
+
           </div>
 
       </div>
