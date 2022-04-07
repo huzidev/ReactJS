@@ -82,8 +82,13 @@ export default function Form() {
           id="unemployed"
           name="employed" // all the radio's name should've to be same so we can't select multiple radio
           value="unemployed"
-
+          checked={FormData.employed === "unemployed"} // we've to create boolean because we don't have boolean in radio
+          onChange={handleChange}
         />
+        <label htmlFor="unemployed">Unemployed</label>
+        
+        <br />
+
       </fieldset>
     </form>
     
