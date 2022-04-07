@@ -63,6 +63,8 @@ export default function Form() {
         onChange={handleChange}
         checked={FormData.email} // IN CASE OF CHECKBOX we dont have value rather we've CHECKED
       />
+      {/* in htmlFor we've to give the id of the input we want it to be linked with like here we did for checkbox id */}
+      <label htmlFor="check">Do You Wanna Subscribe To MemberShip?</label> 
     </form>
     
   )
