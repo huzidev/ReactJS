@@ -81,11 +81,35 @@ export default function Form() {
           type="radio"
           id="unemployed"
           name="employed" // all the radio's name should've to be same so we can't select multiple radio
-          value="unemployed"
+          value="unemployed" // radio is bit diff therefore we didn't pass useState in value in case of radio
           checked={FormData.employed === "unemployed"} // we've to create boolean because we don't have boolean in radio
           onChange={handleChange}
         />
         <label htmlFor="unemployed">Unemployed</label>
+
+        <br />
+
+        <input 
+          type="radio"
+          id="part-time"
+          name="employed" 
+          value="part-time"
+          checked={FormData.employed === "part-time"} 
+          onChange={handleChange}
+        />
+        <label htmlFor="part-time">Part-Time</label>
+        
+        <br />
+
+        <input 
+          type="radio"
+          id="full-time"
+          name="employed" 
+          value="full-time"
+          checked={FormData.employed === "full-time"} 
+          onChange={handleChange}
+        />
+        <label htmlFor="full-time">Full-Time</label>
         
         <br />
 
