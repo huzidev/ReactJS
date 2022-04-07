@@ -63,8 +63,28 @@ export default function Form() {
         onChange={handleChange}
         checked={FormData.email} // IN CASE OF CHECKBOX we dont have value rather we've CHECKED
       />
+
       {/* in htmlFor we've to give the id of the input we want it to be linked with like here we did for checkbox id */}
+
       <label htmlFor="check">Do You Wanna Subscribe To MemberShip?</label> 
+
+      <br />
+      <br />
+
+      <fieldset>
+
+        <legend>
+          Current Status
+        </legend>
+
+        <input 
+          type="radio"
+          id="unemployed"
+          name="employed" // all the radio's name should've to be same so we can't select multiple radio
+          value="unemployed"
+
+        />
+      </fieldset>
     </form>
     
   )
