@@ -2,9 +2,19 @@ import React from 'react';
 
 export default function Form() {
 
+
+
   return (
 
-    <div>App</div>
+    <form>
+      <input 
+      type="text"
+      placeholder="First Name"
+      name="firstName"
+      onChange={handleChange}
+      value={FormData.firstName}
+      />
+    </form>
 
   )
 
