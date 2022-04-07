@@ -21,7 +21,6 @@ export default function Form() {
     }))
 
   }
-
   return (
 
     <form>
@@ -32,6 +31,28 @@ export default function Form() {
         name="firstName"
         onChange={handleChange}
         value={FormData.firstName}
+      />
+
+      <input
+        type="text"
+        placeholder="Last Name"
+        name="lastName"
+        onChange={handleChange}
+        value={FormData.lastName}
+      />
+      
+      <input
+        type="email"
+        placeholder="Yours Email"
+        name="email"
+        onChange={handleChange}
+        value={FormData.email}
+      />
+      <textarea // IN REACT we textarea is single closing tag while in HTML we did <textarea></textarea>
+        name="comments" // we dont have to specify the type of textarea because it has been set by default
+        placeholder="Yours Comments"
+        onChange={handleChange}
+        value={FormData.comments}
       />
       
     </form>
