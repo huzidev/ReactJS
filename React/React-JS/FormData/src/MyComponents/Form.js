@@ -48,13 +48,21 @@ export default function Form() {
         onChange={handleChange}
         value={FormData.email}
       />
+
       <textarea // IN REACT we textarea is single closing tag while in HTML we did <textarea></textarea>
         name="comments" // we dont have to specify the type of textarea because it has been set by default
         placeholder="Yours Comments"
         onChange={handleChange}
         value={FormData.comments}
       />
-      
+
+      <input
+        type="checkbox"
+        id="check"
+        name="email"
+        onChange={handleChange}
+        checked={FormData.email} // IN CASE OF CHECKBOX we dont have value rather we've CHECKED
+      />
     </form>
     
   )
