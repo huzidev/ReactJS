@@ -112,7 +112,7 @@ export default function Form() {
         <label htmlFor="full-time">Full-Time</label>
         
         <br />
-
+      
       </fieldset>
     </form>
     
