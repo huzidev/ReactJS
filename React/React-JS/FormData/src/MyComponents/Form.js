@@ -8,20 +8,20 @@ export default function Form() {
     lastName: "",
     email: "",
     comments: "",
-    checkbox: true,
+    checkbox: true, // we dont have VALUE in checkbox scenario rather we've CHECKED instead of value like others
     employed: "",
 
   })
 
   function handleChange(event) {
 
-    const { name, value } = event.target
+    const { name, value, type, checked} = event.target
 
     SetForm((PrevValue) => ({
 
       ...PrevValue,
 
-      [name]: value
+      [name]: type === "checkbox" ? checked : value
 
     }))
 
