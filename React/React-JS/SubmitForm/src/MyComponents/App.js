@@ -2,6 +2,21 @@ import React from 'react';
 
 export default function App() {
 
+    const[FormData, SetFormData] = React.useState({
+
+        Email: "",
+        Password: "",
+        ConfirmPassword: "",
+        checkbox: false
+
+
+    })
+
+    function HandleChange(event) {
+        const{name, value, type, checked} = event.target
+        
+    }
+
     return(
 
         <form >
@@ -39,6 +54,10 @@ export default function App() {
             <label htmlFor="check">
                 Do You Wanna Subscribe To Ours News?
             </label>
+            
+            <button>
+                Submit
+            </button>
         </form>
 
     )
