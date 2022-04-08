@@ -114,7 +114,7 @@ export default function Form() {
         <br />
       
       </fieldset>
-      {/* if we created button INSIDE form then it's type will be submit by default */}
+      {/* if we created button INSIDE form then it's type will be submit by default and we don't have to specify type = submit */}
       <button> 
         Submit 
       </button>
