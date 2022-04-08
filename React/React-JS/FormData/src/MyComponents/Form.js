@@ -13,7 +13,7 @@ export default function Form() {
 
   })
 
-  function handleChange(event) {
+  function handleChange(event) { // we've to pass this event as well so it'll receive the values from input than will ultimately put it into event.target with respect to other values
 
     const { name, value, type, checked} = event.target // in OBJECT we've name, value, type, checked these elements are equal to event.target means we dont have to write separately name.event.target, value.event.target etc 
 
@@ -21,13 +21,15 @@ export default function Form() {
 
       ...PrevValue,
       // check type if it is checkbox then we don't have value rather we've checked
-      [name]: type === "checkbox" ? checked : value // [name] should've to be inside square brackets
+      [name]: type === "checkbox" ? checked : value // [name] should've to be inside square brackets and it is MANDATORY
 
     }))
   }
 
-  function HandleSubmit(event) {
+  function HandleSubmit(event) { // by doing this we cant prevent getting get_request because we've used event.preventDefault
+
     event.preventDefault()
+    console.log(FormData) // we can check all the values through FormData in console log
 
   }
   return (
