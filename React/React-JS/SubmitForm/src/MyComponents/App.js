@@ -22,12 +22,24 @@ export default function App() {
             [name]: type === "checkbox" ? checked : value
 
         }))
-        
+
     }
 
+    function HandleSubmit(event) {
+        
+        event.preventDefault()
+        if (FormData.Password === FormData.ConfirmPassword) {
+            console.log("Passowrd Match, login Successfully!")
+        }
+        else{
+            console.log("Password Do Not Match!")
+        }
+        console.log(FormData)
+
+    }
     return(
 
-        <form >
+        <form onSubmit={HandleSubmit}>
             <input 
                 placeholder="Yours Email"
                 type="text"
