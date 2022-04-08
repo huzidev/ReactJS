@@ -7,9 +7,14 @@ export default function App() {
     const[Count, SetCount] = React.useState(1) // we didn't starts from zero because there can be no info about any character at 0th
     
 
-    fetch("https://swapi.dev/api/people/1")
-        .then(res => res.json())
-        .then(data => SetStarWarsData(data))
+    React.useEffect(() => {
+
+        fetch("https://swapi.dev/api/people/1")
+            .then(res => res.json())
+            .then(data => SetStarWarsData(data)) // data will receive StarWarsData from state array
+        
+
+    })
 
     function Next() {
 
@@ -35,7 +40,7 @@ export default function App() {
                 {JSON.stringify(StarWarsData, null, 2)}
 
             </pre>
-            
+
         </div>
 
     )
