@@ -51,6 +51,7 @@ export default function App() {
                 onChange={HandleChange}
                 checked={FormData.name} 
             />
+            
             <label htmlFor="check">
                 Do You Wanna Subscribe To Ours News?
             </label>
