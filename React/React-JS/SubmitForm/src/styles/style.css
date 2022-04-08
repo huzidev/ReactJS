@@ -53,3 +53,13 @@ body {
   padding: 5px;
   font-family: "Inter", sans-serif;
 }
+.form-container form button {
+  margin-top: 20px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #639;
+  border: none;
+  cursor: pointer;
+}
