@@ -9,12 +9,19 @@ export default function App() {
         ConfirmPassword: "",
         checkbox: false
 
-
     })
 
     function HandleChange(event) {
+
         const{name, value, type, checked} = event.target
         
+        SetFormData(PrevData =>({
+
+            ...PrevData,
+            
+            [name]: type === "checkbox" ? checked : value
+
+        }))
     }
 
     return(
@@ -51,7 +58,7 @@ export default function App() {
                 onChange={HandleChange}
                 checked={FormData.name} 
             />
-            
+
             <label htmlFor="check">
                 Do You Wanna Subscribe To Ours News?
             </label>
