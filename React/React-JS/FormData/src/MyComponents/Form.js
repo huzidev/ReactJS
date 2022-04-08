@@ -17,7 +17,7 @@ export default function Form() {
 
     const { name, value, type, checked} = event.target // in OBJECT we've name, value, type, checked these elements are equal to event.target means we dont have to write separately name.event.target, value.event.target etc 
 
-    SetForm((PrevValue) => ({
+    SetForm((PrevValue) => ({ // instead of putting all the values in return{} we simply put all the value in parentheses ({})
 
       ...PrevValue,
       // check type if it is checkbox then we don't have value rather we've checked
