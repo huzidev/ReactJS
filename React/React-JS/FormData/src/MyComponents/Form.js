@@ -4,7 +4,12 @@ export default function Form() {
 
   const [FormData, SetForm] = React.useState({
 
-    firstName: ""
+    firstName: "",
+    lastName: "",
+    email: "",
+    comments: "",
+
+
 
   })
 
@@ -59,7 +64,7 @@ export default function Form() {
       <input
         type="checkbox"
         id="check"
-        name="email"
+        name="checkbox"
         onChange={handleChange}
         checked={FormData.email} // IN CASE OF CHECKBOX we dont have value rather we've CHECKED
       />
