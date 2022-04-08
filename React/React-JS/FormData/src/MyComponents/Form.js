@@ -42,7 +42,7 @@ export default function Form() {
         placeholder="First Name"
         name="firstName"
         onChange={handleChange}
-        value={FormData.firstName}
+        value={FormData.name}
       />
 
       <input
@@ -50,7 +50,7 @@ export default function Form() {
         placeholder="Last Name"
         name="lastName"
         onChange={handleChange}
-        value={FormData.lastName}
+        value={FormData.name}
       />
       
       <input
@@ -58,14 +58,14 @@ export default function Form() {
         placeholder="Yours Email"
         name="email"
         onChange={handleChange}
-        value={FormData.email}
+        value={FormData.name}
       />
 
       <textarea // IN REACT we textarea is single closing tag while in HTML we did <textarea></textarea>
         name="comments" // we dont have to specify the type of textarea because it has been set by default
         placeholder="Yours Comments"
         onChange={handleChange}
-        value={FormData.comments}
+        value={FormData.name}
       />
 
       <input
@@ -73,7 +73,7 @@ export default function Form() {
         id="check"
         name="checkbox"
         onChange={handleChange}
-        checked={FormData.checkbox} // IN CASE OF CHECKBOX we dont have value rather we've CHECKED
+        checked={FormData.name} // IN CASE OF CHECKBOX we dont have value rather we've CHECKED
       />
 
       {/* in htmlFor we've to give the id of the input we want it to be linked with like here we did for checkbox id */}
@@ -86,7 +86,7 @@ export default function Form() {
       <br />
 
       <fieldset>
-        
+
         <legend> 
           Current Status
         </legend>
@@ -123,7 +123,9 @@ export default function Form() {
           checked={FormData.employed === "full-time"} 
           onChange={handleChange}
         />
-        <label htmlFor="full-time">Full-Time</label>
+        <label htmlFor="full-time">
+          Full-Time
+        </label>
         
         <br />
       
