@@ -28,6 +28,17 @@ export default function App() {
                 onChange={HandleChange}
                 value={FormData.name} 
             />
+
+            <input 
+                id="check"
+                type="checkbox"
+                name="checkbox"
+                onChange={HandleChange}
+                checked={FormData.name} 
+            />
+            <label htmlFor="check">
+                Do You Wanna Subscribe To Ours News?
+            </label>
         </form>
 
     )
