@@ -26,9 +26,10 @@ export default function Form() {
     }))
   }
 
-  function HandleSubmit(event) { // by doing this we cant prevent getting get_request because we've used event.preventDefault
+  function HandleSubmit(event) { // by doing this we can prevent getting get_request because we've used event.preventDefault
 
-    event.preventDefault()
+    event.preventDefault() // event is just parameter that receive values from ours input and will prevent them from getting into ours URL
+
     console.log(FormData) // we can check all the values through FormData in console log
 
   }
