@@ -19,14 +19,20 @@ export default function App() {
     return(
         
         <div>
+
             <h2>
                 The Current Count is {Count}
             </h2>
+
             <button onClick={Next}>
 
                 Get Next Character
-                
+
             </button>
+
+            <pre>
+                {JSON.stringify(StarWarsData, null, 2)}
+            </pre>
         </div>
 
     )
