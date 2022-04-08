@@ -31,8 +31,11 @@ export default function App() {
             </button>
 
             <pre>
+
                 {JSON.stringify(StarWarsData, null, 2)}
+
             </pre>
+            
         </div>
 
     )
