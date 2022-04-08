@@ -4,11 +4,11 @@ export default function Form() {
 
   const [FormData, SetForm] = React.useState({
 
-    firstName: "",
+    firstName: "", // we've pass empty string by default so when user insert theirs data it'll be stored and then send to backed files
     lastName: "",
     email: "",
     comments: "",
-    checkbox: true, // we dont have VALUE in checkbox scenario rather we've CHECKED instead of value like others
+    checkbox: false, // we dont have VALUE in checkbox scenario rather we've CHECKED instead of value like others
     employed: "", // we've created 3 radio btn and provide SAME NAME TO all three so we can select any one at a time
 
   })
@@ -20,15 +20,19 @@ export default function Form() {
     SetForm((PrevValue) => ({
 
       ...PrevValue,
-
+      // check type if it is checkbox then we don't have value rather we've checked
       [name]: type === "checkbox" ? checked : value // [name] should've to be inside square brackets
 
     }))
+  }
+
+  function HandleSubmit(event) {
+    event.preventDefault()
 
   }
   return (
 
-    <form>
+    <form onSubmit={HandleSubmit}>
 
       <input
         type="text"
@@ -66,7 +70,7 @@ export default function Form() {
         id="check"
         name="checkbox"
         onChange={handleChange}
-        checked={FormData.email} // IN CASE OF CHECKBOX we dont have value rather we've CHECKED
+        checked={FormData.checkbox} // IN CASE OF CHECKBOX we dont have value rather we've CHECKED
       />
 
       {/* in htmlFor we've to give the id of the input we want it to be linked with like here we did for checkbox id */}
