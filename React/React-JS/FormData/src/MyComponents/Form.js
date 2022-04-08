@@ -86,8 +86,8 @@ export default function Form() {
       <br />
 
       <fieldset>
-
-        <legend>
+        
+        <legend> 
           Current Status
         </legend>
 
