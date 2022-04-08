@@ -18,10 +18,11 @@ export default function App() {
         SetFormData(PrevData =>({
 
             ...PrevData,
-            
+
             [name]: type === "checkbox" ? checked : value
 
         }))
+        
     }
 
     return(
