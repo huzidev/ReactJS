@@ -8,8 +8,8 @@ export default function Form() {
     lastName: "",
     email: "",
     comments: "",
-
-
+    checkbox: true,
+    employed: "",
 
   })
 
@@ -71,7 +71,9 @@ export default function Form() {
 
       {/* in htmlFor we've to give the id of the input we want it to be linked with like here we did for checkbox id */}
 
-      <label htmlFor="check">Do You Wanna Subscribe To MemberShip?</label> 
+      <label htmlFor="check">
+        Do You Wanna Subscribe To MemberShip?
+      </label> 
 
       <br />
       <br />
