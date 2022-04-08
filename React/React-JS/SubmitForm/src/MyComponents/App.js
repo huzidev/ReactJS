@@ -39,56 +39,58 @@ export default function App() {
             console.log("Password Do Not Match!")
 
         }
-        if(FormData.checkbox){
 
-            console.log(FormData)
+        console.log(FormData)
 
-        }
 
     }
     return(
+        <div className="form-container">
+            <form onSubmit={HandleSubmit}>
+                <input 
+                    className="form-input"
+                    placeholder="Yours Email"
+                    type="text"
+                    name="Email"
+                    onChange={HandleChange}
+                    value={FormData.name} 
+                />
 
-        <form onSubmit={HandleSubmit}>
-            <input 
-                placeholder="Yours Email"
-                type="text"
-                name="Email"
-                onChange={HandleChange}
-                value={FormData.name} 
-            />
+                <input 
+                    className="form-input"
+                    placeholder="Password"
+                    type="password"
+                    name="Password"
+                    onChange={HandleChange}
+                    value={FormData.name} 
+                />
 
-            <input 
-                placeholder="Password"
-                type="password"
-                name="Password"
-                onChange={HandleChange}
-                value={FormData.name} 
-            />
+                <input 
+                    className="form-input"
+                    placeholder="Confirm Password"
+                    type="password"
+                    name="ConfirmPassword"
+                    onChange={HandleChange}
+                    value={FormData.name} 
+                />
 
-            <input 
-                placeholder="Confirm Password"
-                type="password"
-                name="ConfirmPassword"
-                onChange={HandleChange}
-                value={FormData.name} 
-            />
+                <input 
+                    id="check"
+                    type="checkbox"
+                    name="checkbox"
+                    onChange={HandleChange}
+                    checked={FormData.name} 
+                />
 
-            <input 
-                id="check"
-                type="checkbox"
-                name="checkbox"
-                onChange={HandleChange}
-                checked={FormData.name} 
-            />
-
-            <label htmlFor="check">
-                Do You Wanna Subscribe To Ours News?
-            </label>
-            
-            <button>
-                Submit
-            </button>
-        </form>
+                <label htmlFor="check">
+                    Do You Wanna Subscribe To Ours News?
+                </label>
+                
+                <button>
+                    Submit
+                </button>
+            </form>
+        </div>
 
     )
 
