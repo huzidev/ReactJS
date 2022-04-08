@@ -9,19 +9,19 @@ export default function Form() {
     email: "",
     comments: "",
     checkbox: true, // we dont have VALUE in checkbox scenario rather we've CHECKED instead of value like others
-    employed: "",
+    employed: "", // we've created 3 radio btn and provide SAME NAME TO all three so we can select any one at a time
 
   })
 
   function handleChange(event) {
 
-    const { name, value, type, checked} = event.target
+    const { name, value, type, checked} = event.target // in OBJECT we've name, value, type, checked these elements are equal to event.target means we dont have to write separately name.event.target, value.event.target etc 
 
     SetForm((PrevValue) => ({
 
       ...PrevValue,
 
-      [name]: type === "checkbox" ? checked : value
+      [name]: type === "checkbox" ? checked : value // [name] should've to be inside square brackets
 
     }))
 
