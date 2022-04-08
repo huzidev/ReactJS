@@ -28,10 +28,10 @@ export default function App() {
     function HandleSubmit(event) {
         
         event.preventDefault()
-        
+
         if (FormData.Password === FormData.ConfirmPassword) {
 
-            console.log("Passowrd Match, login Successfully!")
+            console.log("Password Match, login Successfully!")
 
         }
         else{
