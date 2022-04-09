@@ -7,7 +7,7 @@ export default function App() {
     const[Count, SetCount] = React.useState(1) // we didn't starts from zero because there can be no info about any character at 0th
     
 
-    React.useEffect(() => {
+    React.useEffect(() => { // we've to pass 2 parameters in useEffect first one should've to be a call back function and other one is called DEPENDENCY ARRAY
 
         fetch("https://swapi.dev/api/people/1")
             .then(res => res.json())
