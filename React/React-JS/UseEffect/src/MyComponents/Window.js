@@ -4,20 +4,20 @@ export default function Window() {
     
     var width = window.innerWidth
 
-    const[Width, SetWidth] = React.useState(width)
+    const[Width, SetWidth] = React.useState(width) // and width is equal to window.innerwidth
 
     React.useEffect(() => {
 
         function WindowWidth() {
 
-            SetWidth(window.innerWidth)
+            SetWidth(width)
 
 
         }
 
         window.addEventListener("resize", WindowWidth)
 
-        
+
 
     })
 
@@ -26,7 +26,7 @@ export default function Window() {
         <div className="main">
 
             <h2>
-                Winodw Width: {width}
+                Winodw Width: {Width}
             </h2>
 
             {/* <h2>
