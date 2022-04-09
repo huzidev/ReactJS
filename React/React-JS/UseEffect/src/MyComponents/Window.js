@@ -2,6 +2,8 @@ import React from 'react';
 
 export default function Window() {
 
+    const[Width, SetWidth] = React.useState(window.innerWidth)
+
     return (
 
         <div className="main">
@@ -10,9 +12,9 @@ export default function Window() {
                 Winodw Width: 
             </h2>
 
-            <h2>
+            {/* <h2>
                 Window Height:
-            </h2>
+            </h2> */}
 
         </div>
     
