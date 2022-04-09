@@ -6,14 +6,23 @@ export default function Window() {
 
     const[Width, SetWidth] = React.useState(width)
 
+    React.useEffect(() => {
 
+        function WindowWidth() {
+
+            SetWidth(window.innerWidth)
+            
+        }
+
+
+    })
 
     return (
 
         <div className="main">
 
             <h2>
-                Winodw Width: {}
+                Winodw Width: {width}
             </h2>
 
             {/* <h2>
