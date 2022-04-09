@@ -2,15 +2,13 @@ import React from 'react';
 
 export default function Window() {
     
-    var width = window.innerWidth
-
-    const[Width, SetWidth] = React.useState(width) // and width is equal to window.innerwidth
+    const[Width, SetWidth] = React.useState(window.innerWidth) // and width is equal to window.innerwidth
 
     React.useEffect(() => { // while using useEffect some time memory loss could occur and example of that is that if we click button and HIDES window width in UI then in console we'll face and error regarding memory leak therefore we've to use RemoveEventListener for this
 
         function WindowWidth() {
 
-            SetWidth(width)
+            SetWidth(window.innerWidth)
 
 
         }
@@ -19,12 +17,14 @@ export default function Window() {
         
         return function() {
             
+            console.log("Memory Leak fix");
+            
             window.removeEventListener("resize", WindowWidth)
 
         }
 
 
-    })
+    }, [])
 
     return (
 
