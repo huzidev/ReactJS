@@ -1,15 +1,19 @@
 import React from 'react';
 
 export default function Window() {
+    
+    var width = window.innerWidth
 
-    const[Width, SetWidth] = React.useState(window.innerWidth)
+    const[Width, SetWidth] = React.useState(width)
+
+
 
     return (
 
         <div className="main">
 
             <h2>
-                Winodw Width: 
+                Winodw Width: {}
             </h2>
 
             {/* <h2>
