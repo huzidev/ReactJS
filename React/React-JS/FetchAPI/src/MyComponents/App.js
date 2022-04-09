@@ -9,12 +9,14 @@ export default function App() {
 
     React.useEffect(() => { // we've to pass 2 parameters in useEffect first one should've to be a call back function and other one is called DEPENDENCY ARRAY
 
-        fetch("https://swapi.dev/api/people/1")
+        fetch(`https://swapi.dev/api/people/${Count}`)
             .then(res => res.json())
             .then(data => SetStarWarsData(data)) // data as parameter will receive StarWarsData from state array
             console.log(StarWarsData);
 
-    }, []) // it is mandatory to use DEPENDENCY ARRAY in use effect as SECOND PARAMETER BECAUSE when we use useEffect we've to pass 2 parameters first one should've to be a call back function and the other one is called DEPENDENCY ARRAY where we've to pass all the dependency OR values, data that we wanted to UPDATE when condition changes
+    }, [Count]) 
+    
+    // it is mandatory to use DEPENDENCY ARRAY in use effect as SECOND PARAMETER BECAUSE when we use useEffect we've to pass 2 parameters first one should've to be a call back function and the other one is called DEPENDENCY ARRAY where we've to pass all the dependency OR values, data that we wanted to UPDATE when condition changes
 
     // BUT WHY DO WE'VE TO USE THIS DEPENDENCY ARRAY OR useEffect in first case 
 
