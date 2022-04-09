@@ -22,7 +22,9 @@ export default function App() {
 
             </button>
 
-            {Show && <Window />}
+            {/* means if show is true as well as <Window /> and <Window /> will be true but Show can be false as we've created toggle for opposite onClick */}
+
+            {Show && <Window />} 
 
         </div>
 
