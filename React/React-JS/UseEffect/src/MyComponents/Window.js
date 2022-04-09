@@ -6,9 +6,9 @@ export default function Window() {
 
         <div className="main">
 
-            <h1>
+            <h2>
                 Winodw Width: 
-            </h1>
+            </h2>
 
             <h2>
                 Window Height:

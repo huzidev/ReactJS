@@ -4,12 +4,22 @@ import Window from './Window';
 
 export default function App() {
 
+    const[Show, SetShow] = React.useState(true)
+
+    function Toggle() {
+        
+        SetShow(PrevValue => !PrevValue)
+
+    }
+
     return (
         
         <div className="container">
 
-            <button>
+            <button onClick={Toggle}>
+
                 Click
+                
             </button>
 
             <Window />
