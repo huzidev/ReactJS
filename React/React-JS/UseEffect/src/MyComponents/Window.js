@@ -11,9 +11,13 @@ export default function Window() {
         function WindowWidth() {
 
             SetWidth(window.innerWidth)
-            
+
+
         }
 
+        window.addEventListener("resize", WindowWidth)
+
+        
 
     })
 

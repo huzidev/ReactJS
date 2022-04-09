@@ -22,7 +22,7 @@ export default function App() {
 
             </button>
 
-            <Window />
+            {Show && <Window />}
 
         </div>
 
