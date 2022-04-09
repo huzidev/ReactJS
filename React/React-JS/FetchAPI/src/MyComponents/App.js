@@ -68,7 +68,8 @@ export default function App() {
 
             <pre>
 
-                {JSON.stringify(StarWarsData, null, 2)}
+                {/* JSON.stringify to converts js object into STRING */}
+                {JSON.stringify(StarWarsData, null, 2)} 
 
             </pre>
 
