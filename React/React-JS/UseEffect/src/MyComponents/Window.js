@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Window() {
-    
+
     const[Width, SetWidth] = React.useState(window.innerWidth) // and width is equal to window.innerwidth
 
     const[Height, SetHeight] = React.useState(window.innerHeight)
