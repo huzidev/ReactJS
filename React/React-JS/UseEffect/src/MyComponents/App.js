@@ -18,8 +18,8 @@ export default function App() {
 
             <button onClick={Toggle}>
 
-                Click
-                
+                {Show ? "Hide Windows Ratio" : "Show Windows Ratio"}
+
             </button>
 
             <Window />
