@@ -29,6 +29,21 @@ export default function App() {
         SetCount(PrevCount => PrevCount + 1)
 
     }
+
+    function Prev() {
+
+        if( Count === 1 ){
+            alert("No Data Before It")
+        }
+        
+        else{
+
+            SetCount(PrevCount => PrevCount - 1)
+
+        }
+    }
+
+
     return(
         
         <div>
@@ -40,6 +55,14 @@ export default function App() {
             <button onClick={Next}>
 
                 Get Next Character
+
+            </button>
+            
+            <br />
+
+            <button onClick={Prev}>
+
+                Get Prev Character
 
             </button>
 
