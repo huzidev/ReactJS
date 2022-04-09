@@ -15,7 +15,7 @@ export default function Window() {
 
         }
 
-        window.addEventListener("resize", WindowWidth)
+        window.addEventListener("resize", WindowWidth) // event listener is used to add and event which will run every time ours window's width changes 
 
 
 
