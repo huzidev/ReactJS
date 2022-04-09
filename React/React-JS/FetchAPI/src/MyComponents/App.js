@@ -11,7 +11,7 @@ export default function App() {
 
         fetch("https://swapi.dev/api/people/1")
             .then(res => res.json())
-            .then(data => SetStarWarsData(data)) // data will receive StarWarsData from state array
+            .then(data => SetStarWarsData(data)) // data as parameter will receive StarWarsData from state array
             console.log(StarWarsData);
 
     }, []) // it is mandatory to use DEPENDENCY ARRAY in use effect as SECOND PARAMETER BECAUSE when we use useEffect we've to pass 2 parameters first one should've to be a call back function and the other one is called DEPENDENCY ARRAY where we've to pass all the dependency OR values, data that we wanted to UPDATE when condition changes
