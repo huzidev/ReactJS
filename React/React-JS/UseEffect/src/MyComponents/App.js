@@ -5,9 +5,17 @@ import Window from './Window';
 export default function App() {
 
     return (
-
-        <Window />
         
+        <div className="container">
+
+            <button>
+                Click
+            </button>
+
+            <Window />
+
+        </div>
+
     )
 
 }
