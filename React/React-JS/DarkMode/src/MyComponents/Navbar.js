@@ -1,8 +1,10 @@
 import React from "react";
 
 export default function Navbar(props) {
+
     return (
-         <nav className={props.darkMode ? "dark": ""}>
+        // means on toggle if condition is true then the class will be changed to dark else their will be no class just default values 
+         <nav className={props.darkMode ? "dark" : ""}> 
             <img 
                 className="nav--logo_icon"
                 src="../assets/react.png"
@@ -24,4 +26,5 @@ export default function Navbar(props) {
             </div>
         </nav>
     )
+
 }

@@ -16,7 +16,7 @@ export default function App() {
 
         <div>
 
-            <Navbar toggleDarkMode={ToggleDarkMode} darkMode={DarkMode}/>
+            <Navbar darkMode={DarkMode} toggleDarkMode={ToggleDarkMode}/>
             <Main darkMode={DarkMode}/>
 
         </div>
