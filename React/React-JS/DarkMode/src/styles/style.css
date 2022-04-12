@@ -116,34 +116,26 @@ nav.dark .toggler--slider--circle {
 
 .toggler--light {
   color: #2B283A;
-  -webkit-transition: all 1200ms ease;
-  transition: all 1200ms ease;
 }
 
 nav.dark .toggler--light {
   color: #918E9B;
-  -webkit-transition: all 1200ms ease;
-  transition: all 1200ms ease;
 }
 
 .toggler--dark {
   color: #D5D4D8;
-  -webkit-transition: all 1200ms ease;
-  transition: all 1200ms ease;
 }
 
 nav.dark .toggler-dark {
   color: #FFFFFF;
-  -webkit-transition: all 1200ms ease;
-  transition: all 1200ms ease;
 }
 
 nav.dark .toggler--slider {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-transition: all 1200ms ease;
-  transition: all 1200ms ease;
+  -webkit-transition: all 1200ms ease-in-out;
+  transition: all 1200ms ease-in-out;
 }
 
 /* MAIN styles */
