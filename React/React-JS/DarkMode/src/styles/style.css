@@ -37,10 +37,14 @@ nav {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   z-index: 1;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
 }
 
 nav.dark {
   background-color: #21222A;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
 }
 
 .nav--logo_icon {
@@ -102,6 +106,8 @@ nav.dark .toggler--slider {
   width: 13px;
   background-color: white;
   border-radius: 50%;
+  -webkit-transition: all 1200ms ease;
+  transition: all 1200ms ease;
 }
 
 nav.dark .toggler--slider--circle {
@@ -110,24 +116,34 @@ nav.dark .toggler--slider--circle {
 
 .toggler--light {
   color: #2B283A;
+  -webkit-transition: all 1200ms ease;
+  transition: all 1200ms ease;
 }
 
 nav.dark .toggler--light {
   color: #918E9B;
+  -webkit-transition: all 1200ms ease;
+  transition: all 1200ms ease;
 }
 
 .toggler--dark {
   color: #D5D4D8;
+  -webkit-transition: all 1200ms ease;
+  transition: all 1200ms ease;
 }
 
 nav.dark .toggler-dark {
   color: #FFFFFF;
+  -webkit-transition: all 1200ms ease;
+  transition: all 1200ms ease;
 }
 
 nav.dark .toggler--slider {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-transition: all 1200ms ease;
+  transition: all 1200ms ease;
 }
 
 /* MAIN styles */
@@ -140,11 +156,15 @@ main {
           flex: 1 1 auto;
   background-color: white;
   color: #2B283A;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
 }
 
 main.dark {
   background-color: #282D35;
   color: white;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
 }
 
 .main--title {
