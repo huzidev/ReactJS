@@ -2,6 +2,7 @@ import React from 'react';
 
 
 export default function Main(props) {
+
     return (
         <main className={props.darkMode ? "dark" : ""}>
             <h1 className="main--title">Fun facts about React</h1>
@@ -14,4 +15,5 @@ export default function Main(props) {
             </ul>
         </main>
     )
+    
 }
