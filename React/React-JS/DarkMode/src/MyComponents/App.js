@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 export default function App() {
 
-    const[DarkMode, SetDarkMode] = React.useState(true)
+    const[DarkMode, SetDarkMode] = React.useState(false)
 
     function ToggleDarkMode() {
         
@@ -16,7 +16,7 @@ export default function App() {
 
         <div>
 
-            <Navbar toggleDarkMode={ToggleDarkMode}/>
+            <Navbar toggleDarkMode={ToggleDarkMode} darkMode={DarkMode}/>
             <Main darkMode={DarkMode}/>
 
         </div>
