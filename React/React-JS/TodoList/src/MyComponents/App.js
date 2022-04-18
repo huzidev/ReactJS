@@ -20,8 +20,8 @@ export default function App() {
     
     function createNewNote() {
 
-        const newNote = {
-
+        const newNote = { // we've made it an OBJECT {} because we've to provide it an ID and an BODY text in brief we've to provide it multiple features therefore OBJECT
+ 
             id: nanoid(), // will create and UNIQUE id for us and we basically IMPORT nanoid from react libraries
 
             body: "# Type your markdown note's title here" // THE BY DEFAULT TEXT FOR EACH NEW NOTE
