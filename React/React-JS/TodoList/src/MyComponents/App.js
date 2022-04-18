@@ -70,7 +70,7 @@ export default function App() {
             >
                 <Sidebar
                     notes={notes}
-                    currentNote={findCurrentNote()}
+                    currentNote={findCurrentNote()} // here we can see we are passing FindCurrentNote as props
                     setCurrentNoteId={setCurrentNoteId}
                     newNote={createNewNote}
                 />
@@ -78,7 +78,7 @@ export default function App() {
                     currentNoteId && 
                     notes.length > 0 &&
                     <Editor 
-                        currentNote={findCurrentNote()} 
+                        currentNote={findCurrentNote()}  // here we can see we are passing FindCurrentNote as props
                         updateNote={updateNote} 
                     />
                 }
