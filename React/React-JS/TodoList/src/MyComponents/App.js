@@ -28,7 +28,7 @@ export default function App() {
 
         }
 
-        setNotes(prevNotes => [newNote, ...prevNotes])
+        setNotes(prevNotes => [newNote, ...prevNotes]) // initially empty array will take all the prev notes data therefore we've used ... and (NEW NOTE) the function we've already created
         
         setCurrentNoteId(newNote.id) // would sets ours current note id the note which we are updating to newNote.ID IN BRIEF it'll simply provide new id to ours new note which is current note (we called it current note because we are updating it currently)
 
