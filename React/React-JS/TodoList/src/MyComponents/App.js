@@ -70,17 +70,19 @@ export default function App() {
     function updateNote(text) { 
         // will simply state and saves any changes
 
-        setNotes(oldNotes => oldNotes.map(oldNote => { 
-            // SET NOTES form initially empty array
+        setNotes(OldNotes => {
 
-            return oldNote.id === currentNoteId
+            const NewArray = []
 
-                ? { ...oldNote, body: text } 
-                // body text so new update can be saved in the form of text in body part
+            for (let i = 0; i < OldNotes.length; i++){
+                
+                const OldNote = OldNotes[i]
 
-                : oldNote
+                
 
-        }))
+            }
+
+        })
 
     }
     
