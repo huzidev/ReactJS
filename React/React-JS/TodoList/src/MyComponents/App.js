@@ -63,7 +63,7 @@ export default function App() {
         {
             notes.length > 0 
             ?
-            <Split 
+            <Split  // SPLIT IS JUST A PART OF OURS REACT LIBRARY WHICH WE'VE IMPORTED ALREADY
                 sizes={[30, 70]} 
                 direction="horizontal" 
                 className="split"
