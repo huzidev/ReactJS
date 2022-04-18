@@ -1,5 +1,5 @@
 import React from "react";
-import ReactMde from "react-mde";
+import ReactMde from "react-mde"; // these are 3rd party libraries we can install them through npm
 import Showdown from "showdown";
 
 export default function Editor({ currentNote, updateNote }) {
@@ -47,5 +47,5 @@ export default function Editor({ currentNote, updateNote }) {
         </section>
 
     )
-    
+
 }
