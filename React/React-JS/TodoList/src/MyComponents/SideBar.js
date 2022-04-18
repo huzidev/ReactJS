@@ -1,7 +1,9 @@
 import React from "react";
 
 export default function Sidebar(props) {
-    const noteElements = props.notes.map((note, index) => (
+
+    const noteElements = props.notes.map((note, index) => ( // props.notes.map MEANS it is been taking some ARRAY of NOTES
+
         <div key={note.id}>
             <div
                 
