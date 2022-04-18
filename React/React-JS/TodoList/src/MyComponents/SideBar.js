@@ -3,6 +3,7 @@ import React from "react";
 export default function Sidebar(props) {
 
     const noteElements = props.notes.map((note, index) => ( 
+        // note is just parameter name it can be anything just like name of variable
         // props.notes.map MEANS it is been taking some ARRAY of NOTES and mapping it into ours CONST variables called NoteElements then we'll assign this NoteElements in to bottom inside {}
 
         <div key={note.id}>
@@ -21,7 +22,7 @@ export default function Sidebar(props) {
 
             >
 
-                <h4 className="text-snippet">Note {index + 1}</h4>
+                <h4 className="text-snippet">{note.body.split("\n")[0]}</h4>
 
             </div>
 

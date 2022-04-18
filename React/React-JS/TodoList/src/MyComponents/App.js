@@ -19,10 +19,10 @@ export default function App() {
     
         //LAZY STATE INITIALIZATION
 
-        // () => arrow function inside useState will allow us to Return JSON.PARSE only single time whenever ours page loads
+        // () => arrow function inside useState will allow us to Return JSON.PARSE only (SINGLE) time whenever ours page loads
 
-        // BUT why we've to do this is because if we didn't do this ours complete App will load every time when we write something even if we write single character it'll loads complete App component hence simple we'll USE and arrow function inside use State so it'll Returns only when ours App loads
-        
+        // BUT why we've to do this is because if we didn't do this ours complete App will load every time when we write something even if we write single character it'll loads complete App component hence simply we'll USE an arrow function inside use State so it'll Returns only when ours App loads
+
     )
     // we are (initializing) ours notes into an EMPTY ARRAY
 
