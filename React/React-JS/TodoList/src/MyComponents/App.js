@@ -66,19 +66,29 @@ export default function App() {
         // would sets ours current note id the note which we are updating to newNote.ID IN BRIEF it'll simply provide new id to ours new note which is current note (we called it current note because we are updating it currently)
 
     }
-    
-    function updateNote(text) { 
-        // will simply state and saves any changes
 
+    function updateNote(text) { 
+        // will simply state and saves any changes of anything written inside ours note therefore it is called UpdateNote
+
+        // PUT updated note at TOP
         setNotes(OldNotes => {
 
-            const NewArray = []
+            const NewArray = [] // an new empty array which will stores Updated Notes
 
             for (let i = 0; i < OldNotes.length; i++){
                 
-                const OldNote = OldNotes[i]
+                const OldNote = OldNotes[i] // so we don't have to write OldNotes[i] everywhere rather we'll simply just write OldNote
 
-                
+                if (OldNote.id === currentNoteId) {
+    
+                    NewArray.unshift({...OldNote, body: text}) // UNSHIFT will SHIFT Updated Note At Top Of List
+
+                }
+                else{
+
+                    NewArray.push(OldNote) // this will simply PUT ours OldNote After the New Note it has nothing to do with pushing ours updated note to go to TOP
+
+                }
 
             }
 
