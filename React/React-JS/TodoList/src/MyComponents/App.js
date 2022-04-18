@@ -54,7 +54,7 @@ export default function App() {
             id: nanoid(), 
             // will create and UNIQUE id for us and we basically IMPORT nanoid from react libraries
 
-            body: "# Type your markdown note's title here" 
+            body: "Note's Tittle Here" 
             // THE BY DEFAULT TEXT FOR EACH NEW NOTE
 
         }
