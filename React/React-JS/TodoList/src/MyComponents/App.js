@@ -12,7 +12,7 @@ export default function App() {
 
     const [currentNoteId, setCurrentNoteId] = React.useState(
 
-        (notes[0] && notes[0].id) || ""
+        (notes[0] && notes[0].id) || "" // since we are in an empty array therefore here we've says notes at index 0 && notes at index 0's ID because if there is NO notes it'll through error undefined OR empty string
 
     )
     
