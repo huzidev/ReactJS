@@ -7,9 +7,13 @@ import {nanoid} from "nanoid"
 
 
 export default function App() {
-    const [notes, setNotes] = React.useState([])
+
+    const [notes, setNotes] = React.useState([]) // we are (initializing) ours notes into an EMPTY ARRAY
+
     const [currentNoteId, setCurrentNoteId] = React.useState(
+
         (notes[0] && notes[0].id) || ""
+
     )
     
     function createNewNote() {
