@@ -34,18 +34,28 @@ export default function App() {
 
     }
     
-    function updateNote(text) {
-        setNotes(oldNotes => oldNotes.map(oldNote => {
+    function updateNote(text) { // will simply state and saves any changes
+
+        setNotes(oldNotes => oldNotes.map(oldNote => { // SET NOTES form initially empty array
+
             return oldNote.id === currentNoteId
-                ? { ...oldNote, body: text }
+
+                ? { ...oldNote, body: text } // body text so new update can be saved in the form of text in body part
+
                 : oldNote
+
         }))
+
     }
     
     function findCurrentNote() {
+
         return notes.find(note => {
+            
             return note.id === currentNoteId
+
         }) || notes[0]
+
     }
     
     return (
