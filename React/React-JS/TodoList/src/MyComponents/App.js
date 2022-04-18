@@ -22,6 +22,12 @@ export default function App() {
 
     )
     
+
+    // REMEMBER while storing something in LOCAL STORAGE we've to use 
+    // LocalStorage.SetItem and("KEY", Any String Value)
+
+    // therefore here we've pass (key) which is (notes) and (JSON.STRINGIFY) which will converts ours (notes) which is (JS OBJECT) into a String value
+
     React.useEffect(() => {
 
         localStorage.setItem("notes", JSON.stringify(notes))
