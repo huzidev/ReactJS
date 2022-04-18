@@ -48,7 +48,7 @@ export default function App() {
 
     }
     
-    function findCurrentNote() {
+    function findCurrentNote() { // will helps us to find what the current note is as we are passing it as a prop in ours JSX
 
         return notes.find(note => {
             
