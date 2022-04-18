@@ -91,6 +91,7 @@ export default function App() {
                 }
 
             }
+            return NewArray // make sure to return else error will occurs
 
         })
 
