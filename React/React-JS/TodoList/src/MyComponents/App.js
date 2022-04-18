@@ -61,12 +61,18 @@ export default function App() {
     return (
         <main>
         {
-            notes.length > 0 
+            notes.length > 0 // we are passing TERNARY OPERATORS here we says if notes lenth is greater than zero means there are some notes then do all functions else wise : print default text
+
             ?
+
             <Split  // SPLIT IS JUST A PART OF OURS REACT LIBRARY WHICH WE'VE IMPORTED ALREADY
+
                 sizes={[30, 70]} 
+
                 direction="horizontal" 
+
                 className="split"
+
             >
                 <Sidebar
                     notes={notes}
@@ -83,7 +89,9 @@ export default function App() {
                     />
                 }
             </Split>
+
             :
+
             <div className="no-notes">
                 <h1>You have no notes</h1>
                 <button 
