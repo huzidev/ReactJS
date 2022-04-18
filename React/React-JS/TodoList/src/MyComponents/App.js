@@ -60,7 +60,9 @@ export default function App() {
     
     return (
         <main>
-        {
+
+        { // we've used this {} because we are using TERNARY OPERATORS inside it
+
             notes.length > 0 // we are passing TERNARY OPERATORS here we says if notes lenth is greater than zero means there are some notes then do all functions else wise : print default text
 
             ?
@@ -75,19 +77,31 @@ export default function App() {
 
             >
                 <Sidebar
+
                     notes={notes}
+
                     currentNote={findCurrentNote()} // here we can see we are passing FindCurrentNote as props
+
                     setCurrentNoteId={setCurrentNoteId}
+
                     newNote={createNewNote}
+
                 />
                 {
+
                     currentNoteId && 
+
                     notes.length > 0 &&
+
                     <Editor 
+
                         currentNote={findCurrentNote()}  // here we can see we are passing FindCurrentNote as props
+
                         updateNote={updateNote} 
+
                     />
                 }
+
             </Split>
 
             :
@@ -103,6 +117,7 @@ export default function App() {
             </div>
             
         }
+
         </main>
     )
 }
