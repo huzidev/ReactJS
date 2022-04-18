@@ -19,12 +19,19 @@ export default function App() {
     )
     
     function createNewNote() {
+
         const newNote = {
+
             id: nanoid(), // will create and UNIQUE id for us and we basically IMPORT nanoid from react libraries
+
             body: "# Type your markdown note's title here"
+
         }
+
         setNotes(prevNotes => [newNote, ...prevNotes])
-        setCurrentNoteId(newNote.id)
+        
+        setCurrentNoteId(newNote.id) // would sets ours current note id the note which we are updating to newNote.ID IN BRIEF it'll simply provide new id to ours new note which is current note (we called it current note because we are updating it currently)
+
     }
     
     function updateNote(text) {
