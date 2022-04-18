@@ -15,7 +15,7 @@ export default function App() {
         
         // while getting something from LocalStorage it is not necessary to import String rather we'll import JS Object Therefore JSON.PARSE
 
-        // we've also created a condition that if there is no any notes in local storage we'll simply import empty array
+        // we've also created a condition that if there is no any notes in local storage we'll simply import (empty array)
     
     ) 
     // we are (initializing) ours notes into an EMPTY ARRAY
@@ -38,6 +38,7 @@ export default function App() {
         localStorage.setItem("notes", JSON.stringify(notes))
 
     }, [notes])
+    // will update every time when notes changes
 
     function createNewNote() {
 
