@@ -1,6 +1,6 @@
 import React from "react";
-import Sidebar from "./components/Sidebar";
-import Editor from "./components/Editor";
+import Sidebar from "./SideBar";
+import Editor from "./Editor";
 // import { data } from "./data";
 import Split from "react-split"; // split a library which helps us to split and rearrange ours page easily like here we've created a sidebar which splits ours screen to half
 import {nanoid} from "nanoid";
