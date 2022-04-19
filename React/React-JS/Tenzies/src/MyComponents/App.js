@@ -23,6 +23,7 @@ export default function App() {
     }
 
     const DiceElements = RollDice.map(dice => <Dice value={dice}/>)
+    // as we knew instead of updating values AGAIN AND AGAIN we simply use .Map for updating arrays elements
 
     return (
 
