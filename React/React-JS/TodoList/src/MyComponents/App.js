@@ -125,6 +125,7 @@ export default function App() {
     }
 
     return (
+
         <main>
 
         { 
@@ -178,6 +179,7 @@ export default function App() {
             </Split>
 
             :
+            // if notes length is not greater than zero than we'll run that code below
 
             <div className="no-notes">
 
@@ -201,5 +203,6 @@ export default function App() {
         }
 
         </main>
+
     )
 }
