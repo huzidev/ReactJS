@@ -12,10 +12,13 @@ export default function App() {
         for (let i = 0; i < 10; i++){
 
             NewDice.push(Math.ceil(Math.random() * 6))
+            // push will put the elements at the end of new element
 
         }
 
         return NewDice
+        // make sure to return whenever we creat new array 
+        // so all the new info could be stored into that new array after RETURNING
 
     }
 
