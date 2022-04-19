@@ -10,9 +10,11 @@ export default function App() {
 
         for (let i = 0; i < 10; i++){
 
-
+            NewDice.push(Math.ceil(Math.random() * 6))
 
         }
+
+        return NewDice
 
     }
     return (
