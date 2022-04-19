@@ -109,6 +109,13 @@ export default function App() {
 
     }
     
+    function DeleteNote(event, NoteID) {
+        
+        event.stopPropagation() 
+        // we are using event.StopPropagation because when we click the DELETE ICON it selects the parent element as well which is the div in which TITTLE is stored
+
+    }
+
     return (
         <main>
 
