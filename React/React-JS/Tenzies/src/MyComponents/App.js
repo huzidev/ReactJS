@@ -3,7 +3,7 @@ import Dice from './Dice';
 
 export default function App() {
 
-    const [Dice, SetDice] = React.useState(AllNewDice())
+    const [RollDice, SetRollDice] = React.useState(AllNewDice())
 
     function AllNewDice() {
         
@@ -18,22 +18,17 @@ export default function App() {
         return NewDice
 
     }
+
+    const DiceElements = RollDice.map(dice => <Dice value={dice}/>)
+
     return (
 
         <main>
 
             <div className="Dice-container">
 
-                <Dice value="1"/>
-                <Dice value="1"/>
-                <Dice value="1"/>
-                <Dice value="1"/>
-                <Dice value="1"/>
-                <Dice value="1"/>
-                <Dice value="1"/>
-                <Dice value="1"/>
-                <Dice value="1"/>
-                <Dice value="1"/>
+                {/* Instead of creating 10 diff div for Dice we simply created a function above with LOOP */}
+                {DiceElements}
 
             </div>
 
