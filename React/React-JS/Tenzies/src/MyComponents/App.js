@@ -1,11 +1,18 @@
 import React from 'react';
+import Dice from './Dice';
 
 export default function App() {
 
     return (
 
         <main>
-            hello
+
+            <div className="Dice-container">
+
+
+
+            </div>
+
         </main>
 
     )
