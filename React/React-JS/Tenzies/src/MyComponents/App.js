@@ -3,7 +3,7 @@ import Dice from './Dice';
 
 export default function App() {
 
-    const [Dice, SetDice] = React.useState(AllNewDice)
+    const [Dice, SetDice] = React.useState(AllNewDice())
 
     function AllNewDice() {
         
