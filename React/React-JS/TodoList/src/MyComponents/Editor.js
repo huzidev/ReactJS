@@ -3,6 +3,7 @@ import ReactMde from "react-mde"; // these are 3rd party libraries we can instal
 import Showdown from "showdown";
 
 export default function Editor({ currentNote, updateNote }) {
+    // MAKE SURE TO PASS THESE PARAMETERS ABOVE INSIDE THESE CURLY BRACKETS
 
     const [selectedTab, setSelectedTab] = React.useState("write")
 
@@ -26,8 +27,8 @@ export default function Editor({ currentNote, updateNote }) {
 
                 value={currentNote.body}
 
-                onChange={updateNote
-                }
+                onChange={updateNote}
+                
                 selectedTab={selectedTab}
 
                 onTabChange={setSelectedTab}
