@@ -137,9 +137,9 @@ export default function App() {
             ?
 
             <Split  
-            // SPLIT IS JUST A PART OF OURS REACT LIBRARY WHICH WE'VE IMPORTED ALREADY
+            // SPLIT IS JUST A PART OF OURS REACT LIBRARY WHICH WE'VE IMPORTED ALREADY AND IT HAS ALL FUNCTION THAT ALLOW US TO SPLIT OURS SCREEN INTO HALF
 
-                sizes={[30, 70]} 
+                sizes={[20, 80]} // by default size we can provide 20 + 80 is 100 which covers ours complete screen
 
                 direction="horizontal" 
 
