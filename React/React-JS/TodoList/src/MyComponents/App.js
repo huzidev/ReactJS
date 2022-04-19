@@ -115,6 +115,13 @@ export default function App() {
         // we are using event.StopPropagation because when we click the DELETE ICON it selects the parent element as well which is the div in which TITTLE is stored but once we deleted that specific notes it still (HOLDS) the (ID) of that note which is an error when the note doesn't exist then why it is holding the ID therefore we'll use stop propagation then pass it as OnCLick on DELETE button
 
         setNotes(OldNotes => OldNotes.filter(note => note.id !== NoteID))
+        //FILTER is just like LOOP
+
+        // here we are saying that FILTER( runs a loop ) for (notes) that will return the condition where note.id !== NoteID if it is equal then simply (INCLUDING) or (EXCLUDING) depends on condition
+
+        // It's the process of looping through an array and (INCLUDING) or (EXCLUDING) elements inside that array based on a condition that you provide.
+
+        //like here we says if note.id is not equal to NoteID we selected then the condition is true if note.id is == to NoteID then condition if false and (EXCLUDE) that specific note
 
     }
 
