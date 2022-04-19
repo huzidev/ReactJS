@@ -3,6 +3,18 @@ import Dice from './Dice';
 
 export default function App() {
 
+
+    function AllNewDice() {
+        
+        const NewDice = []
+
+        for (let i = 0; i < 10; i++){
+
+
+
+        }
+
+    }
     return (
 
         <main>
