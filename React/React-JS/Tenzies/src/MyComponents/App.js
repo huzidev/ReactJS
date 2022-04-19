@@ -9,7 +9,16 @@ export default function App() {
 
             <div className="Dice-container">
 
-
+                <Dice value="1"/>
+                <Dice value="1"/>
+                <Dice value="1"/>
+                <Dice value="1"/>
+                <Dice value="1"/>
+                <Dice value="1"/>
+                <Dice value="1"/>
+                <Dice value="1"/>
+                <Dice value="1"/>
+                <Dice value="1"/>
 
             </div>
 
