@@ -32,10 +32,11 @@ export default function Sidebar(props) {
 
                     className="delete-btn"
 
+                    onClick={(event) => props.Delete(event, note.id)}
                 >
 
                     <i className="gg-trash trash-icon"></i>
-                    
+
                 </button>
 
             </div>
