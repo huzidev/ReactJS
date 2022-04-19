@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Sidebar(props) {
 
-    const noteElements = props.notes.map((note, index) => ( 
+    const noteElements = props.notes.map((note) => ( 
         // note is just parameter name it can be anything just like name of variable
         // props.notes.map MEANS it is been taking some ARRAY of NOTES and mapping it into ours CONST variables called NoteElements then we'll assign this NoteElements in to bottom inside {}
 

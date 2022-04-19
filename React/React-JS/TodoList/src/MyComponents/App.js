@@ -152,7 +152,7 @@ export default function App() {
 
                     currentNote={findCurrentNote()} 
                     // here we can see we are passing FindCurrentNote as props
-                    // make sure to pass it as FUNCTION so when we clicked on it we can change classes and have nice background change whenever we click on the DIV
+                    // make sure to pass it as FUNCTION so when we clicked on notes we can change classes and have nice background color change whenever we click on the DIV
 
                     setCurrentNoteId={setCurrentNoteId}
 
