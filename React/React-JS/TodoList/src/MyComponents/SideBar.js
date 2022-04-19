@@ -27,6 +27,16 @@ export default function Sidebar(props) {
                 {/* note.body means inside the text area because we defined it as body part SPLIT just works as SEPARATOR which will separates ours text with the next line */}
                 
                 {/* [0] means first line of ours note  else wise the text on index 1 and 2 will also be printed as tittle*/}
+                
+                <button 
+
+                    className="delete-btn"
+
+                >
+
+                    <i className="gg-trash trash-icon"></i>
+                    
+                </button>
 
             </div>
 
