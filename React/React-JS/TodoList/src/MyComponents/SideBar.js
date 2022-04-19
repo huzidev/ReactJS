@@ -33,6 +33,7 @@ export default function Sidebar(props) {
                     className="delete-btn"
 
                     onClick={(event) => props.Delete(event, note.id)}
+                    // IT IS MANDATORY TO DO THIS CALLING AND EVENT FUNCTION WHILE DELETING THE NOTES EVENT IS JUST PARAMETER WHICH WE'VE ALREADY PASS IN OURS FUNCTION IN (APP.JS) and (NOTE.ID) is the id of that specific note which is going to be deleted
                 >
 
                     <i className="gg-trash trash-icon"></i>
