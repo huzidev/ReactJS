@@ -24,9 +24,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -61,4 +60,23 @@ main {
 }
 .Dice-box .Dice {
   font-size: 2rem;
+}
+
+.Roll {
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035FF;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+  cursor: pointer;
+}
+.Roll:focus {
+  outline: none;
+}
+.Roll:active {
+  -webkit-box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }

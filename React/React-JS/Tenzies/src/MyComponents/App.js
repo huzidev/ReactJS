@@ -22,6 +22,12 @@ export default function App() {
 
     }
 
+    function Roll() {
+        
+        SetRollDice(AllNewDice())
+
+    }
+
     const DiceElements = RollDice.map(dice => <Dice value={dice}/>)
     // as we knew instead of updating values AGAIN AND AGAIN we simply use .Map for updating arrays elements
 
@@ -35,6 +41,12 @@ export default function App() {
                 {DiceElements}
 
             </div>
+
+            <button className="Roll" onClick={Roll}>
+
+                Roll
+
+            </button>
 
         </main>
 
