@@ -114,6 +114,7 @@ export default function App() {
         event.stopPropagation() 
         // we are using event.StopPropagation because when we click the DELETE ICON it selects the parent element as well which is the div in which TITTLE is stored but once we deleted that specific notes it still (HOLDS) the (ID) of that note which is an error when the note doesn't exist then why it is holding the ID therefore we'll use stop propagation then pass it as OnCLick on DELETE button
 
+
     }
 
     return (
@@ -147,6 +148,8 @@ export default function App() {
                     setCurrentNoteId={setCurrentNoteId}
 
                     newNote={createNewNote}
+
+                    Delete={DeleteNote}
 
                 />
                 {
