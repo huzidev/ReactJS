@@ -7,6 +7,7 @@ export default function Sidebar(props) {
         // props.notes.map MEANS it is been taking some ARRAY of NOTES and mapping it into ours CONST variables called NoteElements then we'll assign this NoteElements in to bottom inside {}
 
         <div key={note.id}>
+            {/* since we are using (MAP) therefore we've to provide some (KEY) value */}
 
             <div
                 
@@ -18,7 +19,7 @@ export default function Sidebar(props) {
                 }`}
 
                 onClick={() => props.setCurrentNoteId(note.id)} 
-                // ON ONCLICK it'll changes Current Note id to that notes id on which we've CLICKED so we the color of that note changes each time and we'll see all different text and information about that specific note
+                // ON ONCLICK it'll changes Current Note id to that note's id on which we've CLICKED so the color of that note changes each time and we'll see all different text and information about that specific note
 
             >
 
@@ -61,6 +62,8 @@ export default function Sidebar(props) {
             </div>
 
             {noteElements}
+
+            {/* AFTER the basic UI of top we can see all available data below it because we've put {noteElements} after it */}
 
         </section>
 
