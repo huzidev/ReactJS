@@ -1,7 +1,6 @@
 import React from "react";
 import Sidebar from "./SideBar";
 import Editor from "./Editor";
-// import { Data } from "./Data";
 import Split from "react-split"; // split a library which helps us to split and rearrange ours page easily like here we've created a sidebar which splits ours screen to half
 import {nanoid} from "nanoid";
 
@@ -59,7 +58,7 @@ export default function App() {
 
         }
 
-        setNotes(prevNotes => [newNote, ...prevNotes]) 
+        setNotes(prevNotes => [...prevNotes, newNote]) 
         // initially empty array will take all the prev notes data therefore we've used ... and (NEW NOTE) the function we've already created
         
         setCurrentNoteId(newNote.id) 
@@ -86,7 +85,7 @@ export default function App() {
                 }
                 else{
 
-                    NewArray.push(OldNote) // this will simply PUT ours OldNote After the New Note it has nothing to do with pushing ours updated note to go to TOP
+                    NewArray.push(OldNote) // this will simply PUT ours (OldNote) AFTER the (New Note) means (New Note) will be at top and (OldNote) will be after that means at second line if (New Note) is at First Line it has nothing to do with pushing ours updated note to go to TOP
 
                 }
 
