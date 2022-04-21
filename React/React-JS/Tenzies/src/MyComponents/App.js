@@ -1,6 +1,7 @@
 import React from 'react';
 import Dice from './Dice';
-import {nanoid} from "nanoid"
+import {nanoid} from "nanoid";
+import Confetti from "react-confetti";
 
 export default function App() {
 
@@ -121,6 +122,8 @@ export default function App() {
 
         <main>
 
+            {Tenzies && <Confetti />}
+
             <h1 className="title">
             
                 Tenzies
@@ -143,7 +146,7 @@ export default function App() {
 
             <button className="Roll" onClick={Roll}>
 
-                Roll
+                {Tenzies ? "Play Again" : "Roll"}
 
             </button>
 
