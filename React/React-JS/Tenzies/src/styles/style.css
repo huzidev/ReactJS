@@ -56,7 +56,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  background-color: white;
 }
 .Dice-box .Dice {
   font-size: 2rem;
