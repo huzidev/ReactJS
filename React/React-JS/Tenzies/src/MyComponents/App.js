@@ -92,7 +92,11 @@ export default function App() {
 
         <main>
 
-            <h1 className="title">Tenzies</h1>
+            <h1 className="title">
+            
+                Tenzies
+            
+            </h1>
 
             <p className="instructions">
             
