@@ -17,6 +17,20 @@ export default function App() {
 
         // dice.isHeld will check if all the dices isHeld means they are CLICKED
 
+        const FirstValue = RollDice[0].value
+
+        // this is for REFERENCE means whatever the dice at index of 0th value is we want that value for each and every dice so we can make sure that all dice is been clicked and the condition can be TRUE
+        
+        const AllValue = RollDice.every(dice => dice.value === FirstValue)
+
+        // here we are using ours REFERENCE that every dice.value === firstValue means if first value is true then every value MUST have to be true as well
+
+        if ( AllHeld && AllValue ) {
+            
+            console.log("you won");
+
+        }
+
     }, [RollDice])
 
     function GenerateNewDice() {
