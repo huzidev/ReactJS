@@ -62,7 +62,7 @@ export default function App() {
 
     // (Dice) is the name of component name where all properties are written and (dice) is just parameter receiving function
 
-    // as we knew instead of updating values AGAIN AND AGAIN we simply use .Map for updating arrays elements
+    // as we knew instead of updating values AGAIN AND AGAIN we simply use .Map for updating arrays elements or by creating new array where all (UPDATED) information is stored
 
     return (
 
