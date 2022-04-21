@@ -45,7 +45,15 @@ export default function App() {
 
     function HoldDice(id){
 
-        console.log(id);
+        SetRollDice(OldDice => OldDice.map(dice => {
+
+            return (
+                
+                    dice.id === id ? {...dice, isHeld: !dice.isHeld} : dice
+                    // dice.id === id of that div we've clicked on than {...dice} because dice is a parameter receiving all previous values included Random Numbers : dice because if it is not true than simple return dice which have all previous values
+                )
+
+        }))
 
     }
 
