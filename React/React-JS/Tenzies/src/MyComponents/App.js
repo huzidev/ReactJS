@@ -16,7 +16,7 @@ export default function App() {
                 
                 value: Math.ceil(Math.random() * 6),
                 
-                isHeld: false,
+                isHeld: true,
 
                 id: nanoid()
             
@@ -43,11 +43,11 @@ export default function App() {
 
     }
 
-    const DiceElements = RollDice.map(
-        
-        dice => <Dice key={dice.id} value={dice.value}/>
-
-        )
+    const DiceElements = RollDice.map(dice => (
+    
+        <Dice key={dice.id} value={dice.value} isHeld={dice.isHeld}/>
+    
+    ))
     // as we knew instead of updating values AGAIN AND AGAIN we simply use .Map for updating arrays elements
 
     return (
