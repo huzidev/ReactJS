@@ -120,7 +120,14 @@ export default function App() {
 
     function Count() {
         
-        SetRollDice(OldDice )
+        SetCounter(PrevCount => PrevCount + 1)
+        
+    }
+
+    function Merge() {
+        
+        Count()
+        Roll()
 
     }
 
@@ -154,7 +161,7 @@ export default function App() {
             <p className="instructions">
             
                 {
-                    Tenzies ? "Congratulations! You've Won The Game In Just" 
+                    Tenzies ? `{Congratulations! You've Won The Game In Just ${Count} Moves}`
                     : "Roll until all dice are the same. Click each die to freeze it at its current value between rolls"
                 }
             
@@ -167,12 +174,12 @@ export default function App() {
 
             </div>
 
-            <button className="Roll" onClick={Roll}>
+            <button className="Roll" onClick={Merge}>
 
                 {Tenzies ? "Play Again" : "Roll"}
 
             </button>
-
+            
         </main>
 
     )
