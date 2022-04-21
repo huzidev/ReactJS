@@ -5,6 +5,14 @@ import {nanoid} from "nanoid"
 export default function App() {
 
     const [RollDice, SetRollDice] = React.useState(AllNewDice())
+    
+    const [Tenzies, SetTenzies] = React.useState(false)
+
+    React.useEffect(() => {
+
+        
+
+    }, [RollDice])
 
     function GenerateNewDice() {
         
