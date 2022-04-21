@@ -12,7 +12,10 @@ export default function App() {
 
         const AllHeld = RollDice.every(dice => dice.isHeld) 
         // .EVERY is a (ARRAY METHOD) which makes sure that inside array all the elements are showing a specific condition which is TRUE if it is then .EVERY will also return value true 
-        // we are using .EVERY so when we've clicked all the dice we'll change ours button from ROLL to PLAY AGAIN when condition is true therefore we've provide FALSE condition in beg
+
+        // we are using .EVERY so when we've clicked all the dice we'll change ours button from ROLL to PLAY AGAIN when condition is true therefore we've provide FALSE condition in beginning 
+
+        // dice.isHeld will check if all the dices isHeld means they are CLICKED
 
     }, [RollDice])
 
