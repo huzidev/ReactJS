@@ -145,8 +145,10 @@ export default function App() {
 
             <p className="instructions">
             
-                Roll until all dice are the same. Click each die to freeze it at its current value between 
-                rolls.
+                {
+                    Tenzies ? "Congratulations! You've Won The Game" 
+                    : "Roll until all dice are the same. Click each die to freeze it at its current value between rolls"
+                }
             
             </p>
 
