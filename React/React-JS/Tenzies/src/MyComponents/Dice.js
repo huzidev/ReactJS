@@ -10,7 +10,7 @@ export default function Dice(props) {
 
     return (
 
-        <div className="Dice-box" style={styles}> 
+        <div className="Dice-box" style={styles} onClick={props.HoldDice}> 
         {/* (STYLE) is the property for styling (STYLES) is just variable name we've created above */}
 
             <h2 className="Dice">

@@ -43,14 +43,25 @@ export default function App() {
 
     }
 
+    function HoldDice(id){
+
+        console.log(id);
+
+    }
+
     const DiceElements = RollDice.map(dice => (
     
-        <Dice key={dice.id} value={dice.value} isHeld={dice.isHeld}/>
+        <Dice 
+            key={dice.id} 
+            value={dice.value} 
+            isHeld={dice.isHeld} 
+            HoldDice={() => HoldDice(dice.id)}
+        />
     
     ))
 
     // (Dice) is the name of component name where all properties are written and (dice) is just parameter receiving function
-    
+
     // as we knew instead of updating values AGAIN AND AGAIN we simply use .Map for updating arrays elements
 
     return (
