@@ -32,6 +32,8 @@ export default function App() {
             
             SetTenzies(true)
 
+            // so when AllHeld and AllValue is true it'll Set ours SetTenzies to True as a result Ternary operators will update them
+
             console.log("you won");
 
         }
