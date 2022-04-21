@@ -16,9 +16,7 @@ export default function App() {
 
             id: nanoid()
 
-            // push will put the elements at the end of new element
-
-            // for holding the CLICKED dice we've to make it an OBJECT so each dice will have its own different values like if isHeld is true or not or unique id of that dice
+            // for holding the CLICKED dice we've to make it an OBJECT so each dice will have its own different (values) like if (isHeld) is (true) or not or (unique id) of that dice
 
             // therefore we've surround the values inside {} so it'll became an object
 
@@ -34,6 +32,8 @@ export default function App() {
         for (let i = 0; i < 10; i++){
 
             NewDice.push(GenerateNewDice())
+
+            // push will put the old elements at the end of new element
 
         }
 
