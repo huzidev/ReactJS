@@ -26,7 +26,7 @@ export default function App() {
         // here we are using ours REFERENCE that every dice.value === firstValue means if first value is true then every value MUST have to be true as well means every other dice must have been CLICKED as well
 
         if ( AllHeld && AllValue ) {
-            
+            // AllHeld && AllValue both have to be a true value
             console.log("you won");
 
         }
