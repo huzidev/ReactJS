@@ -9,6 +9,8 @@ export default function App() {
     
     const [Tenzies, SetTenzies] = React.useState(false)
 
+    const [Counter, SetCounter] = React.useState(0)
+
     React.useEffect(() => {
 
         const AllHeld = RollDice.every(dice => dice.isHeld === true) 
@@ -116,6 +118,12 @@ export default function App() {
 
     }
 
+    function Count() {
+        
+        SetRollDice(OldDice )
+
+    }
+
     const DiceElements = RollDice.map(dice => (
     
         <Dice 
@@ -146,7 +154,7 @@ export default function App() {
             <p className="instructions">
             
                 {
-                    Tenzies ? "Congratulations! You've Won The Game" 
+                    Tenzies ? "Congratulations! You've Won The Game In Just" 
                     : "Roll until all dice are the same. Click each die to freeze it at its current value between rolls"
                 }
             
