@@ -30,6 +30,8 @@ export default function App() {
 
             // AllHeld && AllValue both have to be a true value
             
+            SetTenzies(true)
+
             console.log("you won");
 
         }
