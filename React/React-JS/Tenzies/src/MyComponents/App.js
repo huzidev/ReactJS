@@ -20,7 +20,11 @@ export default function App() {
             })
             // push will put the elements at the end of new element
 
-            // for holding the CLICKED dice we've to make it an OBJECT so each dice will have its own diff values like if isHeld is true or not or unique id of that dice
+            // for holding the CLICKED dice we've to make it an OBJECT so each dice will have its own different values like if isHeld is true or not or unique id of that dice
+
+            // therefore we've surround the values inside {} so it'll became an object
+
+            // ADVANTAGE of using (OBJECT) is that we don't have to declare ours code again and again because we can store multiple data or values inside object and we can drop it anywhere we wanted 
 
         }
 
