@@ -1,5 +1,6 @@
 import React from 'react';
 import Dice from './Dice';
+import {nanoid} from "nanoid"
 
 export default function App() {
 
@@ -15,7 +16,9 @@ export default function App() {
                 
                 value: Math.ceil(Math.random() * 6),
                 
-                isHeld: false
+                isHeld: false,
+
+                id: nanoid()
             
             })
             // push will put the elements at the end of new element
@@ -40,7 +43,11 @@ export default function App() {
 
     }
 
-    const DiceElements = RollDice.map(dice => <Dice value={dice}/>)
+    const DiceElements = RollDice.map(
+        
+        dice => <Dice key={dice.id} value={dice.value}/>
+
+        )
     // as we knew instead of updating values AGAIN AND AGAIN we simply use .Map for updating arrays elements
 
     return (
