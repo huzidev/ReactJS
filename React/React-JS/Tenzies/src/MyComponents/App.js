@@ -10,7 +10,7 @@ export default function App() {
 
     React.useEffect(() => {
 
-        const AllHeld = RollDice.every(dice => dice.isHeld) 
+        const AllHeld = RollDice.every(dice => dice.isHeld === true) 
         // .EVERY is a (ARRAY METHOD) which makes sure that inside array all the elements are showing a specific condition which is TRUE if it is then .EVERY will also return value true 
 
         // we are using .EVERY so when we've clicked all the dice we'll change ours button from ROLL to PLAY AGAIN when condition is true therefore we've provide FALSE condition in beginning 
@@ -26,7 +26,9 @@ export default function App() {
         // here we are using ours REFERENCE that every dice.value === firstValue means if first value is true then every value MUST have to be true as well means every other dice must have been CLICKED as well
 
         if ( AllHeld && AllValue ) {
+
             // AllHeld && AllValue both have to be a true value
+            
             console.log("you won");
 
         }
