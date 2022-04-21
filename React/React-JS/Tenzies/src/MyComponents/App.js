@@ -11,8 +11,16 @@ export default function App() {
 
         for (let i = 0; i < 10; i++){
 
-            NewDice.push(Math.ceil(Math.random() * 6))
+            NewDice.push({
+                
+                value: Math.ceil(Math.random() * 6),
+                
+                isHeld: false
+            
+            })
             // push will put the elements at the end of new element
+
+            // for holding the CLICKED dice we've to make it an OBJECT so each dice will have its own diff values like if isHeld is true or not or unique id of that dice
 
         }
 
