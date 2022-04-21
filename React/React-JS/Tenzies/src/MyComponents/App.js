@@ -34,8 +34,6 @@ export default function App() {
 
             // so when AllHeld and AllValue is true it'll Set ours SetTenzies to True as a result Ternary operators will update them
 
-            console.log("you won");
-
         }
 
     }, [RollDice])
@@ -97,7 +95,8 @@ export default function App() {
         else{
 
             SetTenzies(false)
-            SetRollDice(GenerateNewDice())
+
+            SetRollDice(AllNewDice())
 
         }
 
