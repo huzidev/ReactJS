@@ -140,12 +140,12 @@ export default function App() {
         }
     }
 
-    function Merge() {
+    // function Merge() {
         
-        Count()
-        Roll()
+    //     Count()
+    //     Roll()
 
-    }
+    // }
 
     const DiceElements = RollDice.map(dice => (
     
@@ -177,8 +177,9 @@ export default function App() {
             
             <DiceBox 
                 elements={DiceElements} 
-                merge={Merge}
                 Tenzies={Tenzies}
+                Count={Count}
+                Roll={Roll}
             />
 
         </main>

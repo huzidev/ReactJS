@@ -2,6 +2,13 @@ import React from 'react';
 
 export default function DiceBox(props) {
 
+    function Merge() {
+        
+        props.Count()
+        props.Roll()
+
+    }
+
     return(
         
         <>
@@ -12,7 +19,7 @@ export default function DiceBox(props) {
 
             </div>
 
-            <button className="Roll" onClick={props.merge}>
+            <button className="Roll" onClick={Merge}>
 
                 {props.Tenzies ? "Play Again" : "Roll"}
 
