@@ -126,11 +126,11 @@ export default function App() {
 
         var timer = setInterval(() => {
             
-            SetSeconds(Seconds+1)
+            SetSeconds(PrevSec => PrevSec + 1)
 
             if ( Seconds === 59 ) {
             
-                SetMinutes(Minutes+1)
+                SetMinutes(PrevMinutes => PrevMinutes + 1)
 
                 SetSeconds(0)
 
