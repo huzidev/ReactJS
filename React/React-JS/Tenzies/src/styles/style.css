@@ -39,7 +39,13 @@ main .header {
       -ms-flex-pack: center;
           justify-content: center;
   width: 630px;
+  position: relative;
 }
+main .header .timer {
+  position: absolute;
+  right: 0px;
+}
+
 .title {
   font-size: 40px;
   margin: 0px;
