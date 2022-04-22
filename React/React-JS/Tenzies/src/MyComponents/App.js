@@ -120,8 +120,16 @@ export default function App() {
 
     function Count() {
         
-        SetCounter(PrevCount => PrevCount + 1)
+        if (Tenzies === false) {
+            
+            SetCounter(PrevCount => PrevCount + 1)
 
+        }
+        else if (Tenzies === true) {
+            
+            SetCounter(PrevCount => 0)
+
+        }
     }
 
     function Merge() {
