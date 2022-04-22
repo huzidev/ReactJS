@@ -87,7 +87,7 @@ export default function App() {
     
                     dice.isHeld ? dice : GenerateNewDice()
                     // we've to GENERATE all the numbers except the CLICKED one and REMEMBER here we'll not use
-                    // ... because we didn't want same number back again and again rather we required all sets of new dice except the clicked ones
+                    // ... because we didn't want same number back again and again rather we required all sets of (NEW DICE) except the clicked ones
     
                 )
     
