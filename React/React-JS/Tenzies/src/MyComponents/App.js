@@ -127,46 +127,31 @@ export default function App() {
     
     // var timer = React.useRef(timer)
 
-    var timer
+    // var timer
 
-    React.useEffect(() => {
+    // React.useEffect(() => {
 
-        timer = setInterval(() => {
+    //     timer = setInterval(() => {
             
-            SetSeconds(PrevSec => PrevSec + 1)
+    //         SetSeconds(PrevSec => PrevSec + 1)
 
-            if ( Seconds === 59 ) {
+    //         if ( Seconds === 59 ) {
 
-                // if seconds reach 59 then update ours minute and start counting seconds again from 0
+    //             // if seconds reach 59 then update ours minute and start counting seconds again from 0
 
-                SetMinutes(PrevMinutes => PrevMinutes + 1)
+    //             SetMinutes(PrevMinutes => PrevMinutes + 1)
 
-                SetSeconds(PrevSec => 0)
+    //             SetSeconds(PrevSec => 0)
                 
-                // therefore here we've set ours SetSeconds to zero
-            }
+    //             // therefore here we've set ours SetSeconds to zero
+    //         }
 
-        }, 1000);
+    //     }, 1000);
 
-        return ()=> clearInterval(timer)
+    //     return ()=> clearInterval(timer)
 
-    }, [Seconds]) // here if we use dependency array it'll be stopped just after a second
+    // }, [Seconds]) // here if we use dependency array it'll be stopped just after a second
     
-    // const Stop = (timer) => {
-
-    //     clearInterval(timer)
-
-    // }
-
-    function Stop() {
-        
-        clearInterval(timer)
-
-    }
-
-
-        
-
 
     function Count() {
         
@@ -187,7 +172,6 @@ export default function App() {
 
             // SetMinutes(PrevMinutes => 0)
             
-            // Stop()
         }
     }
 
@@ -259,9 +243,9 @@ export default function App() {
 
             </button>
 
-            <button onClick={Stop}>
+            {/* <button onClick={Stop}>
                 Stop
-            </button>
+            </button> */}
             
         </main>
 
