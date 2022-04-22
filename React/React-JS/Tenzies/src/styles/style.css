@@ -30,6 +30,11 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
+main .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 .title {
   font-size: 40px;
