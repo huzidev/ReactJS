@@ -1,13 +1,27 @@
 import React from 'react'
 
-export default function First() {
+export default function First(props) {
     return(
 
-        <div>
+        <div className="index">
 
             <h1>
-                Hello
+
+                Tenzies
+
             </h1>
+
+            <h2>
+
+                Select Difficult Level
+
+            </h2>
+
+            <button onClick={props.scr}>
+
+                Medium
+
+            </button>
 
         </div>
 

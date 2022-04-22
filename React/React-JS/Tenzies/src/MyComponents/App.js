@@ -158,6 +158,13 @@ export default function App() {
 
     // as we knew instead of updating values AGAIN AND AGAIN we simply use .Map for updating arrays elements or by creating new array where all (UPDATED) information is stored
 
+
+    function Scr() {
+        
+        SetScreen(PrevScr => !PrevScr)
+
+    }
+
     return (
 
         <main>
@@ -186,7 +193,9 @@ export default function App() {
                     />
                 </>
                 :
-                <First />
+                <First 
+                    scr={Scr}
+                />
             }
 
         </main>
