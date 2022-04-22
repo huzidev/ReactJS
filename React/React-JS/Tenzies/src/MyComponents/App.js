@@ -138,7 +138,7 @@ export default function App() {
 
         }, 1000);
 
-        return ()=> clearInterval
+        return ()=> clearInterval(timer)
 
     })
     
@@ -186,11 +186,17 @@ export default function App() {
 
             {Tenzies && <Confetti />}
 
-            <h1 className="title">
-            
-                Tenzies
-            
-            </h1>
+            <div className="header">
+
+                <h1 className="title">
+                
+                    Tenzies
+                
+                </h1>
+
+                
+            </div>
+
 
             <p className="instructions">
             
