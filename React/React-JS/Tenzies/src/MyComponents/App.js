@@ -4,6 +4,7 @@ import Header from './Header'
 import {nanoid} from "nanoid";
 import Confetti from "react-confetti";
 import Info from './Info';
+import DiceBox from './DiceBox';
 
 export default function App() {
 
@@ -174,18 +175,8 @@ export default function App() {
             <Header />
 
             <Info />
-            <div className="Dice-container">
-
-                {/* Instead of creating 10 diff div for Dice we simply created a function above with LOOP */}
-                {DiceElements}
-
-            </div>
-
-            <button className="Roll" onClick={Merge}>
-
-                {Tenzies ? "Play Again" : "Roll"}
-
-            </button>
+            
+            <DiceBox />
 
             {/* <button onClick={Stop}>
                 Stop
