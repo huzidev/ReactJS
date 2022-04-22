@@ -140,13 +140,6 @@ export default function App() {
         }
     }
 
-    // function Merge() {
-        
-    //     Count()
-    //     Roll()
-
-    // }
-
     const DiceElements = RollDice.map(dice => (
     
         <Dice 
