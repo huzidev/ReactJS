@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Header() {
 
-    const [Seconds, SetSeconds] = React.useState(0)
+    // const [Seconds, SetSeconds] = React.useState(0)
 
-    const [Minutes, SetMinutes] = React.useState(0)
+    // const [Minutes, SetMinutes] = React.useState(0)
 
 
     // WE'VE TO USE (USE EFFECT) for timer because we wanted ours timer to update every seconds and if we didn't use (DEPENDENCY ARRAY) in ours (USE EFFECT) it'll update automatically every seconds
