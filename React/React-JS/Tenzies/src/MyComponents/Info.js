@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-export default function Info() {
+export default function Info(props) {
 
     return(
 
         <p className="instructions">
                 
             {
-                Tenzies ? `Congratulations! You've Won The Game In Just ${Counter} Moves`
+                props.Tenzies ? `Congratulations! You've Won The Game In Just ${props.Counter} Moves`
                 : "Roll until all dice are the same. Click each die to freeze it at its current value between rolls"
             }
                 

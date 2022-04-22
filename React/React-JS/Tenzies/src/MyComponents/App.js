@@ -1,8 +1,9 @@
-import React from 'react';
+    import React from 'react';
 import Dice from './Dice';
 import Header from './Header'
 import {nanoid} from "nanoid";
 import Confetti from "react-confetti";
+import Info from './Info';
 
 export default function App() {
 
@@ -172,16 +173,7 @@ export default function App() {
 
             <Header />
 
-
-            <p className="instructions">
-            
-                {
-                    Tenzies ? `Congratulations! You've Won The Game In Just ${Counter} Moves`
-                    : "Roll until all dice are the same. Click each die to freeze it at its current value between rolls"
-                }
-            
-            </p>
-
+            <Info />
             <div className="Dice-container">
 
                 {/* Instead of creating 10 diff div for Dice we simply created a function above with LOOP */}
