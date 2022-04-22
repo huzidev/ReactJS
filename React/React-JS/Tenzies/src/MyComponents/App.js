@@ -137,10 +137,6 @@ export default function App() {
 
             // so when we complete the game the counter will starts from zero
 
-            // SetSeconds(PrevSec => 0)
-
-            // SetMinutes(PrevMinutes => 0)
-            
         }
     }
 
@@ -174,9 +170,16 @@ export default function App() {
 
             <Header />
 
-            <Info />
+            <Info
+                Count={Counter}
+                Tenzies={Tenzies} 
+            />
             
-            <DiceBox elements={DiceElements} merge={Merge}/>
+            <DiceBox 
+                elements={DiceElements} 
+                merge={Merge}
+                Tenzies={Tenzies}
+            />
 
         </main>
 
