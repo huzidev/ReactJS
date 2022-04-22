@@ -196,7 +196,8 @@ export default function App() {
 
                 <h3>
                 
-                    {Minutes}:{Seconds}
+                    {Minutes < 10 ? "0" + Minutes : Minutes}:{Seconds < 10 ? "0" + Seconds : Seconds}
+                    {/* So we can have 00:00 if we didn't use the above step then we'll have just 0:0 */}
 
                 </h3>
                 
