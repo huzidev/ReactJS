@@ -141,7 +141,7 @@ export default function App() {
 
         return ()=> clearInterval(timer)
 
-    })
+    }) // here if we use dependency array it'll be stopped just after a second
     
     function Count() {
         
