@@ -11,6 +11,10 @@ export default function App() {
 
     const [Counter, SetCounter] = React.useState(0)
 
+    const [Seconds, SetSeconds] = React.useState(0)
+
+    const [Minutes, SetMinutes] = React.useState(0)
+
     React.useEffect(() => {
 
         const AllHeld = RollDice.every(dice => dice.isHeld === true) 
@@ -118,6 +122,26 @@ export default function App() {
 
     }
 
+    React.useEffect(() => {
+
+        var timer = setInterval(() => {
+            
+            SetSeconds(Seconds+1)
+
+            if ( Seconds === 59 ) {
+            
+                SetMinutes(Minutes+1)
+
+                SetSeconds(0)
+
+            }
+
+        }, 1000);
+
+        return ()=> clearInterval
+
+    })
+    
     function Count() {
         
         if (Tenzies === false) {
