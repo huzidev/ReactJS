@@ -14,6 +14,8 @@ export default function App() {
 
     const [Counter, SetCounter] = React.useState(0)
 
+    const [Screen, SetScreen] = React.useState(false)
+
     React.useEffect(() => {
 
         const AllHeld = RollDice.every(dice => dice.isHeld === true) 
@@ -159,21 +161,26 @@ export default function App() {
 
         <main>
 
-            {Tenzies && <Confetti />}
+           { 
+           
+                {Tenzies && <Confetti />}
 
-            <Header />
+                <Header />
 
-            <Info
-                Count={Counter}
-                Tenzies={Tenzies} 
-            />
+                <Info
+                    Count={Counter}
+                    Tenzies={Tenzies} 
+
+                />
+                
+                <DiceBox 
+                    elements={DiceElements} 
+                    Tenzies={Tenzies}
+                    Count={Count}
+                    Roll={Roll}
+                />
             
-            <DiceBox 
-                elements={DiceElements} 
-                Tenzies={Tenzies}
-                Count={Count}
-                Roll={Roll}
-            />
+            }
 
         </main>
 
