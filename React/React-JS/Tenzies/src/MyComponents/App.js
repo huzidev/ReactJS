@@ -122,6 +122,7 @@ export default function App() {
 
     }
 
+    // WE'VE TO USE (USE EFFECT) for timer because we wanted ours timer to update every seconds and if we didn't use (DEPENDENCY ARRAY) in ours (USE EFFECT) it'll update automatically every seconds
     React.useEffect(() => {
 
         var timer = setInterval(() => {
