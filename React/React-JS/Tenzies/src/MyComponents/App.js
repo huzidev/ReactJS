@@ -124,6 +124,7 @@ export default function App() {
 
     // WE'VE TO USE (USE EFFECT) for timer because we wanted ours timer to update every seconds and if we didn't use (DEPENDENCY ARRAY) in ours (USE EFFECT) it'll update automatically every seconds
 
+
     React.useEffect(() => {
 
         var timer = setInterval(() => {
@@ -136,7 +137,7 @@ export default function App() {
 
                 SetMinutes(PrevMinutes => PrevMinutes + 1)
 
-                SetSeconds(0)
+                SetSeconds(PrevSec => 0)
                 
                 // therefore here we've set ours SetSeconds to zero
             }
@@ -145,8 +146,14 @@ export default function App() {
 
         return ()=> clearInterval(timer)
 
-    }) // here if we use dependency array it'll be stopped just after a second
+    }, [Seconds]) // here if we use dependency array it'll be stopped just after a second
     
+    function Stop(timer) {
+        
+        clearInterval(timer)
+
+    }
+
     function Count() {
         
         if (Tenzies === false) {
@@ -155,11 +162,18 @@ export default function App() {
 
         }
         else if (Tenzies === true) {
+
             // TENZIES === true means game is completed
             
             SetCounter(PrevCount => 0)
+
             // so when we complete the game the counter will starts from zero
 
+            // SetSeconds(PrevSec => 0)
+
+            // SetMinutes(PrevMinutes => 0)
+            
+            Stop()
         }
     }
 
