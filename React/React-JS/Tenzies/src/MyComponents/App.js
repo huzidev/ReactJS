@@ -130,7 +130,7 @@ export default function App() {
             SetSeconds(PrevSec => PrevSec + 1)
 
             if ( Seconds === 59 ) {
-            
+                // if seconds reach 59 then update ours minute and start counting seconds again from 0
                 SetMinutes(PrevMinutes => PrevMinutes + 1)
 
                 SetSeconds(0)
