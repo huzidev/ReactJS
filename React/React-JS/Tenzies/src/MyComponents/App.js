@@ -126,6 +126,7 @@ export default function App() {
 
         }
         else if (Tenzies === true) {
+            // TENZIES === true means game is completed
             
             SetCounter(PrevCount => 0)
             // so when we complete the game the counter will starts from zero
