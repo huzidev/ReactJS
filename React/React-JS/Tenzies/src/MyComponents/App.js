@@ -176,12 +176,8 @@ export default function App() {
 
             <Info />
             
-            <DiceBox />
+            <DiceBox elements={DiceElements} merge={Merge}/>
 
-            {/* <button onClick={Stop}>
-                Stop
-            </button> */}
-            
         </main>
 
     )

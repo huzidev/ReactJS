@@ -8,11 +8,11 @@ export default function DiceBox(props) {
             <div className="Dice-container">
 
                 {/* Instead of creating 10 diff div for Dice we simply created a function above with LOOP */}
-                {props.DiceElements}
+                {props.elements}
 
             </div>
 
-            <button className="Roll" onClick={props.Merge}>
+            <button className="Roll" onClick={props.merge}>
 
                 {props.Tenzies ? "Play Again" : "Roll"}
 
