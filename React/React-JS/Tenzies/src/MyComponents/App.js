@@ -73,14 +73,42 @@ export default function App() {
         
         const NewDice = []
 
-        for (let i = 0; i < 15; i++){
-
-            NewDice.push(GenerateNewDice())
-
-            // push will put the old elements at the end of new element
+        if (easy) {
+            
+            for (let i = 0; i < 10; i++){
+    
+                NewDice.push(GenerateNewDice())
+    
+                // push will put the old elements at the end of new element
+    
+            }
 
         }
 
+        else if (med) {
+            
+            for (let i = 0; i < 15; i++){
+    
+                NewDice.push(GenerateNewDice())
+    
+                // push will put the old elements at the end of new element
+    
+            }
+
+        }
+        
+        else if (hard) {
+            
+            for (let i = 0; i < 25; i++){
+    
+                NewDice.push(GenerateNewDice())
+    
+                // push will put the old elements at the end of new element
+    
+            }
+
+        }
+        
         return NewDice
         // make sure to return whenever we creat new array 
         // so all the new info could be stored into that new array after RETURNING
