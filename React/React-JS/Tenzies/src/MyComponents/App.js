@@ -134,7 +134,7 @@ export default function App() {
                 SetMinutes(PrevMinutes => PrevMinutes + 1)
 
                 SetSeconds(0)
-
+                // therefore here we've set ours SetSeconds to zero
             }
 
         }, 1000);
