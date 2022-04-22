@@ -194,6 +194,11 @@ export default function App() {
                 
                 </h1>
 
+                <h3>
+                
+                    {Minutes}:{Seconds}
+
+                </h3>
                 
             </div>
 
