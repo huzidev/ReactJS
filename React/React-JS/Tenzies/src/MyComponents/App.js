@@ -124,10 +124,14 @@ export default function App() {
 
     // WE'VE TO USE (USE EFFECT) for timer because we wanted ours timer to update every seconds and if we didn't use (DEPENDENCY ARRAY) in ours (USE EFFECT) it'll update automatically every seconds
 
+    
+    // var timer = React.useRef(timer)
+
+    var timer
 
     React.useEffect(() => {
 
-        var timer = setInterval(() => {
+        timer = setInterval(() => {
             
             SetSeconds(PrevSec => PrevSec + 1)
 
@@ -148,11 +152,21 @@ export default function App() {
 
     }, [Seconds]) // here if we use dependency array it'll be stopped just after a second
     
-    function Stop(timer) {
+    // const Stop = (timer) => {
+
+    //     clearInterval(timer)
+
+    // }
+
+    function Stop() {
         
         clearInterval(timer)
 
     }
+
+
+        
+
 
     function Count() {
         
@@ -173,7 +187,7 @@ export default function App() {
 
             // SetMinutes(PrevMinutes => 0)
             
-            Stop()
+            // Stop()
         }
     }
 
@@ -243,6 +257,10 @@ export default function App() {
 
                 {Tenzies ? "Play Again" : "Roll"}
 
+            </button>
+
+            <button onClick={Stop}>
+                Stop
             </button>
             
         </main>
