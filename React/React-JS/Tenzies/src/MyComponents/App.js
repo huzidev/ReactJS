@@ -1,10 +1,11 @@
-    import React from 'react';
+import React from 'react';
 import Dice from './Dice';
 import Header from './Header'
 import {nanoid} from "nanoid";
-import Confetti from "react-confetti";
 import Info from './Info';
 import DiceBox from './DiceBox';
+import Complete from './Complete'
+import First from './First';
 
 export default function App() {
 
@@ -162,24 +163,30 @@ export default function App() {
         <main>
 
            { 
-           
-                {Tenzies && <Confetti />}
+                Screen 
+                ?
+                <>
+                    <Complete 
+                        Tenzies={Tenzies}
+                    />
+                    
+                    <Header />
 
-                <Header />
+                    <Info
+                        Count={Counter}
+                        Tenzies={Tenzies} 
 
-                <Info
-                    Count={Counter}
-                    Tenzies={Tenzies} 
-
-                />
-                
-                <DiceBox 
-                    elements={DiceElements} 
-                    Tenzies={Tenzies}
-                    Count={Count}
-                    Roll={Roll}
-                />
-            
+                    />
+                    
+                    <DiceBox 
+                        elements={DiceElements} 
+                        Tenzies={Tenzies}
+                        Count={Count}
+                        Roll={Roll}
+                    />
+                </>
+                :
+                <First />
             }
 
         </main>
