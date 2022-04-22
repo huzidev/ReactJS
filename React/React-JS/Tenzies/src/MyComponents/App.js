@@ -123,6 +123,7 @@ export default function App() {
     }
 
     // WE'VE TO USE (USE EFFECT) for timer because we wanted ours timer to update every seconds and if we didn't use (DEPENDENCY ARRAY) in ours (USE EFFECT) it'll update automatically every seconds
+
     React.useEffect(() => {
 
         var timer = setInterval(() => {
@@ -130,10 +131,13 @@ export default function App() {
             SetSeconds(PrevSec => PrevSec + 1)
 
             if ( Seconds === 59 ) {
+
                 // if seconds reach 59 then update ours minute and start counting seconds again from 0
+
                 SetMinutes(PrevMinutes => PrevMinutes + 1)
 
                 SetSeconds(0)
+                
                 // therefore here we've set ours SetSeconds to zero
             }
 
