@@ -19,7 +19,19 @@ export default function First(props) {
 
             <button onClick={props.scr}>
 
+                Easy
+
+            </button>
+
+            <button onClick={props.scr}>
+
                 Medium
+
+            </button>
+
+            <button onClick={props.scr}>
+
+                Hard
 
             </button>
 

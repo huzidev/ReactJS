@@ -15,7 +15,11 @@ export default function App() {
 
     const [Counter, SetCounter] = React.useState(0)
 
-    const [Screen, SetScreen] = React.useState(false)
+    const [Easy, SetEasy] = React.useState(false)
+
+    const [Medium, SetMedium] = React.useState(false)
+
+    const [Hard, SetHard] = React.useState(false)
 
     React.useEffect(() => {
 
@@ -69,7 +73,7 @@ export default function App() {
         
         const NewDice = []
 
-        for (let i = 0; i < 10; i++){
+        for (let i = 0; i < 15; i++){
 
             NewDice.push(GenerateNewDice())
 
@@ -159,9 +163,21 @@ export default function App() {
     // as we knew instead of updating values AGAIN AND AGAIN we simply use .Map for updating arrays elements or by creating new array where all (UPDATED) information is stored
 
 
-    function Scr() {
+    function easy() {
         
-        SetScreen(PrevScr => !PrevScr)
+        SetEasy(PrevEasy => !PrevEasy)
+
+    }
+
+    function med() {
+        
+        SetMedium(PrevMed => !PrevMed)
+
+    }
+
+    function hard() {
+        
+        SetHard(PrevHard => !PrevHard)
 
     }
 
@@ -194,7 +210,9 @@ export default function App() {
                 </>
                 :
                 <First 
-                    scr={Scr}
+                    easy={easy}
+                    medium={med}
+                    hard={hard}
                 />
             }
 
