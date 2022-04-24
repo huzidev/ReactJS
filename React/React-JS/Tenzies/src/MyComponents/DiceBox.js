@@ -12,7 +12,7 @@ export default function DiceBox(props) {
     return(
         
         <>
-            <div className="easy medium hard">
+            <div className="dice-box">
 
                 {/* Instead of creating 10 diff div for Dice we simply created a function above with LOOP */}
                 {props.elements}

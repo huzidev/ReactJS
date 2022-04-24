@@ -53,7 +53,7 @@ main .header {
   text-align: center;
 }
 
-.easy {
+.dice-box {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto 20px auto;
