@@ -6,7 +6,6 @@ import Info from './Info';
 import DiceBox from './DiceBox';
 import Complete from './Complete'
 import First from './First';
-import Hard from './Hard';
 
 export default function App() {
 
@@ -16,7 +15,7 @@ export default function App() {
 
     const [Counter, SetCounter] = React.useState(0)
 
-    const [Hard, SetHard] = React.useState(false)
+    const [Play, SetPlay] = React.useState(false)
 
     function hard() {
         
@@ -72,10 +71,24 @@ export default function App() {
         }
 
     }
+    
+    function AllNewDice() {
+        
+        const NewDice = []
+            
+            for (let i = 0; i < 10; i++){
+    
+                NewDice.push(GenerateNewDice())
+    
+                // push will put the old elements at the end of new element
+    
+            }
 
-    <Hard 
-        newdice={GenerateNewDice}
-    />
+        return NewDice
+        // make sure to return whenever we creat new array 
+        // so all the new info could be stored into that new array after RETURNING
+
+    }
 
     function Roll() {
         
@@ -98,7 +111,7 @@ export default function App() {
 
             SetTenzies(false)
 
-            SetRollDice(<Hard />)
+            SetRollDice(AllNewDice())
 
         }
 
@@ -183,8 +196,6 @@ export default function App() {
                 </>
                 :
                 <First 
-                    // easy={easy}
-                    // medium={med}
                     hard={hard}
                 />
             }
