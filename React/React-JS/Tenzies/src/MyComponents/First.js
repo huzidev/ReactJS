@@ -6,13 +6,13 @@ export default function First(props) {
 
         <div className="index">
 
-            <h1>
+            <h1 className="heading">
 
                 Tenzies
 
             </h1>
 
-            <button onClick={props.play}>
+            <button className="Roll" onClick={props.play}>
 
                 Play Game
 

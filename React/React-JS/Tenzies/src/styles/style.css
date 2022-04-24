@@ -14,7 +14,7 @@ main {
   background-color: #F5F5F5;
   height: 400px;
   max-width: 800px;
-  margin: 200px auto auto auto;
+  margin: auto;
   border-radius: 5px;
   padding: 20px;
   display: -webkit-box;
@@ -39,6 +39,15 @@ main .header {
           justify-content: center;
   width: 630px;
   position: relative;
+}
+
+.index {
+  text-align: center;
+  position: absolute;
+}
+.index .heading {
+  position: relative;
+  top: -90px;
 }
 
 .title {
