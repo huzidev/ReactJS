@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function First(props) {
     return(
@@ -11,27 +11,9 @@ export default function First(props) {
 
             </h1>
 
-            <h2>
+            <button>
 
-                Select Difficult Level
-
-            </h2>
-
-            <button onClick={props.easy}>
-
-                Easy
-
-            </button>
-
-            <button onClick={props.medium}>
-
-                Medium
-
-            </button>
-
-            <button onClick={props.hard}>
-
-                Hard
+                Play Game
 
             </button>
 

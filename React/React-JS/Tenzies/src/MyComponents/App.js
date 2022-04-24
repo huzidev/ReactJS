@@ -19,7 +19,7 @@ export default function App() {
 
     function hard() {
         
-        SetHard(PrevHard => !PrevHard)
+        SetPlay(PrevHard => !PrevHard)
 
     }
 
@@ -172,7 +172,7 @@ export default function App() {
         <main>
 
            { 
-                Hard
+                Play
                 ?
                 <>
                     <Complete 
