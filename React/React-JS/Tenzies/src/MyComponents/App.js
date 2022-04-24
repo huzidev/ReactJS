@@ -97,9 +97,9 @@ export default function App() {
 
         }
         
-        else if (hard) {
+        if (hard) {
             
-            for (let i = 0; i < 25; i++){
+            for (let i = 0; i < 20; i++){
     
                 NewDice.push(GenerateNewDice())
     
@@ -214,7 +214,7 @@ export default function App() {
         <main>
 
            { 
-                Screen 
+                Hard
                 ?
                 <>
                     <Complete 
