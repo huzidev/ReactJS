@@ -14,7 +14,13 @@ export default function First(props) {
 
             <button className="Roll" onClick={props.play}>
 
-                Play Game
+                Easy
+
+            </button>
+
+            <button className="Roll" onClick={props.play}>
+
+                Medium
 
             </button>
 
