@@ -17,17 +17,9 @@ export default function App() {
 
     const [Play, SetPlay] = React.useState(false)
 
-    const [Medium, SetMedium] = React.useState(false)
-
     function play() {
         
-        SetPlay(PrevVal => !PrevVal)
-
-    }
-
-    function med() {
-        
-        SetMedium(PrevMed => !PrevMed)
+        SetPlay(PrevHard => !PrevHard)
 
     }
 
