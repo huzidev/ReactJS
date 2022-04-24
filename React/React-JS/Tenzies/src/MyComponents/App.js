@@ -6,6 +6,7 @@ import Info from './Info';
 import DiceBox from './DiceBox';
 import Complete from './Complete'
 import First from './First';
+import Hard from './Hard';
 
 export default function App() {
 
@@ -15,12 +16,15 @@ export default function App() {
 
     const [Counter, SetCounter] = React.useState(0)
 
-    const [Easy, SetEasy] = React.useState(false)
-
-    const [Medium, SetMedium] = React.useState(false)
-
     const [Hard, SetHard] = React.useState(false)
 
+    function hard() {
+        
+        SetHard(PrevHard => !PrevHard)
+
+    }
+
+    
     React.useEffect(() => {
 
         const AllHeld = RollDice.every(dice => dice.isHeld === true) 
@@ -69,51 +73,9 @@ export default function App() {
 
     }
 
-    function AllNewDice() {
-        
-        const NewDice = []
-
-        if (easy) {
-            
-            for (let i = 0; i < 10; i++){
-    
-                NewDice.push(GenerateNewDice())
-    
-                // push will put the old elements at the end of new element
-    
-            }
-
-        }
-
-        else if (med) {
-            
-            for (let i = 0; i < 15; i++){
-    
-                NewDice.push(GenerateNewDice())
-    
-                // push will put the old elements at the end of new element
-    
-            }
-
-        }
-        
-        if (hard) {
-            
-            for (let i = 0; i < 20; i++){
-    
-                NewDice.push(GenerateNewDice())
-    
-                // push will put the old elements at the end of new element
-    
-            }
-
-        }
-        
-        return NewDice
-        // make sure to return whenever we creat new array 
-        // so all the new info could be stored into that new array after RETURNING
-
-    }
+    <Hard 
+        newdice={GenerateNewDice}
+    />
 
     function Roll() {
         
@@ -136,7 +98,7 @@ export default function App() {
 
             SetTenzies(false)
 
-            SetRollDice(AllNewDice())
+            SetRollDice(<Hard />)
 
         }
 
@@ -191,23 +153,6 @@ export default function App() {
     // as we knew instead of updating values AGAIN AND AGAIN we simply use .Map for updating arrays elements or by creating new array where all (UPDATED) information is stored
 
 
-    function easy() {
-        
-        SetEasy(PrevEasy => !PrevEasy)
-
-    }
-
-    function med() {
-        
-        SetMedium(PrevMed => !PrevMed)
-
-    }
-
-    function hard() {
-        
-        SetHard(PrevHard => !PrevHard)
-
-    }
 
     return (
 
@@ -238,8 +183,8 @@ export default function App() {
                 </>
                 :
                 <First 
-                    easy={easy}
-                    medium={med}
+                    // easy={easy}
+                    // medium={med}
                     hard={hard}
                 />
             }
