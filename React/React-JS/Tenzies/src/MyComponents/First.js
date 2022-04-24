@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function First(props) {
+
     return(
 
         <div className="index">
@@ -11,7 +12,7 @@ export default function First(props) {
 
             </h1>
 
-            <button>
+            <button onClick={props.play}>
 
                 Play Game
 
@@ -20,4 +21,5 @@ export default function First(props) {
         </div>
 
     )
+    
 }

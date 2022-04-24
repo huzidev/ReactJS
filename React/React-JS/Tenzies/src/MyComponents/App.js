@@ -17,7 +17,7 @@ export default function App() {
 
     const [Play, SetPlay] = React.useState(false)
 
-    function hard() {
+    function play() {
         
         SetPlay(PrevHard => !PrevHard)
 
@@ -196,7 +196,7 @@ export default function App() {
                 </>
                 :
                 <First 
-                    hard={hard}
+                    play={play}
                 />
             }
 
