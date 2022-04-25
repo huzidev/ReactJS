@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../public/assets/react.png'
+import Logo from '../assets/react.png'
 
 export default function App() {
     return (
