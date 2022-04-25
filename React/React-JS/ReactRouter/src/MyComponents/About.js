@@ -6,7 +6,7 @@ export default function Home() {
 
         <div className='about'>
 
-            <img src={Imgg} alt="Main-Img" className='about-img'/>
+            <img src={Imgg} alt="About-Img" className='about-img'/>
             <h1>
                 Vegeta
             </h1>
