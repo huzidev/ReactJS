@@ -12,6 +12,7 @@ export default function Navbar() {
                     <Link to="/" className='link'>
                         Home
                     </Link>
+                    {/* WHILE USING ROUTER WE DONT USE <a href=""/> RATHER WE USES LINK and instead of href="" we uses to="" */}
                 </li>
                 <li>
                     <Link to="/About" className='link'>
