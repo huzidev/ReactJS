@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../assets/react.png';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
@@ -10,15 +11,15 @@ export default function Navbar() {
                 <li>
                     <Link to="/">
                         Home
-                     </Link>
+                    </Link>
                 </li>
                 <li>
-                    <Link to="./About">
+                    <Link to="/About">
                         About
                     </Link>
                 </li>
                 <li>
-                    <Link to="./Contact">
+                    <Link to="/Contact">
                         Contact
                     </Link>
                 </li>
