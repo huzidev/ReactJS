@@ -34,3 +34,9 @@ nav .nav-logo {
   height: 120px;
   width: 155px;
 }
+
+.home {
+  width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+}
