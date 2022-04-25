@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../assets/react.png'
 import Home from './Home';
+import About from './About';
 
 export default function App() {
     return (
@@ -14,6 +15,7 @@ export default function App() {
                 </ul>
             </nav>
             <Home />
+            <About />
         </>
       )
 }

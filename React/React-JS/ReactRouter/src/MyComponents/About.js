@@ -8,7 +8,7 @@ export default function Home() {
 
             <img src={Imgg} alt="Main-Img" className='about-img'/>
             <h1>
-                Goku
+                Vegeta
             </h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolore quis delectus iste repellendus, deserunt rerum nesciunt repellat optio autem aliquam eum ad sint, facilis consectetur eius odit id at.
