@@ -12,18 +12,18 @@ import {
 
 export default function App() {
     return (
-        <>
-            <nav>
-                <img src={Logo} alt="React-img" className='nav-logo'/>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-            <Home />
-            <About />
-            <Contact />
-        </>
+        <Router>
+            <Switch>
+                <Route path="./About">
+                    <About />
+                </Route>
+                <Route path="./Contact">
+                    <Contact />
+                </Route>
+                <Route path="/">
+                    <Home />
+                </Route>
+            </Switch>
+        </Router>
       )
 }
