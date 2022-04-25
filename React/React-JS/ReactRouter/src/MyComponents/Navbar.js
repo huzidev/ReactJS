@@ -9,17 +9,17 @@ export default function Navbar() {
             <img src={Logo} alt="React-img" className='nav-logo'/>
             <ul>
                 <li>
-                    <Link to="/">
+                    <Link to="/" className='link'>
                         Home
                     </Link>
                 </li>
                 <li>
-                    <Link to="/About">
+                    <Link to="/About" className='link'>
                         About
                     </Link>
                 </li>
                 <li>
-                    <Link to="/Contact">
+                    <Link to="/Contact" className='link'>
                         Contact
                     </Link>
                 </li>
