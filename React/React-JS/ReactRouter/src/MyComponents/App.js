@@ -6,11 +6,9 @@ export default function App() {
         <nav>
             <img src={Logo} alt="React-img" className='nav-logo'/>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
             </ul>
         </nav>
       )
