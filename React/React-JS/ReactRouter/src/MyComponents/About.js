@@ -4,7 +4,7 @@ import Imgg from '../assets/slider3.jpg'
 export default function Home() {
     return (
 
-        <div className='about'>
+        <div className='main'>
 
             <img src={Imgg} alt="About-Img" className='about-img'/>
             <h1>
