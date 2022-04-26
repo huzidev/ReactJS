@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from './Header';
 import Todos from './Todos';
 
@@ -8,9 +9,13 @@ function App() {
     
     console.log("Deleted");
 
+
+
   }
 
-  let todos = [
+
+
+  const [todos, SetTodos] = React.useState([
     {
       sno: 1,
       tittle: "Go To University",
@@ -28,7 +33,7 @@ function App() {
       tittle: "Go To University",
       desc: "Go To University And Do Study And Meet Yours Friends"
     }
-  ]
+  ])
 
   return (
     <> 
