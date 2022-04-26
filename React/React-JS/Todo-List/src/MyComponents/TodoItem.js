@@ -8,6 +8,9 @@ export default function TodoItem({todos, onDelete}) {
         <h4>
             {todos.tittle}
         </h4>
+        <p>
+            {todos.desc}
+        </p>
 
     </div>
   )
