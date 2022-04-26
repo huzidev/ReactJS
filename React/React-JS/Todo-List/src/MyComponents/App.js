@@ -1,4 +1,5 @@
 import React from 'react';
+import { Prev } from 'react-bootstrap/esm/PageItem';
 import Header from './Header';
 import Todos from './Todos';
 
@@ -9,8 +10,8 @@ function App() {
     
     console.log("Deleted");
 
-
-
+    SetTodos(PrevVal => PrevVal.filter(list => list !== todos))
+    // IT IS MANDATORY TO USE .FILTER because it is just like a LOOP and to use !== for deleting
   }
 
 
