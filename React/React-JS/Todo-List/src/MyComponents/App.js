@@ -4,6 +4,7 @@ import Todos from './Todos';
 function App() {
 
   function onDelete(todos) {
+    // we've to pass same parameter when we were calling the function on onClick method
     
     console.log("Deleted");
 
