@@ -11,6 +11,9 @@ export default function TodoItem({todos, onDelete}) {
         <p>
             {todos.desc}
         </p>
+        <button className='btn btn-sm btn-danger' onClick={onDelete}>
+            Delete
+        </button>
 
     </div>
   )
