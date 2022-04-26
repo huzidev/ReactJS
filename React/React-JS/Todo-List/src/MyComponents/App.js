@@ -12,6 +12,8 @@ function App() {
 
     SetTodos(PrevVal => PrevVal.filter(list => list !== todos))
     // IT IS MANDATORY TO USE .FILTER because it is just like a LOOP and to use !== for deleting
+
+    // since we wanted to delete the DATA therefore we'll use that SPECIFIC React State where we've all the DATA which we wanted to delete like HERE we've SetTodos which is a react state and in that state we've all the data which should've to be deleted
   }
 
 
