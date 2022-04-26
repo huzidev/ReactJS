@@ -3,6 +3,12 @@ import Todos from './Todos';
 
 function App() {
 
+  function onDelete() {
+    
+    console.log("Deleted");
+
+  }
+
   let todos = [
     {
       sno: 1,
@@ -26,7 +32,7 @@ function App() {
   return (
     <> 
       <Header tittle = "My Todos List" searchBar={false}/>
-      <Todos todos={todos}/>
+      <Todos todos={todos} onDelete={onDelete}/>
     </>
   )
 }
