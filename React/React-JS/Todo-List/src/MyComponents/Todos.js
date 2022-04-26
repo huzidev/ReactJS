@@ -14,6 +14,7 @@ export default function Todos(props) {
 
         props.todos.map((todos) => {
           // make sure to pass parameter here so we can pass the value in props
+          // since we are using props therefore we've close these code in Curly Braces
           return <TodoItem todos={todos} onDelete={props.onDelete}/>
 
         })
