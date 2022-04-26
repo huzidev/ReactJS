@@ -3,7 +3,7 @@ import Todos from './Todos';
 
 function App() {
 
-  function onDelete() {
+  function onDelete(todos) {
     
     console.log("Deleted");
 
