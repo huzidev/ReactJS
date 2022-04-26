@@ -116,6 +116,8 @@ export default function App() {
         setNotes(OldNotes => OldNotes.filter(note => note.id !== NoteID))
         //FILTER is just like LOOP
 
+        // we've to use !== FOR DELETING
+
         // here we are saying that FILTER( runs a loop ) for (notes) that will return the condition where note.id !== NoteID if it is equal then simply (INCLUDING) or (EXCLUDING) depends on condition
 
         // It's the process of looping through an array and (INCLUDING) or (EXCLUDING) elements inside that array based on a condition that you provide.
