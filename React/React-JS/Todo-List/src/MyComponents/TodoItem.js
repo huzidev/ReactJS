@@ -1,8 +1,14 @@
 import React from 'react';
 
 // here we are using destructuring method
-export default function TodoItem({todo, onDelete}) {
+export default function TodoItem({todos, onDelete}) {
   return (
-    <div>TodoItem</div>
+    <div>
+
+        <h4>
+            {todos.tittle}
+        </h4>
+
+    </div>
   )
 }

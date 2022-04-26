@@ -1,4 +1,5 @@
 import React from 'react';
+import TodoItem from './TodoItem';
 
 export default function Todos(props) {
   return (
@@ -11,9 +12,9 @@ export default function Todos(props) {
 
       {
 
-        props.todos.map(() => {
+        props.todos.map((todos) => {
 
-          return <TodoItem />
+          return <TodoItem todos={todos} onDelete={props.onDelete}/>
 
         })
 
