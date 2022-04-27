@@ -9,7 +9,7 @@ function App() {
 
   // THERE we are creating statements for getting items from ours LocalStorage
 
-  if(localStorage.getItem("todos") === "NULL"){
+  if(localStorage.getItem("todos") === null){
 
     // if there is not items in LocalStorage means LocalStorage is === NULL then we simply wanted to update InitTodo to Empty Array [] and we'll pass this InitTodo to ours ReactState where all the Data is going to be stored
 
@@ -44,6 +44,7 @@ function App() {
   }
 
   function addTodo(Tittle, Desc) {
+
     // so we've passed Tittle and Desc which we've Created as ReactState in ours AddTodos.js so it can receive those values
     
     let Sno
@@ -72,10 +73,15 @@ function App() {
 
     SetTodos([...todos, todoList])
     // SetTodos is a function which will updates ours SetTodos State where all list items information is Stored With Sno
-    console.log(todoList)
   }
 
   const [todos, SetTodos] = React.useState(initTodo)
+
+  React.useEffect(() => {
+
+      localStorage.setItem("todos", JSON.stringify(todos))
+
+    }, [todos])
 
   // since we know that in this ReactState all the list items will be STORED and for STORING multiple value we should use ARRAY and initTodo is equal to [] means initTodo = [] hence it can store multiple value and DATA
 
