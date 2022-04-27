@@ -22,6 +22,7 @@ export default function TodoItem({todos, onDelete}) {
 
             Delete
         </button>
+        <hr />
 
     </div>
   )
