@@ -32,6 +32,9 @@ export default function AddTodos(props) {
         else{
 
             props.addTodo(Tittle, Desc)
+            // by providing empty string to ours SetTittle and SetDesc we will not face saved value in ours Input bars
+            SetTittle("")
+            SetDesc("")
 
         }
     }
