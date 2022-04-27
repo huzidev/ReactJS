@@ -6,7 +6,9 @@ export default function AddTodos() {
     const [Tittle, SetTittle] = React.useState("")
     const [Desc, SetDesc] = React.useState("")
 
-
+    function submit() {
+        
+    }
 
   return (
     <div className="container my-3">
@@ -18,13 +20,14 @@ export default function AddTodos() {
                 <label htmlFor="tittle" class="mb-3">
                     Add Todo's Tittle
                 </label>
-                <input type="email" class="form-control" id="tittle" aria-describedby="emailHelp" placeholder="Tittle"/>
+                <input type="email" value={Tittle} class="form-control" id="tittle" aria-describedby="emailHelp" placeholder="Tittle"/>
+                {/* REMEMBER once we provide the value it'll no longer be able to show us changes in the input tag THEREFORE we've to use onChange and then pass (event.target) */}
             </div>
             <div class="mb-3">
                 <label htmlFor="tittle" class="mb-3">
                     Add Todo's Description
                 </label>
-                <input type="text" class="form-control" id="desc" placeholder="Description"/>
+                <input type="text" value={Desc} class="form-control" id="desc" placeholder="Description"/>
             </div>
             <button type="submit" class="btn btn-sm btn-success">
                 Add
