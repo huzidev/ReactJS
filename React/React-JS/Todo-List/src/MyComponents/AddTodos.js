@@ -8,6 +8,9 @@ export default function AddTodos() {
 
     function submit() {
         
+        event.preventDefault()
+        // so page will not reload
+
     }
 
   return (
