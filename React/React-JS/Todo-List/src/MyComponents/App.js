@@ -2,6 +2,13 @@ import React from 'react';
 import AddTodos from './AddTodos';
 import Header from './Header';
 import Todos from './Todos';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import About from './About';
 
 function App() {
 
@@ -88,9 +95,23 @@ function App() {
   // we've to use UseEffect so every time todos changes it'll update the list of items
   return (
     <> 
-      <Header tittle = "My Todos List" searchBar={false}/>
-      <AddTodos addTodo={addTodo}/>
-      <Todos todos={todos} onDelete={onDelete}/>
+      <Router >
+        <Header tittle = "My Todos List" searchBar={false}/>
+        <Routes>
+          <Route exact path='/' render={() => {
+            return(
+              <>
+                <AddTodos addTodo={addTodo}/>
+                <Todos todos={todos} onDelete={onDelete}/>
+              </>
+            )
+          }}>
+          </Route>
+          <Route exact path='/about'>
+            <About/>
+          </Route>
+        </Routes>
+      </Router>
     </>
   )
 }
