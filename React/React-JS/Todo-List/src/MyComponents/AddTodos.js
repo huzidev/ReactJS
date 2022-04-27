@@ -31,7 +31,7 @@ export default function AddTodos(props) {
 
         else{
 
-            props.addTodos(Tittle, Desc)
+            props.addTodo(Tittle, Desc)
 
         }
     }

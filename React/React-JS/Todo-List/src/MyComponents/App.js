@@ -1,5 +1,4 @@
 import React from 'react';
-import { Prev } from 'react-bootstrap/esm/PageItem';
 import AddTodos from './AddTodos';
 import Header from './Header';
 import Todos from './Todos';
@@ -20,7 +19,7 @@ function App() {
   function addTodo(Tittle, Desc) {
     // so we've passed Tittle and Desc which we've Created as ReactState in ours AddTodos.js so it can receive those values
     
-    let Sno = Todos[Todos.length - 1].sno + 1
+    let Sno = todos[todos.length - 1].sno + 1
     // here we says that Todos.Length which can be according to ours list - 1 (-1) because index starts from 0
     // [Todos.lenth-1].sno means TODOS'S (Todos ka) sno with respect to their items in the list
     
@@ -33,7 +32,8 @@ function App() {
 
     }
 
-    SetTodos([...Todos, todoList])
+    SetTodos([...todos, todoList])
+    // SetTodos is a function which will updates ours SetTodos State where all list items information is Stored With Sno
     console.log(todoList)
   }
 
