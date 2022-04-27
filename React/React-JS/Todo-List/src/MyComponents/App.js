@@ -2,13 +2,12 @@ import React from 'react';
 import AddTodos from './AddTodos';
 import Header from './Header';
 import Todos from './Todos';
+import About from './About';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
-import About from './About';
 
 function App() {
 
