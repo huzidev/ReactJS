@@ -28,6 +28,12 @@ export default function AddTodos() {
             alert("Description Can't Be Empty")
 
         }
+
+        else{
+
+            AddTodos(Tittle, Desc)
+
+        }
     }
 
   return (
