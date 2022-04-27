@@ -18,7 +18,7 @@ export default function Header(props) { // remeber THERE we've used export defau
                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">Link</Link>
+                <Link className="nav-link" to="/about">About</Link>
               </li>
             </ul>
             {/* "?" is Turnary operator it'll check if condition is (TRUE) then print the search bar else empty as we did after semi-colon we just pass empty string */}
