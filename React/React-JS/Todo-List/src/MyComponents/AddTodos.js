@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AddTodos() {
+export default function AddTodos(props) {
 
     // we want it empty initially
     const [Tittle, SetTittle] = React.useState("")
@@ -31,7 +31,7 @@ export default function AddTodos() {
 
         else{
 
-            AddTodos(Tittle, Desc)
+            addTodos(Tittle, Desc)
 
         }
     }

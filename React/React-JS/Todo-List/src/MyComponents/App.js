@@ -17,7 +17,11 @@ function App() {
     // since we wanted to delete the DATA therefore we'll use that SPECIFIC React State where we've all the DATA which we wanted to delete like HERE we've SetTodos which is a react state and in that state we've all the data which should've to be deleted
   }
 
+  function addTodo() {
+    
 
+
+  }
 
   const [todos, SetTodos] = React.useState([
     {
@@ -42,7 +46,7 @@ function App() {
   return (
     <> 
       <Header tittle = "My Todos List" searchBar={false}/>
-      <AddTodos />
+      <AddTodos addTodo={addTodo}/>
       <Todos todos={todos} onDelete={onDelete}/>
     </>
   )
