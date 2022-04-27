@@ -27,7 +27,7 @@ export default function AddTodos() {
                 <label htmlFor="tittle" class="mb-3">
                     Add Todo's Description
                 </label>
-                <input type="text" value={Desc} class="form-control" id="desc" placeholder="Description"/>
+                <input type="text" value={Desc} onChange={(event => SetDesc(event.target.value))} class="form-control" id="desc" placeholder="Description"/>
             </div>
             <button type="submit" class="btn btn-sm btn-success">
                 Add
