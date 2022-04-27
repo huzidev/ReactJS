@@ -97,15 +97,12 @@ function App() {
       <Router >
         <Header tittle = "My Todos List" searchBar={false}/>
         <Routes>
-          {/* <Route exact path='/' render={() => {
-            return(
-              <>
-                element={<AddTodos addTodo={addTodo}/>}
-                ele{<Todos todos={todos} onDelete={onDelete}/>}
-              </>
-            )
-          }}/> */}
-          {/* <Route exact path='/' render={() => element={<AddTodos addTodo={addTodo}}}/> */}
+          <Route exact path='/' element={
+            <>
+              <AddTodos addTodo={addTodo}/>
+              <Todos todos={todos} onDelete={onDelete}/>
+            </>
+          }/>
           <Route exact path='/about' element={<About />}/>
         </Routes>
       </Router>
