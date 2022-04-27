@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export default function AddTodos() {
+
+
+
   return (
     <div className="container my-3">
         <h3>
@@ -19,7 +22,9 @@ export default function AddTodos() {
                 </label>
                 <input type="text" class="form-control" id="desc" placeholder="Description"/>
             </div>
-            <button type="submit" class="btn btn-sm btn-success">Submit</button>
+            <button type="submit" class="btn btn-sm btn-success">
+                Add
+            </button>
         </form>
     </div>
     
