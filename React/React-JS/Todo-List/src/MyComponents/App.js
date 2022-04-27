@@ -1,5 +1,6 @@
 import React from 'react';
 import { Prev } from 'react-bootstrap/esm/PageItem';
+import AddTodos from './AddTodos';
 import Header from './Header';
 import Todos from './Todos';
 
@@ -41,6 +42,7 @@ function App() {
   return (
     <> 
       <Header tittle = "My Todos List" searchBar={false}/>
+      <AddTodos />
       <Todos todos={todos} onDelete={onDelete}/>
     </>
   )
