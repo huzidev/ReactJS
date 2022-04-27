@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+
 // props is JS object which takes data from parent to child and we've to use PROPS wherever we wanted to use infomation or data or arguments form parent to child as their
 
 // and we simply uses { props.tittle } as we did their and we already assigned tittle = My Todo List in main parent functions
