@@ -19,10 +19,6 @@ export default function AddTodos() {
                 </label>
                 <input type="text" class="form-control" id="desc" placeholder="Description"/>
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
             <button type="submit" class="btn btn-sm btn-success">Submit</button>
         </form>
     </div>
