@@ -2,6 +2,10 @@ import React from 'react';
 
 export default function AddTodos() {
 
+    // we want it empty initially
+    const [Tittle, SetTittle] = React.useState("")
+    const [Desc, SetDesc] = React.useState("")
+
 
 
   return (
