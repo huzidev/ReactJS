@@ -18,6 +18,7 @@ function App() {
   }
 
   function addTodo(Tittle, Desc) {
+    // so we've passed Tittle and Desc which we've Created as ReactState in ours AddTodos.js so it can receive those values
     
     const todoList = {
 
