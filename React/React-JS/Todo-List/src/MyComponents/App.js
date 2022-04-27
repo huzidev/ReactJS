@@ -7,6 +7,12 @@ function App() {
 
   let initTodo
 
+  if(localStorage.getItem("todos") === "NULL"){
+
+    initTodo = []
+
+  }
+
   function onDelete(todos) {
     // we've to pass same parameter when we were calling the function on onClick method
     
@@ -50,25 +56,9 @@ function App() {
     console.log(todoList)
   }
 
-  const [todos, SetTodos] = React.useState([
-    {
-      sno: 1,
-      tittle: "Go To University",
-      desc: "Go To University And Do Study And Meet Yours Friends",
-    },
+  const [todos, SetTodos] = React.useState(initTodo)
 
-    {
-      sno: 2,
-      tittle: "Go To University",
-      desc: "Go To University And Do Study And Meet Yours Friends"
-    },
-
-    {
-      sno: 3,
-      tittle: "Go To University",
-      desc: "Go To University And Do Study And Meet Yours Friends"
-    }
-  ])
+  // since we know that in this ReactState all the list items will be STORED and for STORING multiple value we should use ARRAY and initTodo is equal to [] means initTodo = [] hence it can store multiple value and DATA
 
   return (
     <> 
