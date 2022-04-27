@@ -20,6 +20,10 @@ function App() {
   function addTodo(Tittle, Desc) {
     // so we've passed Tittle and Desc which we've Created as ReactState in ours AddTodos.js so it can receive those values
     
+    let Sno = Todos[Todos.length - 1].sno + 1
+    // here we says that Todos.Length which can be according to ours list - 1 (-1) because index starts from 0
+    
+
     const todoList = {
 
       sno: Sno,
@@ -28,6 +32,8 @@ function App() {
 
     }
 
+    SetTodos([...Todos, todoList])
+    console.log(todoList)
   }
 
   const [todos, SetTodos] = React.useState([
