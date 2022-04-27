@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AddTodos() {
   return (
-    <div>
+    <div className='container my-3'>
         <form>
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
