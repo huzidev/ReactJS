@@ -10,6 +10,8 @@ export default function App() {
     const [notes, setNotes] = React.useState(
     
         () => JSON.parse(localStorage.getItem("notes")) || []
+        
+    )
         // while getting info from LocalStorage we'll use JSON.parse(LocalStorage.GetItem("KEY"))
         
         // while getting something from LocalStorage it is not necessary to import String rather we'll import JS Object Therefore JSON.PARSE
@@ -22,7 +24,6 @@ export default function App() {
 
         // BUT why we've to do this is because if we didn't do this ours complete App will load every time when we write something even if we write single character it'll loads complete App component hence simply we'll USE an arrow function inside use State so it'll Returns only when ours App loads
 
-    )
     // we are (initializing) ours notes into an EMPTY ARRAY
 
     const [currentNoteId, setCurrentNoteId] = React.useState(
