@@ -7,9 +7,21 @@ function App() {
 
   let initTodo
 
+  // THERE we are creating statements for getting items from ours LocalStorage
+
   if(localStorage.getItem("todos") === "NULL"){
 
+    // if there is not items in LocalStorage means LocalStorage is === NULL then we simply wanted to update InitTodo to Empty Array [] and we'll pass this InitTodo to ours ReactState where all the Data is going to be stored
+
     initTodo = []
+
+  }
+
+  else{
+
+    initTodo = JSON.parse(localStorage.getItem("todos"))
+
+    // else we know that for GETTING items or data form local storage we've to use JSON.Parse
 
   }
 
