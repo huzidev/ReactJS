@@ -22,6 +22,7 @@ function App() {
     
     let Sno = Todos[Todos.length - 1].sno + 1
     // here we says that Todos.Length which can be according to ours list - 1 (-1) because index starts from 0
+    // [Todos.lenth-1].sno means TODOS'S (Todos ka) sno with respect to their items in the list
     
 
     const todoList = {
