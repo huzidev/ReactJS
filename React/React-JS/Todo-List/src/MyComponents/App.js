@@ -19,10 +19,21 @@ function App() {
   function addTodo(Tittle, Desc) {
     // so we've passed Tittle and Desc which we've Created as ReactState in ours AddTodos.js so it can receive those values
     
-    let Sno = todos[todos.length - 1].sno + 1
+    let Sno
+
+    // we've to do this if else statement there so WHEN ours list is completely empty then sno will be starts from 0 if list is not empty then we've to assign Sno with respect to other available item's Sno
+
+    if(todos.length === 0){
+
+      Sno = 0
+
+    }
+
+    else{
+      Sno = todos[todos.length - 1].sno + 1
     // here we says that Todos.Length which can be according to ours list - 1 (-1) because index starts from 0
     // [Todos.lenth-1].sno means TODOS'S (Todos ka) sno with respect to their items in the list
-    
+    }
 
     const todoList = {
 
