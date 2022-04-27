@@ -17,13 +17,13 @@ export default function AddTodos() {
 
         }
 
-        if (!Tittle) {
+        else if (!Tittle) {
             
             alert("Tittle Can't Be Empty")
 
         }
 
-        if (!Desc) {
+        else if (!Desc) {
             
             alert("Description Can't Be Empty")
 
