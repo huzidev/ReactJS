@@ -6,11 +6,22 @@ export default function AddTodos() {
     const [Tittle, SetTittle] = React.useState("")
     const [Desc, SetDesc] = React.useState("")
 
-    function submit() {
+    function submit(event) {
         
         event.preventDefault()
         // so page will not reload
 
+        if (!Tittle) {
+            
+            alert("Tittle Can't Be Empty")
+
+        }
+
+        if (!Desc) {
+            
+            alert("Description Can't Be Empty")
+
+        }
     }
 
   return (
