@@ -85,6 +85,7 @@ function App() {
 
   // since we know that in this ReactState all the list items will be STORED and for STORING multiple value we should use ARRAY and initTodo is equal to [] means initTodo = [] hence it can store multiple value and DATA
 
+  // we've to use UseEffect so every time todos changes it'll update the list of items
   return (
     <> 
       <Header tittle = "My Todos List" searchBar={false}/>
