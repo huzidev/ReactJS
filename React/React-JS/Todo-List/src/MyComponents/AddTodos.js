@@ -3,8 +3,11 @@ import React from 'react'
 export default function AddTodos() {
   return (
     <div className='container my-3'>
+        <h3>
+            Add Todo Items
+        </h3>
         <form>
-            <div class="form-group">
+            <div class="mb-3">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 </input>
@@ -18,7 +21,7 @@ export default function AddTodos() {
                 <input type="checkbox" class="form-check-input" id="exampleCheck1"></input>
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-sm btn-success">Submit</button>
         </form>
     </div>
     
