@@ -8,13 +8,13 @@ export default function AddTodos() {
         </h3>
         <form>
             <div class="mb-3">
-                <label htmlFor="tittle" >
+                <label htmlFor="tittle" class="mb-3">
                     Add Todo's Tittle
                 </label>
                 <input type="email" class="form-control" id="tittle" aria-describedby="emailHelp" placeholder="Tittle"/>
             </div>
             <div class="mb-3">
-                <label htmlFor="tittle" >
+                <label htmlFor="tittle" class="mb-3">
                     Add Todo's Description
                 </label>
                 <input type="text" class="form-control" id="desc" placeholder="Description"/>
