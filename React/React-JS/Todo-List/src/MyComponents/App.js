@@ -81,6 +81,12 @@ function App() {
     // SetTodos is a function which will updates ours SetTodos State where all list items information is Stored With Sno
   }
 
+  function deleteAll() {
+    
+    
+
+  }
+
   const [todos, SetTodos] = React.useState(initTodo)
 
   React.useEffect(() => {
