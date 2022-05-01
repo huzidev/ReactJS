@@ -107,8 +107,8 @@ function App() {
         </Routes>
         <div className="del-div">
           {
-            todos.length > 1 ? 
-            <button className="btn btn-sm btn-success" onClick={() => SetTodos([])}>
+            [todos.length] > 1 ? 
+            <button className="btn btn-sm btn-success del-btn" onClick={() => SetTodos([])}>
             Delete All
           </button>
           : ""
