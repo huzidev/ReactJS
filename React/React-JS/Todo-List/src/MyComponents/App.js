@@ -81,12 +81,6 @@ function App() {
     // SetTodos is a function which will updates ours SetTodos State where all list items information is Stored With Sno
   }
 
-  function deleteAll() {
-    
-    
-
-  }
-
   const [todos, SetTodos] = React.useState(initTodo)
 
   React.useEffect(() => {
@@ -111,6 +105,13 @@ function App() {
           }/>
           <Route exact path='/about' element={<About />}/>
         </Routes>
+        {
+          todos.length > 1 ? 
+          <button className="del-all" onClick={() => SetTodos([])}>
+          Delete All
+        </button>
+        : ""
+        }
       </Router>
     </>
   )
