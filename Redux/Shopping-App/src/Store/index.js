@@ -7,7 +7,7 @@ const store = configureStore({
 
     reducer : {
 
-// here we've AUTH reducer for ours LOGIN page
+// here we've AUTH reducer for ours LOGIN page amd authSlice is imported from ours auth.js
 
         auth : authSlice.reducer
 
