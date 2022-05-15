@@ -16,13 +16,15 @@ export default function App() {
 
     const increment = () = {
 
-
+        dispatch({ type : "inc" });
 
     };
+    
+    // here we've used dispatch for sending if we hover on that dispatch we can see that it'll takes an action
 
     const decrement = () = {
 
-        
+        dispatch({ type : "dec" });
 
     };
 
@@ -37,7 +39,7 @@ export default function App() {
             <button onClick={increment}>
                 +
             </button>
-            <button onClick={decrement}>
+            <button onClick={decrementss}>
                 -
             </button>
         </div>
