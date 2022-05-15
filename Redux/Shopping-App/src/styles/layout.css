@@ -41,3 +41,15 @@ nav .cart {
 .list .items button {
   cursor: pointer;
 }
+
+.right {
+  margin: auto;
+  width: 1350px;
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
