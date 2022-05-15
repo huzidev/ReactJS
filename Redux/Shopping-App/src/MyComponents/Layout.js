@@ -86,6 +86,16 @@ export default function Auth() {
                    </button>
                </div>
             </div>
+            <div className='total'>
+                <h5>
+                    Total : 100 $
+                </h5>
+            </div>
+            <div>
+                <button>
+                    Place Order
+                </button>
+            </div>
         </div>
     )
 }
