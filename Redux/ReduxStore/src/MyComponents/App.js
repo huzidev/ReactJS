@@ -34,6 +34,12 @@ export default function App() {
             <h2>
                 {counter}
             </h2>
+            <button onClick={increment}>
+                +
+            </button>
+            <button onClick={decrement}>
+                -
+            </button>
         </div>
     )
 }
