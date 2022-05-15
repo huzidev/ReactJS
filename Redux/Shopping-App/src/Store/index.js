@@ -3,7 +3,11 @@ import authSlice from "./auth-slice";
 
 const store = configureStore({
 
+// this REDUCER is ours STORES REDUCER and we'll create object of that REDUCER according to the names we've provided
+
     reducer : {
+
+// here we've AUTH reducer for ours LOGIN page
 
         auth : authSlice.reducer
 
