@@ -7,12 +7,21 @@ import { createStore } from 'redux';
 
 const reducerFn = (state = { counter : 0 }, action) => {
 
+// SINCE DISPATCH is used for send the information and DISPATCH takes and (ACTION TYPE) therefore we've write (action.type) here
+
+// and in app.js we've used dispatch for increment and (ACTION TYPE) we used is (type : "inc") therefore we'use if condition according to it
 
     if(action.type === "inc"){
 
         // we uses RETURN when we wanted to CHANGE and then UPDATE the value like here we are changing and UPDATING the counter
 
         return { counter: state.counter + 1 }
+
+    }
+
+    if(action.type === "dec"){
+
+        return { counter: state.counter - 1 }
 
     }
 
