@@ -8,6 +8,8 @@ import { createStore } from 'redux';
 const reducerFn = (state = { counter : 0 }, action) => {
 
 
+    // make sure to use RETURN STATE in the end
+    return state;
 
 }
 
