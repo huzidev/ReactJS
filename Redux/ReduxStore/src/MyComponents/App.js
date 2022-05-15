@@ -30,6 +30,15 @@ export default function App() {
 
     };
 
+    const addBy = () => {
+
+        dispatch({ 
+            type: "add",
+            payload : 10
+    })
+
+    }
+
     return (
         <div>
             <h1>
@@ -43,6 +52,9 @@ export default function App() {
             </button>
             <button onClick={increment}>
                 +
+            </button>
+            <button onClick={addBy}>
+                Add By 10
             </button>
         </div>
     )
