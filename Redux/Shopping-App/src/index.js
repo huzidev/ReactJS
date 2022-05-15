@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./MyComponents/App";
 import "./styles/style.css";
+import "./styles/auth.css";
 import { Provider } from 'react-redux';
 import store from './Store';
 
