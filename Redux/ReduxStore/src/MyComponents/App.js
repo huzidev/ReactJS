@@ -14,6 +14,18 @@ export default function App() {
 
     const dispatch = useDispatch();
 
+    const increment = () = {
+
+
+
+    };
+
+    const decrement = () = {
+
+        
+
+    };
+
     return (
         <div>
             <h1>
