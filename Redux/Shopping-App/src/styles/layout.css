@@ -9,6 +9,11 @@ nav {
       -ms-flex-align: center;
           align-items: center;
 }
+nav .cart {
+  padding: 0px 15px;
+  border: 1px solid black;
+  border-radius: 35%;
+}
 
 img {
   height: 200px;
