@@ -30,13 +30,15 @@ const counterSlice = createSlice({
 
     } 
 
+    // we don't have to use RETURN for returning the functions
+
 // inside REDUCERS we've function we wanted to use and we've to pass arguments or parameters like here we did is STATE and ACTION 
 // here we've passed all the functions we wanted inside REDUCERS
 })
 
 export const actions = counterSlice.actions;
 
-// counterSlice is the name of variable and counterSlice.actions is for performing actions of ours counters
+// counterSlice is the name of variable and counterSlice.actions is for performing actions of ours counters means to update it
 
 const store = configureStore({
 
