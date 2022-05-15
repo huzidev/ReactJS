@@ -25,7 +25,7 @@ const counterSlice = createSlice({
         addBy(state, action) {
 
             state.counter += action.payload;
-
+            // since we don't have to define payload in app.js but we've to write it here
         }
 
     } 
