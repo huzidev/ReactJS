@@ -11,7 +11,7 @@ export default function Auth() {
         event.preventDefault();
 
         dispatch(authActions.login())
-        // so when use login it'll runs the authActions from auth-slice.js by dispatch(To Send)
+        // so we used login because it'll runs the authActions from auth-slice.js by dispatch(To Send)
     }
 
     return (
