@@ -6,7 +6,7 @@ export default function Auth() {
             <h1>
                 Login
             </h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="id">
                     Id
                 </label>
