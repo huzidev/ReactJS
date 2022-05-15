@@ -7,6 +7,13 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 const counterSlice = createSlice({
 
     name : 'counter',
-    initialState = 
+    initialState = { counter : 0 },
+    reducers : {
 
+        increment() {}
+        decrement() {}
+        addBy() {}
+
+    } 
+// here we've passed all the functions we wanted inside REDUCERS
 })
