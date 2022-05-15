@@ -14,77 +14,77 @@ export default function Auth() {
                     </h5>
                 </div>
             </nav>
-            <div className='items'>
-                <div className='items'>
-                    <img src={Img} alt="items-img" />
-                    <h5>
-                        Laptop
-                    </h5>
-                    <p>
-                        <b>
-                            $ 25
-                        </b>
-                    </p>
-                    <button>
-                        Add To Cart
-                    </button>
-                </div>
-                <div className='items'>
-                    <img src={Img} alt="items-img" />
-                    <h5>
-                        Laptop
-                    </h5>
-                    <p>
-                        <b>
-                            $ 25
-                        </b>
-                    </p>
-                    <button>
-                        Add To Cart
-                    </button>
-                </div>
-                <div className='items'>
-                    <img src={Img} alt="items-img" />
-                    <h5>
-                        Laptop
-                    </h5>
-                    <p>
-                        <b>
-                            $ 25
-                        </b>
-                    </p>
-                    <button>
-                        Add To Cart
-                    </button>
-                </div>
-                <div className='items'>
-                    <img src={Img} alt="items-img" />
-                    <h5>
-                        Laptop
-                    </h5>
-                    <p>
-                        <b>
-                            $ 25
-                        </b>
-                    </p>
-                    <button>
-                        Add To Cart
-                    </button>
-                </div>
-                <div className='items'>
-                    <img src={Img} alt="items-img" />
-                    <h5>
-                        Laptop
-                    </h5>
-                    <p>
-                        <b>
-                            $ 25
-                        </b>
-                    </p>
-                    <button>
-                        Add To Cart
-                    </button>
-                </div>
+            <div className='list'>
+               <div className='items'>
+                   <img src={Img} alt="items-img" />
+                   <h5>
+                       Laptop
+                   </h5>
+                   <p>
+                       <b>
+                           $ 25
+                       </b>
+                   </p>
+                   <button>
+                       Add To Cart
+                   </button>
+               </div>
+               <div className='items'>
+                       <img src={Img} alt="items-img" />
+                       <h5>
+                           Laptop
+                       </h5>
+                       <p>
+                           <b>
+                               $ 25
+                           </b>
+                       </p>
+                       <button>
+                           Add To Cart
+                       </button>
+               </div>
+               <div className='items'>
+                       <img src={Img} alt="items-img" />
+                       <h5>
+                           Laptop
+                       </h5>
+                       <p>
+                           <b>
+                               $ 25
+                           </b>
+                       </p>
+                       <button>
+                           Add To Cart
+                       </button>
+               </div>
+               <div className='items'>
+                       <img src={Img} alt="items-img" />
+                       <h5>
+                           Laptop
+                       </h5>
+                       <p>
+                           <b>
+                               $ 25
+                           </b>
+                       </p>
+                       <button>
+                           Add To Cart
+                       </button>
+               </div>
+               <div className='items'>
+                       <img src={Img} alt="items-img" />
+                       <h5>
+                           Laptop
+                       </h5>
+                       <p>
+                           <b>
+                               $ 25
+                           </b>
+                       </p>
+                       <button>
+                           Add To Cart
+                       </button>
+               </div>
             </div>
         </div>
     )
