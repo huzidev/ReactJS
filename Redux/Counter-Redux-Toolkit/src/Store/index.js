@@ -36,9 +36,12 @@ const counterSlice = createSlice({
 
 export const actions = counterSlice.actions;
 
+// counterSlice is the name of variable and counterSlice.actions is for performing actions of ours counters
+
 const store = configureStore({
 
     reducer : counterSlice.reducer
+    // counterSlice is the name of variable so counterSlice.reducer means the reducer which is going to work for counterSlice
 
 });
 
