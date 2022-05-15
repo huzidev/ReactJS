@@ -24,13 +24,13 @@ export default function Auth() {
                     Id
                 </label>
                 <br />
-                <input type="text" name='id' id='id' />
+                <input type="text" name='id' id='id' placeholder='yours ID' />
                 <br />
                 <label htmlFor="password">
                     password
                 </label>
                 <br />
-                <input type="password" name='password' id='password' />
+                <input type="password" name='password' id='password' placeholder='yours password'/>
                 <br />
                 <button className='login-btn' type='submit'>
                     Login
