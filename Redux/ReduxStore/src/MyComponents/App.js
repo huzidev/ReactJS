@@ -5,9 +5,12 @@ import { useSelector, useDispatch } from 'react-redux';
 
 //useSelector will always takes STATE as ARGUMENTS OR AS PARAMETER from ours REDUX-STORE if we hover on the useSelector we can see that
 
+// DISPATCH is just a function used to Send ours ACTIONS TO REDUCER
 export default function App() {
 
     const counter = useSelector((state) => state.counter);
+
+    const dispatch = useDispatch();
 
     return (
         <div>
