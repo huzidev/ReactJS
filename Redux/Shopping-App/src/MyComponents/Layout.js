@@ -13,6 +13,73 @@ export default function Auth() {
                     </h5>
                 </div>
             </nav>
+            <div className='items'>
+                <div>
+                    <h5>
+                        Laptop
+                    </h5>
+                    <p>
+                        <b>
+                            $ 25
+                        </b>
+                    </p>
+                    <button>
+                        Add To Cart
+                    </button>
+                </div>
+                <div>
+                    <h5>
+                        Laptop
+                    </h5>
+                    <p>
+                        <b>
+                            $ 25
+                        </b>
+                    </p>
+                    <button>
+                        Add To Cart
+                    </button>
+                </div>
+                <div>
+                    <h5>
+                        Laptop
+                    </h5>
+                    <p>
+                        <b>
+                            $ 25
+                        </b>
+                    </p>
+                    <button>
+                        Add To Cart
+                    </button>
+                </div>
+                <div>
+                    <h5>
+                        Laptop
+                    </h5>
+                    <p>
+                        <b>
+                            $ 25
+                        </b>
+                    </p>
+                    <button>
+                        Add To Cart
+                    </button>
+                </div>
+                <div>
+                    <h5>
+                        Laptop
+                    </h5>
+                    <p>
+                        <b>
+                            $ 25
+                        </b>
+                    </p>
+                    <button>
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
         </div>
     )
 }
