@@ -18,7 +18,7 @@ export default function App() {
 
     const increment = () => {
 
-        dispatch({ type : "inc" });
+        dispatch(increment());
 
     };
     
@@ -26,16 +26,13 @@ export default function App() {
 
     const decrement = () => {
 
-        dispatch({ type : "dec" });
+        dispatch(decrement());
 
     };
 
     const addBy = () => {
 
-        dispatch({ 
-            type: "add",
-            payload : 10
-    })
+        dispatch(addBy( {payload: 10} ))
     // we can provide any value want in payload then we will pass action.payload in ours REDUX-STORE
     }
 
