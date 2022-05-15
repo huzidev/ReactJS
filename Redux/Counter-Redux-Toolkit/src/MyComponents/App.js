@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux'; 
+import { actions } from '../Store/index';
 
 // useSelector will takes a State which we've provided in ours REDUX-STORE and that state have an object equals to {counter : 0} therefore we've used state.counter
 
@@ -18,7 +19,7 @@ export default function App() {
 
     const increment = () => {
 
-        dispatch(increment());
+        dispatch(actions.increment());
 
     };
     
@@ -26,13 +27,13 @@ export default function App() {
 
     const decrement = () => {
 
-        dispatch(decrement());
+        dispatch(actions.decrement());
 
     };
 
     const addBy = () => {
 
-        dispatch(addBy( {payload: 10} ))
+        dispatch(actions.addBy(10))
     // we can provide any value want in payload then we will pass action.payload in ours REDUX-STORE
     }
 
