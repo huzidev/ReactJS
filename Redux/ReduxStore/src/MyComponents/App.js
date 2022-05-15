@@ -14,13 +14,15 @@ export default function App() {
 
     const dispatch = useDispatch();
 
+    // basically this counter and dispatch are just name of variables which are equals to useSelector and useDispatch functions and these variables are just for REFERENCE just like prototypes of C-language 
+
     const increment = () = {
 
         dispatch({ type : "inc" });
 
     };
     
-    // here we've used dispatch for sending if we hover on that dispatch we can see that it'll takes an action
+    // here we've used dispatch for sending if we hover on that dispatch we can see that it'll takes an action type
 
     const decrement = () = {
 
