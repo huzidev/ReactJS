@@ -8,3 +8,6 @@
 .container input {
   margin: 20px;
 }
+.container button {
+  cursor: pointer;
+}
