@@ -1,11 +1,15 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 
 export default function Auth() {
 
+    const dispatch = useDispatch
+
     const handleSubmit = (event) => {
 
-        event.preventDefault()
+        event.preventDefault();
 
+        
     }
 
     return (
