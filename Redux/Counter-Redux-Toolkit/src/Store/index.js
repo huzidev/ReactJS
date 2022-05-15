@@ -6,7 +6,7 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 const counterSlice = createSlice({
 
-    name : 'counter',
+    name : "counter",
     initialState : { counter : 0 },
     reducers : {
 
