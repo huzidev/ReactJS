@@ -19,7 +19,7 @@ const reducerFn = (state = { counter : 0 }, action) => {
 
     }
 
-    if(action.type === "dec"){
+    else if(action.type === "dec"){
 
         return { counter: state.counter - 1 }
 
