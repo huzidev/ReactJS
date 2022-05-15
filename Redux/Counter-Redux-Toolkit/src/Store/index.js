@@ -29,3 +29,11 @@ const counterSlice = createSlice({
 })
 
 export const actions = counterSlice.actions;
+
+const store = configureStore({
+
+    reducers : configureStore.reducers
+
+});
+
+export default store;
