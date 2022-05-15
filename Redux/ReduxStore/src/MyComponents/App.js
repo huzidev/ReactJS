@@ -36,7 +36,7 @@ export default function App() {
             type: "add",
             payload : 10
     })
-
+    // we can provide any value want in payload then we will pass action.payload in ours REDUX-STORE
     }
 
     return (
