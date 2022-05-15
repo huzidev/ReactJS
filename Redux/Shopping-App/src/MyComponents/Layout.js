@@ -17,9 +17,9 @@ export default function Auth() {
             <div className='list'>
                <div className='items'>
                    <img src={Img} alt="items-img" />
-                   <h5>
+                   <h3>
                        Laptop
-                   </h5>
+                   </h3>
                    <p>
                        <b>
                            $ 25
@@ -30,60 +30,60 @@ export default function Auth() {
                    </button>
                </div>
                <div className='items'>
-                       <img src={Img} alt="items-img" />
-                       <h5>
-                           Laptop
-                       </h5>
-                       <p>
-                           <b>
-                               $ 25
-                           </b>
-                       </p>
-                       <button>
-                           Add To Cart
-                       </button>
+                   <img src={Img} alt="items-img" />
+                   <h3>
+                       Laptop
+                   </h3>
+                   <p>
+                       <b>
+                           $ 25
+                       </b>
+                   </p>
+                   <button>
+                       Add To Cart
+                   </button>
                </div>
                <div className='items'>
-                       <img src={Img} alt="items-img" />
-                       <h5>
-                           Laptop
-                       </h5>
-                       <p>
-                           <b>
-                               $ 25
-                           </b>
-                       </p>
-                       <button>
-                           Add To Cart
-                       </button>
+                   <img src={Img} alt="items-img" />
+                   <h3>
+                       Laptop
+                   </h3>
+                   <p>
+                       <b>
+                           $ 25
+                       </b>
+                   </p>
+                   <button>
+                       Add To Cart
+                   </button>
                </div>
                <div className='items'>
-                       <img src={Img} alt="items-img" />
-                       <h5>
-                           Laptop
-                       </h5>
-                       <p>
-                           <b>
-                               $ 25
-                           </b>
-                       </p>
-                       <button>
-                           Add To Cart
-                       </button>
+                   <img src={Img} alt="items-img" />
+                   <h3>
+                       Laptop
+                   </h3>
+                   <p>
+                       <b>
+                           $ 25
+                       </b>
+                   </p>
+                   <button>
+                       Add To Cart
+                   </button>
                </div>
                <div className='items'>
-                       <img src={Img} alt="items-img" />
-                       <h5>
-                           Laptop
-                       </h5>
-                       <p>
-                           <b>
-                               $ 25
-                           </b>
-                       </p>
-                       <button>
-                           Add To Cart
-                       </button>
+                   <img src={Img} alt="items-img" />
+                   <h3>
+                       Laptop
+                   </h3>
+                   <p>
+                       <b>
+                           $ 25
+                       </b>
+                   </p>
+                   <button>
+                       Add To Cart
+                   </button>
                </div>
             </div>
         </div>

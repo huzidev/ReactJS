@@ -31,7 +31,13 @@ nav .cart {
           align-items: center;
   gap: 25px;
 }
-.list img {
+.list .items {
+  text-align: center;
+}
+.list .items img {
   height: 200px;
   width: 250px;
+}
+.list .items button {
+  cursor: pointer;
 }
