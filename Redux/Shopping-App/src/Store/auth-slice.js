@@ -20,3 +20,7 @@ const authSlice = createSlice({
     }
 
 });
+
+export const authActions = authSlice.actions;
+
+// so we can export all the ACTIONS of variable called authSlice to ours main REDUX-STORE
