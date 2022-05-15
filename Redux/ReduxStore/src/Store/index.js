@@ -25,6 +25,12 @@ const reducerFn = (state = { counter : 0 }, action) => {
 
     }
 
+    else if(action.type === "add"){
+
+        return { counter: state.counter + action.payload }
+
+    }
+
     // make sure to use RETURN STATE in the end
     return state;
 
