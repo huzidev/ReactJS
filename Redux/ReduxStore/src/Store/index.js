@@ -8,6 +8,14 @@ import { createStore } from 'redux';
 const reducerFn = (state = { counter : 0 }, action) => {
 
 
+    if(action.type === "inc"){
+
+        // we uses RETURN when we wanted to CHANGE and then UPDATE the value like here we are changing and UPDATING the counter
+
+        return { counter: state.counter + 1 }
+
+    }
+
     // make sure to use RETURN STATE in the end
     return state;
 
