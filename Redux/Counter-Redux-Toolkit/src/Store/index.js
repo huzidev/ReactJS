@@ -38,7 +38,7 @@ const counterSlice = createSlice({
 
 export const actions = counterSlice.actions;
 
-// counterSlice is the name of variable and counterSlice.actions is for performing actions of ours counters means to update it
+// counterSlice is the name of variable and counterSlice.actions is for performing actions of ours counters means to update it and to export and then to import these counterSlice k andar wale actions to ours app.js 
 
 const store = configureStore({
 
