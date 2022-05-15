@@ -1,6 +1,13 @@
 import React from 'react';
 
 export default function Auth() {
+
+    const handleSubmit = (event) => {
+
+        event.preventDefault()
+
+    }
+
     return (
         <div className='container'>
             <h1>
