@@ -16,7 +16,7 @@ export default function App() {
 
     // basically this counter and dispatch are just name of variables which are equals to useSelector and useDispatch functions and these variables are just for REFERENCE just like prototypes of C-language 
 
-    const increment = () = {
+    const increment = () => {
 
         dispatch({ type : "inc" });
 
@@ -24,7 +24,7 @@ export default function App() {
     
     // here we've used dispatch for sending if we hover on that dispatch we can see that it'll takes an action type
 
-    const decrement = () = {
+    const decrement = () => {
 
         dispatch({ type : "dec" });
 
@@ -41,7 +41,7 @@ export default function App() {
             <button onClick={increment}>
                 +
             </button>
-            <button onClick={decrementss}>
+            <button onClick={decrement}>
                 -
             </button>
         </div>
