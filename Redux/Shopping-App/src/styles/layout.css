@@ -43,13 +43,16 @@ nav .cart {
 }
 
 .right {
-  margin: auto;
+  margin: 10px auto;
   width: 1350px;
-  background-color: aqua;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+.right button {
+  padding: 10px 20px;
+  cursor: pointer;
 }
