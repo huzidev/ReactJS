@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 
 export default function Auth() {
 
-    const dispatch = useDispatch
+    const dispatch = useDispatch();
 
     const handleSubmit = (event) => {
 
