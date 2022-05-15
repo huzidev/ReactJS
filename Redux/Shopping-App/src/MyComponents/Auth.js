@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { authActions } from '../Store/auth-slice';
 
 export default function Auth() {
 
@@ -9,7 +10,8 @@ export default function Auth() {
 
         event.preventDefault();
 
-        
+        dispatch(authActions.login())
+        // so when use login it'll runs the authActions from auth-slice.js by dispatch(To Send)
     }
 
     return (
