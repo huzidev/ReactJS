@@ -11,8 +11,9 @@ export default function App() {
 
     return (
         <div>
-            <Auth />
-            {/* <Layout /> */}
+            {/* { isLoggedIn ? <Layout /> : <Auth />} */}
+            { !isLoggedIn && <Auth />}
+            { isLoggedIn && <Layout />}
         </div>
     )
 }
