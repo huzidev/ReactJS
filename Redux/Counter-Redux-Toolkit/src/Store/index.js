@@ -10,10 +10,19 @@ const counterSlice = createSlice({
     initialState = { counter : 0 },
     reducers : {
 
-        increment() {}
-        decrement() {}
-        addBy() {}
+        increment(state, action) {
+
+        },
+
+        decrement(state, action) {
+
+        },
+        
+        addBy(state, action) {
+
+        }
 
     } 
+// inside REDUCERS we've function we wanted to use and we've to pass arguments or parameters like here we did is state and action state is for 
 // here we've passed all the functions we wanted inside REDUCERS
 })
