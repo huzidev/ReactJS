@@ -1,4 +1,5 @@
 import React from 'react';
+import Img from '../assets/item.jfif';
 
 export default function Auth() {
     return (
@@ -14,7 +15,8 @@ export default function Auth() {
                 </div>
             </nav>
             <div className='items'>
-                <div>
+                <div className='items'>
+                    <img src={Img} alt="items-img" />
                     <h5>
                         Laptop
                     </h5>
@@ -27,7 +29,8 @@ export default function Auth() {
                         Add To Cart
                     </button>
                 </div>
-                <div>
+                <div className='items'>
+                    <img src={Img} alt="items-img" />
                     <h5>
                         Laptop
                     </h5>
@@ -40,7 +43,8 @@ export default function Auth() {
                         Add To Cart
                     </button>
                 </div>
-                <div>
+                <div className='items'>
+                    <img src={Img} alt="items-img" />
                     <h5>
                         Laptop
                     </h5>
@@ -53,7 +57,8 @@ export default function Auth() {
                         Add To Cart
                     </button>
                 </div>
-                <div>
+                <div className='items'>
+                    <img src={Img} alt="items-img" />
                     <h5>
                         Laptop
                     </h5>
@@ -66,7 +71,8 @@ export default function Auth() {
                         Add To Cart
                     </button>
                 </div>
-                <div>
+                <div className='items'>
+                    <img src={Img} alt="items-img" />
                     <h5>
                         Laptop
                     </h5>
