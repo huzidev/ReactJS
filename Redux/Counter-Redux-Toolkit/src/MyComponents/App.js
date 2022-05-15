@@ -34,7 +34,10 @@ export default function App() {
     const addBy = () => {
 
         dispatch(actions.addBy(10))
+        
+    // we don't have to specify the PAYLOAD in REDUX-TOOLKIT rather we'll just simple define the value
     // we can provide any value want in payload then we will pass action.payload in ours REDUX-STORE
+
     }
 
     return (
