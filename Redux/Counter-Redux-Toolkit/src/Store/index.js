@@ -32,7 +32,7 @@ export const actions = counterSlice.actions;
 
 const store = configureStore({
 
-    reducers : configureStore.reducers
+    reducers : counterSlice.reducers
 
 });
 
