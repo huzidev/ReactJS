@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { cartActions } from '../Store/cart-slice';
 import products from './products';
 
 // MAKE SURE TO MAKE SEPARATE COMPONENTS FOR YOURS PRODUCTS ITEMS
@@ -10,6 +11,12 @@ export default function items() {
     // we've to compulsory use useDispatch because it will send ours functions to Redux-Store
 
     const dispatch = useDispatch();
+
+    const addToCart = () => {
+
+        dispatch(cartActions)
+
+    }
 
     const list = products.map((info) => {
 
