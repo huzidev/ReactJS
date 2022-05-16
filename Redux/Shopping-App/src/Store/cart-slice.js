@@ -43,9 +43,10 @@ const createSlice = createSlice({
 
                     price : newItem.price,
 
-                    quantity : 1 // quantity must be 1 in else condition because if there is no item then on adding an item the quantity will be 1 if there is already an item then we'll jump on the (existingItem) case
+                    quantity : 1, // quantity must be 1 in else condition because if there is no item then on adding an item the quantity will be 1 if there is already an item then we'll jump on the (existingItem) case
+                    totalPrice : newItem.price,
 
-
+                    name : newItem.name
                 })
 
             }
