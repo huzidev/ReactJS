@@ -21,7 +21,17 @@ const createSlice = createSlice({
 
             const existingItem = state.itemsList.find((item) => item.id === newItem.id)
 
-            // means if we've laptop of dell with id 1 and user wanted to add same laptop once again then state.itemList.find() means to run like a loop to check the itemsList which is an array until we found item.id which is equals to newItem because user wanted to add same product once again
+            // means if we've laptop of dell with id 1 and user wanted to add same laptop once again then state.itemList.find() 
+            // means to run like a loop to check the itemsList which is an array until we found item.id which is equals to 
+            // newItem because user wanted to add same product once again
+
+            if(existingItem){
+
+                existingItem.quantity ++;
+
+                existingItem.price += newItem.price
+
+            }
 
         },
 
