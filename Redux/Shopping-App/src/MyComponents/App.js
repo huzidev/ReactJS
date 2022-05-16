@@ -10,7 +10,7 @@ export default function App() {
 
         return(
             <Auth 
-                key = {info.Id},
+                key = {info.Id}
                 info = {info}
             />
         )
@@ -25,13 +25,13 @@ export default function App() {
         <div>
             {/* through Ternary operators */}
 
-            {/* { isLoggedIn ? <Layout /> : <Auth />} */}
+            { isLoggedIn ? <Layout /> : list}
 
-            { !isLoggedIn && list}
+            {/* { !isLoggedIn && list} */}
 
             {/* !isLoggedIn simply means false && <Auth /> only if isLoggedIn is false */}
             
-            { isLoggedIn && <Layout />}
+            {/* { isLoggedIn && <Layout />} */}
 
             {/* isLoggedIn simply means true && <Auth /> only if isLoggedIn is true */}
 
