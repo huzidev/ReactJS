@@ -10,7 +10,8 @@ export default function App() {
 
         return(
             <Auth 
-                key = {info.Id}
+                key = {info.Id},
+                info = {info}
             />
         )
 
