@@ -25,13 +25,13 @@ export default function App() {
         <div>
             {/* through Ternary operators */}
 
-            { isLoggedIn ? list : <Auth />}
+            {/* { isLoggedIn ? list : <Auth />} */}
 
-            {/* { !isLoggedIn && list} */}
+            { !isLoggedIn && <Auth />}
 
             {/* !isLoggedIn simply means false && <Auth /> only if isLoggedIn is false */}
             
-            {/* { isLoggedIn && <Layout />} */}
+            { isLoggedIn && list}
 
             {/* isLoggedIn simply means true && <Auth /> only if isLoggedIn is true */}
 
