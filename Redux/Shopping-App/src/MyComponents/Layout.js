@@ -1,7 +1,8 @@
 import React from 'react';
-// import Img from '../assets/item.jfif';
+import Items from './Items';
 
 export default function Layout(props) {
+
     return (
         <div>
             <nav>
@@ -15,76 +16,7 @@ export default function Layout(props) {
                 </div>
             </nav>
             <div className='list'>
-               <div className='items'>
-                   <img src={`../assets/${props.info.imgURL}`} alt="items-img" />
-                   <h3>
-                       {props.info.name}
-                   </h3>
-                   <p>
-                       <b>
-                           {props.info.price}
-                       </b>
-                   </p>
-                   <button>
-                       Add To Cart
-                   </button>
-               </div>
-               <div className='items'>
-                   <img src={`../assets/${props.info.imgURL}`} alt="items-img" />
-                   <h3>
-                       Laptop
-                   </h3>
-                   <p>
-                       <b>
-                           $ 25
-                       </b>
-                   </p>
-                   <button>
-                       Add To Cart
-                   </button>
-               </div>
-               <div className='items'>
-                   <img src={`../assets/${props.info.imgURL}`} alt="items-img" />
-                   <h3>
-                       Laptop
-                   </h3>
-                   <p>
-                       <b>
-                           $ 25
-                       </b>
-                   </p>
-                   <button>
-                       Add To Cart
-                   </button>
-               </div>
-               <div className='items'>
-                   <img src={`../assets/${props.info.imgURL}`} alt="items-img" />
-                   <h3>
-                       Laptop
-                   </h3>
-                   <p>
-                       <b>
-                           $ 25
-                       </b>
-                   </p>
-                   <button>
-                       Add To Cart
-                   </button>
-               </div>
-               <div className='items'>
-                   <img src={`../assets/${props.info.imgURL}`} alt="items-img" />
-                   <h3>
-                       Laptop
-                   </h3>
-                   <p>
-                       <b>
-                           $ 25
-                       </b>
-                   </p>
-                   <button>
-                       Add To Cart
-                   </button>
-               </div>
+                <Items />
             </div>
             <div className='right'>
                 <h3>
