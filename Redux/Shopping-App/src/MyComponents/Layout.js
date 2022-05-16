@@ -1,7 +1,7 @@
 import React from 'react';
 import Img from '../assets/item.jfif';
 
-export default function Auth(props) {
+export default function Layout(props) {
     return (
         <div>
             <nav>
@@ -18,7 +18,7 @@ export default function Auth(props) {
                <div className='items'>
                    <img src={Img} alt="items-img" />
                    <h3>
-                       adas
+                       {props.info.Id}
                    </h3>
                    <p>
                        <b>
