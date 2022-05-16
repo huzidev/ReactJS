@@ -14,7 +14,13 @@ export default function items() {
 
     const addToCart = () => {
 
-        dispatch(cartActions)
+        dispatch(cartActions.addToCart({
+
+            Id,
+            name,
+            price
+
+        }))
 
     }
 
