@@ -49,6 +49,10 @@ const cartSlice = createSlice({
 
                     name : newItem.name
                 })
+            
+            state.totalQuantity ++;
+
+            // so no matter of any scenario the totalQuantity will be increase accordingly if cart is full or empty or if it just have single element
 
             }
 
