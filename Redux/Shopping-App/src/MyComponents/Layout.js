@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from '../assets/item.jfif';
+// import Img from '../assets/item.jfif';
 
 export default function Layout(props) {
     return (
@@ -16,13 +16,13 @@ export default function Layout(props) {
             </nav>
             <div className='list'>
                <div className='items'>
-                   <img src={Img} alt="items-img" />
+                   <img src={`../assets/${props.info.imgURL}`} alt="items-img" />
                    <h3>
-                       {props.info.Id}
+                       {props.info.name}
                    </h3>
                    <p>
                        <b>
-                           $ 25
+                           {props.info.price}
                        </b>
                    </p>
                    <button>
@@ -30,21 +30,7 @@ export default function Layout(props) {
                    </button>
                </div>
                <div className='items'>
-                   <img src={Img} alt="items-img" />
-                   <h3>
-                       Laptop
-                   </h3>
-                   <p>
-                       <b>
-                           $ 25
-                       </b>
-                   </p>
-                   <button>
-                       Add To Cart
-                   </button>
-               </div>
-               <div className='items'>
-                   <img src={Img} alt="items-img" />
+                   <img src={`../assets/${props.info.imgURL}`} alt="items-img" />
                    <h3>
                        Laptop
                    </h3>
@@ -58,7 +44,7 @@ export default function Layout(props) {
                    </button>
                </div>
                <div className='items'>
-                   <img src={Img} alt="items-img" />
+                   <img src={`../assets/${props.info.imgURL}`} alt="items-img" />
                    <h3>
                        Laptop
                    </h3>
@@ -72,7 +58,21 @@ export default function Layout(props) {
                    </button>
                </div>
                <div className='items'>
-                   <img src={Img} alt="items-img" />
+                   <img src={`../assets/${props.info.imgURL}`} alt="items-img" />
+                   <h3>
+                       Laptop
+                   </h3>
+                   <p>
+                       <b>
+                           $ 25
+                       </b>
+                   </p>
+                   <button>
+                       Add To Cart
+                   </button>
+               </div>
+               <div className='items'>
+                   <img src={`../assets/${props.info.imgURL}`} alt="items-img" />
                    <h3>
                        Laptop
                    </h3>
