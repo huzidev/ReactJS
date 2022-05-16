@@ -54,6 +54,8 @@ const cartSlice = createSlice({
 
             // so no matter of any scenario the totalQuantity will be increase accordingly if cart is full or empty or if it just have single element
 
+            // we've to use useSelector then Redux's state to update the totalQuantity with state.cart.totalQuantity
+
             }
 
         },
