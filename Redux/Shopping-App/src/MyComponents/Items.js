@@ -15,7 +15,8 @@ export default function items() {
     const addToCart = () => {
 
         dispatch(cartActions.addToCart({
-
+            // SINCE we just have include newItem.id, name, price in ours Redux-Store for cartSlice and quantity and totalPrice 
+            // are the state of ours Redux-Store not of ours components therefore we didn't passed it
             Id,
             name,
             price
