@@ -47,14 +47,14 @@ export default function items() {
         }
 
         return(
-           <div className='items'>
+           <div className='items' key={Id}>
                <img src={`../assets/${imgURL}`} alt="items-img" />
                <h3>
                    {name}
                </h3>
                <p>
                    <b>
-                       {price}
+                       $ {price}
                    </b>
                </p>
                <button onClick={addToCart}>

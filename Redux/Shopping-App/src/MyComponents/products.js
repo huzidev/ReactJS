@@ -2,32 +2,32 @@
 export default [
     {
         Id: 1,
-        name: "Laptop",
+        name: "Dell",
         imgURL: "item.jfif",
-        price: "$ 25"
+        price: 25
     },
     {
         Id: 2,
-        name: "Laptop",
+        name: "Macbook",
         imgURL: "item.jfif",
-        price: "$ 25"
+        price: 25
     },
     {
         Id: 3,
-        name: "Laptop",
+        name: "Lenovo",
         imgURL: "item.jfif",
-        price: "$ 25"
+        price: 25
     },
     {
         Id: 4,
-        name: "Laptop",
+        name: "Hp",
         imgURL: "item.jfif",
-        price: "$ 25"
+        price: 25
     },
     {
         Id: 5,
-        name: "Laptop",
+        name: "Samsung",
         imgURL: "item.jfif",
-        price: "$ 25"
+        price: 25
     }
 ]
