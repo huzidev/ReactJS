@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-export default function cartItem({Id, name, quantity, total, price}) {
+export default function CartItem({Id, name, quantity, total, price}) {
     return (
         <div>
             <h2>
