@@ -1,9 +1,20 @@
 import React from 'react';
 import Auth from './Auth.js';
 import Layout from './Layout.js';
+import products from './products';
 import { useSelector } from 'react-redux';
 
 export default function App() {
+
+    const list = products.map(info => {
+
+        return(
+            <Auth 
+                key = {info.Id}
+            />
+        )
+
+    }) 
 
     const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
 
@@ -15,7 +26,7 @@ export default function App() {
 
             {/* { isLoggedIn ? <Layout /> : <Auth />} */}
 
-            { !isLoggedIn && <Auth />}
+            { !isLoggedIn && list}
 
             {/* !isLoggedIn simply means false && <Auth /> only if isLoggedIn is false */}
             

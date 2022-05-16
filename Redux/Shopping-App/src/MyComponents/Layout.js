@@ -1,7 +1,8 @@
 import React from 'react';
+import products from './products';
 import Img from '../assets/item.jfif';
 
-export default function Auth() {
+export default function Auth({Id, name, imgURL, price}) {
     return (
         <div>
             <nav>
@@ -18,7 +19,7 @@ export default function Auth() {
                <div className='items'>
                    <img src={Img} alt="items-img" />
                    <h3>
-                       Laptop
+                       {name}
                    </h3>
                    <p>
                        <b>
