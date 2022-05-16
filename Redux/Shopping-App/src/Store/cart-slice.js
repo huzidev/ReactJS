@@ -17,6 +17,8 @@ const createSlice = createSlice({
 
             const newItem = action.payload; // which is going to be according to user that how much time user clicked on addToCart
 
+            // TO CHECK IF ANY ITEM IS ALREADY PRESENT
+
         },
 
         removeFromCart() {},
