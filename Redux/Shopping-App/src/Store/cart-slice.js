@@ -2,7 +2,7 @@ import { createSlice} from "@reduxjs/toolkit";
 
 const cartSlice = createSlice({
 
-    name : "Cart",
+    name : "cart",
     initialState : {
 
         itemsList : [], // because array can store multiple values
