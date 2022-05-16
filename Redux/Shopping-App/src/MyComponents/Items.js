@@ -17,6 +17,7 @@ export default function items() {
         dispatch(cartActions.addToCart({
             // SINCE we just have include newItem.id, name, price in ours Redux-Store for cartSlice and quantity and totalPrice 
             // are the state of ours Redux-Store not of ours components therefore we didn't passed it
+            // these all are the payloads for ours products
             Id,
             name,
             price
