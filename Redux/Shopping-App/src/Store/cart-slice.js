@@ -19,7 +19,7 @@ const createSlice = createSlice({
 
             // TO CHECK IF ANY ITEM IS ALREADY PRESENT mens if user wanted to purchase the same product MULTIPLE TIMES
 
-            const existingItem = state.itemsList.find((item) => item.id === newItem.id)
+            const existingItem = state.itemsList.find((item) => item.Id === newItem.Id)
 
             // means if we've laptop of dell with id 1 and user wanted to add same laptop once again then state.itemList.find() 
             // means to run like a loop to check the itemsList which is an array until we found item.id which is equals to 
@@ -29,7 +29,24 @@ const createSlice = createSlice({
 
                 existingItem.quantity ++;
 
-                existingItem.price += newItem.price
+                existingItem.price += newItem.price;
+
+            }
+
+            // if the itemsList is empty
+
+            else{
+
+                state.itemsList.push({
+
+                    Id : newItem.Id, // so ours carts will update the id according to newItem's id
+
+                    price : newItem.price,
+
+                    quantity : 1 // quantity must be 1 in else condition because if there is no item then on adding an item the quantity will be 1 if there is already an item then we'll jump on the (existingItem) case
+
+
+                })
 
             }
 
