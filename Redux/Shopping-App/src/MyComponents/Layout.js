@@ -16,7 +16,7 @@ export default function Layout(props) {
                 </h2>
                 <div className='cart'>
                     <h5>
-                        cart: {quantity}
+                        cart: {quantity} items
                     </h5>
                 </div>
             </nav>
