@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Items from './Items';
+import CartItem from './CartItem.js';
+import Items from './Items.js';
 
 export default function Layout(props) {
 
@@ -33,6 +34,7 @@ export default function Layout(props) {
                     Place Order
                 </button>
             </div>
+            <CartItem />
         </div>
     )
 }
