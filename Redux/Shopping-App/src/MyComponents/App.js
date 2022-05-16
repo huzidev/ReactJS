@@ -1,7 +1,6 @@
 import React from 'react';
 import Auth from './Auth.js';
 import Layout from './Layout.js';
-// import products from './products';
 import { useSelector } from 'react-redux';
 
 export default function App() {
