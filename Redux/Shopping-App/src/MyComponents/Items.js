@@ -3,9 +3,10 @@ import products from './products';
 
 export default function items() {
 
-    const render = products.map((product) => {
+    const list = products.map((info) => {
 
-        const {Id, name, imgURL} = product
+        const {Id, name, imgURL} = info
+
         return(
            <div className='items'>
                <img src={`../assets/${imgURL}`} alt="items-img" />
@@ -26,7 +27,7 @@ export default function items() {
 
     return (
        <>
-        {render}
+        {list}
        </>
     )
 }
