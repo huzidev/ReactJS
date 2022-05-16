@@ -1,7 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Items from './Items';
 
 export default function Layout(props) {
+
+    const quantity = useSelector((state) => state.cart.totalQuantity)
+
+    // we'll pass this quantity variable inside ours JSX
 
     return (
         <div>
@@ -11,7 +16,7 @@ export default function Layout(props) {
                 </h2>
                 <div className='cart'>
                     <h5>
-                        cart: 5 items
+                        cart: {quantity}
                     </h5>
                 </div>
             </nav>
