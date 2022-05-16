@@ -8,7 +8,7 @@ export default function items() {
 
     const list = products.map((info) => {
 
-        const {Id, name, imgURL} = info
+        const {Id, name, price, imgURL} = info
 
         return(
            <div className='items'>
@@ -18,7 +18,7 @@ export default function items() {
                </h3>
                <p>
                    <b>
-                       {Id}
+                       {price}
                    </b>
                </p>
                <button>
