@@ -1,5 +1,5 @@
 import React from 'react';
-import cartItem from './cartItem.js';
+import CartItem from './CartItem.js';
 import { useSelector } from 'react-redux';
 
 export default function CartItems() {
@@ -15,8 +15,7 @@ export default function CartItems() {
                 {cartItems.map((item) => (
                     <li>
                         {" "}
-                        <cartItem 
-
+                        <CartItem 
                             Id = {item.Id}
                             price = {item.price}
                             total = {item.totalPrice}

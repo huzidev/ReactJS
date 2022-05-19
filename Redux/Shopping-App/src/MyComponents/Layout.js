@@ -1,5 +1,6 @@
 import React from 'react';
 import Cart from './Cart.js'
+import CartItems from './CartItems.js';
 import Items from './Items.js';
 
 export default function Layout(props) {
@@ -25,6 +26,7 @@ export default function Layout(props) {
                     Place Order
                 </button>
             </div>
+            <CartItems />
         </div>
     )
 }
