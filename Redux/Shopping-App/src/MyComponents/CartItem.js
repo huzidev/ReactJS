@@ -13,7 +13,7 @@ export default function cartItem({Id, name, quantity, price, total}) {
                 x {quantity}
             </p>
             <article>
-                Total $ {total}
+                Total: $ {total}
             </article>
             <button>
                 -
