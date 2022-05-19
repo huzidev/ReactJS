@@ -26,7 +26,9 @@ export default function Layout(props) {
                     Place Order
                 </button>
             </div>
-            <CartItems />
+            <div className='items-container'>
+                <CartItems />
+            </div>
         </div>
     )
 }

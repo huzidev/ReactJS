@@ -7,7 +7,7 @@ export default function CartItems() {
     const cartItems = useSelector((state) => state.cart.itemsList)
 
     return (
-        <div className='items-container'>
+        <div>
             <h2>
                 Yours Cart
             </h2>
