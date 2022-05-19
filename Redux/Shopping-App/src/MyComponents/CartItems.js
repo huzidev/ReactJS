@@ -11,6 +11,11 @@ export default function CartItems() {
             <h2>
                 Yours Cart
             </h2>
+            <ul>
+                <li>
+                    
+                </li>
+            </ul>
         </div>
       )
 }
