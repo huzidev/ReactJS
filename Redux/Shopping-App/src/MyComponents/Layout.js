@@ -1,9 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Cart from './Cart.js'
 import CartItems from './CartItems.js';
 import Items from './Items.js';
 
 export default function Layout(props) {
+
+    const showCart = useSelector((state) => state.cart.showCart)
 
     return (
         <div>
@@ -27,7 +30,7 @@ export default function Layout(props) {
                 </button>
             </div>
             <div className='items-container'>
-                <CartItems />
+                {showCart && <CartItems />}
             </div>
         </div>
     )
