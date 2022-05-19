@@ -91,3 +91,7 @@ button {
   width: 1200px;
   margin: auto;
 }
+
+.cart-btn {
+  cursor: pointer;
+}
