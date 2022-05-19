@@ -68,3 +68,12 @@ nav .cart {
       -ms-flex-align: center;
           align-items: center;
 }
+
+ul {
+  list-style: none;
+}
+
+.items-container {
+  width: 1200px;
+  margin: auto;
+}
