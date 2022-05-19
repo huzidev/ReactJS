@@ -14,14 +14,15 @@ export default function CartItems() {
             <ul>
                 {cartItems.map((item) => (
                     <li>
+                        {" "}
                         <cartItem 
 
                             Id = {item.Id}
                             price = {item.price}
                             total = {item.totalPrice}
                             name = {item.name}
-
                         />
+                        {" "}
                     </li>
                 ))}
             </ul>
