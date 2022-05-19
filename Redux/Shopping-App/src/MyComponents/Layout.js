@@ -1,4 +1,5 @@
 import React from 'react';
+import Cart from './Cart.js'
 import { useSelector } from 'react-redux';
 import Items from './Items.js';
 
@@ -14,11 +15,7 @@ export default function Layout(props) {
                 <h2>
                     Redux Shopping App
                 </h2>
-                <div className='cart'>
-                    <h5>
-                        cart: {quantity} items
-                    </h5>
-                </div>
+                <Cart />
             </nav>
             <div className='list'>
                 <Items />
