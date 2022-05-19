@@ -4,7 +4,9 @@ export default function cartItem({Id, name, quantity, price, total}) {
 
     // here we are using DESTRUCTURING REFERENCE and we've already pass the props in the CartItems.js
 
-    // in 
+    // in CartItems.js we've imported CartItem and we've passed the props for CartItem and we've used useSelector hook for importing
+    
+    // all the data information like {TotalPrice, Price, Quantity Etc} and by using MAP
 
     return (
         <div className='items-list'>
