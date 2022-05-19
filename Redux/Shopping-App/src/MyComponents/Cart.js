@@ -8,7 +8,7 @@ export default function Cart() {
 
     // we'll pass this quantity variable inside ours JSX
 
-    const dispatch = useDispatch;
+    const dispatch = useDispatch();
 
     const showCart = () => {
 
