@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function cartItem({Id, name, quantity, price, total}) {
     return (
-        <div>
+        <div className='items-list'>
             <h2>
                 {name}
             </h2>

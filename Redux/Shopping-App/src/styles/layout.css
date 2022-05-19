@@ -56,3 +56,15 @@ nav .cart {
   padding: 10px 20px;
   cursor: pointer;
 }
+
+.items-list {
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
