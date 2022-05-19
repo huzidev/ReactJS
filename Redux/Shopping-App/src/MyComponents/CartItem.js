@@ -12,7 +12,15 @@ export default function cartItem({Id, name, quantity, price, total}) {
             <p>
                 x {quantity}
             </p>
-            
+            <article>
+                Total $ {total}
+            </article>
+            <button>
+                -
+            </button>
+            <button>
+                +
+            </button>
         </div>
     )
 }
