@@ -1,6 +1,11 @@
 import React from 'react';
 
 export default function cartItem({Id, name, quantity, price, total}) {
+
+    // here we are using DESTRUCTURING REFERENCE and we've already pass the props in the CartItems.js
+
+    // in 
+
     return (
         <div className='items-list'>
             <h2>
