@@ -1,5 +1,6 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { cartActions } from '../Store/cart-slice';
 
 export default function Cart() {
 
@@ -7,10 +8,18 @@ export default function Cart() {
 
     // we'll pass this quantity variable inside ours JSX
 
+    const dispatch = useDispatch;
+
+    const showCart = () => {
+
+        dispatch(cartActions.setShowCart())
+
+    }
+
     return (
         <div>
             <div className='cart'>
-                <h5>
+                <h5 onClick={showCart}>
                     cart: {quantity} items
                 </h5>
             </div>
