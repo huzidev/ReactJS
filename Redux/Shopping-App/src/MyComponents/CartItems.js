@@ -8,7 +8,9 @@ export default function CartItems() {
 
     return (
         <div>
-
+            <h2>
+                Yours Cart
+            </h2>
         </div>
       )
 }
