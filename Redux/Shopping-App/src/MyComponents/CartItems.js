@@ -12,9 +12,18 @@ export default function CartItems() {
                 Yours Cart
             </h2>
             <ul>
-                <li>
-                    
-                </li>
+                {cartItems.map((item) => (
+                    <li>
+                        <cartItem 
+
+                            Id = {item.Id}
+                            price = {item.price}
+                            total = {item.totalPrice}
+                            name = {item.name}
+
+                        />
+                    </li>
+                ))}
             </ul>
         </div>
       )
