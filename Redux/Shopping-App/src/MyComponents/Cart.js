@@ -22,8 +22,8 @@ export default function Cart() {
 
     return (
         <div>
-            <div className='cart cart-btn'>
-                <h5 onClick={showCart}>
+            <div className='cart cart-btn' onClick={showCart}>
+                <h5>
                     cart: {quantity} items
                 </h5>
             </div>
