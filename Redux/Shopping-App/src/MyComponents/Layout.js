@@ -1,13 +1,8 @@
 import React from 'react';
 import Cart from './Cart.js'
-import { useSelector } from 'react-redux';
 import Items from './Items.js';
 
 export default function Layout(props) {
-
-    const quantity = useSelector((state) => state.cart.totalQuantity)
-
-    // we'll pass this quantity variable inside ours JSX
 
     return (
         <div>
