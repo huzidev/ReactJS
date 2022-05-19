@@ -6,7 +6,7 @@ export default function cartItem({Id, name, quantity, price, total}) {
 
     // in CartItems.js we've imported CartItem and we've passed the props for CartItem and we've used useSelector hook for importing
     
-    // all the data information like {TotalPrice, Price, Quantity Etc} and by using MAP
+    // all the data information like {TotalPrice, Price, Quantity Etc}
 
     return (
         <div className='items-list'>
