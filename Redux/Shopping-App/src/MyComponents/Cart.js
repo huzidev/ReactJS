@@ -16,6 +16,10 @@ export default function Cart() {
 
     }
 
+    // the btn for cart would not works until we've used useSelector hook for showCart in ours Layout.js and why Layout.js
+
+    // is because we wanted to use ternary operator so the btn will only works will only show the cart only if it is clicked means when it became TRUE
+
     return (
         <div>
             <div className='cart cart-btn'>
