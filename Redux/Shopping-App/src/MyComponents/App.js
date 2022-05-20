@@ -2,9 +2,11 @@ import React from 'react';
 import Auth from './Auth.js';
 import Layout from './Layout.js';
 import Notification from './Notification.js'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 export default function App() {
+
+    const dispatch = useDispatch();
 
     const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
     
@@ -53,7 +55,7 @@ export default function App() {
 
     return (
         <div>
-            <Notification type='success' message='testing'/>
+            <Notification type='warning' message='testing'/>
             
             {/* through Ternary operators */}
 
