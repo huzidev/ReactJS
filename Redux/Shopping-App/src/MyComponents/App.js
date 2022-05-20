@@ -15,7 +15,7 @@ export default function App() {
 
     React.useEffect(() => {
         
-    // fetching the data from the backend files
+// fetching the data from the backend files
 
     const sendRequest = async() => {
 
@@ -28,14 +28,18 @@ export default function App() {
 
         })
 
+        const data = await response.json()
+
+// this (DATA) variable is basically used when ours RESPONSE fetched from server it converts ours RESPONSE into json FORMAT 
+
     }
-    // The await operator is used to wait for a Promise . It can only be used inside an async function just like a DELAY
+// The await operator is used to wait for a Promise . It can only be used inside an async function just like a DELAY
 
-    // async/await syntax fits great with fetch() because it simplifies the work with promises
+// async/await syntax fits great with fetch() because it simplifies the work with promises
 
-    // promise basically represents the completion of an asynchronous operation
+// promise basically represents the completion of an asynchronous operation
 
-    // .JSON should have to always be their because it helps us to add the collection their on backend files
+// .JSON should have to always be their because it helps us to add the collection their on backend files
 
     }, [cart])
 
