@@ -62,9 +62,9 @@ const cartSlice = createSlice({
 
         removeFromCart(state, action) {
 
-            const id = action.payload;
+            const Id = action.payload;
 
-            const existingItem = state.itemsList.find((item) => item.id === id);
+            const existingItem = state.itemsList.find((item) => item.Id === Id);
 
             // to check if item is already present so this means their will be more quantity hence we check with IF condition
 
@@ -72,7 +72,7 @@ const cartSlice = createSlice({
 
             if(existingItem.quantity === 1){
 
-                state.itemsList = state.itemsList.filter((item) => item.id !== id);
+                state.itemsList = state.itemsList.filter((item) => item.Id !== Id);
 
                 // we always uses filter to run a like a loop to delete the elements whom id is present
 
