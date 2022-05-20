@@ -8,11 +8,19 @@ export default function Layout(props) {
 
     let total = 0;
 
-    const itemList = useSelector((state) => state.cart.itemList);
+    const itemsList = useSelector((state) => state.cart.itemsList);
 
     // so we can have total price according to the items we added in ours cart therefore we've use useSelector for having the access
 
     // of REDUX-STORE
+
+    // for each loop will increase the price according to every product's price
+
+    itemsList.forEach((item) => {
+        
+        total += item.totalPrice;
+
+    });
 
     const showCart = useSelector((state) => state.cart.showCart);
 
