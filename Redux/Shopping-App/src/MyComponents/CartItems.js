@@ -17,7 +17,7 @@ export default function CartItems() {
             </h2>
             <ul>
                 {cartItems.map((item) => (
-                    <li>
+                    <li key={item.Id}>
                         {" "}
                         <CartItem 
                             Id = {item.Id}
