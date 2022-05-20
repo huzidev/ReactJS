@@ -2,6 +2,7 @@ import React from 'react';
 import Auth from './Auth.js';
 import Layout from './Layout.js';
 import Notification from './Notification.js'
+import { uiActions } from '../Store/ui-slice.js';
 import { useDispatch, useSelector } from 'react-redux';
 
 export default function App() {
@@ -21,6 +22,14 @@ export default function App() {
     React.useEffect(() => {
 
     const sendRequest = async() => {
+
+        dispatch(uiActions.showNotification({
+
+            open : true,
+            type : 'warning',
+            message : 'Sending Request'
+
+        }))
 
         const response = await fetch('https://redux-http-7c1de-default-rtdb.firebaseio.com/cartItems.json', {
 
