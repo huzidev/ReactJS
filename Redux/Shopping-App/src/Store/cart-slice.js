@@ -60,7 +60,13 @@ const cartSlice = createSlice({
 
         },
 
-        removeFromCart() {},
+        removeFromCart(state, action) {
+
+        },
+
+        // we didn't provide ACTION in ours setShowCart because we only provide or use section when we wanted to update something
+
+        // but in case of setShowCart we are not updating rather we are just changing the state
 
         setShowCart(state) {
 
