@@ -15,7 +15,7 @@ export default function Layout(props) {
 
     const logoutHandler = () => {
 
-        dispatch(authActions)
+        dispatch(authActions.logOut())
 
     }
 
