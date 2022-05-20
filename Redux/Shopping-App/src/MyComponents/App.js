@@ -5,15 +5,11 @@ import { useSelector } from 'react-redux';
 
 export default function App() {
 
-    const cart = useSelector((state) => state.cart)
-
     const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+    
+    const cart = useSelector((state) => state.cart);
 
-    // console.log(isLoggedIn);
-
-    // const cartItems = useSelector(state => state.cart.itemsList);
-
-    // console.log(cartItems);
+// the cart will help us to send the HTTPS request
 
 // useSelector is used for have the access of REDUX-STORE and takes Redux-state as parameter and (State) is basically REDUX's state and auth is the name we've provided in ours REDUX STORE inside REDUCER and isLoggedIn is the action we wanted to update
 
