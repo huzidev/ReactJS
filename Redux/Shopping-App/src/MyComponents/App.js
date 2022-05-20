@@ -13,6 +13,23 @@ export default function App() {
 
 // useSelector is used for have the access of REDUX-STORE and takes Redux-state as parameter and (State) is basically REDUX's state and auth is the name we've provided in ours REDUX STORE inside REDUCER and isLoggedIn is the action we wanted to update
 
+    React.useEffect(() => {
+        
+    // fetching the data from the backend files
+
+        fetch('https://redux-http-7c1de-default-rtdb.firebaseio.com/cartItems.json', {
+
+            method : "PUT",
+            body : JSON.stringify(cart)
+            
+            // so all the data from ours backend will be stringify so it'll be easy to read 
+
+        })
+
+    // .JSON should have to always be their because it helps us to add the collection their on backend files
+
+    }, [])
+
     return (
         <div>
             {/* through Ternary operators */}
