@@ -16,6 +16,10 @@ export default function CartItem({Id, name, quantity, price, total}) {
 
         dispatch(cartActions.removeFromCart(Id));
 
+        // since we've already created the method for removing the items through removeFromCart therefore we just have to
+
+        // put the Id here for the elements whom we wanted to decrease or to Delete
+        
     }
 
     const incrementCartItems = () => {
