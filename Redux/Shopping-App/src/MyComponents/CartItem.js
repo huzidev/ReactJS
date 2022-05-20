@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../Store/cart-slice';
 
-export default function cartItem({Id, name, quantity, price, total}) {
+export default function CartItem({Id, name, quantity, price, total}) {
 
     // here we are using DESTRUCTURING REFERENCE and we've already pass the props in the CartItems.js
 
@@ -14,7 +14,7 @@ export default function cartItem({Id, name, quantity, price, total}) {
 
     const decrementCartItems = () => {
 
-
+        dispatch(cartActions.removeFromCart(Id));
 
     }
 
