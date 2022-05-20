@@ -16,9 +16,9 @@ export default function App() {
 
 // useSelector is used for have the access of REDUX-STORE and takes Redux-state as parameter and (State) is basically REDUX's state and auth is the name we've provided in ours REDUX STORE inside REDUCER and isLoggedIn is the action we wanted to update
 
-    React.useEffect(() => {
-        
 // fetching the data from the backend files
+
+    React.useEffect(() => {
 
     const sendRequest = async() => {
 
@@ -26,8 +26,6 @@ export default function App() {
 
             method : "PUT", // PUT is just the name of ours request name
             body : JSON.stringify(cart)
-
-            // so all the data from ours backend will be stringify so it'll be easy to read 
 
         })
 
@@ -39,7 +37,9 @@ export default function App() {
 
     sendRequest();
 
-    // IT IS MANDATORY TO CALL THE VARIABLE NAME LIKE HERE WE'VE CALLED sendRequest else the DATA would not update on backend
+    }, [cart])
+
+// IT IS MANDATORY TO CALL THE VARIABLE NAME LIKE HERE WE'VE CALLED sendRequest() else the DATA would not update on backend
 
 // The await operator is used to wait for a Promise . It can only be used inside an async function just like a DELAY
 
@@ -49,9 +49,7 @@ export default function App() {
 
 // .JSON should have to always be their because it helps us to add the collection their on backend files
 
-    }, [cart])
-
-    // so whenever (CART) changes it fetch will runs again
+// In dependency array we've passed [cart] so whenever (CART) changes data will fetch again
 
     return (
         <div>
@@ -68,8 +66,6 @@ export default function App() {
             { isLoggedIn && <Layout />}
             
             {/* isLoggedIn simply means true && <Auth /> only if isLoggedIn is true */}
-
-
         </div>
     )
 }
