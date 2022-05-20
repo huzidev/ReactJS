@@ -62,6 +62,14 @@ const cartSlice = createSlice({
 
         removeFromCart(state, action) {
 
+            const id = action.payload;
+
+            const existingItem = state.itemsList.find((item) => item.id === id);
+
+            // to check if item is already present so this means their will be more quantity hence we check with IF condition
+
+            // if existingItem is present so we just have to DECREASE the quantity just not deleting the item completely
+
         },
 
         // for delete we use ID so to check if ID is equal to the ID of the element we wanted to delete and FIND function
