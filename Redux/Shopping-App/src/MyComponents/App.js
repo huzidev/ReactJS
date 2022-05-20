@@ -1,6 +1,7 @@
 import React from 'react';
 import Auth from './Auth.js';
 import Layout from './Layout.js';
+import Notification from './Notification,js'
 import { useSelector } from 'react-redux';
 
 export default function App() {
@@ -63,6 +64,8 @@ export default function App() {
             { isLoggedIn && <Layout />}
             
             {/* isLoggedIn simply means true && <Auth /> only if isLoggedIn is true */}
+
+            <Notification />
 
         </div>
     )
