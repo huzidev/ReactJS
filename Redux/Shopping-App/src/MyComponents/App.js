@@ -53,7 +53,7 @@ export default function App() {
 
     return (
         <div>
-            <Notification type='error' message='testing'/>
+            <Notification type='success' message='testing'/>
             
             {/* through Ternary operators */}
 
