@@ -72,7 +72,9 @@ const cartSlice = createSlice({
 
             if(existingItem.quantity === 1){
 
-                
+                state.itemsList = state.itemsList.filter((item) => item.id !== id);
+
+                // we always uses filter to run a like a loop to delete the elements whom id is present
 
             }
 
