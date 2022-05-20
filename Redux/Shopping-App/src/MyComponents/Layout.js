@@ -32,6 +32,11 @@ export default function Layout(props) {
                     Redux Shopping App
                 </h2>
                 <Cart />
+                <div>
+                    <button onClick={logoutHandler}>
+                        Logout
+                    </button>
+                </div>
             </nav>
             <div className='list'>
                 <Items />
