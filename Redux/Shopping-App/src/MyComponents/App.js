@@ -58,7 +58,13 @@ export default function App() {
 
     sendRequest().catch((error) => {
 
+        dispatch(uiActions.showNotification({
 
+            open : true,
+            type : 'error',
+            message : 'Sending Request Failed'
+
+        }))
 
     });
 
