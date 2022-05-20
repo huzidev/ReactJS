@@ -16,6 +16,8 @@ export default function Cart() {
 
     }
 
+    // dispatch (SEND) the cartActions.setShowCart() function from Redux-Store which we've already created in the Redux-store for ours cart
+
     // the btn for cart would not works until we've used useSelector hook for showCart in ours Layout.js and why Layout.js
 
     // is because we wanted to use ternary operator so the btn will only works will only show the cart only if it is clicked means when it became TRUE
