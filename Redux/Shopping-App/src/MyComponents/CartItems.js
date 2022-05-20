@@ -24,6 +24,7 @@ export default function CartItems() {
                             price = {item.price}
                             total = {item.totalPrice}
                             name = {item.name}
+                            quantity = {item.quantity}
                         />
                         {" "}
                     </li>
