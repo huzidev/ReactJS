@@ -8,6 +8,19 @@ export default function cartItem({Id, name, quantity, price, total}) {
     
     // all the data information like {TotalPrice, Price, Quantity Etc}
 
+    const decrementCartItems = () => {
+
+
+
+    }
+
+    const incrementCartItems = () => {
+
+
+
+    }
+
+
     return (
         <div className='items-list'>
             <h2>
