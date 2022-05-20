@@ -1,7 +1,7 @@
 import React from 'react';
 import Auth from './Auth.js';
 import Layout from './Layout.js';
-import Notification from './Notification,js'
+import Notification from './Notification.js'
 import { useSelector } from 'react-redux';
 
 export default function App() {
@@ -53,6 +53,8 @@ export default function App() {
 
     return (
         <div>
+            <Notification type='error' message='testing'/>
+            
             {/* through Ternary operators */}
 
             {/* { isLoggedIn ? <Layout /> : <Auth />} */}
@@ -65,7 +67,6 @@ export default function App() {
             
             {/* isLoggedIn simply means true && <Auth /> only if isLoggedIn is true */}
 
-            <Notification />
 
         </div>
     )
