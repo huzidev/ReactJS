@@ -21,14 +21,16 @@ export default function App() {
 
             method : "PUT",
             body : JSON.stringify(cart)
-            
+
             // so all the data from ours backend will be stringify so it'll be easy to read 
 
         })
 
     // .JSON should have to always be their because it helps us to add the collection their on backend files
 
-    }, [])
+    }, [cart])
+
+    // so whenever (CART) changes it fetch will runs again
 
     return (
         <div>
