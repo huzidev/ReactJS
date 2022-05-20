@@ -21,7 +21,7 @@ export default function App() {
 
         const response = await fetch('https://redux-http-7c1de-default-rtdb.firebaseio.com/cartItems.json', {
 
-            method : "PUT",
+            method : "PUT", // PUT is just the name of ours request name
             body : JSON.stringify(cart)
 
             // so all the data from ours backend will be stringify so it'll be easy to read 
@@ -29,7 +29,7 @@ export default function App() {
         })
 
     }
-    // The await operator is used to wait for a Promise . It can only be used inside an async function 
+    // The await operator is used to wait for a Promise . It can only be used inside an async function just like a DELAY
 
     // async/await syntax fits great with fetch() because it simplifies the work with promises
 
