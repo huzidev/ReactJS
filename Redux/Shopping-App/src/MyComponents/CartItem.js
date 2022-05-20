@@ -23,7 +23,9 @@ export default function cartItem({Id, name, quantity, price, total}) {
         dispatch(cartActions.addToCart({
 
             // these are all PAYLOADS which will be receive in ours REDUX-STORE with the help of DISPATCH
-            
+
+            // therefore we've used const id = action.payload in ours REDUX-STORE
+
             Id,
             name,
             price
