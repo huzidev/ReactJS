@@ -28,8 +28,8 @@ export default function App() {
 
         })
 
-
     }
+    // The await operator is used to wait for a Promise . It can only be used inside an async function 
 
     // async/await syntax fits great with fetch() because it simplifies the work with promises
 
