@@ -66,7 +66,9 @@ const cartSlice = createSlice({
 
             state.showCart = !state.showCart;
 
-            // so each time we clicked on the cart button it'll change from false to true and vice versa
+            // so each time we clicked on the cart button it'll change from false to true and vice versa 
+
+            // because at the above we've provide showCart a (FALSE) value in the initialState object and here we've provided (!) so each time it'll be opposite on click
 
         }
     }
