@@ -23,6 +23,8 @@ export default function App() {
 
     const sendRequest = async() => {
 
+        // FOR SENDING REQUEST
+
         dispatch(uiActions.showNotification({
 
             open : true,
