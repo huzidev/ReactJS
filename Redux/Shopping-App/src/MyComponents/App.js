@@ -40,7 +40,17 @@ export default function App() {
 
         })
 
-        const data = await response.json()
+        const data = await response.json();
+
+        // SEND STATE AS REQUEST SUCCESSFULLY
+
+        dispatch(uiActions.showNotification({
+
+            open : true,
+            type : 'success',
+            message : 'Data Send To Database Successfully'
+
+        }))
 
 // this (DATA) variable is basically used when ours RESPONSE fetched from server it converts ours RESPONSE into json FORMAT 
 
