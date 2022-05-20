@@ -17,11 +17,13 @@ const uiSlice = createSlice({
                 type : state.payload.type,
                 message : state.payload.message,
                 open : state.payload.open
-                
+
             }
 
         }
 
     }
 
-})
+});
+
+const default uiSlice = uiSlice.actions;
