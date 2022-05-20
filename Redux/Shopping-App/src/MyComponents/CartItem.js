@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { cartActions } from '../Store/cart-slice';
 
 export default function cartItem({Id, name, quantity, price, total}) {
 
@@ -19,7 +20,15 @@ export default function cartItem({Id, name, quantity, price, total}) {
 
     const incrementCartItems = () => {
 
+        dispatch(cartActions.addToCart({
 
+            // these are all PAYLOADS which will be receive in ours REDUX-STORE with the help of DISPATCH
+            
+            Id,
+            name,
+            price
+
+        }))
 
     }
 
