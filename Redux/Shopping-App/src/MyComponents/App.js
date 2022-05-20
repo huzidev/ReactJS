@@ -56,7 +56,11 @@ export default function App() {
 
     };
 
-    sendRequest();
+    sendRequest().catch((error) => {
+
+
+
+    });
 
     }, [cart])
 
