@@ -76,6 +76,10 @@ const cartSlice = createSlice({
 
                 // we always uses filter to run a like a loop to delete the elements whom id is present
 
+                state.totalQuantity --;
+
+                // for decreasing the TOTAL QUANTITY at nav-bar cart logo else the value will remains same at CART logo
+
             }
 
             else{
