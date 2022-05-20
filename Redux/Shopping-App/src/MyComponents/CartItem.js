@@ -22,10 +22,10 @@ export default function cartItem({Id, name, quantity, price, total}) {
             <article>
                 Total: $ {total}
             </article>
-            <button>
+            <button onClick={decrementCartItems}>
                 -
             </button>
-            <button>
+            <button onClick={incrementCartItems}>
                 +
             </button>
         </div>
