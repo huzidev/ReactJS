@@ -68,7 +68,13 @@ const cartSlice = createSlice({
 
             // to check if item is already present so this means their will be more quantity hence we check with IF condition
 
-            // if existingItem is present so we just have to DECREASE the quantity just not deleting the item completely
+            // if existingItem === 1  then we just have to DELETE the ITEM just not DECREASE the value
+
+            if(existingItem.quantity === 1){
+
+                
+
+            }
 
         },
 
