@@ -78,6 +78,16 @@ const cartSlice = createSlice({
 
             }
 
+            else{
+
+                existingItem.quantity --;
+
+                existingItem.totalPrice -= existingItem.price;
+
+                // so while DECREASING the value we've to make sure that total price of that item is also DECREASING respectively
+
+            }
+
         },
 
         // for delete we use ID so to check if ID is equal to the ID of the element we wanted to delete and FIND function
