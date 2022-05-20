@@ -6,6 +6,8 @@ import Items from './Items.js';
 
 export default function Layout(props) {
 
+    let total = 0;
+
     const showCart = useSelector((state) => state.cart.showCart)
 
     return (
@@ -21,7 +23,7 @@ export default function Layout(props) {
             </div>
             <div className='right'>
                 <h3>
-                    Total : 100 $
+                    Total : {total} $
                 </h3>
             </div>
             <div className='right'>
