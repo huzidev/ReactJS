@@ -32,7 +32,12 @@ export default function App() {
 
 // this (DATA) variable is basically used when ours RESPONSE fetched from server it converts ours RESPONSE into json FORMAT 
 
-    }
+    };
+
+    sendRequest();
+
+    // IT IS MANDATORY TO CALL THE VARIABLE NAME LIKE HERE WE'VE CALLED sendRequest else the DATA would not update on backend
+
 // The await operator is used to wait for a Promise . It can only be used inside an async function just like a DELAY
 
 // async/await syntax fits great with fetch() because it simplifies the work with promises
