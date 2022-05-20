@@ -86,7 +86,7 @@ export default function App() {
 
     return (
         <div>
-            <Notification type='warning' message='testing'/>
+            <Notification type={notification.type} message={notification.message}/>
             
             {/* through Ternary operators */}
 
