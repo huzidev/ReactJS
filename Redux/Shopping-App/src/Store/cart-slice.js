@@ -64,6 +64,8 @@ const cartSlice = createSlice({
 
         },
 
+        // for delete we use ID so to check if ID is equal to the ID of the element we wanted to delete and FIND function
+
         // we didn't provide ACTION in ours setShowCart because we only provide or use section when we wanted to update something
 
         // but in case of setShowCart we are not updating rather we are just changing the state
