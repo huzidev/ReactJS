@@ -17,7 +17,9 @@ export default function App() {
         
     // fetching the data from the backend files
 
-        fetch('https://redux-http-7c1de-default-rtdb.firebaseio.com/cartItems.json', {
+    const sendRequest = async() => {
+
+        const response = await fetch('https://redux-http-7c1de-default-rtdb.firebaseio.com/cartItems.json', {
 
             method : "PUT",
             body : JSON.stringify(cart)
@@ -25,6 +27,13 @@ export default function App() {
             // so all the data from ours backend will be stringify so it'll be easy to read 
 
         })
+
+
+    }
+
+    // async/await syntax fits great with fetch() because it simplifies the work with promises
+
+    // promise basically represents the completion of an asynchronous operation
 
     // .JSON should have to always be their because it helps us to add the collection their on backend files
 
