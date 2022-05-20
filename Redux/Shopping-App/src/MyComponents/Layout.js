@@ -1,5 +1,6 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { authActions } from '../Store/auth-slice.js'
 import Cart from './Cart.js'
 import CartItems from './CartItems.js';
 import Items from './Items.js';
@@ -8,7 +9,15 @@ export default function Layout(props) {
 
     let total = 0;
 
+    const dispatch = useDispatch();
+
     const itemsList = useSelector((state) => state.cart.itemsList);
+
+    const logoutHandler = () => {
+
+        dispatch(authActions)
+
+    }
 
     // so we can have total price according to the items we added in ours cart therefore we've use useSelector for having the access
 
