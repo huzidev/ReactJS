@@ -2,8 +2,8 @@ import React from 'react';
 import Auth from './Auth.js';
 import Layout from './Layout.js';
 import Notification from './Notification.js'
-import { uiActions } from '../Store/ui-slice.js';
 import { useDispatch, useSelector } from 'react-redux';
+import { sendCartData } from '../Store/cart-slice.js';
 let isFirstRender = true;
 
 export default function App() {
@@ -31,42 +31,9 @@ export default function App() {
 // so the notification will not shown at firstRender means as we enter the website the notification will only shown when call some actions
     }
         
-    const sendRequest = async () => {
+    dispatch(sendCartData(cart));
 
-        const response = await fetch('https://redux-http-7c1de-default-rtdb.firebaseio.com/cartItems.json', {
-
-            method : "PUT", // PUT is just the name of ours request name
-            body : JSON.stringify(cart)
-
-        })
-
-        const data = await response.json();
-
-        // SEND STATE AS REQUEST SUCCESSFULLY
-
-        dispatch(uiActions.showNotification({
-
-            open : true,
-            type : 'success',
-            message : 'Data Send To Database Successfully'
-
-        }))
-
-// this (DATA) variable is basically used when ours RESPONSE fetched from server it converts ours RESPONSE into json FORMAT 
-
-    };
-
-    sendRequest().catch((error) => {
-
-        dispatch(uiActions.showNotification({
-
-            open : true,
-            type : 'error',
-            message : 'Sending Request Failed'
-
-        }))
-
-    });
+// we've to use it in a DISPATCH because we are sending it to ours REDUX-STORE where we've used THUNK logic
 
     }, [cart, dispatch])
 
