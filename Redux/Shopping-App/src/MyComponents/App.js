@@ -33,8 +33,6 @@ export default function App() {
         
     const sendRequest = async () => {
 
-        // FOR SENDING REQUEST
-
         const response = await fetch('https://redux-http-7c1de-default-rtdb.firebaseio.com/cartItems.json', {
 
             method : "PUT", // PUT is just the name of ours request name
