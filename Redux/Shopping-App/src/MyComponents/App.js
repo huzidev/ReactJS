@@ -31,7 +31,7 @@ export default function App() {
 // so the notification will not shown at firstRender means as we enter the website the notification will only shown when call some actions
     }
         
-    const sendRequest = async() => {
+    const sendRequest = async () => {
 
         // FOR SENDING REQUEST
 
