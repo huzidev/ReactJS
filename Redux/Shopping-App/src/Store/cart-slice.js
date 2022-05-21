@@ -113,6 +113,8 @@ const cartSlice = createSlice({
 
 });
 
+// THUNK method for logics
+
 export const cartActions = cartSlice.actions;
 
 export default cartSlice;
