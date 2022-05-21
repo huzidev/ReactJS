@@ -9,7 +9,10 @@ export default function Notification({type, message}) {
     return (
         <div>
             {/* so whenever the notification.open state is true show the notification with its severity type */}
-            {notification && <Alert severity={type}>
+            {notification.open && 
+            <Alert
+            onClose={handleClose} 
+            severity={type}>
                 {message}
             </Alert>}
         </div>
