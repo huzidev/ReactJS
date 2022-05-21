@@ -132,7 +132,7 @@ export const sendCartData = (cart) => { // for thunk their will be an parameter 
             type : 'warning',
             message : 'Sending Request'
 
-        }))
+        }));
 
     const sendRequest = async () => {
 

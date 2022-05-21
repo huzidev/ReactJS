@@ -14,9 +14,9 @@ const uiSlice = createSlice({
 
             state.notification = {
 
-                type : state.payload.type,
-                message : state.payload.message,
-                open : state.payload.open
+                type : action.payload.type,
+                message : action.payload.message,
+                open : action.payload.open
 
             }
 
