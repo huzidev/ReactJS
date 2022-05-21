@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { useDispatch } from "react-redux";
 
 const cartSlice = createSlice({
 
@@ -114,6 +115,18 @@ const cartSlice = createSlice({
 });
 
 // THUNK method for logics
+
+const sendCartData = (cart) => { // for thunk their will be an parameter in this case it will be cart
+
+// and it'll return another function which will take DISPATCH as parameter 
+
+    return (dispatch) => {
+
+
+        
+    }
+
+}
 
 export const cartActions = cartSlice.actions;
 
