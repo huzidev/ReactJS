@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { useDispatch } from "react-redux";
 
 const cartSlice = createSlice({
 
@@ -122,7 +121,15 @@ const sendCartData = (cart) => { // for thunk their will be an parameter in this
 
     return (dispatch) => {
 
+// FOR SENDING REQUEST
+        
+        dispatch(uiActions.showNotification({
 
+            open : true,
+            type : 'warning',
+            message : 'Sending Request'
+
+        }))
         
     }
 
