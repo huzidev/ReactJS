@@ -8,9 +8,10 @@ export default function Notification({type, message}) {
 
     return (
         <div>
-            <Alert severity={type}>
+            {/* so whenever the notification.open state is true show the notification with its severity type */}
+            {notification && <Alert severity={type}>
                 {message}
-            </Alert>
+            </Alert>}
         </div>
     )
 //The severity of the alert. This defines the color and icon used according to type 
