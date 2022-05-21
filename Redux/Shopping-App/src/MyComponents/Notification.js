@@ -1,6 +1,7 @@
 import React from 'react';
 import { Alert } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
+import { uiActions } from '../Store/ui-slice';
 
 export default function Notification({type, message}) {
 
@@ -10,7 +11,11 @@ export default function Notification({type, message}) {
 
     const handleClose = () => {
 
-        dispatch()
+        dispatch(uiActions.showNotification({
+
+            open : false
+// because when we wanted to close notification we simply will change the state of open to FALSE
+        }))
 
     }
     
