@@ -165,9 +165,16 @@ const sendCartData = (cart) => { // for thunk their will be an parameter in this
     }
     catch (error){
 
+        dispatch(uiActions.showNotification({
 
+            open : true,
+            type : 'error',
+            message : 'Sending Request Failed'
+
+        }))
 
     }
+    
 }
 
 export const cartActions = cartSlice.actions;
