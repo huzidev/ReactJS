@@ -78,7 +78,7 @@ export default function App() {
 
     });
 
-    }, [cart])
+    }, [cart, dispatch])
 
 // IT IS MANDATORY TO CALL THE VARIABLE NAME LIKE HERE WE'VE CALLED sendRequest() else the DATA would not update on backend
 
