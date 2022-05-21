@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { uiActions } from "./ui-slice.js";
 
 const cartSlice = createSlice({
 
@@ -131,7 +132,7 @@ const sendCartData = (cart) => { // for thunk their will be an parameter in this
 
         }))
         
-    }
+    };
 
 }
 
