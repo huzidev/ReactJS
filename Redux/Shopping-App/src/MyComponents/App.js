@@ -4,6 +4,7 @@ import Layout from './Layout.js';
 import Notification from './Notification.js'
 import { uiActions } from '../Store/ui-slice.js';
 import { useDispatch, useSelector } from 'react-redux';
+let isFirstRender = true;
 
 export default function App() {
 
@@ -86,7 +87,7 @@ export default function App() {
 
     return (
         <div>
-            <Notification type={notification.type} message={notification.message}/>
+            {notification && <Notification type={notification.type} message={notification.message}/>}
             
             {/* through Ternary operators */}
 
