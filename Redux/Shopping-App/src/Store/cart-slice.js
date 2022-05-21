@@ -133,8 +133,6 @@ export const sendCartData = (cart) => { // for thunk their will be an parameter 
             message : 'Sending Request'
 
         }))
-        
-    };
 
     const sendRequest = async () => {
 
@@ -176,7 +174,7 @@ export const sendCartData = (cart) => { // for thunk their will be an parameter 
         }))
 
     }
-    
+    };
 }
 
 export const cartActions = cartSlice.actions;
