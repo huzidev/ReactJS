@@ -16,7 +16,7 @@ export default function App() {
 
     const notification = useSelector((state) => state.ui.notification); 
     
-    // the cart will help us to send the HTTPS request
+// the cart will help us to send the HTTPS request
 
 // useSelector is used for have the access of REDUX-STORE and takes Redux-state as parameter and (State) is basically REDUX's state and auth is the name we've provided in ours REDUX STORE inside REDUCER and isLoggedIn is the action we wanted to update
 
@@ -24,6 +24,13 @@ export default function App() {
 
     React.useEffect(() => {
 
+    if (isFirstRender) {
+        
+        isFirstRender = false;
+        return;
+// so the notification will not shown at firstRender means as we enter the website the notification will only shown when call some actions
+    }
+        
     const sendRequest = async() => {
 
         // FOR SENDING REQUEST
