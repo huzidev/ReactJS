@@ -8,6 +8,12 @@ export default function Notification({type, message}) {
 
     const notification = useSelector((state) => state.ui.notification);
 
+    const handleClose = () => {
+
+        dispatch()
+
+    }
+    
     return (
         <div>
             {/* so whenever the notification.open state is true show the notification with its severity type */}
