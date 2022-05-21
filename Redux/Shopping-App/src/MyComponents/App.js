@@ -51,7 +51,9 @@ export default function App() {
 
     return (
         <div>
-            {notification && <Notification type={notification.type} message={notification.message}/>}
+            {notification && (
+                <Notification type={notification.type} message={notification.message}/>
+            )}
             
             {/* through Ternary operators */}
 
