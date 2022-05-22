@@ -10,7 +10,9 @@ export default function CartItems() {
 
     // of Redux-Store and we've used state.cart.itemsList which is the part of ours REDUX-STORE
 
+
     return (
+        <>
         <div className='cart-main'>
             <h2>
                 Yours Cart
@@ -31,5 +33,6 @@ export default function CartItems() {
                 ))}
             </ul>
         </div>
+        </>
       )
 }
