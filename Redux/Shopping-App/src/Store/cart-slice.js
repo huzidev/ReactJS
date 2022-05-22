@@ -109,6 +109,12 @@ const cartSlice = createSlice({
 
             // because at the above we've provide showCart a (FALSE) value in the initialState object and here we've provided (!) so each time it'll be opposite on click
 
+        },
+
+        replaceData() {
+
+
+
         }
     }
 
