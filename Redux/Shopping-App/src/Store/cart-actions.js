@@ -1,5 +1,5 @@
-import { cartActions } from "./cart-slice";
-import { uiActions } from "./ui-slice";
+import { cartActions } from "./cart-slice.js";
+import { uiActions } from "./ui-slice.js";
 
 // THUNK method for logics
 
@@ -14,7 +14,7 @@ export const fetchData = () => {
             const response = await fetch('https://redux-http-7c1de-default-rtdb.firebaseio.com/cartItems.json');
             const data = await response.json();
             return data;
-        }
+        };
 // NOW WE'VE TO USE tryCatch block because we've used async function and completion of an async function is called PROMISE
 //PROMISE Represents the completion of an asynchronous operation
         try {
@@ -57,7 +57,7 @@ export const sendCartData = (cart) => { // for thunk their will be an parameter 
                 method : "PUT", // PUT is just the name of ours request name
                 body : JSON.stringify(cart)
     
-            })
+            });
     
             const data = await response.json();
     
@@ -91,4 +91,4 @@ export const sendCartData = (cart) => { // for thunk their will be an parameter 
     
         }
     };
-}
+};
