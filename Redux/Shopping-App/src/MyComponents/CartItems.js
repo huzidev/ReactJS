@@ -27,7 +27,7 @@ export default function CartItems() {
                 Yours Cart
             </h2>
             { show ? 
-                <ul>
+                (<ul>
                     {cartItems.map((item) => (
                         <li key={item.Id}>
                             {" "}
@@ -41,8 +41,14 @@ export default function CartItems() {
                             {" "}
                         </li>
                     ))}
-                </ul>
-            : <b> cart is empty </b>}
+                </ul>)
+            : (<div className='center'> 
+                <b> cart is empty </b>
+                <p>
+                    Go Buy Something
+                </p>
+              </div>)
+              }
         </div>
         </>
       )
