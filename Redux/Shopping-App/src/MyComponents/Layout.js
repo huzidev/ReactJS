@@ -49,6 +49,9 @@ export default function Layout(props) {
             <div className='list'>
                 <Items />
             </div>
+            <div className='items-container'>
+                {showCart && <CartItems />}
+            </div>
             <div className='right'>
                 <h3>
                     Total : {total} $
@@ -58,9 +61,6 @@ export default function Layout(props) {
                 <button>
                     Place Order
                 </button>
-            </div>
-            <div className='items-container'>
-                {showCart && <CartItems />}
             </div>
         </div>
     )
