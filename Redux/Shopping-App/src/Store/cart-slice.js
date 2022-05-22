@@ -8,7 +8,8 @@ const cartSlice = createSlice({
 
         itemsList : [], // because array can store multiple values
         totalQuantity : 0, // by default it should've to be zero
-        showCart : false
+        showCart : false,
+        changed : false
     },
     reducers : {
 

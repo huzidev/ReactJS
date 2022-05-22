@@ -2,8 +2,8 @@ import React from 'react';
 import Auth from './Auth.js';
 import Layout from './Layout.js';
 import Notification from './Notification.js'
-import { useDispatch, useSelector } from 'react-redux';
 import { fetchData, sendCartData } from '../Store/cart-actions.js';
+import { useDispatch, useSelector } from 'react-redux';
 let isFirstRender = true;
 
 export default function App() {
