@@ -38,7 +38,7 @@ export default function App() {
         }
         if (cart.changed) {
 // so the notification will not shown at firstRender means as we enter the website the notification will only shown when call some actions
-            
+// and the notifications will only works as we use addToCart or removeFromCart
             dispatch(sendCartData(cart));
 
         }
