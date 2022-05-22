@@ -59,6 +59,8 @@ export default function CartItem({Id, name, quantity, price, total}) {
             <button onClick={incrementCartItems}>
                 +
             </button>
+            <i className='fa fa-trash'>
+            </i>
         </div>
     )
 }
