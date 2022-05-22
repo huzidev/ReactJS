@@ -30,15 +30,20 @@ export default function App() {
 
     React.useEffect(() => {
 
-    if (isFirstRender) {
-        
-        isFirstRender = false;
-        return;
+        if (isFirstRender) {
+            
+            isFirstRender = false;
+            return;
+            
+        }
+        if (cart.changed) {
 // so the notification will not shown at firstRender means as we enter the website the notification will only shown when call some actions
-    }
-        
-    dispatch(sendCartData(cart));
+            
+            dispatch(sendCartData(cart));
 
+        }
+        
+        
 // we've to use it in a DISPATCH because we are sending it to ours REDUX-STORE where we've used THUNK logic
 
     }, [cart, dispatch])
