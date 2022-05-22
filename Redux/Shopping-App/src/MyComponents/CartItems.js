@@ -43,8 +43,8 @@ export default function CartItems() {
                     ))}
                 </ul>)
             : (<div className='center'> 
-                <b> cart is empty </b>
                 <p>
+                    Cart Is Empty <br />
                     Go Buy Something
                 </p>
               </div>)
