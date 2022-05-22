@@ -4,6 +4,7 @@ import Layout from './Layout.js';
 import Notification from './Notification.js'
 import { useDispatch, useSelector } from 'react-redux';
 import { sendCartData } from '../Store/cart-slice.js';
+import { fetchData } from '../Store/cart-actions.js';
 let isFirstRender = true;
 
 export default function App() {
@@ -24,9 +25,9 @@ export default function App() {
 
     React.useEffect(() => {
 
+        dispatch(fetchData())
 
-
-    }, [])
+    }, [dispatch])
 
     React.useEffect(() => {
 
