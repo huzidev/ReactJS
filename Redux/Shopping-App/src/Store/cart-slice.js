@@ -111,9 +111,9 @@ const cartSlice = createSlice({
 
         },
 
-        replaceData() {
+        replaceData(state, action) {
 
-
+            state.totalQuantity = action.payload;
 
         }
     }
