@@ -14,9 +14,15 @@ export const fetchData = () => {
             const data = await response.json();
             return data;
         }
-
+// NOW WE'VE TO USE tryCatch block because we've used async function and completion of an async function is called PROMISE
+//PROMISE Represents the completion of an asynchronous operation
+        try {
+                
+        } 
+        catch (error) {
+            
+        }
     }
-    
 }
 
 export const sendCartData = (cart) => { // for thunk their will be an parameter in this case it will be cart
