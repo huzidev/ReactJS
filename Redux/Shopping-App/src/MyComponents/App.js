@@ -36,13 +36,6 @@ export default function App() {
             return;
             
         }
-        if (cart.changed) {
-// so the notification will not shown at firstRender means as we enter the website the notification will only shown when call some actions
-// and the notifications will only works as we use addToCart or removeFromCart
-            dispatch(sendCartData(cart));
-
-        }
-        
         
 // we've to use it in a DISPATCH because we are sending it to ours REDUX-STORE where we've used THUNK logic
 
