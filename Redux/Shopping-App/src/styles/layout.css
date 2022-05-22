@@ -106,5 +106,6 @@ button {
 }
 
 .sign-out {
-  font-size: 19px;
+  font-size: 17px;
+  padding: 5px 10px;
 }
