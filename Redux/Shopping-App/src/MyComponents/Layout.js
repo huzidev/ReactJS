@@ -42,6 +42,8 @@ export default function Layout(props) {
                 <Cart />
                 <div>
                     <button onClick={logoutHandler}>
+                        <i className='fa fa-sign-out'>
+                        </i>
                         Logout
                     </button>
                 </div>
