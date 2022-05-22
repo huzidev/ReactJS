@@ -20,7 +20,7 @@ export const fetchData = () => {
         try {
             const cartData = await fetchHandler();
             dispatch(cartActions.replaceData(cartData));
-// we've insert cartData as payload because it'll REPLACE all the data with cartData
+// we've insert cartData as payload because it'll REPLACE all the data with cartData on ours FRONTEND
         } 
         catch (error) {
             
