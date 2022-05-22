@@ -1,3 +1,4 @@
+import { cartActions } from "./cart-slice";
 import { uiActions } from "./ui-slice";
 
 // THUNK method for logics
@@ -17,7 +18,8 @@ export const fetchData = () => {
 // NOW WE'VE TO USE tryCatch block because we've used async function and completion of an async function is called PROMISE
 //PROMISE Represents the completion of an asynchronous operation
         try {
-                
+            const cartData = await fetchHandler();
+            dispatch(cartActions.replaceData(cart));
         } 
         catch (error) {
             
