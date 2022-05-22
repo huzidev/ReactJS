@@ -1,3 +1,5 @@
+import { uiActions } from "./ui-slice";
+
 // THUNK method for logics
 
 // we use THUNK so we can have ours logic, data and all actionCreators inside REDUX-STORE
