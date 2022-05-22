@@ -3,8 +3,7 @@ import Auth from './Auth.js';
 import Layout from './Layout.js';
 import Notification from './Notification.js'
 import { useDispatch, useSelector } from 'react-redux';
-import { sendCartData } from '../Store/cart-slice.js';
-import { fetchData } from '../Store/cart-actions.js';
+import { fetchData, sendCartData } from '../Store/cart-actions.js';
 let isFirstRender = true;
 
 export default function App() {
