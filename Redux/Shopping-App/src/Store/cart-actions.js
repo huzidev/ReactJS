@@ -19,7 +19,8 @@ export const fetchData = () => {
 //PROMISE Represents the completion of an asynchronous operation
         try {
             const cartData = await fetchHandler();
-            dispatch(cartActions.replaceData(cart));
+            dispatch(cartActions.replaceData(cartData));
+// we've insert cartData as payload because it'll REPLACE all the data with cartData
         } 
         catch (error) {
             
