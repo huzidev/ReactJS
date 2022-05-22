@@ -16,6 +16,9 @@ const cartSlice = createSlice({
         // addToCart will takes state and action so when user will click on addToCart the action will update accordingly
 
         addToCart(state, action) {
+// we've to put state.changed to true in both addToCart and removeFromCart else wise the notification will be shown continuously 
+// this state.changed means once we get to addToCart then change the CHANGED from false to true
+            state.changed = true;
 
             const newItem = action.payload; // which is going to be according to user that how much time user clicked on addToCart
 
@@ -63,6 +66,8 @@ const cartSlice = createSlice({
         },
 
         removeFromCart(state, action) {
+
+            state.changed = true;
 
             const Id = action.payload;
 
