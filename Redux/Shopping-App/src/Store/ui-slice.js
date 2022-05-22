@@ -18,11 +18,11 @@ const uiSlice = createSlice({
                 message : action.payload.message,
                 open : action.payload.open
 
-            }
+            };
 
-        }
+        },
 
-    }
+    },
 
 });
 

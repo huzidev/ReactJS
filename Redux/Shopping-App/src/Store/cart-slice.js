@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { uiActions } from "./ui-slice.js";
 
 const cartSlice = createSlice({
 
@@ -120,8 +119,9 @@ const cartSlice = createSlice({
 // this replace data is for getting HTTP request from backend for example if any user with some id logged in then the previous cart item that user insert will be shown
         replaceData(state, action) {
 
-            state.totalQuantity = action.payload.totalPrice;
+            state.totalQuantity = action.payload.totalQuantity;
             state.itemsList = action.payload.itemsList;
+            
         }
     }
 
