@@ -19,7 +19,7 @@ export default function CartItems() {
     else if (quantity > 0) {
         show = true;
     }
-    
+
     return (
         <>
         <div className='cart-main'>
