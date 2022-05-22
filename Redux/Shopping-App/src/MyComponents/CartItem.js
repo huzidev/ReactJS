@@ -37,7 +37,12 @@ export default function CartItem({Id, name, quantity, price, total}) {
         }))
 
     }
+    
+    const deleteItem = () => {
 
+        dispatch(cartActions.deleteFromCart(Id));
+
+    }
 
     return (
         <div className='items-list'>
@@ -59,7 +64,7 @@ export default function CartItem({Id, name, quantity, price, total}) {
             <button onClick={incrementCartItems}>
                 +
             </button>
-            <i className='fa fa-trash'>
+            <i className='fa fa-trash' onClick={deleteItem}>
             </i>
         </div>
     )

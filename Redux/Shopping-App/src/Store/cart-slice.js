@@ -108,6 +108,27 @@ const cartSlice = createSlice({
 
             // because at the above we've provide showCart a (FALSE) value in the initialState object and here we've provided (!) so each time it'll be opposite on click
 
+        },
+
+        deleteFromCart(state, action) {
+
+            const Id = action.payload;
+
+            const existingItem = state.itemsList.find((item) => item.Id === Id);
+
+            if(existingItem.quantity > 0){
+
+                state.itemsList = state.itemsList.filter((item) => item.Id !== Id);
+
+                existingItem.quantity = 0;
+    
+                existingItem.totalPrice = 0;
+
+                state.totalQuantity --;
+
+            }
+
+
         }
 
     }
