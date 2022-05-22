@@ -24,6 +24,12 @@ export default function App() {
 
     React.useEffect(() => {
 
+
+
+    }, [])
+
+    React.useEffect(() => {
+
     if (isFirstRender) {
         
         isFirstRender = false;
