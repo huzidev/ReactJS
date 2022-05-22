@@ -31,7 +31,6 @@ export default function Layout(props) {
 
     });
 
-
     const showCart = useSelector((state) => state.cart.showCart);
 
     return (
