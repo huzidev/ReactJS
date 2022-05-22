@@ -20,7 +20,7 @@ export default function App() {
 
 // useSelector is used for have the access of REDUX-STORE and takes Redux-state as parameter and (State) is basically REDUX's state and auth is the name we've provided in ours REDUX STORE inside REDUCER and isLoggedIn is the action we wanted to update
 
-// fetching the data from the backend files
+// fetching the data from the backend files to frontEnd
 
     React.useEffect(() => {
 
