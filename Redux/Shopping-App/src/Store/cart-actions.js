@@ -9,7 +9,7 @@ export const fetchData = () => {
 
     return async (dispatch) => {
 
-        const fetchHandler = () => {
+        const fetchHandler = async () => {
 // since we are just getting http request from backend therefore we don't have to use METHOD(PUT) AND BODY because we are not sending
             const response = await fetch('https://redux-http-7c1de-default-rtdb.firebaseio.com/cartItems.json');
             const data = await response.json();
