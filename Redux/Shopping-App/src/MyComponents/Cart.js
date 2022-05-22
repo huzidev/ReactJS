@@ -26,7 +26,8 @@ export default function Cart() {
         <div>
             <div className='cart cart-btn' onClick={showCart}>
                 <h5>
-                    cart: {quantity} items
+                    <i className='fa fa-shopping-cart'></i>
+                    &nbsp;: {quantity} items
                 </h5>
             </div>
         </div>
