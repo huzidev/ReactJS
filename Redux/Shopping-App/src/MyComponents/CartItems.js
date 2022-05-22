@@ -26,23 +26,23 @@ export default function CartItems() {
             <h2>
                 Yours Cart
             </h2>
-        { show ? 
-            <ul>
-                {cartItems.map((item) => (
-                    <li key={item.Id}>
-                        {" "}
-                        <CartItem 
-                            Id = {item.Id}
-                            price = {item.price}
-                            total = {item.totalPrice}
-                            name = {item.name}
-                            quantity = {item.quantity}
-                        />
-                        {" "}
-                    </li>
-                ))}
-            </ul>
-            : 'cart is empty'}
+            { show ? 
+                <ul>
+                    {cartItems.map((item) => (
+                        <li key={item.Id}>
+                            {" "}
+                            <CartItem 
+                                Id = {item.Id}
+                                price = {item.price}
+                                total = {item.totalPrice}
+                                name = {item.name}
+                                quantity = {item.quantity}
+                            />
+                            {" "}
+                        </li>
+                    ))}
+                </ul>
+            : <b> cart is empty </b>}
         </div>
         </>
       )
