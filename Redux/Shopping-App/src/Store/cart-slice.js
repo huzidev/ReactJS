@@ -108,15 +108,8 @@ const cartSlice = createSlice({
 
             // because at the above we've provide showCart a (FALSE) value in the initialState object and here we've provided (!) so each time it'll be opposite on click
 
-        },
-
-// this replace data is for getting HTTP request from backend for example if any user with some id logged in then the previous cart item that user insert will be shown
-        replaceData(state, action) {
-
-            state.totalQuantity = action.payload.totalQuantity;
-            state.itemsList = action.payload.itemsList;
-            
         }
+
     }
 
 });

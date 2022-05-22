@@ -2,7 +2,7 @@ import React from 'react';
 import Auth from './Auth.js';
 import Layout from './Layout.js';
 import Notification from './Notification.js'
-import { fetchData, sendCartData } from '../Store/cart-actions.js';
+import { sendCartData } from '../Store/cart-actions.js';
 import { useDispatch, useSelector } from 'react-redux';
 let isFirstRender = true;
 
@@ -20,14 +20,6 @@ export default function App() {
 
 // useSelector is used for have the access of REDUX-STORE and takes Redux-state as parameter and (State) is basically REDUX's state and auth is the name we've provided in ours REDUX STORE inside REDUCER and isLoggedIn is the action we wanted to update
 
-// fetching the data from the backend files to frontEnd
-
-    React.useEffect(() => {
-
-        dispatch(fetchData());
-
-    }, [dispatch]);
-
     React.useEffect(() => {
 
         if (isFirstRender) {
@@ -37,9 +29,11 @@ export default function App() {
             
         }
         
+        dispatch(sendCartData(cart));
 // we've to use it in a DISPATCH because we are sending it to ours REDUX-STORE where we've used THUNK logic
 
     }, [cart, dispatch])
+
 
 // IT IS MANDATORY TO CALL THE VARIABLE NAME LIKE HERE WE'VE CALLED sendRequest() else the DATA would not update on backend
 
