@@ -128,7 +128,6 @@ const cartSlice = createSlice({
 
             }
 
-
         }
 
     }
