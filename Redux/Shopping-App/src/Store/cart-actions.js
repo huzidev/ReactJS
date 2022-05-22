@@ -4,6 +4,12 @@ import { uiActions } from "./ui-slice";
 
 // we use THUNK so we can have ours logic, data and all actionCreators inside REDUX-STORE
 
+export const fetchData = () => {
+
+    return async (dispatch)
+    
+}
+
 export const sendCartData = (cart) => { // for thunk their will be an parameter in this case it will be cart
 
     // and it'll return another function which will take DISPATCH as parameter 
