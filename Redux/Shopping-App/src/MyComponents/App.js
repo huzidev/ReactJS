@@ -24,9 +24,9 @@ export default function App() {
 
     React.useEffect(() => {
 
-        dispatch(fetchData())
+        dispatch(fetchData());
 
-    }, [dispatch])
+    }, [dispatch]);
 
     React.useEffect(() => {
 
