@@ -23,7 +23,13 @@ export const fetchData = () => {
 // we've insert cartData as payload because it'll REPLACE all the data with cartData on ours FRONTEND
         } 
         catch (error) {
-            
+            dispatch(uiActions.showNotification({
+    
+                open : true,
+                type : 'error',
+                message : 'Sending Request Failed'
+    
+            }))
         }
     }
 }
