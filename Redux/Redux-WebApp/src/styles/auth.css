@@ -1,0 +1,13 @@
+.container {
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: aqua;
+  padding: 20px 0px;
+}
+.container input {
+  margin: 20px;
+}
+.container button {
+  cursor: pointer;
+}
