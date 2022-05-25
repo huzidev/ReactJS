@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const loginStore = createSlice({
+const logInStore = createSlice({
 
     name : 'login',
     initialState : {isLoggedIn : false},
@@ -12,9 +12,11 @@ const loginStore = createSlice({
 
         logOut(state) {
             state.isLoggedIn = false;
-        },
+        }
 
     }
 });
 
-export default loginStore;
+export const logInActions = logInStore.actions;
+
+export default logInStore;

@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import loginStore from "./Login-Store.js";
+import logInStore from "./Login-Store.js";
 
 
 const store = configureStore({
 
     reducer : {
-        login : loginStore.reducer
+        login : logInStore.reducer
     }
 
 });
