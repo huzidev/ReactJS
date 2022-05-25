@@ -22,7 +22,7 @@ export default function Login() {
                         </h5>
                         <input type="password" className='input'/>
                     </div>
-                    <div>
+                    <div className='btn'>
                         <button>
                             Login
                         </button>
