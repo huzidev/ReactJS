@@ -6,10 +6,18 @@ export default function Login() {
 
     function addFocus() {
         
-    }
-
+        let parent = this.parentNode.parentNode;
+        parent.classList.add('focus');
+        
+    };
+    
     function removeFocus() {
         
+        let parent = this.parentNode.parentNode;
+        if (this.value === '') {
+            parent.classList.remove('focus');
+        }
+
     }
 
     return (
