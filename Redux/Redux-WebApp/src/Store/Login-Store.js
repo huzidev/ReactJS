@@ -3,7 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const logInStore = createSlice({
 
     name : 'login',
-    initialState : {isLoggedIn : false},
+    initialState : {
+        isLoggedIn : false,
+        setStateForUser : false,
+        setStateForPassword : false
+    },
     reducers : {
 
         logIn(state) {

@@ -5,8 +5,8 @@ import { logInActions } from '../Store/Login-Store';
 export default function Login() {
     
     const dispatch = useDispatch();
-    const [stateForUser, setStateForUser] = useState(false);
-    const [stateForPassword, setStateForPassword] = useState(false);
+    // const [stateForUser, setStateForUser] = useState(false);
+    // const [stateForPassword, setStateForPassword] = useState(false);
 
     const user = event => {
 
