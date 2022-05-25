@@ -8,6 +8,6 @@ const store = configureStore({
         login : loginStore.reducer
     }
 
-})
+});
 
 export default store;
