@@ -60,5 +60,8 @@
   text-align: center;
 }
 .login-main .login-setup .btn button {
+  font-size: 15px;
   cursor: pointer;
+  height: 30px;
+  width: 150px;
 }
