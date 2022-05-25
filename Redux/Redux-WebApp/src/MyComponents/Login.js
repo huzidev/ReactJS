@@ -9,12 +9,14 @@ export default function Login() {
                         Welcome
                     </h2>
                     <div>
+                        <i className='fa fa-user'></i>
                         <h5>
                             Username
                         </h5>
                         <input type="text" className='input'/>
                     </div>
                     <div>
+                        <i className='fas fa-lock'></i>
                         <h5>
                             Password
                         </h5>
