@@ -16,8 +16,15 @@ const logInStore = createSlice({
 
         logOut(state) {
             state.isLoggedIn = false;
-        }
+        },
 
+        user(state) {
+            state.setStateForUser = true;
+        },
+
+        pass(state) {
+            state.setStateForPassword = true;
+        }
     }
 });
 

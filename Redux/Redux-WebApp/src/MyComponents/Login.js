@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { logInActions } from '../Store/Login-Store';
+import { useSelector } from 'react-redux';
 
 export default function Login() {
     
@@ -8,15 +9,26 @@ export default function Login() {
     // const [stateForUser, setStateForUser] = useState(false);
     // const [stateForPassword, setStateForPassword] = useState(false);
 
-    const user = event => {
+    // const user = event => {
 
-        setStateForUser(prev => !prev)
+    //     setStateForUser(prev => !prev)
         
+    // }
+
+    // function pass(params) {
+        
+    //     setStateForPassword(prev => !prev)
+    // }
+
+    const setStateForUser = useSelector((state) => state.login.setStateForUser);
+    const setStateForPassword = useSelector((state) => state.login.setStateForPassword);
+
+    function test() {
+        dispatch(logInActions.user())
     }
 
-    function pass(params) {
-        
-        setStateForPassword(prev => !prev)
+    function testA() {
+        dispatch(logInActions.pass())
     }
 
     function next() {
@@ -32,7 +44,7 @@ export default function Login() {
                     </h2>
                     <div className='user-input'>
                         <i className='fa fa-user'></i>
-                        <div onClick={user} type="text" className={'ref' + ( stateForUser ? ' focus' : '')}>
+                        <div onClick={test} type="text" className={'ref' + ( setStateForUser ? ' focus' : '')}>
                             <h5>
                                 Username
                             </h5>
@@ -41,7 +53,7 @@ export default function Login() {
                     </div>
                     <div className='user-input'>
                         <i className='fas fa-lock'></i>
-                        <div onClick={pass} type="text" className={'ref' + ( stateForPassword ? ' focus' : '')}>
+                        <div onClick={testA} type="text" className={'ref' + ( setStateForPassword ? ' focus' : '')}>
                             <h5>
                                 Password
                             </h5>
