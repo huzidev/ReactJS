@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Login() {
     
-   window.addEventListener("click", function(){    
+    const [state, setState] = useState(false);
 
-       const inputs = document.querySelectorAll(".input");
-       
-   })
-    
+    function add() {
+        setState(prev => !prev.state)
+        if (state === true) {
+            setState(prev => !prev.state)
+        }
     }
+
+    const isOn = state
 
     return (
         <div className='login-main'>
@@ -22,14 +25,14 @@ export default function Login() {
                         <h5>
                             Username
                         </h5>
-                        <input type="text" className='input'/>
+                        <input onClick={add} type="text" className={'input' + ( isOn ? ' focus' : '')}/>
                     </div>
                     <div className='user-input'>
                         <i className='fas fa-lock'></i>
                         <h5>
                             Password
                         </h5>
-                        <input type="password" className='input'/>
+                        <input onClick={add} type="password" className={'input' + ( isOn ? ' focus' : '')}/>
                     </div>
                     <div className='btn'>
                         <button>
