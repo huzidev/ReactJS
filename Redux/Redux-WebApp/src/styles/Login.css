@@ -42,3 +42,6 @@
   background-color: aqua;
   text-align: center;
 }
+.login-main .login-setup .btn button {
+  cursor: pointer;
+}
