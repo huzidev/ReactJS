@@ -47,8 +47,10 @@
 .login-main .login-setup .user-input .input {
   height: 30px;
   width: 250px;
-  outline: none;
+  border: none;
   margin: 0px 0px 0px 10px;
+  -webkit-box-shadow: 0px 6px 11px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 11px 1px rgba(0, 0, 0, 0.1);
 }
 .login-main .login-setup .btn {
   text-align: center;
