@@ -57,7 +57,7 @@
 .login-main .login-setup .user-input .input:focus {
   outline: none;
 }
-.login-main .login-setup .user-input .focus {
+.login-main .login-setup .user-input .input.focus {
   background-color: aqua;
 }
 .login-main .login-setup .btn {

@@ -2,12 +2,18 @@ import React, { useState } from 'react';
 
 export default function Login() {
     
-    const [state, setState] = useState(false);
+    const [stateForUser, setStateForUser] = useState(false);
+    const [stateForPassword, setStateForPassword] = useState(false);
 
-    const click = event => {
+    const user = event => {
 
-        setState(prev => !prev)
+        setStateForUser(prev => !prev)
+        
+    }
 
+    function pass(params) {
+        
+        setStateForPassword(prev => !prev)
     }
 
     return (
@@ -22,14 +28,14 @@ export default function Login() {
                         <h5>
                             Username
                         </h5>
-                        <input onClick={add} type="text" className={'input' + ( {state} ? ' focus' : '')}/>
+                        <input onClick={user} type="text" className={'input' + ( stateForUser ? ' focus' : '')}/>
                     </div>
                     <div className='user-input'>
                         <i className='fas fa-lock'></i>
                         <h5>
                             Password
                         </h5>
-                        <input onClick={add} type="password" className={'input' + ( {state} ? ' focus' : '')}/>
+                        <input onClick={pass} type="password" className={'input' + ( stateForPassword ? ' focus' : '')}/>
                     </div>
                     <div className='btn'>
                         <button>
