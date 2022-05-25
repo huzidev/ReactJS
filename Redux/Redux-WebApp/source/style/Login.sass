@@ -10,6 +10,7 @@
         align-items: center
         justify-content: center
         border: 1px solid black
+        border-radius: 20px
         h2
             text-align: center
         .user-input
@@ -18,15 +19,6 @@
             align-items: center
             position: relative
             margin: 30px
-            &::before &::after
-                content: ""
-                position: absolute
-                bottom: -2px
-                width: 0%
-                height: 2px
-                background-color: #38d39f
-                -webkit-transition: 400ms
-                transition: 400ms
             h5
                 position: absolute
                 left: 30px
@@ -40,6 +32,7 @@
                 border-bottom: 2px solid black
                 &:focus
                     outline: none
+                &::before
         .btn
             text-align: center
             button

@@ -23,6 +23,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid black;
+  border-radius: 20px;
 }
 .login-main .login-setup h2 {
   text-align: center;
@@ -39,16 +40,6 @@
           align-items: center;
   position: relative;
   margin: 30px;
-}
-.login-main .login-setup .user-input::before .login-main .login-setup .user-input::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  width: 0%;
-  height: 2px;
-  background-color: #38d39f;
-  -webkit-transition: 400ms;
-  transition: 400ms;
 }
 .login-main .login-setup .user-input h5 {
   position: absolute;
