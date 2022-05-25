@@ -18,6 +18,10 @@ export default function Login() {
             parent.classList.remove('focus');
         }
 
+    inputs.forEach((input) => {
+        input.addEventListener('focus', addFocus);
+        input.addEventListener('blur', addFocus);
+    })
     }
 
     return (
