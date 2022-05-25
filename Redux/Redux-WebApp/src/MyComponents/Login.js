@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 export default function Login() {
     
+    const dispatch = useDispatch();
     const [stateForUser, setStateForUser] = useState(false);
     const [stateForPassword, setStateForPassword] = useState(false);
 
@@ -14,6 +16,10 @@ export default function Login() {
     function pass(params) {
         
         setStateForPassword(prev => !prev)
+    }
+
+    function next() {
+        
     }
 
     return (
@@ -42,7 +48,7 @@ export default function Login() {
                         </div>
                     </div>
                     <div className='btn'>
-                        <button>
+                        <button onClick={next}>
                             Login
                         </button>
                     </div>
