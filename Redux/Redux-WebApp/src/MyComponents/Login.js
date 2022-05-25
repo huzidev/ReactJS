@@ -1,6 +1,9 @@
 import React from 'react'
 
 export default function Login() {
+
+    const input = document.querySelectorAll("input");
+
     return (
         <div className='login-main'>
             <div className='login-setup'>
