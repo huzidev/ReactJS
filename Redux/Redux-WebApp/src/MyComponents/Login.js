@@ -2,7 +2,15 @@ import React from 'react'
 
 export default function Login() {
 
-    const input = document.querySelectorAll("input");
+    const inputs = document.querySelectorAll(".input");
+
+    function addFocus() {
+        
+    }
+
+    function removeFocus() {
+        
+    }
 
     return (
         <div className='login-main'>
