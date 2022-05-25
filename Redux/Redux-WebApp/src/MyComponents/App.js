@@ -5,6 +5,8 @@ import Login from './Login.js';
 
 export default function App() {
     return (
-        <div></div>
+        <div>
+            <Login />
+        </div>
     )
 }
