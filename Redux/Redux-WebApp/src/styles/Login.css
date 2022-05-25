@@ -24,3 +24,6 @@
           justify-content: center;
   border: 1px solid black;
 }
+.login-main .login-setup h2 {
+  text-align: center;
+}
