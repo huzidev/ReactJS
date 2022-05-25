@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { logInActions } from '../Store/Login-Store';
 
 export default function Login() {
     
@@ -19,7 +20,7 @@ export default function Login() {
     }
 
     function next() {
-        
+        dispatch(logInActions.logIn())
     }
 
     return (
