@@ -8,19 +8,24 @@ export default function Login() {
                     <h2>
                         Welcome
                     </h2>
-                    <div>
+                    <div className='user-input'>
                         <i className='fa fa-user'></i>
                         <h5>
                             Username
                         </h5>
                         <input type="text" className='input'/>
                     </div>
-                    <div>
+                    <div className='user-input'>
                         <i className='fas fa-lock'></i>
                         <h5>
                             Password
                         </h5>
                         <input type="password" className='input'/>
+                    </div>
+                    <div>
+                        <button>
+                            Login
+                        </button>
                     </div>
                 </form>
             </div>
