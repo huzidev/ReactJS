@@ -4,14 +4,11 @@ export default function Login() {
     
     const [state, setState] = useState(false);
 
-    function add() {
-        setState(prev => !prev.state)
-        if (state === true) {
-            setState(prev => !prev.state)
-        }
-    }
+    const click = event => {
 
-    const isOn = state
+        setState(prev => !prev)
+
+    }
 
     return (
         <div className='login-main'>
@@ -25,14 +22,14 @@ export default function Login() {
                         <h5>
                             Username
                         </h5>
-                        <input onClick={add} type="text" className={'input' + ( isOn ? ' focus' : '')}/>
+                        <input onClick={add} type="text" className={'input' + ( {state} ? ' focus' : '')}/>
                     </div>
                     <div className='user-input'>
                         <i className='fas fa-lock'></i>
                         <h5>
                             Password
                         </h5>
-                        <input onClick={add} type="password" className={'input' + ( isOn ? ' focus' : '')}/>
+                        <input onClick={add} type="password" className={'input' + ( {state} ? ' focus' : '')}/>
                     </div>
                     <div className='btn'>
                         <button>
