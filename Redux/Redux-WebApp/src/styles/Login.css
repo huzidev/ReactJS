@@ -48,6 +48,9 @@
   position: absolute;
   left: 20px;
   top: -15px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-weight: 500;
 }
 .login-main .login-setup .user-input .ref .input {
   height: 30px;
@@ -60,6 +63,12 @@
 }
 .login-main .login-setup .user-input .ref .input:focus {
   outline: none;
+}
+.login-main .login-setup .user-input .focus h5 {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  top: -45px;
+  left: 10px;
 }
 .login-main .login-setup .btn {
   text-align: center;
