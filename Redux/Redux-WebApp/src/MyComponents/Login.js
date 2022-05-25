@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function Login() {
     
     const [stateForUser, setStateForUser] = useState(false);
-    const [stateForPassword, setStateForPassword] = useState(false);
+    // const [stateForPassword, setStateForPassword] = useState(false);
 
     const user = event => {
 
@@ -11,10 +11,10 @@ export default function Login() {
         
     }
 
-    function pass(params) {
+    // function pass(params) {
         
-        setStateForPassword(prev => !prev)
-    }
+    //     setStateForPassword(prev => !prev)
+    // }
 
     return (
         <div className='login-main'>
@@ -25,17 +25,21 @@ export default function Login() {
                     </h2>
                     <div className='user-input'>
                         <i className='fa fa-user'></i>
-                        <h5>
-                            Username
-                        </h5>
-                        <input onClick={user} type="text" className={'input' + ( stateForUser ? ' focus' : '')}/>
+                        <div onClick={user} type="text" className={'ref' + ( stateForUser ? ' focus' : '')}>
+                            <h5>
+                                Username
+                            </h5>
+                            <input type="text" className='input'/>
+                        </div>
                     </div>
                     <div className='user-input'>
                         <i className='fas fa-lock'></i>
-                        <h5>
-                            Password
-                        </h5>
-                        <input onClick={pass} type="password" className={'input' + ( stateForPassword ? ' focus' : '')}/>
+                        <div onClick={user} type="text" className={'ref' + ( stateForUser ? ' focus' : '')}>
+                            <h5>
+                                Password
+                            </h5>
+                            <input type="password" className='input'/>
+                        </div>
                     </div>
                     <div className='btn'>
                         <button>
