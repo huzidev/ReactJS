@@ -9,7 +9,7 @@ export default function App() {
 
     return (
         <div>
-            {<Login />}
+            {isLoggedIn ? <Layout /> : <Login />}
         </div>
     )
 }
