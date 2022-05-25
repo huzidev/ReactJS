@@ -1,27 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 export default function Login() {
-
-    const inputs = document.querySelectorAll(".input");
-
-    function addFocus() {
-        
-        let parent = this.parentNode.parentNode;
-        parent.classList.add('focus');
-        
-    };
     
-    function removeFocus() {
-        
-        let parent = this.parentNode.parentNode;
-        if (this.value === '') {
-            parent.classList.remove('focus');
-        }
+   window.addEventListener("click", function(){    
 
-    inputs.forEach((input) => {
-        input.addEventListener('focus', addFocus);
-        input.addEventListener('blur', addFocus);
-    })
+       const inputs = document.querySelectorAll(".input");
+       
+   })
+    
     }
 
     return (
