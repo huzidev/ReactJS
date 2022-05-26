@@ -6,6 +6,7 @@ import { layoutActions } from '../Store/Layout-Store';
 export default function Nav() {
 
     const hamburgerOpen = useSelector((state) => state.layout.hamburgerOpen);
+    const totalQuantity = useSelector((state) => state.cart.totalQuantity)
 
     const dispatch = useDispatch();
 
@@ -23,6 +24,11 @@ export default function Nav() {
                 <img src={Logo} alt="logo" className="logo"/>
                 <div>
                     <i className="fas fa-shopping-cart"></i>
+                    <div>
+                        <p>
+                            {totalQuantity}
+                        </p>
+                    </div>
                 </div>
                 <div onClick={hamburger} className={'ham' + activeClass}>
                     <div className='hamburger-menu'>
