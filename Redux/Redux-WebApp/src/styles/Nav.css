@@ -15,11 +15,14 @@ nav .cart-btn {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background-color: purple;
 }
 nav .cart-btn .counter {
   position: absolute;
-  top: 50px;
+  top: -15px;
+  right: -7px;
+}
+nav .cart-btn .counter p {
+  color: yellow;
 }
 nav .logo {
   height: 150px;
