@@ -6,13 +6,14 @@ import sliderImage from "./sliderImage.js";
 
 const len = sliderImage.length - 1;
 
-function Slider(props) {
+
+export default function Slider() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
-    }, 1000);
+    }, 3000);
     return () => clearInterval(interval);
   }, [activeIndex]);
 
@@ -35,5 +36,3 @@ function Slider(props) {
     </div>
   );
 }
-
-export default Slider;
