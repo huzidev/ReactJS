@@ -6,19 +6,6 @@ import { useSelector } from 'react-redux';
 export default function Login() {
     
     const dispatch = useDispatch();
-    // const [stateForUser, setStateForUser] = useState(false);
-    // const [stateForPassword, setStateForPassword] = useState(false);
-
-    // const user = event => {
-
-    //     setStateForUser(prev => !prev)
-        
-    // }
-
-    // function pass(params) {
-        
-    //     setStateForPassword(prev => !prev)
-    // }
 
     const setStateForUser = useSelector((state) => state.login.setStateForUser);
     const setStateForPassword = useSelector((state) => state.login.setStateForPassword);
