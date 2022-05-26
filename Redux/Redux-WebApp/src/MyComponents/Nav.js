@@ -13,8 +13,6 @@ export default function Nav() {
         dispatch(layoutActions.open());
     }
 
-    // const [state, stateFunction] = React.useState(false);
-
 
 
     const activeClass = hamburgerOpen ? ' open' : '';
@@ -26,7 +24,7 @@ export default function Nav() {
                 <div>
                     <i className="fas fa-shopping-cart"></i>
                 </div>
-                <div onClick={() => hamburger(!hamburgerOpen)} className={'ham' + activeClass}>
+                <div onClick={hamburger} className={'ham' + activeClass}>
                     <div className='hamburger-menu'>
                     </div>
                 </div>
