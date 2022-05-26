@@ -1,8 +1,17 @@
 import React from 'react';
 import Logo from '../assets/logo.png';
 import { useDispatch, useSelector } from 'react-redux';
+import { layoutActions } from '../Store/Layout-Store';
 
 export default function Nav() {
+
+    const hamburgerOpen = useSelector((state) => state.layout.hamburgerOpen);
+
+    const dispatch = useDispatch();
+
+    function hamburger() {
+        dispatch(layoutActions.open());
+    }
     return (
         <div>
             <nav>
@@ -10,7 +19,7 @@ export default function Nav() {
                 <div>
                     <i className="fas fa-shopping-cart"></i>
                 </div>
-                <div className={'ham' + (hamburgerOpen ? 'open' : '')}>
+                <div onClick={hamburger} className={'ham' + ( hamburgerOpen ? ' open' : '')}>
                     <div className='hamburger-menu'>
                     </div>
                 </div>
