@@ -16,3 +16,6 @@
   transition: 600ms;
   opacity: 0;
 }
+#slider .slide.active {
+  opacity: 1;
+}
