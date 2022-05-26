@@ -17,6 +17,6 @@ const layoutStore = createSlice({
 
 });
 
-
+export const layoutActions = layoutStore.actions;
 
 export default layoutStore;
