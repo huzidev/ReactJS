@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-function Arrows({ prevSlide, nextSlide }) {
+export default function Arrow({prevSlide, nextSlide}) {
   return (
     <div className="arrows">
       <span className="prev" onClick={prevSlide}>
@@ -10,7 +10,5 @@ function Arrows({ prevSlide, nextSlide }) {
         &#10095;
       </span>
     </div>
-  );
-}
-
-export default Arrows;
+  )
+};
