@@ -20,6 +20,9 @@ export default function Login() {
         dispatch(logInActions.logIn())
     }
 
+    const activeClassForUser = setStateForUser ? ' focus' : '';
+    const activeClassForPass = setStateForPassword ? ' focus' : '';
+
     return (
         <div className='login-main'>
             <div className='login-setup'>
@@ -29,7 +32,7 @@ export default function Login() {
                     </h2>
                     <div className='user-input'>
                         <i className='fa fa-user'></i>
-                        <div onClick={test} type="text" className={'ref' + ( setStateForUser ? ' focus' : '')}>
+                        <div onClick={test} type="text" className={'ref' + activeClassForUser}>
                             <h5>
                                 Username
                             </h5>
@@ -38,7 +41,7 @@ export default function Login() {
                     </div>
                     <div className='user-input'>
                         <i className='fas fa-lock'></i>
-                        <div onClick={testA} type="text" className={'ref' + ( setStateForPassword ? ' focus' : '')}>
+                        <div onClick={testA} type="text" className={'ref' + activeClassForPass}>
                             <h5>
                                 Password
                             </h5>
