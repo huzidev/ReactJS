@@ -5,15 +5,19 @@ import { layoutActions } from '../Store/Layout-Store';
 
 export default function Nav() {
 
-    const hamburgerOpen = useSelector((state) => state.layout.hamburgerOpen);
+    // const hamburgerOpen = useSelector((state) => state.layout.hamburgerOpen);
 
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
-    function hamburger() {
-        dispatch(layoutActions.open());
-    }
+    // function hamburger() {
+    //     dispatch(layoutActions.open());
+    // }
 
-    const activeClass = hamburgerOpen ? ' open' : '';
+    const [state, statefunction] = React.useState(false);
+
+
+
+    // const activeClass = hamburgerOpen ? ' open' : '';
 
     return (
         <div>
@@ -22,7 +26,7 @@ export default function Nav() {
                 <div>
                     <i className="fas fa-shopping-cart"></i>
                 </div>
-                <div onClick={hamburger} className={'ham' + activeClass}>
+                <div onClick={() => statefunction(!state)} className={'ham' + (state ? ' open' : '')}>
                     <div className='hamburger-menu'>
                     </div>
                 </div>
