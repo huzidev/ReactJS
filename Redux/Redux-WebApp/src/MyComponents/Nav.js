@@ -1,7 +1,12 @@
 import React from 'react';
+import Logo from '../assets/logo.png';
 
 export default function Nav() {
     return (
-        <div></div>
+        <div>
+            <nav>
+                <img src={Logo} alt="logo" className='logo'/>
+            </nav>
+        </div>
     )
 }

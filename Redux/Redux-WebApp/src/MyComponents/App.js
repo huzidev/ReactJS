@@ -1,7 +1,6 @@
 import React from 'react';
 import Login from './Login.js';
 import Layout from './Layout.js';
-import Nav from './Nav.js';
 import { useSelector } from 'react-redux';
 
 export default function App() {

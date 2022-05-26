@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./MyComponents/App";
 import "./styles/style.css";
 import "./styles/Login.css"
+import "./styles/Nav.css"
 import { Provider } from 'react-redux';
 import store from './Store';
 
