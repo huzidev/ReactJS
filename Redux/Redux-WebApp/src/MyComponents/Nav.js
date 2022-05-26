@@ -14,7 +14,7 @@ export default function Nav() {
     }
 
     const activeClass = hamburgerOpen ? ' open' : '';
-    
+
     return (
         <div>
             <nav>
