@@ -30,10 +30,12 @@ nav
         width: 55px
         // right: 0px
         height: 40px
+        z-index: 2
         cursor: pointer
         position: relative
         transition: all 500ms ease-in-out
         .hamburger-menu
+            z-index: 2
             width: 50px
             height: 6px
             background-color: white
@@ -53,10 +55,6 @@ nav
                 transform: translateY(-16px)
             &::after
                 transform: translateY(16px)
-            .menu
-                min-height: 100vh
-                background-color: aqua     
-                position: absolute  
         &.open
             .hamburger-menu
                 transform: translateX(-50px)
