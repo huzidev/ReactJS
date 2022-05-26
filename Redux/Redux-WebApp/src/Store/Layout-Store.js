@@ -8,9 +8,15 @@ const layoutStore = createSlice({
     },
     reducers : {
 
-
+        open(state) {
+            state.hamburgerOpen = true;
+        }
 
     }
 
 
 });
+
+
+
+export default layoutStore;

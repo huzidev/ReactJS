@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../assets/logo.png';
+import { useDispatch, useSelector } from 'react-redux';
 
 export default function Nav() {
     return (
@@ -9,7 +10,7 @@ export default function Nav() {
                 <div>
                     <i className="fas fa-shopping-cart"></i>
                 </div>
-                <div className='ham'>
+                <div className={'ham' + (hamburgerOpen ? 'open' : '')}>
                     <div className='hamburger-menu'>
                     </div>
                 </div>
