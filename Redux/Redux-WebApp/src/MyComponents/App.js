@@ -12,4 +12,4 @@ export default function App() {
             {isLoggedIn ? <Layout /> : <Login />}
         </div>
     )
-}
+};

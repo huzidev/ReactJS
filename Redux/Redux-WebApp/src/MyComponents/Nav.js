@@ -14,8 +14,6 @@ export default function Nav() {
         dispatch(layoutActions.open());
     }
 
-
-
     const activeClass = hamburgerOpen ? ' open' : '';
 
     return (
