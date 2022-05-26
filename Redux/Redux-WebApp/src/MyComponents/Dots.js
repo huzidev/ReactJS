@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-function Dots({ activeIndex, onclick, sliderImage }) {
+export default function Dots({sliderImage, activeIndex}) {
   return (
     <div className="all-dots">
       {sliderImage.map((slide, index) => (
@@ -11,7 +11,5 @@ function Dots({ activeIndex, onclick, sliderImage }) {
         ></span>
       ))}
     </div>
-  );
-}
-
-export default Dots;
+  )
+};
