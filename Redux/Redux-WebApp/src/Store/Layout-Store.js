@@ -9,7 +9,7 @@ const layoutStore = createSlice({
     reducers : {
 
         open(state) {
-            state.hamburgerOpen = true;
+            state.hamburgerOpen = !state.hamburgerOpen;
         } 
     }
 
