@@ -31,7 +31,6 @@ nav .ham {
   cursor: pointer;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
-  background-color: black;
 }
 nav .ham .hamburger-menu {
   width: 50px;
