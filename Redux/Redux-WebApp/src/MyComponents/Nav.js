@@ -32,6 +32,8 @@ export default function Nav() {
                 </div>
                 <div onClick={hamburger} className={'ham' + activeClass}>
                     <div className='hamburger-menu'>
+                        <div className='menu'>
+                        </div>
                     </div>
                 </div>
             </nav>

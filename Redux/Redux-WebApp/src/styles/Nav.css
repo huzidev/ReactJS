@@ -36,7 +36,6 @@ nav i {
   font-size: 50px;
 }
 nav .ham {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,6 +49,7 @@ nav .ham {
   width: 55px;
   height: 40px;
   cursor: pointer;
+  position: relative;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
@@ -82,6 +82,11 @@ nav .ham .hamburger-menu::before {
 nav .ham .hamburger-menu::after {
   -webkit-transform: translateY(16px);
           transform: translateY(16px);
+}
+nav .ham .hamburger-menu .menu {
+  min-height: 100vh;
+  background-color: aqua;
+  position: absolute;
 }
 nav .ham.open .hamburger-menu {
   -webkit-transform: translateX(-50px);
