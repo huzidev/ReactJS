@@ -10,7 +10,6 @@ export default function Nav() {
                     <i className="fas fa-shopping-cart"></i>
                 </div>
                 <div className='hamburger-menu'>
-
                 </div>
             </nav>
         </div>
