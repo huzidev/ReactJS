@@ -15,6 +15,9 @@ nav .logo {
   width: 200px;
   margin: 0px 20px;
 }
+nav i {
+  font-size: 50px;
+}
 nav .ham {
   position: relative;
   display: -webkit-box;
