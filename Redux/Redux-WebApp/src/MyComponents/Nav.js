@@ -22,9 +22,9 @@ export default function Nav() {
         <div>
             <nav>
                 <img src={Logo} alt="logo" className="logo"/>
-                <div>
+                <div className='cart-btn'>
                     <i className="fas fa-shopping-cart"></i>
-                    <div>
+                    <div className='counter'>
                         <p>
                             {totalQuantity}
                         </p>
