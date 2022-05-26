@@ -9,7 +9,9 @@ export default function Nav() {
                 <div>
                     <i className="fas fa-shopping-cart"></i>
                 </div>
-                <div className='hamburger-menu'>
+                <div className='ham'>
+                    <div className='hamburger-menu'>
+                    </div>
                 </div>
             </nav>
         </div>

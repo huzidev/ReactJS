@@ -2,30 +2,43 @@ nav
     width: 1200px
     margin: auto
     display: flex
-    justify-content: center
+    justify-content: space-around
     align-items: center
+    background-color: aqua
     .logo
         height: 150px
         width: 200px
-    .hamburger-menu
-        width: 50px
-        height: 6px
-        background-color: white
-        border-radius: 5px
+    .ham
+        position: relative
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 55px
+        height: 40px
+        cursor: pointer
         transition: all 500ms ease-in-out
-        box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
-        &::before, &::after
-            content: ""
-            position: absolute
+        background-color: black
+        .hamburger-menu
             width: 50px
             height: 6px
             background-color: white
-            border-radius: 15px
-            box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
-            -webkit-transition: all 500ms ease-in-out
+            border-radius: 5px
             transition: all 500ms ease-in-out
-        &::before
-            transform: translateY(-16px)
-        &::after
-            transform: translateY(16px)
+            box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
+            &::before, &::after
+                content: ""
+                position: absolute
+                width: 50px
+                height: 6px
+                background-color: white
+                border-radius: 15px
+                box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
+                -webkit-transition: all 500ms ease-in-out
+                transition: all 500ms ease-in-out
+            &::before
+                transform: translateY(-16px)
+            &::after
+                transform: translateY(16px)
             
