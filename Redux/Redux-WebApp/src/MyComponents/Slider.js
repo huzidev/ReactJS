@@ -1,85 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import SliderContent from "./SliderContent";
+import Dots from "./Dots";
+import Arrows from "./Arrow";
+import sliderImage from "./sliderImage";
 
-export default function Slider() {
+const len = sliderImage.length - 1;
 
-    // let index = 0;
+function Slider(props) {
+  const [activeIndex, setActiveIndex] = useState(0);
 
-    // window.onload = function () {
-    //     const slide = document.getElementsByClassName("slide");
-    //     slide[index].classList.add("active");
-    //     slide[index].classList.remove("remove");
-    
-    //     setInterval(() => {
-    //         loops()
-    //     }, 6000);
-    // };
-    
-    // function loops() {
-    //     const slide = document.getElementsByClassName("slide");
-    //     slide[index].classList.add("active");
-    //     slide[index].classList.remove("active");
-    //     index++;
-    //     if (index === slide.length) {
-    //         index = 0;
-    //     }
-    //     slide[index].classList.add("active");
-    //     console.log(index, slide.length);
-    // };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [activeIndex]);
 
-    const [state, setState] = React.useState(false)
+  return (
+    <div className="slider-container">
+      <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
+      <Arrows
+        prevSlide={() =>
+          setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+        }
+        nextSlide={() =>
+          setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
+        }
+      />
+      <Dots
+        activeIndex={activeIndex}
+        sliderImage={sliderImage}
+        onclick={(activeIndex) => setActiveIndex(activeIndex)}
+      />
+    </div>
+  );
+}
 
-    // setInterval({
-    //     setState(prev => !prev)
-    // }, 1000)
-    setInterval(() => {
-        setState(prev => !prev)
-    }, 3000);
-
-    if (state === true) {
-        setState(prev => !prev)
-    }
-
-    let classActive = state ? ' active' : ''
-
-    return (
-        <div>
-            <section id='slider'>
-                <div className={'slide' + classActive} >
-                    <h1>
-                        hello
-                    </h1>
-                </div>
-                <div className={'slide' + classActive}>
-                    <h1>
-                        hello
-                    </h1>
-                </div>
-                <div className="slide">
-                    <h1>
-                        hello
-                    </h1>
-                </div>
-                <div className="slide">
-                    <h1>
-                        hello
-                    </h1>
-                </div>
-                <div className="slide">
-                    <h1>
-                        hello
-                    </h1>
-                </div>
-                <div className="slide">
-                    <h1>
-                        hello
-                    </h1>
-                </div>
-                <div className="slide">
-                    <h1>
-                        hello
-                    </h1>
-                </div>
-            </section>
-        </div>
-    )
-};
+export default Slider;
