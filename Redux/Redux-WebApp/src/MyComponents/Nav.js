@@ -12,6 +12,9 @@ export default function Nav() {
     function hamburger() {
         dispatch(layoutActions.open());
     }
+
+    const activeClass = hamburgerOpen ? ' open' : '';
+    
     return (
         <div>
             <nav>
@@ -19,7 +22,7 @@ export default function Nav() {
                 <div>
                     <i className="fas fa-shopping-cart"></i>
                 </div>
-                <div onClick={hamburger} className={'ham' + ( hamburgerOpen ? ' open' : '')}>
+                <div onClick={hamburger} className={'ham' + activeClass}>
                     <div className='hamburger-menu'>
                     </div>
                 </div>

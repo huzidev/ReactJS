@@ -39,4 +39,13 @@ nav
                 transform: translateY(-16px)
             &::after
                 transform: translateY(16px)
+        &.open
+            .hamburger-menu
+                transform: translateX(-50px)
+                background: transparent
+                box-shadow: none
+                &::before
+                    transform: rotate(45deg) translate(35px, -35px)
+                &::after
+                    transform: rotate(-45deg) translate(35px, 35px)
             

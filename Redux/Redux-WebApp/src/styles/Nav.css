@@ -62,3 +62,18 @@ nav .ham .hamburger-menu::after {
   -webkit-transform: translateY(16px);
           transform: translateY(16px);
 }
+nav .ham.open .hamburger-menu {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+nav .ham.open .hamburger-menu::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+nav .ham.open .hamburger-menu::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
+}

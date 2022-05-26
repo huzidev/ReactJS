@@ -10,8 +10,7 @@ const layoutStore = createSlice({
 
         open(state) {
             state.hamburgerOpen = true;
-        }
-
+        } 
     }
 
 
