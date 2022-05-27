@@ -3,8 +3,8 @@ import SliderContent from "./SliderContent.js";
 import Dots from "./Dots.js";
 import Arrows from "./Arrow.js";
 import sliderImage from "./sliderImage.js";
-import { useDispatch } from "react-redux";
-import { sliderStoreActions } from "../Store/Slider-Store.js";
+// import { useDispatch } from "react-redux";
+// import { sliderStoreActions } from "../../Store/Slider-Store.js";
 
 const len = sliderImage.length - 1;
 

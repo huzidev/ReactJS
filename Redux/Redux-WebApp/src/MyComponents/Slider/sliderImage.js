@@ -1,6 +1,6 @@
-import First from "../assets/product.webp";
-import Second from "../assets/second.webp";
-import Third from "../assets/third.webp";
+import First from "../../assets/product.webp";
+import Second from "../../assets/second.webp";
+import Third from "../../assets/third.webp";
 
 export default [
   {

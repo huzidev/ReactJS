@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import sliderImage from "../MyComponents/sliderImage";
+import sliderImage from "../MyComponents/Slider/sliderImage";
 
 const sliderStore = createSlice({
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Items from './Items.js';
 import Nav from './Nav.js';
-import Slider from './Slider.js';
+import Slider from './Slider/Slider.js';
 import SliderCart from './SliderCart.js';
 
 export default function Layout() {
