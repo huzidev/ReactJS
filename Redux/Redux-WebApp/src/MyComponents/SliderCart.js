@@ -8,7 +8,14 @@ export default function SliderCart() {
 
         const {Id, name, price, img} = info
 
-        const dispatch = useDispatch();
+        // const dispatch = useDispatch();
+
+        // function addToCart() {
+        //     // Id,
+        //     // name,
+        //     // price
+        //     dispatch()
+        // }
 
     })
 
