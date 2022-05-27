@@ -24,6 +24,7 @@ export default function Slider() {
     <div className="slider-container">
       <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
       <Arrows
+      // clickAction try to use when Redux Store
         prevSlide={() =>
           setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
         }
