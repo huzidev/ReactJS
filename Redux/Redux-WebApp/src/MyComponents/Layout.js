@@ -2,6 +2,7 @@ import React from 'react';
 import Items from './Items.js';
 import Nav from './Nav.js';
 import Slider from './Slider.js';
+import SliderCart from './SliderCart.js';
 
 export default function Layout() {
   return (
@@ -9,6 +10,7 @@ export default function Layout() {
       <Nav />
       <Slider />
       <Items />
+      <SliderCart />
     </div>
   )
 };
