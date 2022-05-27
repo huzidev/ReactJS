@@ -7,7 +7,8 @@ const sliderStore = createSlice({
     initialState : {
         sliderImage : [sliderImage.length],
         setActiveIndex : 0,
-        len : sliderImage - 1
+        len : sliderImage - 1,
+        setActiveIndex : 0
     },
     reducers : {
            
