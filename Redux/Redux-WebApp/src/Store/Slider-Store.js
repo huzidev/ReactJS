@@ -10,9 +10,10 @@ const sliderStore = createSlice({
         len : sliderImage - 1
     },
     reducers : {
-        console.log(state.len)
+           
     }
-})
+    
+});
 
 export const sliderStoreActions = sliderStore.actions;
 

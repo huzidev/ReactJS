@@ -3,20 +3,13 @@ import SliderContent from "./SliderContent.js";
 import Dots from "./Dots.js";
 import Arrows from "./Arrow.js";
 import sliderImage from "./sliderImage.js";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { sliderStoreActions } from "../Store/Slider-Store.js";
 
 const len = sliderImage.length - 1;
 
 
 export default function Slider() {
-
-  const test = useSelector((state) => state.slider.len);
-
-  const dispatch = useDispatch();
-
-  console.log(dispatch(sliderStoreActions.prevSlide()));
-  console.log(test);
 
   const [activeIndex, setActiveIndex] = useState(0);
 
