@@ -14,9 +14,10 @@
   margin: 5px 0px;
   background-color: black;
   height: 300px;
-  width: 390px;
+  width: 393px;
 }
 .container .list .items .img {
+  cursor: pointer;
   height: 100%;
   width: 100%;
 }
