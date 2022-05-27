@@ -9,14 +9,12 @@
 
 .active {
   opacity: 1;
-  left: 0px;
 }
 
 .inactive {
   opacity: 0;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  left: -100%;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
 }
 
 .slides {
