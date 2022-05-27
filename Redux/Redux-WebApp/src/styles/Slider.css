@@ -57,7 +57,7 @@
   font-size: 2rem;
 }
 
-.prev, .next {
+.arrow {
   color: transparent;
   cursor: pointer;
   z-index: 100;
