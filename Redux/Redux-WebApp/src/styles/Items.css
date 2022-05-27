@@ -11,8 +11,12 @@
           justify-content: space-between;
 }
 .container .list .items {
-  margin: 20px 0px;
+  margin: 5px 0px;
   background-color: black;
   height: 250px;
-  width: 370px;
+  width: 390px;
+}
+.container .list .items .img {
+  height: 100%;
+  width: 100%;
 }
