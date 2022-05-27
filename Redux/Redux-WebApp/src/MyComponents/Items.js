@@ -1,7 +1,14 @@
-import React from 'react'
+import React from 'react';
 
 export default function Items() {
     return (
-        <div></div>
+        <div className='container'>
+            <div className='list'>
+
+            </div>
+            <div className='list'>
+
+            </div>
+        </div>
     )
 };
