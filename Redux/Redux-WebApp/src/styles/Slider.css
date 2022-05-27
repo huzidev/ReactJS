@@ -3,7 +3,6 @@
   width: 1200px;
   margin: auto;
   position: relative;
-  overflow: hidden;
   background-color: aqua;
 }
 
@@ -58,7 +57,7 @@
 }
 
 .arrow {
-  color: transparent;
+  color: black;
   cursor: pointer;
   z-index: 100;
   position: absolute;
@@ -71,18 +70,20 @@
   border-radius: 0px 5px 5px 0px;
 }
 
-.slider-container:hover .prev, .slider-container:hover .next {
-  color: black;
-}
-.slider-container:hover .prev:hover, .slider-container:hover .next:hover {
+.prev:hover, .next:hover {
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 700ms ease;
+  transition: all 700ms ease;
 }
 
 .next {
-  right: 0;
+  right: -70px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.prev {
+  left: -70px;
   border-radius: 5px 0px 0px 5px;
 }
 
