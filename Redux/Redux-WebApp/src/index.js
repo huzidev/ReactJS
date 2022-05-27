@@ -6,6 +6,7 @@ import "./styles/Login.css"
 import "./styles/Nav.css"
 import "./styles/Slider.css"
 import "./styles/Slider.css";
+import "./styles/Items.css";
 import { Provider } from 'react-redux';
 import store from './Store';
 
