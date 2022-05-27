@@ -7,23 +7,71 @@ export default function Items() {
             <div className='list'>
                 <div className="items">
                     <img src={Img} alt="item-img" className="img" />
+                    <div className="content">
+                        <h1>
+                            Macbook Pro
+                        </h1>
+                        <p>
+                            Macbook Pro
+                        </p>
+                    </div>
                 </div>
                 <div className="items">
                     <img src={Img} alt="item-img" className="img" />
+                    <div className="content">
+                        <h1>
+                            Macbook Pro
+                        </h1>
+                        <p>
+                            Macbook Pro
+                        </p>
+                    </div>
                 </div>
                 <div className="items">
                     <img src={Img} alt="item-img" className="img" />
+                    <div className="content">
+                        <h1>
+                            Macbook Pro
+                        </h1>
+                        <p>
+                            Macbook Pro
+                        </p>
+                    </div>
                 </div>
             </div>
             <div className='list'>
                 <div className="items">
                     <img src={Img} alt="item-img" className="img" />
+                    <div className="content">
+                        <h1>
+                            Macbook Pro
+                        </h1>
+                        <p>
+                            Macbook Pro
+                        </p>
+                    </div>
                 </div>
                 <div className="items">
                     <img src={Img} alt="item-img" className="img" />
+                    <div className="content">
+                        <h1>
+                            Macbook Pro
+                        </h1>
+                        <p>
+                            Macbook Pro
+                        </p>
+                    </div>
                 </div>
                 <div className="items">
                     <img src={Img} alt="item-img" className="img" />
+                    <div className="content">
+                        <h1>
+                            Macbook Pro
+                        </h1>
+                        <p>
+                            Macbook Pro
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
