@@ -1,12 +1,10 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { cartActions } from '../Store/Cart-Store.js';
-import ProductList from './ProductList'
+import { cartActions } from '../../Store/Cart-Store.js';
+import ProductList from './ProductList.js'
 
 export default function SliderCart() {
     const dispatch = useDispatch();
-
-    const quantity = useSelector((state) => state.cart.totalQuantity);
 
     const Products = ProductList.map((info) => {
         
@@ -37,13 +35,13 @@ export default function SliderCart() {
                         </b>
                     </p>
                     <div className='add-cart'> 
-                        <button onClick={removeFromCart}>
+                        <button>
                             -
                         </button>
                         <div className='num'>
-                            quantity : {quantity}
+                            quantity :
                         </div>
-                        <button onClick={addToCart}>
+                        <button>
                             +
                         </button>
                     </div>
