@@ -1,7 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { useDispatch } from 'react-redux';
+
 
 export default function CartList() {
-  return (
-    <div>CartList</div>
-  )
+
+    const dispatch = useDispatch();
+
+    function incrementItems() {
+        
+    }
+    function decrementItems() {
+        
+    }
+    return (
+        <div>
+
+        </div>
+    )
 }
