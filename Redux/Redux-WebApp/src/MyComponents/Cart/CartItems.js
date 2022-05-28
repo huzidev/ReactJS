@@ -1,5 +1,6 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { logInActions } from '../../Store/Login-Store.js';
 import CartList from './CartList.js';
 
 export default function CartItems() {
@@ -12,6 +13,12 @@ export default function CartItems() {
 
     // const {Id, name, price, quantity, total} = item;
 
+    const dispatch = useDispatch();
+
+    function logoutHandler() {
+        dispatch(logInActions.back())
+    }
+    
     return (
         <div className='cart-main'>
             <h2>
@@ -32,6 +39,7 @@ export default function CartItems() {
                     ))
                 }
             </ul>
+            <i className='fa fa-arrow-left' onClick={logoutHandler}></i>
         </div>
     )
 }

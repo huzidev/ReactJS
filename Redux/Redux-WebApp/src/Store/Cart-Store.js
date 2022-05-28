@@ -73,6 +73,11 @@ const cartStore = createSlice({
 
             }
 
+        },
+
+        goBack(state) {
+
+            
         }
     }
 });
