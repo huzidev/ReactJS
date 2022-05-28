@@ -41,3 +41,13 @@
   height: 100%;
   width: 100%;
 }
+.cart-items .cart-products .add-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.cart-items .cart-products .add-cart .num {
+  width: 40px;
+  border: 1px solid black;
+  text-align: center;
+}

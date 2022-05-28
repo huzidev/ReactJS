@@ -30,6 +30,17 @@ export default function SliderCart() {
                             $ {price}
                         </b>
                     </p>
+                    <div className='add-cart'> 
+                        <button>
+                            -
+                        </button>
+                        <div className='num'>
+
+                        </div>
+                        <button>
+                            +
+                        </button>
+                    </div>
                     <button onClick={addToCart}>
                         Add To Cart
                     </button>
