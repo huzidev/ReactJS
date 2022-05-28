@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { logInActions } from '../../Store/Login-Store.js';
+import { cartActions } from '../../Store/Cart-Store.js';
 import CartList from './CartList.js';
 
 export default function CartItems() {
@@ -16,7 +16,7 @@ export default function CartItems() {
     const dispatch = useDispatch();
 
     function logoutHandler() {
-        dispatch(logInActions.back())
+        dispatch(cartActions.goBack())
     }
     
     return (

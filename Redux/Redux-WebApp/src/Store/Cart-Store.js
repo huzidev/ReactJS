@@ -76,7 +76,8 @@ const cartStore = createSlice({
         },
 
         goBack(state) {
-
+            
+            state.setShowCart = false;
             
         }
     }
