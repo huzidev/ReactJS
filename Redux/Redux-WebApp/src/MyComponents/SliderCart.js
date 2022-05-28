@@ -1,10 +1,12 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { cartActions } from '../Store/Cart-Store.js';
 import ProductList from './ProductList'
 
 export default function SliderCart() {
     const dispatch = useDispatch();
+
+    const quantity = useSelector((state) => state.cart.totalQuantity);
 
     const Products = ProductList.map((info) => {
         
