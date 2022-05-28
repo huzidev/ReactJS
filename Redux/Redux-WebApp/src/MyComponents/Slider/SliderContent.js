@@ -3,8 +3,8 @@ import sliderImage from './sliderImage.js'
 
 export default function SliderContent({activeIndex}) {
 
-  // the [] array we've created is having multiple data and INDEX starts from 0, 1, 2, 3...
-
+// the [] array we've created is having multiple data and INDEX starts from 0, 1, 2, 3...
+// the index is basically the slider number
   const slider = sliderImage.map((list, index) => {
 
     const {title, description, urls} = list;
@@ -12,8 +12,8 @@ export default function SliderContent({activeIndex}) {
       return (
         <section>
           <div
-          key={index}
-          className={index === activeIndex ? "slides active" : "inactive"}
+            key={index}
+            className={index === activeIndex ? "slides active" : "inactive"}
           >
             <img className="slide-image" src={urls} alt="slider-img"/>
             <h2 className="slide-title">
