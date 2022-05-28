@@ -47,6 +47,14 @@ const cartStore = createSlice({
             }
 
         },
+
+        delFromCart(state, action) {
+
+            const Id = action.payload;
+
+            const existingItem = state.itemsList.find((item) => item.Id === Id);
+
+        }
     }
 });
 
