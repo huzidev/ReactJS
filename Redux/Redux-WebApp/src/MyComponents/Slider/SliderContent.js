@@ -3,6 +3,8 @@ import sliderImage from './sliderImage.js'
 
 export default function SliderContent({activeIndex}) {
 
+  // the [] array we've created is having multiple data and INDEX starts from 0, 1, 2, 3...
+
   const slider = sliderImage.map((list, index) => {
 
     const {title, description, urls} = list;
