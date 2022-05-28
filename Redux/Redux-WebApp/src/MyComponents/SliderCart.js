@@ -41,7 +41,7 @@ export default function SliderCart() {
                             -
                         </button>
                         <div className='num'>
-                            quantity : {}
+                            quantity : {quantity}
                         </div>
                         <button onClick={addToCart}>
                             +

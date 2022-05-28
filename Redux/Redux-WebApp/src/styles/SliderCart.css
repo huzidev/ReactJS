@@ -47,7 +47,7 @@
   display: flex;
 }
 .cart-items .cart-products .add-cart .num {
-  width: 40px;
+  width: 90px;
   border: 1px solid black;
   text-align: center;
 }
