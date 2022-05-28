@@ -6,6 +6,7 @@ const cartStore = createSlice({
     initialState : {
         itemsList : [],
         totalQuantity : 0,
+        setShowCart : false
     },
     reducers : {
         addToCart(state, action) {
@@ -48,11 +49,29 @@ const cartStore = createSlice({
 
         },
 
+        setShowCart(state){
+
+            state.setShowCart = !state.setShowCart;
+
+        }
+
         delFromCart(state, action) {
 
             const Id = action.payload;
 
             const existingItem = state.itemsList.find((item) => item.Id === Id);
+
+            if (existingItem.quantity > 0) {
+                
+                state.itemsList = state.itemsList.filter((item) => item.Id !== Id);
+
+                existingItem.quantity = 0;
+                
+                existingItem.totalPrice = 0;
+
+                state.totalQuantity --;
+
+            }
 
         }
     }
