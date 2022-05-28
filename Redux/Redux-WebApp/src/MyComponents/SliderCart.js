@@ -31,13 +31,13 @@ export default function SliderCart() {
                         </b>
                     </p>
                     <div className='add-cart'> 
-                        <button>
+                        <button onClick={removeFromCart}>
                             -
                         </button>
                         <div className='num'>
-
+                            
                         </div>
-                        <button>
+                        <button onClick={addToCart}>
                             +
                         </button>
                     </div>
