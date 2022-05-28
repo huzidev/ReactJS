@@ -5,13 +5,14 @@ import ProductList from './ProductList.js'
 
 export default function SliderCart() {
 
+    const dispatch = useDispatch();
+    
     const Products = ProductList.map((info) => {
+        
 
         const {Id, name, price, img} = info
 
-        const dispatch = useDispatch();
-
-        function addToCart() {
+        function addToCart (){
             dispatch(cartActions.addToCart({
                 Id,
                 name,
@@ -19,19 +20,30 @@ export default function SliderCart() {
             }))
         }
             
+        return (
+            <div>
+                <div className='cart-items' key={Id}>
+                    <img src={`../assets/${img}`} alt="item-img"/>
+                    <h3>
+                        {name}
+                    </h3>
+                    <p>
+                        <b>
+                            $ {price}
+                        </b>
+                    </p>
+                    <button onClick={addToCart}>
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+        )
+
     })
 
-    return (
-        <div>
-            <div className='info'>
-                <h3>
-                    Now, Lets Buy <br />
-                    SomeThing.
-                </h3>
-            </div>
-            <div>
-
-            </div>
-        </div>
+    return(
+        <>
+            {Products}
+        </>
     )
 };

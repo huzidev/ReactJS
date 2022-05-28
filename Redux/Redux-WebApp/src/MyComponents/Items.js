@@ -74,6 +74,12 @@ export default function Items() {
                     </div>
                 </div>
             </div>
+            <div className='info'>
+                <h3>
+                    Now, Lets Buy <br />
+                    SomeThing.
+                </h3>
+            </div>
         </div>
     )
 };
