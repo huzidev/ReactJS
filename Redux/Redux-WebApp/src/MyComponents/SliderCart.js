@@ -20,6 +20,7 @@ export default function SliderCart() {
             
         return (
             <div key={Id}>
+                <div className='cart-products'>
                     <img src={`../../mapImages/${img}`} alt="item-img"/>
                     <h3>
                         {name}
@@ -32,6 +33,7 @@ export default function SliderCart() {
                     <button onClick={addToCart}>
                         Add To Cart
                     </button>
+                </div>
             </div>
         )
 

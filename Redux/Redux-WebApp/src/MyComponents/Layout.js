@@ -10,7 +10,9 @@ export default function Layout() {
       <Nav />
       <Slider />
       <Items />
-      <SliderCart />
+      <div className='cart-items'>
+        <SliderCart />
+      </div>
     </div>
   )
 };
