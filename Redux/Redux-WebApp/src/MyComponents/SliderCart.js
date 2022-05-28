@@ -21,7 +21,7 @@ export default function SliderCart() {
             
         return (
             <div key={Id}>
-                    <img src={`../../assets/${img}`} alt="item-img"/>
+                    <img src={`../../mapImages/${img}`} alt="item-img"/>
                     <h3>
                         {name}
                     </h3>
