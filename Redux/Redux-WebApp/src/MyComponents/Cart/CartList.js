@@ -17,6 +17,9 @@ export default function CartList({Id, name, price, quantity, total}) {
     function decrementItems() {
         dispatch(cartActions.removeFromCart(Id));
     }
+    function deleteItems() {
+        dispatch(cartActions.delFromCart(Id));
+    }
     return (
         <div className='item-list'>
             <h2>
