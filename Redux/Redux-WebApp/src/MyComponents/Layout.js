@@ -12,15 +12,16 @@ export default function Layout() {
 
   return (
     <div>
-      {setShowCart ? <CartItems /> : (
-          <>
+      {/* {setShowCart ? <CartItems /> : ( */}
+          {/* <> */}
             <Nav />
             <Slider />
             <Items />
             <div className='cart-items'>
               <SliderCart />
             </div>
-        </>)}
+          <CartItems />
+        {/* </>)} */}
     </div>
   )
 };
