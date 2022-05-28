@@ -19,7 +19,27 @@ export default function CartList({Id, name, price, quantity, total}) {
     }
     return (
         <div className='item-list'>
-            
+            <h2>
+                {name}
+            </h2>
+            <p>
+                $ {price}
+            </p>
+            <p>
+                x {quantity}
+            </p>
+            <article>
+                Totoal : $ {price}
+            </article>
+            <button onClick={decrementItems}>
+                -
+            </button>
+            <button onClick={incrementItems}>
+                +
+            </button>
+            <i className='fa fa-trash' onClick={deleteItems}>
+
+            </i>
         </div>
     )
 }
