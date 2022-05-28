@@ -29,7 +29,7 @@ export default function CartList({Id, name, price, quantity, total}) {
                 x {quantity}
             </p>
             <article>
-                Totoal : $ {price}
+                Total : $ {price}
             </article>
             <button onClick={decrementItems}>
                 -
@@ -38,7 +38,6 @@ export default function CartList({Id, name, price, quantity, total}) {
                 +
             </button>
             <i className='fa fa-trash' onClick={deleteItems}>
-
             </i>
         </div>
     )
