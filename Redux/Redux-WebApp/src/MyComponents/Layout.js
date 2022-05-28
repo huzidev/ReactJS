@@ -12,7 +12,7 @@ export default function Layout() {
 
   return (
     <div>
-      { setShowCart ? <CartItems /> : (
+      {setShowCart ? <CartItems /> : (
           <>
             <Nav />
             <Slider />
