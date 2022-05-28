@@ -10,7 +10,6 @@ export default function SliderCart() {
         
         const {Id, name, price, img} = info
 
-
         function addToCart (){
             dispatch(cartActions.addToCart({
                 Id,
