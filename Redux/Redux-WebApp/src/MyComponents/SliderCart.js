@@ -1,16 +1,15 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../Store/Cart-Store.js';
-import ProductList from './ProductList.js'
+import ProductList from './ProductList'
 
 export default function SliderCart() {
-
     const dispatch = useDispatch();
-    
+
     const Products = ProductList.map((info) => {
         
-
         const {Id, name, price, img} = info
+
 
         function addToCart (){
             dispatch(cartActions.addToCart({
@@ -21,9 +20,8 @@ export default function SliderCart() {
         }
             
         return (
-            <div>
-                <div className='cart-items' key={Id}>
-                    <img src={`../assets/${img}`} alt="item-img"/>
+            <div key={Id}>
+                    <img src={`../../assets/${img}`} alt="item-img"/>
                     <h3>
                         {name}
                     </h3>
@@ -35,7 +33,6 @@ export default function SliderCart() {
                     <button onClick={addToCart}>
                         Add To Cart
                     </button>
-                </div>
             </div>
         )
 
