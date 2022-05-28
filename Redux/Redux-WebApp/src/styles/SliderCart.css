@@ -18,12 +18,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 500px;
   width: 1200px;
   margin: auto;
-  background-color: aqua;
 }
 .cart-items .cart-products {
   height: 200px;
