@@ -53,7 +53,7 @@ const cartStore = createSlice({
 
             state.setShowCart = !state.setShowCart;
 
-        }
+        },
 
         delFromCart(state, action) {
 
