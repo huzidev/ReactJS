@@ -16,7 +16,7 @@ export default function Nav() {
     }
 
     function setShowCart() {
-        dispatch(cartActions.setShowCart())
+        dispatch(cartActions.setShowCart());
     }
 
     const activeClass = hamburgerOpen ? ' open' : '';
