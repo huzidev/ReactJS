@@ -14,8 +14,12 @@ export default function SliderCart() {
             dispatch(cartActions.addToCart({
                 Id,
                 name,
-                price
+                price   
             }))
+        }
+
+        function removeFromCart(){
+            dispatch(cartActions.removeFromCart())
         }
             
         return (
@@ -35,7 +39,7 @@ export default function SliderCart() {
                             -
                         </button>
                         <div className='num'>
-                            
+                            quantity : {}
                         </div>
                         <button onClick={addToCart}>
                             +

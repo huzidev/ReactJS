@@ -22,11 +22,11 @@ const cartStore = createSlice({
                     Id : newItem.Id,
                     name : newItem.name,
                     price : newItem.price,
-                    totalPrice : newItem.totalPrice,
+                    totalPrice : newItem.price,
                     quantity : 1
                 })
+                state.totalQuantity ++;
             }
-            state.totalQuantity ++;
         },
 
         removeFromCart(state, action){
@@ -48,13 +48,13 @@ const cartStore = createSlice({
 
         },
 
-        // delFromCart(state, action) {
+        delFromCart(state, action) {
 
-        //     const Id = action.payload;
+            const Id = action.payload;
 
-        //     const existingItem = state.itemsList.find((item) => item.Id === Id);
+            const existingItem = state.itemsList.find((item) => item.Id === Id);
 
-        // }
+        }
     }
 });
 
