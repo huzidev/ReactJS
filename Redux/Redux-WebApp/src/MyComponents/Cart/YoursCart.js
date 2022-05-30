@@ -6,7 +6,7 @@ import { cartActions } from '../../Store/Cart-Store.js';
 export default function YoursCart({Id, name, price, quantity, total, img}) {
     
     const dispatch = useDispatch();
-    
+
     function incrementItems() {
         dispatch(cartActions.addToCart({
             Id,
