@@ -20,17 +20,24 @@ export default function Slider() {
     return () => clearInterval(interval);
   }, [activeIndex]);
 
+  function prev() {
+    setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+  } 
+
+  function next() {
+    setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
+  }
+
   return (
     <div className="slider-container">
-      <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
+      <SliderContent 
+        activeIndex={activeIndex} 
+        sliderImage={sliderImage} 
+      />
       <Arrows
-      // clickAction try to use when Redux Store
-        prevSlide={() =>
-          setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
-        }
-        nextSlide={() =>
-          setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
-        }
+        prevSlide={prev}
+        nextSlide={next}
+        
       />
       <Dots
         activeIndex={activeIndex}
