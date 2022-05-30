@@ -34,7 +34,7 @@ export default function CartItems() {
                                 price = {item.price}
                                 quantity = {item.quantity}
                                 total = {item.totalPrice}
-                                Img = {item.Img}
+                                img = {item.img}
                             />
                         </li>
                     ))

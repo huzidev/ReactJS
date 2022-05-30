@@ -2,7 +2,6 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../../Store/Cart-Store.js';
 
-
 export default function YoursCart({Id, name, price, quantity, total, img}) {
     
     const dispatch = useDispatch();
@@ -12,17 +11,18 @@ export default function YoursCart({Id, name, price, quantity, total, img}) {
             Id,
             name,
             price
+            // img
         }))
     }
     function decrementItems() {
-        (cartActions.removeFromCart(Id));
+        dispatch(cartActions.removeFromCart(Id));
     }
     function deleteItems() {
         dispatch(cartActions.delFromCart(Id));
     }
+
     return (
         <div className='item-list'>
-            <img src={img} alt="product-img" />
             <h2>
                 {name}
             </h2>
@@ -43,6 +43,8 @@ export default function YoursCart({Id, name, price, quantity, total, img}) {
             </button>
             <i className='fa fa-trash' onClick={deleteItems}>
             </i>
+            <img src={`../../mapImages/${img}`} alt="img" />
         </div>
     )
+
 };
