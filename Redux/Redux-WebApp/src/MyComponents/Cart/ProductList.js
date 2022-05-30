@@ -1,21 +1,21 @@
 export default [
     {
         Id : 1,
-        name : "Laptop",
+        name : "Macbook",
         img : "test.avif",
         price : 25
         
     },
     {
         Id : 2,
-        name : "Laptop",
+        name : "Dell",
         img : "product.webp",
         price : 25
         
     },
     {
         Id : 3,
-        name : "Laptop",
+        name : "Lenovo",
         img : "second.webp",
         price : 25
         
