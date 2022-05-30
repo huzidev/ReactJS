@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { cartActions } from '../../Store/Cart-Store.js';
-import CartList from './CartList.js';
+import YoursCart from './YoursCart.js';
 
 export default function CartItems() {
 
@@ -28,7 +28,7 @@ export default function CartItems() {
                 {
                     CartItems.map((item) => (
                         <li>
-                            <CartList 
+                            <YoursCart
                                 Id = {item.Id}
                                 name = {item.name}
                                 price = {item.price}

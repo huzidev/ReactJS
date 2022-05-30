@@ -1,12 +1,12 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { cartActions } from '../../Store/Cart-Store';
+import { cartActions } from '../../Store/Cart-Store.js';
 
 
-export default function CartList({Id, name, price, quantity, total}) {
-
+export default function YoursCart({Id, name, price, quantity, total}) {
+    
     const dispatch = useDispatch();
-
+    
     function incrementItems() {
         dispatch(cartActions.addToCart({
             Id,
@@ -15,7 +15,7 @@ export default function CartList({Id, name, price, quantity, total}) {
         }))
     }
     function decrementItems() {
-        dispatch(cartActions.removeFromCart(Id));
+        (cartActions.removeFromCart(Id));
     }
     function deleteItems() {
         dispatch(cartActions.delFromCart(Id));
@@ -44,4 +44,4 @@ export default function CartList({Id, name, price, quantity, total}) {
             </i>
         </div>
     )
-}
+};
