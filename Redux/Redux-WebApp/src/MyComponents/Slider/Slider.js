@@ -28,6 +28,9 @@ export default function Slider() {
     setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
   }
 
+  function active(activeIndex) {
+    setActiveIndex(activeIndex)
+  }
   return (
     <div className="slider-container">
       <SliderContent 
@@ -37,12 +40,11 @@ export default function Slider() {
       <Arrows
         prevSlide={prev}
         nextSlide={next}
-        
       />
       <Dots
         activeIndex={activeIndex}
         sliderImage={sliderImage}
-        onclick={(activeIndex) => setActiveIndex(activeIndex)}
+        onclick={active}
       />
     </div>
   );
