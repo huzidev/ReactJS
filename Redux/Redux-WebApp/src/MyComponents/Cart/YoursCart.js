@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { cartActions } from '../../Store/Cart-Store.js';
 
 
-export default function YoursCart({Id, name, price, quantity, total}) {
+export default function YoursCart({Id, name, price, quantity, total, img}) {
     
     const dispatch = useDispatch();
     
@@ -22,6 +22,7 @@ export default function YoursCart({Id, name, price, quantity, total}) {
     }
     return (
         <div className='item-list'>
+            <img src={img} alt="product-img" />
             <h2>
                 {name}
             </h2>
