@@ -11,7 +11,6 @@ export default function YoursCart({Id, name, price, quantity, total, img}) {
             Id,
             name,
             price
-            // img
         }))
     }
     function decrementItems() {

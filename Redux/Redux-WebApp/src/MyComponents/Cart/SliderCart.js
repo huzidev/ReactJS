@@ -21,14 +21,14 @@ export default function SliderCart() {
             }))
         }
 
-        function incrementItems() {
-            dispatch(cartActions.addToCart({
-                Id,
-                name,
-                price,
-                img
-            }))
-        }
+        // function incrementItems() {
+        //     dispatch(cartActions.addToCart({
+        //         Id,
+        //         name,
+        //         price,
+        //         img
+        //     }))
+        // }
 
         function decrementItems(){
             dispatch(cartActions.removeFromCart(Id))
@@ -46,14 +46,14 @@ export default function SliderCart() {
                             $ {price}
                         </b>
                     </p>
-                    <div className='add-cart' onClick={addToCart}> 
+                    <div className='add-cart'> 
                         <button onClick={decrementItems}>
                             -
                         </button>
                         <div className='num'>
                             quantity : {quantity}
                         </div>
-                        <button onClick={incrementItems}>
+                        <button onClick={addToCart}>
                             +
                         </button>
                     </div>
