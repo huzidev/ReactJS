@@ -21,9 +21,18 @@ export default function CartItems() {
     
     return (
         <div className='cart-main'>
+            <div className='top-nav'>
             <h2>
                 Yours Cart
             </h2>
+            <div className='logout' onClick={logoutHandler}>
+                <i className='fa fa-arrow-left' onClick={logoutHandler}>
+                </i>
+                <p>
+                    Go Back To Shopping
+                </p>
+            </div>
+            </div>
             <div className='cart-nav'>
                 <h5>
                     Items-Name
@@ -57,7 +66,7 @@ export default function CartItems() {
                     ))
                 }
             </ul>
-            <i className='fa fa-arrow-left' onClick={logoutHandler}></i>
+            
         </div>
     )
 }
