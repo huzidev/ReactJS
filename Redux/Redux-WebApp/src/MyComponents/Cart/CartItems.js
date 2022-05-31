@@ -24,19 +24,36 @@ export default function CartItems() {
             <h2>
                 Yours Cart
             </h2>
+            <div className='cart-nav'>
+                <h5>
+                    Items-Name
+                </h5>
+                <h5>
+                    Price
+                </h5>
+                <h5>
+                    Quantity
+                </h5>
+                <h5>
+                    Total Price
+                </h5>
+            </div>
             <ul>
                 {
                     CartItems.map((item) => (
-                        <li>
-                            <YoursCart
-                                Id = {item.Id}
-                                name = {item.name}
-                                price = {item.price}
-                                quantity = {item.quantity}
-                                total = {item.totalPrice}
-                                img = {item.img}
-                            />
-                        </li>
+                        <>
+                            <li>
+                                <YoursCart
+                                    Id = {item.Id}
+                                    name = {item.name}
+                                    price = {item.price}
+                                    quantity = {item.quantity}
+                                    total = {item.totalPrice}
+                                    img = {item.img}
+                                />
+                            </li>
+                            <hr />
+                        </>
                     ))
                 }
             </ul>

@@ -52,21 +52,34 @@
   text-align: center;
 }
 
-ul {
-  list-style: none;
-}
-
-.item-list {
-  background-color: aqua;
+.cart-nav {
+  width: 620px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.item-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
 }
 .item-list img {
   height: 200px;
