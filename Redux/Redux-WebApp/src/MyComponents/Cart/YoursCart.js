@@ -22,6 +22,7 @@ export default function YoursCart({Id, name, price, quantity, total, img}) {
 
     return (
         <div className='item-list'>
+            <img src={`../../mapImages/${img}`} alt="img" />
             <h2>
                 {name}
             </h2>
@@ -42,7 +43,6 @@ export default function YoursCart({Id, name, price, quantity, total, img}) {
             </button>
             <i className='fa fa-trash' onClick={deleteItems}>
             </i>
-            <img src={`../../mapImages/${img}`} alt="img" />
         </div>
     )
 

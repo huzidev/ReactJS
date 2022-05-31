@@ -21,15 +21,6 @@ export default function SliderCart() {
             }))
         }
 
-        // function incrementItems() {
-        //     dispatch(cartActions.addToCart({
-        //         Id,
-        //         name,
-        //         price,
-        //         img
-        //     }))
-        // }
-
         function decrementItems(){
             dispatch(cartActions.removeFromCart(Id))
         }

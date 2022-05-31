@@ -51,3 +51,24 @@
   border: 1px solid black;
   text-align: center;
 }
+
+ul {
+  list-style: none;
+}
+
+.item-list {
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.item-list img {
+  height: 200px;
+  width: 250px;
+}
