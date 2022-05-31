@@ -7,10 +7,16 @@ const sliderStore = createSlice({
     initialState : {
         sliderImage : [sliderImage.length],
         setActiveIndex : 0,
-        len : sliderImage - 1,
+        activeIndex = 0,
+        len : sliderImage - 1
     },
     reducers : {
-           
+           prevSlide(state){
+            state.setActiveIndex = (state.activeIndex < 1 ? len : state.activeIndex - 1);
+           },
+           nextSlide(state){
+            state.setActiveIndex = (state.activeIndex === len ? 0 : state.activeIndex + 1); 
+           }
     }
     
 });
