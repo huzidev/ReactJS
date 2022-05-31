@@ -1,3 +1,4 @@
+import { CardActions } from '@mui/material';
 import { click } from '@testing-library/user-event/dist/click';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -7,7 +8,7 @@ import YoursCart from './YoursCart.js';
 export default function CartItems() {
 
     const CartItems = useSelector((state) => state.cart.itemsList)
-    const screen = useSelector((state) => state.cart.screen)
+    const screen = useSelector((state) => state.cart.screen);
 
     const quantity = useSelector((state) => state.cart.totalQuantity)
 
@@ -101,6 +102,23 @@ export default function CartItems() {
                             Go Buy Something
                         </h2>
                     </div>
+                )
+            }
+            {
+                screen ? (
+                    <>
+                        <div className='modal'>
+                            <p>
+                                Are You Sure You Wanted To Remove All Cart Items?
+                            </p>
+                            <button>
+
+                            </button>
+                            <button>
+
+                            </button>
+                        </div>
+                    </>
                 )
             }
         </div>
