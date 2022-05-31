@@ -7,7 +7,7 @@ export default function SliderContent({activeIndex}) {
 // the index is basically the slider number
   const slider = sliderImage.map((list, index) => {
 
-    const {title, description, urls} = list;
+    const {title, description, img} = list;
 
       return (
         <section>
@@ -15,7 +15,7 @@ export default function SliderContent({activeIndex}) {
             key={index}
             className={index === activeIndex ? "slides active" : "inactive"}
           >
-            <img className="slide-image" src={urls} alt="slider-img"/>
+            <img className="slide-image" src={img} alt="slider-img"/>
             <h2 className="slide-title">
               {title}
             </h2>
