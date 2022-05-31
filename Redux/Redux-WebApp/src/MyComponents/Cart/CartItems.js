@@ -18,6 +18,9 @@ export default function CartItems() {
     function logoutHandler() {
         dispatch(cartActions.goBack())
     }
+    function deleteAll() {
+        dispatch(cartActions.deleteAll())
+    }
     
     return (
         <div className='cart-main'>
