@@ -66,7 +66,9 @@ export default function CartItems() {
                     ))
                 }
             </ul>
-            
+            <button onClick={deleteAll}>
+                Clear Cart
+            </button>
         </div>
     )
 }

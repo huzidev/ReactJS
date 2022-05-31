@@ -76,6 +76,13 @@ const cartStore = createSlice({
 
         },
 
+        deleteAll(state) {
+
+
+
+        },
+
+
         goBack(state) {
             
             state.setShowCart = false;
