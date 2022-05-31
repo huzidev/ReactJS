@@ -102,6 +102,14 @@ ul {
   margin: auto;
 }
 
+.delete-btn {
+  background-color: none;
+  border: 1px solid black;
+  padding: 5px 15px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
 .item-list {
   display: -webkit-box;
   display: -ms-flexbox;

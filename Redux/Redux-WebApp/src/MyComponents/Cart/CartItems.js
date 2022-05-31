@@ -28,10 +28,10 @@ export default function CartItems() {
             <h2>
                 Yours Cart
             </h2>
-            <div className='logout' onClick={logoutHandler}>
+            <div className='logout'>
                 <i className='fa fa-arrow-left' onClick={logoutHandler}>
                 </i>
-                <p>
+                <p onClick={logoutHandler}>
                     Go Back To Shopping
                 </p>
             </div>
@@ -68,10 +68,10 @@ export default function CartItems() {
                         </>
                     ))
                 }
-            </ul>
-            <button onClick={deleteAll}>
+            <button onClick={deleteAll} className='delete-btn'>
                 Clear Cart
             </button>
+            </ul>
         </div>
     )
 }
