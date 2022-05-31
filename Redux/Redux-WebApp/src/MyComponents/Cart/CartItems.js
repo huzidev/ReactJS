@@ -7,7 +7,8 @@ export default function CartItems() {
 
     const CartItems = useSelector((state) => state.cart.itemsList)
 
-    // const quantity = useSelector((state) => state.cart.totalQuantity)
+
+    const quantity = useSelector((state) => state.cart.totalQuantity)
 
     // let item;
 
@@ -22,6 +23,14 @@ export default function CartItems() {
         dispatch(cartActions.deleteAll())
     }
     
+    let show;
+
+    if(quantity === 0){
+        show = false;
+    }
+    else if(quantity > 0){
+        show = true;
+    }
     return (
         <div className='cart-main'>
             <div className='top-nav'>
@@ -36,42 +45,53 @@ export default function CartItems() {
                 </p>
             </div>
             </div>
-            <div className='cart-nav'>
-                <h5>
-                    Items-Name
-                </h5>
-                <h5>
-                    Price
-                </h5>
-                <h5>
-                    Quantity
-                </h5>
-                <h5>
-                    Total Price
-                </h5>
-            </div>
-            <ul>
-                {
-                    CartItems.map((item) => (
-                        <>
-                            <li>
-                                <YoursCart
-                                    Id = {item.Id}
-                                    name = {item.name}
-                                    price = {item.price}
-                                    quantity = {item.quantity}
-                                    total = {item.totalPrice}
-                                    img = {item.img}
-                                />
-                            </li>
-                            <hr />
-                        </>
-                    ))
-                }
-            <button onClick={deleteAll} className='delete-btn'>
-                Clear Cart
-            </button>
-            </ul>
+            {show ?
+                <>
+                    <div className='cart-nav'>
+                        <h5>
+                            Items-Name
+                        </h5>
+                        <h5>
+                            Price
+                        </h5>
+                        <h5>
+                            Quantity
+                        </h5>
+                        <h5>
+                            Total Price
+                        </h5>
+                    </div>
+                    <ul>
+                        {
+                            CartItems.map((item) => (
+                                <>
+                                    <li>
+                                        <YoursCart
+                                            Id = {item.Id}
+                                            name = {item.name}
+                                            price = {item.price}
+                                            quantity = {item.quantity}
+                                            total = {item.totalPrice}
+                                            img = {item.img}
+                                        />
+                                    </li>
+                                    <hr />
+                                </>
+                            ))
+                        }
+                    <button onClick={deleteAll} className='delete-btn'>
+                        Clear Cart
+                    </button>
+                    </ul>
+                </> : (
+                    <div className='center'> 
+                        <h2>
+                            Cart Is Empty! <br />
+                            Go Buy Something
+                        </h2>
+                    </div>
+                )
+            }
         </div>
     )
 }
