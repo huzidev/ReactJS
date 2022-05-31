@@ -74,6 +74,7 @@
   margin: 0px 10px;
 }
 .top-nav .logout p {
+  margin-bottom: 15px;
   cursor: pointer;
 }
 
@@ -88,6 +89,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.cart-nav h5 {
+  font-weight: 500;
+  font-size: 19px;
 }
 
 ul {
