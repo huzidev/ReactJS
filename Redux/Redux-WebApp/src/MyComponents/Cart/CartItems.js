@@ -22,6 +22,7 @@ export default function CartItems() {
     }
     function deleteAll() {
         dispatch(cartActions.deleteAll())
+        window.alert("You sure");
     }
     
     let show;
