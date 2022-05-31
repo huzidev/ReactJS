@@ -28,7 +28,6 @@ export default function CartItems() {
         if (confirmAction) {
             alert("success")
         }
-        
         else{
             alert("failure")
         }
