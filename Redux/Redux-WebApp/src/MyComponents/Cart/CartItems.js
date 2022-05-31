@@ -1,3 +1,4 @@
+import { click } from '@testing-library/user-event/dist/click';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { cartActions } from '../../Store/Cart-Store.js';
@@ -31,6 +32,7 @@ export default function CartItems() {
     else if(quantity > 0){
         show = true;
     }
+
     return (
         <div className='cart-main'>
             <div className='top-nav'>

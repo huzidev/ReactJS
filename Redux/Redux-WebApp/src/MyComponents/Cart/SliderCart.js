@@ -6,7 +6,7 @@ import ProductList from './ProductList.js'
 export default function SliderCart() {
     const dispatch = useDispatch();
 
-    const quantity = useSelector((state) => state.cart.totalQuantity)
+    const quantity = useSelector((state) => state.cart.itemsList.length)
 
     const Products = ProductList.map((info) => {
         
