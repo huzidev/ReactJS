@@ -6,7 +6,10 @@ const cartStore = createSlice({
     initialState : {
         itemsList : [],
         totalQuantity : 0,
-        setShowCart : false
+        setShowCart : false,
+        screen : false,
+        yes : false,
+        no : false
     },
     reducers : {
         addToCart(state, action) {
@@ -78,6 +81,13 @@ const cartStore = createSlice({
 
         deleteAll(state) {
 
+            state.screen = !state.screen;
+
+            if (state.screen === true) {
+                
+                
+            }
+            
             state.itemsList = [];
             state.totalQuantity = 0;
             state.totalPrice = 0;

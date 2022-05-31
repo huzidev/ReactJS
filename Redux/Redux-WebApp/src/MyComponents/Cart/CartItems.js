@@ -7,7 +7,7 @@ import YoursCart from './YoursCart.js';
 export default function CartItems() {
 
     const CartItems = useSelector((state) => state.cart.itemsList)
-
+    const screen = useSelector((state) => state.cart.screen)
 
     const quantity = useSelector((state) => state.cart.totalQuantity)
 
@@ -23,14 +23,14 @@ export default function CartItems() {
     function deleteAll() {
         dispatch(cartActions.deleteAll())
 
-        let confirmAction = window.confirm("You Sure");
+        // let confirmAction = window.confirm("You Sure");
 
-        if (confirmAction) {
-            alert("success")
-        }
-        else{
-            alert("failure")
-        }
+        // if (confirmAction) {
+        //     alert("success")
+        // }
+        // else{
+        //     alert("failure")
+        // }
     }
     
     let show;
