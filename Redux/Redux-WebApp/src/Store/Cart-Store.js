@@ -78,8 +78,10 @@ const cartStore = createSlice({
 
         deleteAll(state) {
 
-
-
+            state.itemsList = 0;
+            state.totalQuantity = 0;
+            state.totalPrice = 0;
+            
         },
 
 
