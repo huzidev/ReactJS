@@ -11,25 +11,44 @@ const len = sliderImage.length - 1;
 
 export default function Slider() {
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  // const activeImg = useSelector((state) => state.slider.activeIndex)
+
+  const dispatch = useDispatch();
+
+  const[activeIndex, setActiveIndex] = React.useState(0)
+
+  // const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
+      // setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
+      dispatch(sliderStoreActions.nextSlide({
+        len,
+        setActiveIndex
+      }));
     }, 3000);
     return () => clearInterval(interval);
-  }, [activeIndex]);
+  }, [activeIndex, dispatch]);
 
   function prev() {
-    setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+    // setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+    dispatch(sliderStoreActions.prevSlide({
+      len,
+      setActiveIndex
+    }));
   } 
 
   function next() {
-    setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
+    // setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
+    dispatch(sliderStoreActions.nextSlide({
+      len,
+      setActiveIndex
+    }));
   }
 
   function active(activeIndex) {
-    setActiveIndex(activeIndex)
+    // setActiveIndex(activeIndex)
+    dispatch(sliderStoreActions.activeIndex(activeIndex));
   }
   return (
     <div className="slider-container">
