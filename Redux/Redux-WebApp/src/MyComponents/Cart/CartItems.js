@@ -104,23 +104,22 @@ export default function CartItems() {
                     </div>
                 )
             }
-            {
-                screen ? (
-                    <>
-                        <div className='modal'>
-                            <p>
-                                Are You Sure You Wanted To Remove All Cart Items?
-                            </p>
-                            <button>
-
-                            </button>
-                            <button>
-
-                            </button>
-                        </div>
-                    </>
-                )
-            }
+            <>
+                {screen ? 
+                <div className='modal'>
+                    <p>
+                        Are You Sure You Wanted To Remove All Cart Items?
+                    </p>
+                    <button>
+                        Yes
+                    </button>
+                    <button>
+                        No
+                    </button>
+                </div>
+                : ""
+                }
+            </> 
         </div>
     )
 }
