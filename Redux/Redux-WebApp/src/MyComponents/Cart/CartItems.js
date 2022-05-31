@@ -22,7 +22,16 @@ export default function CartItems() {
     }
     function deleteAll() {
         dispatch(cartActions.deleteAll())
-        window.alert("You sure");
+
+        let confirmAction = window.confirm("You Sure");
+
+        if (confirmAction) {
+            alert("success")
+        }
+        
+        else{
+            alert("failure")
+        }
     }
     
     let show;
