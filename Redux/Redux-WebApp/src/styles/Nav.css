@@ -40,10 +40,15 @@
   right: 0px;
 }
 .nav .header .ham-side-bar ul {
-  list-style: none;
+  text-align: left;
   right: 0px;
 }
-.nav .header .ham-side-bar ul li {
+.nav .header .ham-side-bar ul .nav-item {
+  list-style: none;
+  padding: 25px;
+}
+.nav .header .ham-side-bar ul .nav-item a {
+  text-decoration: none;
   color: white;
   font-weight: 300;
   text-transform: uppercase;
@@ -52,12 +57,12 @@
   position: relative;
   font-size: 19px;
 }
-.nav .header .ham-side-bar ul li::before, .nav .header .ham-side-bar ul li::after {
+.nav .header .ham-side-bar ul .nav-item a::before, .nav .header .ham-side-bar ul .nav-item a::after {
   content: "";
   position: absolute;
   height: 2px;
   left: 0px;
-  width: 50px;
+  width: 100%;
   background-color: chocolate;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -66,18 +71,18 @@
   transition: transform 800ms;
   transition: transform 800ms, -webkit-transform 800ms;
 }
-.nav .header .ham-side-bar ul li::after {
+.nav .header .ham-side-bar ul .nav-item a::after {
   bottom: 0px;
   -webkit-transform-origin: left;
           transform-origin: left;
 }
-.nav .header .ham-side-bar ul li::before {
+.nav .header .ham-side-bar ul .nav-item a::before {
   top: 0px;
   -webkit-transform-origin: right;
           transform-origin: right;
 }
-.nav .header .ham-side-bar ul li:hover::before,
-.nav .header .ham-side-bar ul li:hover::after {
+.nav .header .ham-side-bar ul .nav-item a:hover::before,
+.nav .header .ham-side-bar ul .nav-item a:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
