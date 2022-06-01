@@ -28,17 +28,24 @@ export default function Nav() {
                     <img src={Logo} alt="logo" className="logo"/>
                 </div>
                 <div className={'ham-side-bar' + activeClass}>
-                    <div className='cart-section'>
-                        <div className='cart-btn'>
-                            <i onClick={setShowCart} className="fas fa-shopping-cart"></i>
-                            <div className='counter'>
-                                <p>
-                                    {totalQuantity}
-                                </p>
+                    <ul>
+                        <div className='flex'>
+                            <li className='nav-item'>
+                                <a href="#">
+                                    Cart-Items
+                                </a>
+                            </li>
+                            <div className='cart-section'>
+                                <div className='cart-btn'>
+                                    <i onClick={setShowCart} className="fas fa-shopping-cart"></i>
+                                    <div className='counter'>
+                                        <p>
+                                            {totalQuantity}
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <ul>
                         <li className='nav-item'>
                             <a href="#">
                                 About

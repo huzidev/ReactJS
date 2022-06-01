@@ -43,6 +43,11 @@
   text-align: left;
   right: 0px;
 }
+.nav .header .ham-side-bar ul .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .nav .header .ham-side-bar ul .nav-item {
   list-style: none;
   padding: 25px;
