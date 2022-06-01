@@ -8,6 +8,7 @@ import "./styles/Slider.css"
 import "./styles/Slider.css";
 import "./styles/Items.css";
 import "./styles/SliderCart.css";
+import "./styles/Modal.css";
 import { Provider } from 'react-redux';
 import store from './Store';
 
