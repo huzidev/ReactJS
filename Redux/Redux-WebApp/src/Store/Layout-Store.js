@@ -4,7 +4,8 @@ const layoutStore = createSlice({
 
     name : 'layout',
     initialState : {
-        hamburgerOpen : false
+        hamburgerOpen : false,
+        logout: false
     },
     reducers : {
 

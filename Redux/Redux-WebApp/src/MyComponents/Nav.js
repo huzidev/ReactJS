@@ -19,6 +19,10 @@ export default function Nav() {
         dispatch(cartActions.setShowCart());
     }
 
+    function logoutHandler() {
+        dispatch(cartActions.goBack())
+    }
+
     const activeClass = hamburgerOpen ? ' open' : '';
 
     return (
@@ -62,12 +66,12 @@ export default function Nav() {
                             </a>
                         </li>
                         <div className='flex'>
-                            <li className='nav-item'>
+                            <li className='nav-item' onClick={logoutHandler}>
                                 <a href="#">
                                     Logout 
                                 </a>
                             </li>
-                            <i class="fa fa-sign-out sign"></i>
+                            <i class="fa fa-sign-out sign" onClick={logoutHandler}></i>
                         </div>
 
                     </ul>
