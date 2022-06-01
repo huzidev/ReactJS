@@ -123,12 +123,14 @@ export default function CartItems() {
                             <p>
                                 Are You Sure You Wanted To Remove All Cart Items?
                             </p>
-                            <button onClick={confirm}>
-                                Yes
-                            </button>
-                            <button onClick={notConfirm}>
-                                No
-                            </button>
+                            <div className='modal-btns'>
+                                <button onClick={confirm}>
+                                    Yes
+                                </button>
+                                <button onClick={notConfirm}>
+                                    No
+                                </button>
+                            </div>
                         </div>
                     </div>
                 : ""
