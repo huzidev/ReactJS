@@ -36,7 +36,11 @@ nav i {
   font-size: 50px;
   cursor: pointer;
 }
-nav .ham {
+nav .ham-side-bar {
+  background-color: black;
+}
+nav .ham-side-bar .ham {
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,7 +59,7 @@ nav .ham {
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-nav .ham .hamburger-menu {
+nav .ham-side-bar .ham .hamburger-menu {
   z-index: 2;
   width: 50px;
   height: 6px;
@@ -66,7 +70,7 @@ nav .ham .hamburger-menu {
   -webkit-box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2);
 }
-nav .ham .hamburger-menu::before, nav .ham .hamburger-menu::after {
+nav .ham-side-bar .ham .hamburger-menu::before, nav .ham-side-bar .ham .hamburger-menu::after {
   content: "";
   position: absolute;
   width: 50px;
@@ -78,26 +82,26 @@ nav .ham .hamburger-menu::before, nav .ham .hamburger-menu::after {
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-nav .ham .hamburger-menu::before {
+nav .ham-side-bar .ham .hamburger-menu::before {
   -webkit-transform: translateY(-16px);
           transform: translateY(-16px);
 }
-nav .ham .hamburger-menu::after {
+nav .ham-side-bar .ham .hamburger-menu::after {
   -webkit-transform: translateY(16px);
           transform: translateY(16px);
 }
-nav .ham.open .hamburger-menu {
+nav .ham-side-bar .ham.open .hamburger-menu {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
   background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-nav .ham.open .hamburger-menu::before {
+nav .ham-side-bar .ham.open .hamburger-menu::before {
   -webkit-transform: rotate(45deg) translate(35px, -35px);
           transform: rotate(45deg) translate(35px, -35px);
 }
-nav .ham.open .hamburger-menu::after {
+nav .ham-side-bar .ham.open .hamburger-menu::after {
   -webkit-transform: rotate(-45deg) translate(35px, 35px);
           transform: rotate(-45deg) translate(35px, 35px);
 }

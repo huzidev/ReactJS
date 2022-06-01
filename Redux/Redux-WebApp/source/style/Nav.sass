@@ -15,6 +15,7 @@ nav
                 font-weight: 600
                 -webkit-text-stroke: 0.5px black
                 color: yellow
+        
     .logo
         height: 150px
         width: 200px
@@ -22,45 +23,48 @@ nav
     i
         font-size: 50px
         cursor: pointer
-    .ham
-        display: flex
-        margin: 0px 20px
-        justify-content: center
-        align-items: center
-        width: 55px
-        height: 40px
-        z-index: 2
-        cursor: pointer
-        position: relative
-        transition: all 500ms ease-in-out
-        .hamburger-menu
+    .ham-side-bar
+        background-color: black
+        .ham
+            z-index: 10
+            display: flex
+            margin: 0px 20px
+            justify-content: center
+            align-items: center
+            width: 55px
+            height: 40px
             z-index: 2
-            width: 50px
-            height: 6px
-            background-color: white
-            border-radius: 5px
+            cursor: pointer
+            position: relative
             transition: all 500ms ease-in-out
-            box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
-            &::before, &::after
-                content: ""
-                position: absolute
+            .hamburger-menu
+                z-index: 2
                 width: 50px
                 height: 6px
                 background-color: white
-                border-radius: 15px
-                box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
+                border-radius: 5px
                 transition: all 500ms ease-in-out
-            &::before
-                transform: translateY(-16px)
-            &::after
-                transform: translateY(16px)
-        &.open
-            .hamburger-menu
-                transform: translateX(-50px)
-                background: transparent
-                box-shadow: none
+                box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
+                &::before, &::after
+                    content: ""
+                    position: absolute
+                    width: 50px
+                    height: 6px
+                    background-color: white
+                    border-radius: 15px
+                    box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
+                    transition: all 500ms ease-in-out
                 &::before
-                    transform: rotate(45deg) translate(35px, -35px)
+                    transform: translateY(-16px)
                 &::after
-                    transform: rotate(-45deg) translate(35px, 35px)
+                    transform: translateY(16px)
+            &.open
+                .hamburger-menu
+                    transform: translateX(-50px)
+                    background: transparent
+                    box-shadow: none
+                    &::before
+                        transform: rotate(45deg) translate(35px, -35px)
+                    &::after
+                        transform: rotate(-45deg) translate(35px, 35px)
             

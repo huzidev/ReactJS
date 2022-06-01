@@ -33,9 +33,11 @@ export default function Nav() {
                         </p>
                     </div>
                 </div>
-                <div onClick={hamburger} className={'ham' + activeClass}>
-                    <div className='hamburger-menu'>
-                        <div className='menu'>
+                <div className='ham-side-bar'>
+                    <div onClick={hamburger} className={'ham' + activeClass}>
+                        <div className='hamburger-menu'>
+                            <div className='menu'>
+                            </div>
                         </div>
                     </div>
                 </div>
