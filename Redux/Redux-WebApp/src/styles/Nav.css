@@ -9,7 +9,6 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   background-color: aqua;
-  width: 800px;
 }
 nav .cart-btn {
   display: -webkit-box;
@@ -75,7 +74,7 @@ nav .ham-side-bar .ham .hamburger-menu {
   z-index: 2;
   width: 50px;
   height: 6px;
-  background-color: white;
+  background-color: black;
   border-radius: 5px;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
@@ -83,11 +82,11 @@ nav .ham-side-bar .ham .hamburger-menu {
           box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2);
 }
 nav .ham-side-bar .ham .hamburger-menu::before, nav .ham-side-bar .ham .hamburger-menu::after {
+  background-color: black;
   content: "";
   position: absolute;
   width: 50px;
   height: 6px;
-  background-color: white;
   border-radius: 15px;
   -webkit-box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2);
@@ -110,10 +109,12 @@ nav .ham-side-bar .ham.open .hamburger-menu {
           box-shadow: none;
 }
 nav .ham-side-bar .ham.open .hamburger-menu::before {
+  background-color: white;
   -webkit-transform: rotate(45deg) translate(35px, -35px);
           transform: rotate(45deg) translate(35px, -35px);
 }
 nav .ham-side-bar .ham.open .hamburger-menu::after {
+  background-color: white;
   -webkit-transform: rotate(-45deg) translate(35px, 35px);
           transform: rotate(-45deg) translate(35px, 35px);
 }

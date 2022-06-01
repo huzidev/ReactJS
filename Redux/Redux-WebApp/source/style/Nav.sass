@@ -3,7 +3,7 @@ nav
     justify-content: space-between
     align-items: center
     background-color: aqua
-    width: 800px
+    // width: 800px
     .cart-btn
         display: flex
         position: relative
@@ -51,16 +51,16 @@ nav
                 z-index: 2
                 width: 50px
                 height: 6px
-                background-color: white
+                background-color: black
                 border-radius: 5px
                 transition: all 500ms ease-in-out
                 box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
                 &::before, &::after
+                    background-color: black
                     content: ""
                     position: absolute
                     width: 50px
                     height: 6px
-                    background-color: white
                     border-radius: 15px
                     box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
                     transition: all 500ms ease-in-out
@@ -74,7 +74,9 @@ nav
                     background: transparent
                     box-shadow: none
                     &::before
+                        background-color: white
                         transform: rotate(45deg) translate(35px, -35px)
                     &::after
+                        background-color: white
                         transform: rotate(-45deg) translate(35px, 35px)
             
