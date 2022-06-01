@@ -39,6 +39,48 @@
 .nav .header .ham-side-bar.open {
   right: 0px;
 }
+.nav .header .ham-side-bar ul {
+  list-style: none;
+  right: 0px;
+}
+.nav .header .ham-side-bar ul li {
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 3px 0px;
+  position: relative;
+  font-size: 19px;
+}
+.nav .header .ham-side-bar ul li::before, .nav .header .ham-side-bar ul li::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0px;
+  width: 50px;
+  background-color: chocolate;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
+}
+.nav .header .ham-side-bar ul li::after {
+  bottom: 0px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+.nav .header .ham-side-bar ul li::before {
+  top: 0px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+.nav .header .ham-side-bar ul li:hover::before,
+.nav .header .ham-side-bar ul li:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
 .nav .header .ham-side-bar .cart-btn {
   display: -webkit-box;
   display: -ms-flexbox;
