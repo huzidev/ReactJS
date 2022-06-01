@@ -61,6 +61,13 @@ export default function Nav() {
                                 More
                             </a>
                         </li>
+                        <li className='nav-item'>
+                            <a href="#">
+                                Logout 
+                                <i class="fa fa-sign-out"></i>
+                            </a>
+                        </li>
+
                     </ul>
                     <div onClick={hamburger} className={'ham' + activeClass}>
                         <div className='hamburger-menu'>
