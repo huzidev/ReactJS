@@ -38,6 +38,7 @@ nav i {
 }
 nav .ham-side-bar {
   background-color: black;
+  overflow: none;
 }
 nav .ham-side-bar .ham {
   z-index: 10;
