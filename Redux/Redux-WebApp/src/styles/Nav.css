@@ -17,32 +17,10 @@
   position: relative;
   color: white;
 }
-.nav .header .cart-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-.nav .header .cart-btn .counter {
-  position: absolute;
-  top: -22px;
-  right: -7px;
-}
-.nav .header .cart-btn .counter p {
-  font-size: 22px;
-  font-weight: 600;
-  -webkit-text-stroke: 0.5px black;
-  color: yellow;
-}
 .nav .header .logo {
   height: 150px;
   width: 200px;
   margin: 0px 20px;
-}
-.nav .header i {
-  color: white;
-  font-size: 50px;
-  cursor: pointer;
 }
 .nav .header .ham-side-bar {
   height: 100vh;
@@ -61,11 +39,27 @@
 .nav .header .ham-side-bar.open {
   right: 0px;
 }
-.nav .header .ham-side-bar .right {
-  background-color: black;
+.nav .header .ham-side-bar .cart-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+}
+.nav .header .ham-side-bar .cart-btn i {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+.nav .header .ham-side-bar .cart-btn .counter {
+  position: absolute;
+  top: -30px;
+  left: 55px;
+}
+.nav .header .ham-side-bar .cart-btn .counter p {
+  font-size: 28px;
+  font-weight: 600;
+  -webkit-text-stroke: 0.5px black;
+  color: aqua;
 }
 .nav .header .ham-side-bar .ham {
   position: fixed;

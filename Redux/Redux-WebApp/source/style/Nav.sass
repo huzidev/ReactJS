@@ -9,27 +9,10 @@
             position: relative
             // background-color: black
             color: white
-        .cart-btn
-            display: flex
-            position: relative
-            .counter
-                position: absolute
-                top: -22px
-                right: -7px
-                p
-                    font-size: 22px
-                    font-weight: 600
-                    -webkit-text-stroke: 0.5px black
-                    color: yellow
-            
         .logo
             height: 150px
             width: 200px
             margin: 0px 20px
-        i
-            color: white
-            font-size: 50px
-            cursor: pointer
         .ham-side-bar
             height: 100vh
             background-color: black
@@ -43,9 +26,22 @@
             transition: all 800ms cubic-bezier(1, 0, 0, 1)
             &.open
                 right: 0px
-            .right 
-                background-color: black
+            .cart-btn
                 display: flex
+                position: relative
+                i
+                    color: white
+                    font-size: 50px
+                    cursor: pointer
+                .counter
+                    position: absolute
+                    top: -30px
+                    left: 55px
+                    p
+                        font-size: 28px
+                        font-weight: 600
+                        -webkit-text-stroke: 0.5px black
+                        color: aqua
             .ham
                 position: fixed
                 top: 50px

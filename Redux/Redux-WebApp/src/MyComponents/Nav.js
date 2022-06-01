@@ -27,6 +27,17 @@ export default function Nav() {
                 <div className='header-section logo-section'>
                     <img src={Logo} alt="logo" className="logo"/>
                 </div>
+                <div className='right'>
+                <div className='cart-section'>
+                        <div className='cart-btn'>
+                            <i onClick={setShowCart} className="fas fa-shopping-cart"></i>
+                            <div className='counter'>
+                                <p>
+                                    {totalQuantity}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 <div className={'ham-side-bar' + activeClass}>
                     <div className='cart-section'>
                         <div className='cart-btn'>
@@ -44,6 +55,7 @@ export default function Nav() {
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </nav>
         </div>
