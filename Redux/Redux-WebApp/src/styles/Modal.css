@@ -25,7 +25,6 @@
   text-align: center;
 }
 .modal-container .modal .modal-btns {
-  background-color: black;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,7 +36,9 @@
 .modal-container .modal .modal-btns button {
   margin: 0px 10px;
   padding: 10px 20px;
-  font-weight: 17px;
+  font-size: 17px;
+  background-color: aqua;
+  cursor: pointer;
 }
 .modal-container .modal p {
   font-size: 19px;
