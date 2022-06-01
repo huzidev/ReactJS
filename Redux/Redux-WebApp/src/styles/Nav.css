@@ -41,12 +41,14 @@
 }
 .nav .header .ham-side-bar ul {
   text-align: left;
-  right: 0px;
 }
 .nav .header .ham-side-bar ul .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .nav .header .ham-side-bar ul .nav-item {
   list-style: none;
@@ -99,13 +101,14 @@
 }
 .nav .header .ham-side-bar .cart-btn i {
   color: white;
-  font-size: 50px;
+  font-size: 30px;
   cursor: pointer;
+  margin-bottom: 3px;
 }
 .nav .header .ham-side-bar .cart-btn .counter {
   position: absolute;
-  top: -30px;
-  left: 55px;
+  top: -40px;
+  left: 35px;
 }
 .nav .header .ham-side-bar .cart-btn .counter p {
   font-size: 28px;
