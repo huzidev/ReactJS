@@ -125,6 +125,7 @@ const cartStore = createSlice({
 
             if (state.no === true) {
                 state.screen = !state.screen;
+                state.no = !state.no
             }
 
         },
