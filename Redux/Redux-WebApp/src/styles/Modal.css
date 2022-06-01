@@ -6,6 +6,11 @@
 }
 .modal-container .modal {
   background-color: aqua;
-  width: 1200px;
+  width: 550px;
   margin: auto;
+  text-align: center;
+}
+.modal-container .modal p {
+  font-size: 19px;
+  letter-spacing: 1.5px;
 }
