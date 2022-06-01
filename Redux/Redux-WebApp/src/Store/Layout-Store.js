@@ -11,7 +11,13 @@ const layoutStore = createSlice({
 
         open(state) {
             state.hamburgerOpen = !state.hamburgerOpen;
-        } 
+        },
+
+        goBack(state) {
+
+            state.logout = !state.logout;
+
+        }
     }
 
 
