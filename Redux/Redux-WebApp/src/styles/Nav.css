@@ -50,8 +50,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.nav .header .ham-side-bar ul .flex i {
+.nav .header .ham-side-bar ul .flex .sign {
   color: white;
+  font-size: 30px;
+  cursor: pointer;
+  margin-bottom: 3px;
 }
 .nav .header .ham-side-bar ul .nav-item {
   list-style: none;
@@ -102,7 +105,7 @@
   display: flex;
   position: relative;
 }
-.nav .header .ham-side-bar .cart-btn i {
+.nav .header .ham-side-bar .cart-btn .sign {
   color: white;
   font-size: 30px;
   cursor: pointer;
