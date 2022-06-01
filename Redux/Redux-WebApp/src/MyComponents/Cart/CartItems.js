@@ -9,7 +9,7 @@ export default function CartItems() {
 
     const CartItems = useSelector((state) => state.cart.itemsList)
     let screen = useSelector((state) => state.cart.screen);
-    const yes = useSelector((state) => state.cart.yes)
+    let yes = useSelector((state) => state.cart.yes)
     const no = useSelector((state) => state.cart.no)
     const quantity = useSelector((state) => state.cart.totalQuantity)
 
@@ -22,21 +22,30 @@ export default function CartItems() {
     function logoutHandler() {
         dispatch(cartActions.goBack())
     }
-    function deleteAll() {
-        function yes() {
-            dispatch(cartActions.yes())
-        }
-        if (yes === true) {
-            
-            dispatch(cartActions.deleteAll())
-        
-        }
-        else if(no === true){
-            screen = !screen
-        }
 
+    function deleteAll() {
+        // yes = !yes
+        // if (yes === true) {
+            
+        //     dispatch(cartActions.deleteAll())
+        
+        // }
+        // else if(no === true){
+        //     screen = !screen
+        // }
+        dispatch(cartActions.deleteAll());
     }
     
+    function confirm() {
+        
+
+
+    }
+
+    function notConfirm() {
+        
+    }
+
     let show;
 
     if(quantity === 0){
@@ -113,10 +122,10 @@ export default function CartItems() {
                         <p>
                             Are You Sure You Wanted To Remove All Cart Items?
                         </p>
-                        <button onClick={deleteAll}>
+                        <button onClick={confirm}>
                             Yes
                         </button>
-                        <button>
+                        <button onClick={notConfirm}>
                             No
                         </button>
                     </div>
