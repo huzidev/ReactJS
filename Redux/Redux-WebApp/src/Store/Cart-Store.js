@@ -85,12 +85,17 @@ const cartStore = createSlice({
 
             if (state.screen === true) {
                 
+                state.yes = !state.yes
                 
             }
             
-            state.itemsList = [];
-            state.totalQuantity = 0;
-            state.totalPrice = 0;
+            if (state.yes === true) {
+                
+                state.itemsList = [];
+                state.totalQuantity = 0;
+                state.totalPrice = 0;
+            
+            }
 
         },
 

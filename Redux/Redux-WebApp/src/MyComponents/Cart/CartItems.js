@@ -8,8 +8,9 @@ import YoursCart from './YoursCart.js';
 export default function CartItems() {
 
     const CartItems = useSelector((state) => state.cart.itemsList)
-    const screen = useSelector((state) => state.cart.screen);
-
+    let screen = useSelector((state) => state.cart.screen);
+    const yes = useSelector((state) => state.cart.yes)
+    const no = useSelector((state) => state.cart.no)
     const quantity = useSelector((state) => state.cart.totalQuantity)
 
     // let item;
@@ -22,16 +23,18 @@ export default function CartItems() {
         dispatch(cartActions.goBack())
     }
     function deleteAll() {
-        dispatch(cartActions.deleteAll())
+        function yes() {
+            dispatch(cartActions.yes())
+        }
+        if (yes === true) {
+            
+            dispatch(cartActions.deleteAll())
+        
+        }
+        else if(no === true){
+            screen = !screen
+        }
 
-        // let confirmAction = window.confirm("You Sure");
-
-        // if (confirmAction) {
-        //     alert("success")
-        // }
-        // else{
-        //     alert("failure")
-        // }
     }
     
     let show;
@@ -106,17 +109,17 @@ export default function CartItems() {
             }
             <>
                 {screen ? 
-                <div className='modal'>
-                    <p>
-                        Are You Sure You Wanted To Remove All Cart Items?
-                    </p>
-                    <button>
-                        Yes
-                    </button>
-                    <button>
-                        No
-                    </button>
-                </div>
+                    <div className='modal'>
+                        <p>
+                            Are You Sure You Wanted To Remove All Cart Items?
+                        </p>
+                        <button onClick={deleteAll}>
+                            Yes
+                        </button>
+                        <button>
+                            No
+                        </button>
+                    </div>
                 : ""
                 }
             </> 
