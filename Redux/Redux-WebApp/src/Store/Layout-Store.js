@@ -5,19 +5,13 @@ const layoutStore = createSlice({
     name : 'layout',
     initialState : {
         hamburgerOpen : false,
-        logout: false
     },
     reducers : {
 
         open(state) {
             state.hamburgerOpen = !state.hamburgerOpen;
-        },
-
-        goBack(state) {
-
-            state.logout = !state.logout;
-
         }
+
     }
 
 

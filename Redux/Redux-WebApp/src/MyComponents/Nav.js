@@ -3,6 +3,7 @@ import Logo from '../assets/logo.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { layoutActions } from '../Store/Layout-Store';
 import { cartActions } from '../Store/Cart-Store';
+import { logInActions } from '../Store/Login-Store';
 
 export default function Nav() {
 
@@ -20,7 +21,7 @@ export default function Nav() {
     }
 
     function logoutHandler() {
-        dispatch(cartActions.goBack())
+        dispatch(logInActions.logOut())
     }
 
     const activeClass = hamburgerOpen ? ' open' : '';
