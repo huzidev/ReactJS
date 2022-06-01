@@ -65,6 +65,8 @@ export default function Nav() {
                             <a href="#">
                                 More
                             </a>
+                            <div className='line1'></div>
+                            <div className='line2'></div>
                         </li>
                         <div className='flex'>
                             <li className='nav-item' onClick={logoutHandler}>
