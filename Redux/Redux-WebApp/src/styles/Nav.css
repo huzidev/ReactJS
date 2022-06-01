@@ -1,4 +1,7 @@
-nav {
+.nav {
+  background-color: aqua;
+}
+.nav .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,35 +11,34 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: aqua;
 }
-nav .cart-btn {
+.nav .header .cart-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
-nav .cart-btn .counter {
+.nav .header .cart-btn .counter {
   position: absolute;
   top: -22px;
   right: -7px;
 }
-nav .cart-btn .counter p {
+.nav .header .cart-btn .counter p {
   font-size: 22px;
   font-weight: 600;
   -webkit-text-stroke: 0.5px black;
   color: yellow;
 }
-nav .logo {
+.nav .header .logo {
   height: 150px;
   width: 200px;
   margin: 0px 20px;
 }
-nav i {
+.nav .header i {
   font-size: 50px;
   cursor: pointer;
 }
-nav .ham-side-bar {
+.nav .header .ham-side-bar {
   height: 100vh;
   background-color: black;
   -webkit-box-shadow: 0px 0px 21px -5px white;
@@ -50,10 +52,10 @@ nav .ham-side-bar {
   -webkit-transition: all 800ms cubic-bezier(1, 0, 0, 1);
   transition: all 800ms cubic-bezier(1, 0, 0, 1);
 }
-nav .ham-side-bar.open {
+.nav .header .ham-side-bar.open {
   right: 0px;
 }
-nav .ham-side-bar .ham {
+.nav .header .ham-side-bar .ham {
   position: fixed;
   top: 50px;
   right: 50px;
@@ -70,7 +72,7 @@ nav .ham-side-bar .ham {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-nav .ham-side-bar .ham .hamburger-menu {
+.nav .header .ham-side-bar .ham .hamburger-menu {
   z-index: 2;
   width: 50px;
   height: 6px;
@@ -81,7 +83,7 @@ nav .ham-side-bar .ham .hamburger-menu {
   -webkit-box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2);
 }
-nav .ham-side-bar .ham .hamburger-menu::before, nav .ham-side-bar .ham .hamburger-menu::after {
+.nav .header .ham-side-bar .ham .hamburger-menu::before, .nav .header .ham-side-bar .ham .hamburger-menu::after {
   background-color: black;
   content: "";
   position: absolute;
@@ -93,27 +95,27 @@ nav .ham-side-bar .ham .hamburger-menu::before, nav .ham-side-bar .ham .hamburge
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-nav .ham-side-bar .ham .hamburger-menu::before {
+.nav .header .ham-side-bar .ham .hamburger-menu::before {
   -webkit-transform: translateY(-16px);
           transform: translateY(-16px);
 }
-nav .ham-side-bar .ham .hamburger-menu::after {
+.nav .header .ham-side-bar .ham .hamburger-menu::after {
   -webkit-transform: translateY(16px);
           transform: translateY(16px);
 }
-nav .ham-side-bar .ham.open .hamburger-menu {
+.nav .header .ham-side-bar .ham.open .hamburger-menu {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
   background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-nav .ham-side-bar .ham.open .hamburger-menu::before {
+.nav .header .ham-side-bar .ham.open .hamburger-menu::before {
   background-color: white;
   -webkit-transform: rotate(45deg) translate(35px, -35px);
           transform: rotate(45deg) translate(35px, -35px);
 }
-nav .ham-side-bar .ham.open .hamburger-menu::after {
+.nav .header .ham-side-bar .ham.open .hamburger-menu::after {
   background-color: white;
   -webkit-transform: rotate(-45deg) translate(35px, 35px);
           transform: rotate(-45deg) translate(35px, 35px);

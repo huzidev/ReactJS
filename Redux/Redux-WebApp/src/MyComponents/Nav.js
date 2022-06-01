@@ -22,8 +22,8 @@ export default function Nav() {
     const activeClass = hamburgerOpen ? ' open' : '';
 
     return (
-        <div>
-            <nav>
+        <div className='nav'>
+            <nav className='header'>
                 <img src={Logo} alt="logo" className="logo"/>
                 <div className='cart-btn'>
                     <i onClick={setShowCart} className="fas fa-shopping-cart"></i>

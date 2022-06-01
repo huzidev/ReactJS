@@ -1,82 +1,82 @@
-nav
-    display: flex
-    justify-content: space-between
-    align-items: center
+.nav
     background-color: aqua
-    // width: 800px
-    .cart-btn
+    .header
         display: flex
-        position: relative
-        .counter
-            position: absolute
-            top: -22px
-            right: -7px
-            p
-                font-size: 22px
-                font-weight: 600
-                -webkit-text-stroke: 0.5px black
-                color: yellow
-        
-    .logo
-        height: 150px
-        width: 200px
-        margin: 0px 20px
-    i
-        font-size: 50px
-        cursor: pointer
-    .ham-side-bar
-        height: 100vh
-        background-color: black
-        box-shadow: 0px 0px 21px -5px white
-        width: 350px
-        position: fixed
-        right: -350px
-        top: 0px
-        z-index: 2
-        padding: 150px 70px
-        transition: all 800ms cubic-bezier(1, 0, 0, 1)
-        &.open
-            right: 0px
-        .ham
-            position: fixed
-            top: 50px
-            right: 50px 
-            height: 40px
-            width: 45px
-            cursor: pointer
+        justify-content: space-between
+        align-items: center
+        .cart-btn
             display: flex
-            flex-direction: column
-            justify-content: space-around
-            .hamburger-menu
-                z-index: 2
-                width: 50px
-                height: 6px
-                background-color: black
-                border-radius: 5px
-                transition: all 500ms ease-in-out
-                box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
-                &::before, &::after
-                    background-color: black
-                    content: ""
-                    position: absolute
+            position: relative
+            .counter
+                position: absolute
+                top: -22px
+                right: -7px
+                p
+                    font-size: 22px
+                    font-weight: 600
+                    -webkit-text-stroke: 0.5px black
+                    color: yellow
+            
+        .logo
+            height: 150px
+            width: 200px
+            margin: 0px 20px
+        i
+            font-size: 50px
+            cursor: pointer
+        .ham-side-bar
+            height: 100vh
+            background-color: black
+            box-shadow: 0px 0px 21px -5px white
+            width: 350px
+            position: fixed
+            right: -350px
+            top: 0px
+            z-index: 2
+            padding: 150px 70px
+            transition: all 800ms cubic-bezier(1, 0, 0, 1)
+            &.open
+                right: 0px
+            .ham
+                position: fixed
+                top: 50px
+                right: 50px 
+                height: 40px
+                width: 45px
+                cursor: pointer
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                .hamburger-menu
+                    z-index: 2
                     width: 50px
                     height: 6px
-                    border-radius: 15px
-                    box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
+                    background-color: black
+                    border-radius: 5px
                     transition: all 500ms ease-in-out
-                &::before
-                    transform: translateY(-16px)
-                &::after
-                    transform: translateY(16px)
-            &.open
-                .hamburger-menu
-                    transform: translateX(-50px)
-                    background: transparent
-                    box-shadow: none
+                    box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
+                    &::before, &::after
+                        background-color: black
+                        content: ""
+                        position: absolute
+                        width: 50px
+                        height: 6px
+                        border-radius: 15px
+                        box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2)
+                        transition: all 500ms ease-in-out
                     &::before
-                        background-color: white
-                        transform: rotate(45deg) translate(35px, -35px)
+                        transform: translateY(-16px)
                     &::after
-                        background-color: white
-                        transform: rotate(-45deg) translate(35px, 35px)
+                        transform: translateY(16px)
+                &.open
+                    .hamburger-menu
+                        transform: translateX(-50px)
+                        background: transparent
+                        box-shadow: none
+                        &::before
+                            background-color: white
+                            transform: rotate(45deg) translate(35px, -35px)
+                        &::after
+                            background-color: white
+                            transform: rotate(-45deg) translate(35px, 35px)
             
