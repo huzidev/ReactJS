@@ -67,11 +67,8 @@ export default function Nav() {
                                     More
                                 </a>
                             </li>
-                            <div className='main-line'>
-                                <div className='line line1'>
-                                </div>
-                                <div className='line line2'></div>
-                            </div>
+                            <i className='fa fa-caret-down'>
+                            </i>
                         </div>
                         <div className='flex'>
                             <li className='nav-item' onClick={logoutHandler}>
