@@ -36,7 +36,7 @@ export default function Nav() {
                     <ul>
                         <div className='flex'>
                             <li className='nav-item'>
-                                <a href="#">
+                                <a href="#" onClick={setShowCart}>
                                     Cart-Items
                                 </a>
                             </li>
@@ -74,7 +74,6 @@ export default function Nav() {
                             </li>
                             <i class="fa fa-sign-out sign" onClick={logoutHandler}></i>
                         </div>
-
                     </ul>
                     <div onClick={hamburger} className={'ham' + activeClass}>
                         <div className='hamburger-menu'>
