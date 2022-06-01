@@ -14,12 +14,14 @@ const sliderStore = createSlice({
            prevSlide(state, action){
             //    const next = action.payload;
             // return state.setActiveIndex = (state.activeIndex < 1 ? state.len : state.activeIndex - 1);
-                return action.payload < 0 ? state.len : action.payload
+                // return action.payload < 1 ? state.len : action.payload
+                // state.setActiveIndex = (state.activeIndex < 1 ? state.len : state.activeIndex - 1);
            },
            nextSlide(state, action){
                 // const next = action.payload;
             // return state.setActiveIndex = (state.activeIndex === state.len ? 0 : state.activeIndex + 1);
-                return action.payload > state.len ? 0 : action.payload 
+                // state.setActiveIndex = (state.activeIndex === state.len ? 0 : state.activeIndex + 1);
+                // return action.payload === state.len ? state.len : action.payload
            }
            
     }
