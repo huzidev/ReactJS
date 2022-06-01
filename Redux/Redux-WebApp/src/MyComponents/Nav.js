@@ -24,20 +24,20 @@ export default function Nav() {
     return (
         <div className='nav'>
             <nav className='header'>
-                <div className='header-section'>
+                <div className='header-section logo-section'>
                     <img src={Logo} alt="logo" className="logo"/>
                 </div>
-                <div className='header-section'>
-                    <div className='cart-btn'>
-                        <i onClick={setShowCart} className="fas fa-shopping-cart"></i>
-                        <div className='counter'>
-                            <p>
-                                {totalQuantity}
-                            </p>
+                <div className={'ham-side-bar' + activeClass}>
+                    <div className='cart-section'>
+                        <div className='cart-btn'>
+                            <i onClick={setShowCart} className="fas fa-shopping-cart"></i>
+                            <div className='counter'>
+                                <p>
+                                    {totalQuantity}
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className={'ham-side-bar' + activeClass}>
                     <div onClick={hamburger} className={'ham' + activeClass}>
                         <div className='hamburger-menu'>
                             <div className='menu'>

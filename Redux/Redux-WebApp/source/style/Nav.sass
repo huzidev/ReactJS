@@ -4,6 +4,11 @@
         display: flex
         justify-content: space-between
         align-items: center
+        .header-section
+            width: 30%
+            position: relative
+            // background-color: black
+            color: white
         .cart-btn
             display: flex
             position: relative
@@ -22,6 +27,7 @@
             width: 200px
             margin: 0px 20px
         i
+            color: white
             font-size: 50px
             cursor: pointer
         .ham-side-bar
@@ -37,6 +43,9 @@
             transition: all 800ms cubic-bezier(1, 0, 0, 1)
             &.open
                 right: 0px
+            .right 
+                background-color: black
+                display: flex
             .ham
                 position: fixed
                 top: 50px
