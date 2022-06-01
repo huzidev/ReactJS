@@ -61,13 +61,18 @@ export default function Nav() {
                                 Contact Us
                             </a>
                         </li>
-                        <li className='nav-item'>
-                            <a href="#">
-                                More
-                            </a>
-                            <div className='line1'></div>
-                            <div className='line2'></div>
-                        </li>
+                        <div className='drop-down'>
+                            <li className='nav-item'>
+                                <a href="#">
+                                    More
+                                </a>
+                            </li>
+                            <div className='main-line'>
+                                <div className='line line1'>
+                                </div>
+                                <div className='line line2'></div>
+                            </div>
+                        </div>
                         <div className='flex'>
                             <li className='nav-item' onClick={logoutHandler}>
                                 <a href="#">

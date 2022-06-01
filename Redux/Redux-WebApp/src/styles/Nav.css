@@ -60,6 +60,26 @@
   position: absolute;
   right: 120px;
 }
+.nav .header .ham-side-bar ul .drop-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav .header .ham-side-bar ul .drop-down .main-line {
+  position: absolute;
+  right: 120px;
+  background-color: white;
+  height: 5px;
+}
+.nav .header .ham-side-bar ul .drop-down .main-line .line {
+  height: 3px;
+  width: 30px;
+  background-color: white;
+  border: 2px solid white;
+}
 .nav .header .ham-side-bar ul .nav-item {
   list-style: none;
   padding: 25px;
