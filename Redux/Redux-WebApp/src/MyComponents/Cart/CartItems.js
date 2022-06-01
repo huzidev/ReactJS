@@ -38,12 +38,12 @@ export default function CartItems() {
     
     function confirm() {
         
-
+        dispatch(cartActions.yes())
 
     }
 
     function notConfirm() {
-        
+        dispatch(cartActions.no())
     }
 
     let show;
