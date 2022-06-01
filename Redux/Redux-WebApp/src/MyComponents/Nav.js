@@ -37,7 +37,7 @@ export default function Nav() {
                             </li>
                             <div className='cart-section'>
                                 <div className='cart-btn'>
-                                    <i onClick={setShowCart} className="fas fa-shopping-cart"></i>
+                                    <i onClick={setShowCart} className="fas fa-shopping-cart sign"></i>
                                     <div className='counter'>
                                         <p>
                                             {totalQuantity}
@@ -61,12 +61,14 @@ export default function Nav() {
                                 More
                             </a>
                         </li>
-                        <li className='nav-item'>
-                            <a href="#">
-                                Logout 
-                                <i class="fa fa-sign-out"></i>
-                            </a>
-                        </li>
+                        <div className='flex'>
+                            <li className='nav-item'>
+                                <a href="#">
+                                    Logout 
+                                </a>
+                            </li>
+                            <i class="fa fa-sign-out sign"></i>
+                        </div>
 
                     </ul>
                     <div onClick={hamburger} className={'ham' + activeClass}>

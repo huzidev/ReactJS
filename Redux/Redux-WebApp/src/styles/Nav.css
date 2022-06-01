@@ -50,6 +50,9 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.nav .header .ham-side-bar ul .flex i {
+  color: white;
+}
 .nav .header .ham-side-bar ul .nav-item {
   list-style: none;
   padding: 25px;
