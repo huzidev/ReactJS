@@ -34,6 +34,11 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+.modal-container .modal .modal-btns button {
+  margin: 0px 10px;
+  padding: 10px 20px;
+  font-weight: 17px;
+}
 .modal-container .modal p {
   font-size: 19px;
   letter-spacing: 1.5px;
