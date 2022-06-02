@@ -68,7 +68,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.nav .header .ham-side-bar ul .drop-down i {
+.nav .header .ham-side-bar ul .drop-down .fa-caret-down {
   color: white;
   margin-bottom: 3px;
   font-size: 29px;
