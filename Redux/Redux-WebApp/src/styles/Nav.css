@@ -67,11 +67,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .nav .header .ham-side-bar ul .drop-down .fa-caret-down {
   color: white;
-  margin-bottom: 3px;
+  margin-bottom: 33px;
   font-size: 29px;
+  position: absolute;
+  left: 0px;
 }
 .nav .header .ham-side-bar ul .nav-item {
   list-style: none;
@@ -79,6 +82,14 @@
 }
 .nav .header .ham-side-bar ul .nav-item .drop-down-items {
   color: white;
+  list-style: none;
+  background-color: aqua;
+  width: 80px;
+  text-align: center;
+  margin: 10px 0px 0px 30px;
+}
+.nav .header .ham-side-bar ul .nav-item .drop-down-items li {
+  margin: 10px;
 }
 .nav .header .ham-side-bar ul .nav-item a {
   text-decoration: none;

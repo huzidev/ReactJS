@@ -68,7 +68,9 @@ export default function Nav() {
                                 </a>
                                 <ul className='drop-down-items'>
                                     <li>hello</li>
+                                    <hr />
                                     <li>hello</li>
+                                    <hr />
                                     <li>hello</li>
                                 </ul>
                             </li>
