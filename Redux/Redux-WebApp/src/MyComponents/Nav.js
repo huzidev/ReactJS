@@ -72,6 +72,7 @@ export default function Nav() {
                                     <li>hello</li>
                                     <hr />
                                     <li>hello</li>
+                                    <hr />
                                 </ul>
                             </li>
                             <i className='fa fa-caret-down'>
