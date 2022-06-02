@@ -79,7 +79,7 @@ export default function Nav() {
                             </i>
                         </div>
                         <div className='flex'>
-                            <li className='nav-item' onClick={logoutHandler}>
+                            <li className='nav-item nav-logout' onClick={logoutHandler}>
                                 <a href="#">
                                     Logout 
                                 </a>
