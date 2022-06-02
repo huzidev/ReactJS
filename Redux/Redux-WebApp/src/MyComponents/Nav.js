@@ -66,6 +66,11 @@ export default function Nav() {
                                 <a href="#">
                                     More
                                 </a>
+                                <ul className='drop-down-items'>
+                                    <li>hello</li>
+                                    <li>hello</li>
+                                    <li>hello</li>
+                                </ul>
                             </li>
                             <i className='fa fa-caret-down'>
                             </i>
