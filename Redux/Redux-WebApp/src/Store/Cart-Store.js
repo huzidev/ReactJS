@@ -10,7 +10,8 @@ const cartStore = createSlice({
         display : false,
         screen : false,
         yes : false,
-        no : false
+        no : false,
+        len : 0
     },
     reducers : {
         addToCart(state, action) {
@@ -120,6 +121,12 @@ const cartStore = createSlice({
         display(state) {
 
             state.display = !state.display;
+
+        },
+
+        totalLen(state) {
+
+            state.len += state.itemsList.length;
 
         }
     }

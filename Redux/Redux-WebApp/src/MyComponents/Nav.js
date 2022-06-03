@@ -18,7 +18,16 @@ export default function Nav() {
     }
 
     function setShowCart() {
+        
         dispatch(cartActions.setShowCart());
+        
+        if ( hamburgerOpen === true ) {
+            dispatch(layoutActions.open());
+        }
+
+        if ( displayShow === true ) {
+            dispatch(cartActions.display());
+        }
     }
 
     function logoutHandler() {

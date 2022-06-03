@@ -6,7 +6,7 @@ import ProductList from './ProductList.js'
 export default function SliderCart() {
     const dispatch = useDispatch();
 
-    const quantity = useSelector((state) => state.cart.itemsList.length)
+    const quantity = useSelector((state) => state.cart.len)
 
     const Products = ProductList.map((info) => {
         
@@ -19,6 +19,10 @@ export default function SliderCart() {
                 price,
                 img
             }))
+        }
+
+        function test() {
+            dispatch(cartActions.totalLen())
         }
 
         function decrementItems(){
@@ -41,7 +45,7 @@ export default function SliderCart() {
                         <button onClick={decrementItems}>
                             -
                         </button>
-                        <div className='num'>
+                        <div className='num' onClick={test}>
                             quantity : {quantity}
                         </div>
                         <button onClick={addToCart}>
