@@ -51,7 +51,6 @@
   cursor: pointer;
 }
 .footer-background .footer-container .form-main {
-  border: 1px solid black;
   width: 800px;
   margin: 70px auto;
 }
@@ -67,8 +66,7 @@
   padding: 10px 5px;
 }
 .footer-background .footer-container .form-main .form-comp {
-  margin: 10px 0px;
-  background-color: black;
+  margin: 10px 0px 7px 0px;
 }
 .footer-background .footer-container .form-main .form-comp textarea {
   padding: 10px 5px;
