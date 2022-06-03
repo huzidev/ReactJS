@@ -13,14 +13,13 @@
 }
 .footer-background .footer-container .footer-items {
   margin: 30px 0px;
-  width: 100%;
-  margin-top: 50px;
+  width: 75%;
+  margin: 50px auto 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .footer-background .footer-container .footer-items .logo {
   height: 100px;
