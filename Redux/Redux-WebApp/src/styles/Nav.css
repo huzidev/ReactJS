@@ -71,10 +71,14 @@
   position: absolute;
   right: 55px;
   top: 16.5px;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 .nav .header .ham-side-bar ul .drop-down .fa-caret-down.show {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .nav .header .ham-side-bar ul .nav-logout:not(:last-child) {
   padding: 13px 20px;
