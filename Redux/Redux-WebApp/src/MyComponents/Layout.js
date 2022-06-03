@@ -5,7 +5,6 @@ import Slider from './Slider/Slider.js';
 import SliderCart from './Cart/SliderCart.js';
 import CartItems from './Cart/CartItems.js';
 import Footer from './Footer.js';
-import Bottom from './Bottom.js';
 import { useSelector } from 'react-redux';
 
 export default function Layout() {
@@ -23,7 +22,6 @@ export default function Layout() {
               <SliderCart />
             </div>
             <Footer />
-            <Bottom />
         </>)}
     </div>
   )

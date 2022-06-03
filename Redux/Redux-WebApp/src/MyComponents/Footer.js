@@ -1,4 +1,5 @@
 import React from 'react';
+import Bottom from './Bottom';
 
 export default function Footer() {
     return (
@@ -55,6 +56,7 @@ export default function Footer() {
                     </form>
                 </div>
             </div>
+            <Bottom />
         </>
     )
 }
