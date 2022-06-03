@@ -1,12 +1,11 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { cartActions } from '../../Store/Cart-Store.js';
 import ProductList from './ProductList.js'
 
 export default function SliderCart() {
-    const dispatch = useDispatch();
 
-    const quantity = useSelector((state) => state.cart.len)
+    const dispatch = useDispatch();
 
     const Products = ProductList.map((info) => {
         
@@ -20,15 +19,11 @@ export default function SliderCart() {
                 img
             }))
         }
-
-        function decrementItems(){
-            dispatch(cartActions.removeFromCart(Id))
-        }
         
         return (
             <div key={Id}>
                 <div className='cart-products'>
-                    <img src={`../../mapImages/${img}`} alt="item-img"/>
+                    <img src={`../../mapImages/${img}`} alt="item-img" className='product-img'/>
                     <h3>
                         {name}
                     </h3>
@@ -37,17 +32,6 @@ export default function SliderCart() {
                             $ {price}
                         </b>
                     </p>
-                    <div className='add-cart'> 
-                        <button onClick={decrementItems}>
-                            -
-                        </button>
-                        <div className='num'>
-                            quantity : {quantity}
-                        </div>
-                        <button onClick={addToCart}>
-                            +
-                        </button>
-                    </div>
                     <button onClick={addToCart}>
                         Add To Cart
                     </button>

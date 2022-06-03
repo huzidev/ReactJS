@@ -15,7 +15,7 @@ const cartStore = createSlice({
     },
     reducers : {
         addToCart(state, action) {
-            
+
             const newItem = action.payload;
 
             const existingItem = state.itemsList.find((item) => item.Id === newItem.Id);
@@ -31,7 +31,7 @@ const cartStore = createSlice({
                     price : newItem.price,
                     img : newItem.img,
                     totalPrice : newItem.price,
-                    quantity : 1
+                    quantity : state.len
                 })
                 state.totalQuantity ++;
             }
@@ -125,11 +125,18 @@ const cartStore = createSlice({
 
         },
 
-        totalLen(state) {
+        inc(state, action) {
 
-            state.totalQuantity += state.totalQuantity;
+            state.len ++;
 
+        },
+
+        dec(state, action) {
+
+            state.len --;
+            
         }
+        
     }
 });
 

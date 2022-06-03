@@ -22,34 +22,14 @@
   width: 1200px;
   margin: auto;
 }
-.cart-items .cart-products {
-  height: 200px;
-  width: 200px;
-  margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.cart-items .cart-products img {
-  height: 100%;
-  width: 100%;
-}
-.cart-items .cart-products .add-cart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.cart-items .cart-products .add-cart .num {
-  width: 90px;
-  border: 1px solid black;
+
+.cart-products {
+  margin: 10px;
   text-align: center;
+}
+.cart-products .product-img {
+  height: 200px;
+  width: 300px;
 }
 
 .top-nav {

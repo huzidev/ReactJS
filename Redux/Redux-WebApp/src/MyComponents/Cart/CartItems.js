@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { cartActions } from '../../Store/Cart-Store.js';
+import SliderCart from './SliderCart.js';
 import YoursCart from './YoursCart.js';
 
 export default function CartItems() {
