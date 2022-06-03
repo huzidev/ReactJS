@@ -8,7 +8,7 @@ import { logInActions } from '../Store/Login-Store';
 export default function Nav() {
 
     const hamburgerOpen = useSelector((state) => state.layout.hamburgerOpen);
-    const totalQuantity = useSelector((state) => state.cart.totalQuantity);
+    let totalQuantity = useSelector((state) => state.cart.totalQuantity);
     const displayShow = useSelector((state) => state.cart.display);
 
     const dispatch = useDispatch();
@@ -22,15 +22,20 @@ export default function Nav() {
     }
 
     function logoutHandler() {
+
         dispatch(logInActions.logOut());
-        if (hamburgerOpen === true) {
-            // hamburgerOpen = !hamburgerOpen
-            // displayShow = !displayShow
+        
+        if ( hamburgerOpen === true ) {
             dispatch(layoutActions.open());
         }
+
         if ( displayShow === true ) {
             dispatch(cartActions.display());
         }
+        
+        // if ( totalQuantity > 0 ) {
+        //     totalQuantity = 0;
+        // }
 
     }
 
