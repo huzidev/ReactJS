@@ -9,7 +9,7 @@ export default function Nav() {
 
     const hamburgerOpen = useSelector((state) => state.layout.hamburgerOpen);
     const totalQuantity = useSelector((state) => state.cart.totalQuantity);
-    const display = useSelector((state) => state.cart.display);
+    const displayShow = useSelector((state) => state.cart.display);
 
     const dispatch = useDispatch();
 
@@ -31,7 +31,8 @@ export default function Nav() {
 
     const activeClass = hamburgerOpen ? ' open' : '';
 
-    const activeClassForDisplay = display ? ' show' : '';
+    const activeClassForDisplay = displayShow ? ' show' : '';
+
     return (
         <div className='nav'>
             <nav className='header'>
@@ -81,7 +82,7 @@ export default function Nav() {
                                     <hr />
                                 </ul>
                             </li>
-                            <i className='fa fa-caret-down'>
+                            <i className='fa fa-caret-down' onClick={display}>
                             </i>
                         </div>
                         <div className='flex'>
