@@ -1,8 +1,8 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { cartActions } from '../../Store/Cart-Store.js';
-import Footer from '../../MyComponents/Footer'
 import YoursCart from './YoursCart.js';
+import Bottom from '../Bottom.js';
 
 export default function CartItems() {
 
@@ -89,8 +89,8 @@ export default function CartItems() {
                     <button onClick={deleteAll} className='delete-btn'>
                         Clear Cart
                     </button>
-                    <Footer />
                     </ul>
+                    <Bottom />
                 </> : (
                     <div className='center'> 
                         <h2>
