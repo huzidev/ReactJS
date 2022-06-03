@@ -1,6 +1,6 @@
 .footer-background {
   background-color: aqua;
-  height: 500px;
+  height: 800px;
   position: relative;
 }
 .footer-background .footer-container {
@@ -49,6 +49,28 @@
   font-size: 19px;
   text-decoration: none;
   cursor: pointer;
+}
+.footer-background .footer-container .form-main {
+  border: 1px solid black;
+  width: 800px;
+  margin: 70px auto;
+}
+.footer-background .footer-container .form-main .form-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+.footer-background .footer-container .form-main .form-side input {
+  width: 50%;
+}
+.footer-background .footer-container .form-main .form-comp {
+  margin: 10px 0px;
+  background-color: black;
+}
+.footer-background .footer-container .form-main .form-comp textarea {
+  width: 100%;
 }
 
 .bottom {
