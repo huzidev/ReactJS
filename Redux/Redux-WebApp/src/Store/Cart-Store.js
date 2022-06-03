@@ -83,25 +83,6 @@ const cartStore = createSlice({
         deleteAll(state) {
 
             state.screen = !state.screen;
-            // // if (state.screen === true) {
-                
-            // //     // state.yes = !state.yes
-                
-            // // }
-            
-            // if (state.yes === true) {
-                
-            //     state.itemsList = [];
-            //     state.totalQuantity = 0;
-            //     state.totalPrice = 0;
-            
-            // }
-
-            // else if (state.no === true){
-
-            //     state.screen = !state.screen;
-
-            // }
 
         },
 
