@@ -22,9 +22,7 @@
       justify-content: space-around;
 }
 .footer-background .footer-container .footer-items .logo {
-  background-color: black;
-  color: white;
-  height: 90px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,9 +37,14 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.footer-background .footer-container .footer-items .logo i {
+  margin: 20px 0px;
+  font-size: 39px;
+}
 .footer-background .footer-container .footer-items .logo a {
+  letter-spacing: 1.5px;
+  font-size: 19px;
   text-decoration: none;
-  color: white;
 }
 
 .bottom {
