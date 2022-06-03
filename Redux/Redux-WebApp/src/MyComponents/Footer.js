@@ -44,8 +44,7 @@ export default function Footer() {
                             <input type="email" placeholder='Yours Email' />
                         </div>
                         <div className='form-comp'>
-                            <textarea name="message" cols="30" rows="10" placeholder='Yours Message'>
-                                
+                            <textarea name="message" cols="41.5" rows="10" placeholder='Yours Message'>
                             </textarea>
                         </div>
                         <button>
@@ -53,6 +52,11 @@ export default function Footer() {
                         </button>
                     </div>
                 </form>
+                <div className='bottom'>
+                    <h3 className='bottom-text'>
+                        All Rights Are Reserved &copy; 2022
+                    </h3>
+                </div>
             </div>
         </div>
     )
