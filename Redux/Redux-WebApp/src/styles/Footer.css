@@ -71,6 +71,7 @@
 .footer-background .footer-container .form-main .form-comp textarea {
   padding: 10px 5px;
   width: 100%;
+  resize: none;
 }
 .footer-background .footer-container .form-main button {
   cursor: pointer;
