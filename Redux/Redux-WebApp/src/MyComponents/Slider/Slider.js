@@ -15,36 +15,36 @@ export default function Slider() {
 
   const dispatch = useDispatch();
 
-  const[activeImg, setActiveIndex] = React.useState(0)
+  // const[activeImg, setActiveIndex] = React.useState(0)
 
-  // const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
-      dispatch(() => sliderStoreActions.nextSlide(setActiveIndex(activeImg === len ? 0 : activeImg + 1)));
+      setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
+      // dispatch(() => sliderStoreActions.nextSlide(setActiveIndex(activeImg === len ? 0 : activeImg + 1)));
     }, 3000);
     return () => clearInterval(interval);
-  }, [activeImg, dispatch]);
+  }, [activeIndex]);
 
   function prev() {
-    // setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
-    dispatch(() => sliderStoreActions.prevSlide(setActiveIndex(activeImg < 1 ? len : activeImg - 1)));
+    setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+    // dispatch(() => sliderStoreActions.prevSlide(setActiveIndex(activeImg < 1 ? len : activeImg - 1)));
   } 
 
   function next() {
-    // setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
-    dispatch(() => sliderStoreActions.prevSlide(setActiveIndex(activeImg === len ? 0 : activeImg + 1)));
+    setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
+    // dispatch(() => sliderStoreActions.prevSlide(setActiveIndex(activeImg === len ? 0 : activeImg + 1)));
   }
 
   function active(activeIndex) {
-    // setActiveIndex(activeIndex)
-    dispatch(() => sliderStoreActions.activeIndex(setActiveIndex(activeIndex)));
+    setActiveIndex(activeIndex)
+    // dispatch(() => sliderStoreActions.activeIndex(setActiveIndex(activeIndex)));
   }
   return (
     <div className="slider-container">
       <SliderContent 
-        activeIndex={activeImg} 
+        activeIndex={activeIndex} 
         sliderImage={sliderImage} 
       />
       <Arrows
@@ -52,7 +52,7 @@ export default function Slider() {
         nextSlide={next}
       />
       <Dots
-        activeIndex={activeImg}
+        activeIndex={activeIndex}
         sliderImage={sliderImage}
         onclick={active}
       />

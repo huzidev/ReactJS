@@ -100,6 +100,7 @@ export default function CartItems() {
                     </div>
                 )
             }
+            {<Bottom />}
             <>
                 {screen ? 
                     <div className='modal-container'>
