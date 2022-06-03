@@ -72,14 +72,14 @@
   right: 55px;
   top: 17px;
 }
-.nav .header .ham-side-bar ul .nav-logout {
-  padding: 0px;
+.nav .header .ham-side-bar ul .nav-logout:not(:last-child) {
+  padding: 13px 20px;
 }
-.nav .header .ham-side-bar ul .nav-item:not(:last-child) {
+.nav .header .ham-side-bar ul .nav-item {
   list-style: none;
   padding: 20px;
 }
-.nav .header .ham-side-bar ul .nav-item:not(:last-child) .drop-down-items {
+.nav .header .ham-side-bar ul .nav-item .drop-down-items {
   color: white;
   list-style: none;
   width: 150px;
@@ -88,10 +88,10 @@
   margin: 11px 0px 0px 5px;
   display: none;
 }
-.nav .header .ham-side-bar ul .nav-item:not(:last-child) .drop-down-items li {
+.nav .header .ham-side-bar ul .nav-item .drop-down-items li {
   padding: 10px 20px;
 }
-.nav .header .ham-side-bar ul .nav-item:not(:last-child) a {
+.nav .header .ham-side-bar ul .nav-item a {
   text-decoration: none;
   color: white;
   font-weight: 300;
@@ -101,7 +101,7 @@
   position: relative;
   font-size: 19px;
 }
-.nav .header .ham-side-bar ul .nav-item:not(:last-child) a::before, .nav .header .ham-side-bar ul .nav-item:not(:last-child) a::after {
+.nav .header .ham-side-bar ul .nav-item a::before, .nav .header .ham-side-bar ul .nav-item a::after {
   content: "";
   position: absolute;
   height: 2px;
@@ -115,18 +115,18 @@
   transition: transform 800ms;
   transition: transform 800ms, -webkit-transform 800ms;
 }
-.nav .header .ham-side-bar ul .nav-item:not(:last-child) a::after {
+.nav .header .ham-side-bar ul .nav-item a::after {
   bottom: 0px;
   -webkit-transform-origin: left;
           transform-origin: left;
 }
-.nav .header .ham-side-bar ul .nav-item:not(:last-child) a::before {
+.nav .header .ham-side-bar ul .nav-item a::before {
   top: 0px;
   -webkit-transform-origin: right;
           transform-origin: right;
 }
-.nav .header .ham-side-bar ul .nav-item:not(:last-child) a:hover::before,
-.nav .header .ham-side-bar ul .nav-item:not(:last-child) a:hover::after {
+.nav .header .ham-side-bar ul .nav-item a:hover::before,
+.nav .header .ham-side-bar ul .nav-item a:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
