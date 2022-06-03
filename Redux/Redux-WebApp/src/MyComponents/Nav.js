@@ -22,7 +22,16 @@ export default function Nav() {
     }
 
     function logoutHandler() {
-        dispatch(logInActions.logOut())
+        dispatch(logInActions.logOut());
+        if (hamburgerOpen === true) {
+            // hamburgerOpen = !hamburgerOpen
+            // displayShow = !displayShow
+            dispatch(layoutActions.open());
+        }
+        if ( displayShow === true ) {
+            dispatch(cartActions.display());
+        }
+
     }
 
     function display() {
