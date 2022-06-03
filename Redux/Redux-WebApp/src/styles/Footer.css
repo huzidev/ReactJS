@@ -1,11 +1,7 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 .footer-background {
   background-color: aqua;
   height: 500px;
+  position: relative;
 }
 .footer-background .footer-container {
   width: 1200px;
@@ -22,4 +18,16 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.bottom {
+  background-color: black;
+  bottom: 0px;
+  width: 100%;
+  position: absolute;
+}
+.bottom .bottom-text {
+  text-align: center;
+  color: white;
+  font-weight: 500;
 }

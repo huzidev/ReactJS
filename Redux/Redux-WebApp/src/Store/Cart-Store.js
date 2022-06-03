@@ -11,7 +11,6 @@ const cartStore = createSlice({
         screen : false,
         yes : false,
         no : false,
-        len : 0
     },
     reducers : {
         addToCart(state, action) {
@@ -31,7 +30,7 @@ const cartStore = createSlice({
                     price : newItem.price,
                     img : newItem.img,
                     totalPrice : newItem.price,
-                    quantity : state.len
+                    quantity : 1
                 })
                 state.totalQuantity ++;
             }
@@ -113,6 +112,7 @@ const cartStore = createSlice({
             }
 
         },
+
         goBack(state) {
             
             state.setShowCart = false;
@@ -123,18 +123,6 @@ const cartStore = createSlice({
 
             state.display = !state.display;
 
-        },
-
-        inc(state, action) {
-
-            state.len ++;
-
-        },
-
-        dec(state, action) {
-
-            state.len --;
-            
         }
         
     }

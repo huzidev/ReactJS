@@ -11,28 +11,28 @@ export default function Footer() {
                     <div className="logo">
                         <i className="fab fa-github">
                         </i>
-                        <a href="">
+                        <a href="#">
                             Huzi-Dev
                         </a>
                     </div>
                     <div className="logo">
                         <i className="fa fa-envelope">
                         </i>
-                        <a href="">
+                        <a href="#">
                             Huzaifa Iqbal
                         </a>
                     </div>
                     <div className="logo">
                         <i className="fa fa-phone">
                         </i>
-                        <a href="">
+                        <a href="#">
                             123-456-789
                         </a>
                     </div>
                     <div className="logo">
                         <i className="fa fa-instagram">
                         </i>
-                        <a href="">
+                        <a href="#">
                             huzaifa_iqbal_
                         </a>
                     </div>
@@ -52,11 +52,11 @@ export default function Footer() {
                         </button>
                     </div>
                 </form>
-                <div className='bottom'>
-                    <h3 className='bottom-text'>
-                        All Rights Are Reserved &copy; 2022
-                    </h3>
-                </div>
+            </div>
+            <div className='bottom'>
+                <h3 className='bottom-text'>
+                    All Rights Are Reserved &copy; 2022
+                </h3>
             </div>
         </div>
     )
