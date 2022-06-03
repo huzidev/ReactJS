@@ -1,5 +1,3 @@
-import { CardActions } from '@mui/material';
-import { click } from '@testing-library/user-event/dist/click';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { cartActions } from '../../Store/Cart-Store.js';
@@ -9,13 +7,7 @@ export default function CartItems() {
 
     const CartItems = useSelector((state) => state.cart.itemsList)
     let screen = useSelector((state) => state.cart.screen);
-    let yes = useSelector((state) => state.cart.yes)
-    const no = useSelector((state) => state.cart.no)
     const quantity = useSelector((state) => state.cart.totalQuantity)
-
-    // let item;
-
-    // const {Id, name, price, quantity, total} = item;
 
     const dispatch = useDispatch();
 
@@ -24,22 +16,11 @@ export default function CartItems() {
     }
 
     function deleteAll() {
-        // yes = !yes
-        // if (yes === true) {
-            
-        //     dispatch(cartActions.deleteAll())
-        
-        // }
-        // else if(no === true){
-        //     screen = !screen
-        // }
         dispatch(cartActions.deleteAll());
     }
     
     function confirm() {
-        
         dispatch(cartActions.yes())
-
     }
 
     function notConfirm() {

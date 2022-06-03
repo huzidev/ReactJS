@@ -21,10 +21,6 @@ export default function SliderCart() {
             }))
         }
 
-        function test() {
-            dispatch(cartActions.totalLen())
-        }
-
         function decrementItems(){
             dispatch(cartActions.removeFromCart(Id))
         }
@@ -45,7 +41,7 @@ export default function SliderCart() {
                         <button onClick={decrementItems}>
                             -
                         </button>
-                        <div className='num' onClick={test}>
+                        <div className='num'>
                             quantity : {quantity}
                         </div>
                         <button onClick={addToCart}>
