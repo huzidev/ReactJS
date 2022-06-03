@@ -72,6 +72,10 @@
   right: 55px;
   top: 16.5px;
 }
+.nav .header .ham-side-bar ul .drop-down .fa-caret-down.show {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 .nav .header .ham-side-bar ul .nav-logout:not(:last-child) {
   padding: 13px 20px;
 }

@@ -82,7 +82,7 @@ export default function Nav() {
                                     <hr />
                                 </ul>
                             </li>
-                            <i className='fa fa-caret-down' onClick={display}>
+                            <i className={'fa fa-caret-down'  + activeClassForDisplay} onClick={display}>
                             </i>
                         </div>
                         <div className='flex'>
