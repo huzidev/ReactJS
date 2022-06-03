@@ -85,7 +85,7 @@
   width: 150px;
   font-size: 19px;
   text-align: center;
-  margin: 11px 0px 0px 11px;
+  margin: 11px 0px 0px 5px;
 }
 .nav .header .ham-side-bar ul .nav-item:not(:last-child) .drop-down-items li {
   padding: 10px 20px;
