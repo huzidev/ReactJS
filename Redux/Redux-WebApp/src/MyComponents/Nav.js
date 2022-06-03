@@ -69,11 +69,11 @@ export default function Nav() {
                             </a>
                         </li>
                         <div className='drop-down'>
-                            <li className={'nav-item' + activeClassForDisplay}>
+                            <li className='nav-item'>
                                 <a href="#">
                                     More
                                 </a>
-                                <ul className='drop-down-items'>
+                                <ul className={'drop-down-items' + activeClassForDisplay}>
                                     <li>hello</li>
                                     <hr />
                                     <li>hello</li>
