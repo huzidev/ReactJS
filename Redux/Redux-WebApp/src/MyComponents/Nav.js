@@ -70,7 +70,7 @@ export default function Nav() {
                         </li>
                         <div className='drop-down'>
                             <li className='nav-item'>
-                                <a href="#">
+                                <a href="#" onClick={display}>
                                     More
                                 </a>
                                 <ul className={'drop-down-items' + activeClassForDisplay}>
