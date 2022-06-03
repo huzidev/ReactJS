@@ -4,8 +4,22 @@ export default function Footer() {
     return (
         <div className='footer-container'>
             <h2>
-                
+                Contact Us
             </h2>
+            <div className='footer-item'>
+                <div className="logo">
+                    test
+                </div>
+                <div className="logo">
+                    test
+                </div>
+                <div className="logo">
+                    test
+                </div>
+                <div className="logo">
+                    test
+                </div>
+            </div>
         </div>
     )
 }
