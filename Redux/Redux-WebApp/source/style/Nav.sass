@@ -59,6 +59,8 @@
                 .nav-item
                     list-style: none
                     padding: 20px
+                    overflow: hidden
+                    position: relative
                     .drop-down-items
                         color: white
                         list-style: none
@@ -66,12 +68,13 @@
                         font-size: 19px
                         text-align: center
                         margin: 11px 0px 0px 5px
+                        top: -240px
                         display: none
                         &.show
                             display: block
+                            top: 0px
                         li
                             padding: 10px 20px
-                            // margin: 10px
                     a
                         text-decoration: none
                         color: white
