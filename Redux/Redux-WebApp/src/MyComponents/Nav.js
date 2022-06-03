@@ -8,7 +8,8 @@ import { logInActions } from '../Store/Login-Store';
 export default function Nav() {
 
     const hamburgerOpen = useSelector((state) => state.layout.hamburgerOpen);
-    const totalQuantity = useSelector((state) => state.cart.totalQuantity)
+    const totalQuantity = useSelector((state) => state.cart.totalQuantity);
+    const display = useSelector((state) => state.cart.display);
 
     const dispatch = useDispatch();
 
@@ -24,8 +25,13 @@ export default function Nav() {
         dispatch(logInActions.logOut())
     }
 
+    function display() {
+        dispatch(cartActions.display());
+    }
+
     const activeClass = hamburgerOpen ? ' open' : '';
 
+    const activeClassForDisplay = display ? ' show' : '';
     return (
         <div className='nav'>
             <nav className='header'>
@@ -62,7 +68,7 @@ export default function Nav() {
                             </a>
                         </li>
                         <div className='drop-down'>
-                            <li className='nav-item'>
+                            <li className={'nav-item' + activeClassForDisplay}>
                                 <a href="#">
                                     More
                                 </a>
