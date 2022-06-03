@@ -64,13 +64,19 @@
 }
 .footer-background .footer-container .form-main .form-side input {
   width: 50%;
+  padding: 10px 5px;
 }
 .footer-background .footer-container .form-main .form-comp {
   margin: 10px 0px;
   background-color: black;
 }
 .footer-background .footer-container .form-main .form-comp textarea {
+  padding: 10px 5px;
   width: 100%;
+}
+.footer-background .footer-container .form-main button {
+  cursor: pointer;
+  padding: 10px 25px;
 }
 
 .bottom {
