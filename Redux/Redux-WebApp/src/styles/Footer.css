@@ -1,0 +1,20 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-background {
+  background-color: aqua;
+}
+.footer-background .footer-container {
+  width: 1200px;
+  margin: auto;
+}
+.footer-background .footer-container h2 {
+  text-align: center;
+}
+.footer-background .footer-container .footer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

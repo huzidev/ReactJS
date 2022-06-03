@@ -9,6 +9,7 @@ import "./styles/Slider.css";
 import "./styles/Items.css";
 import "./styles/SliderCart.css";
 import "./styles/Modal.css";
+import "./styles/Footer.css";
 import { Provider } from 'react-redux';
 import store from './Store';
 
