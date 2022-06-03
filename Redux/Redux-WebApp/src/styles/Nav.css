@@ -70,7 +70,7 @@
   font-size: 29px;
   position: absolute;
   right: 55px;
-  top: 16.5px;
+  top: 25.5px;
   cursor: pointer;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
@@ -86,7 +86,7 @@
 }
 .nav .header .ham-side-bar ul .nav-item {
   list-style: none;
-  padding: 20px;
+  padding: 30px 20px;
   overflow: hidden;
   position: relative;
 }
