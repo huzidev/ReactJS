@@ -7,6 +7,7 @@ const cartStore = createSlice({
         itemsList : [],
         totalQuantity : 0,
         setShowCart : false,
+        display : false;
         screen : false,
         yes : false,
         no : false
