@@ -22,9 +22,15 @@
       justify-content: space-around;
 }
 .footer-background .footer-container .footer-items .logo {
+  background-color: black;
+  color: white;
+  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -35,6 +41,7 @@
 }
 .footer-background .footer-container .footer-items .logo a {
   text-decoration: none;
+  color: white;
 }
 
 .bottom {
