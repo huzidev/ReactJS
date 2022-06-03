@@ -115,6 +115,12 @@ const cartStore = createSlice({
             
             state.setShowCart = false;
             
+        },
+
+        display(state) {
+
+            state.display = !state.display;
+
         }
     }
 });
