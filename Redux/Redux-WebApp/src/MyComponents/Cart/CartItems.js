@@ -67,6 +67,7 @@ export default function CartItems() {
                             Total Price
                         </h5>
                     </div>
+                    <hr />
                     <ul>
                         {
                             CartItems.map((item) => (
