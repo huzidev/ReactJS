@@ -74,11 +74,12 @@ export default function Nav() {
                                     More
                                 </a>
                                 <ul className={'drop-down-items' + activeClassForDisplay}>
-                                    <li>hello</li>
                                     <hr />
-                                    <li>hello</li>
+                                    <li>New-Products</li>
                                     <hr />
-                                    <li>hello</li>
+                                    <li>New Arrival</li>
+                                    <hr />
+                                    <li>Epic Items</li>
                                     <hr />
                                 </ul>
                             </li>
