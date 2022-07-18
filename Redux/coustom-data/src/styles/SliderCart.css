@@ -1,0 +1,118 @@
+.info {
+  background-color: aqua;
+  text-align: center;
+  width: 1200px;
+  margin: 70px auto;
+  padding: 10px;
+}
+.info h3 {
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.cart-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 500px;
+  width: 1200px;
+  margin: auto;
+}
+
+.cart-products {
+  margin: 10px;
+  text-align: center;
+}
+.cart-products .product-img {
+  height: 200px;
+  width: 300px;
+}
+
+.top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.top-nav .logout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.top-nav .logout i {
+  margin: 0px 10px;
+}
+.top-nav .logout p {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.cart-nav {
+  width: 620px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cart-nav h5 {
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.center {
+  text-align: center;
+  border: 1px solid black;
+  width: 1000px;
+  margin: auto;
+}
+.center h2 {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  width: 1300px;
+  margin: auto;
+}
+
+.delete-btn {
+  background-color: none;
+  border: 1px solid black;
+  padding: 5px 15px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.item-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+.item-list img {
+  height: 200px;
+  width: 250px;
+}

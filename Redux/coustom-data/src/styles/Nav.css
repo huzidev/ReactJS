@@ -1,0 +1,240 @@
+.nav {
+  background-color: aqua;
+}
+.nav .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav .header .header-section {
+  width: 30%;
+  position: relative;
+  color: white;
+}
+.nav .header .logo {
+  height: 150px;
+  width: 200px;
+  margin: 0px 20px;
+}
+.nav .header .ham-side-bar {
+  height: 100vh;
+  background-color: black;
+  -webkit-box-shadow: 0px 0px 21px -5px black;
+          box-shadow: 0px 0px 21px -5px black;
+  width: 350px;
+  position: fixed;
+  right: -350px;
+  top: 0px;
+  z-index: 999;
+  padding: 150px 70px;
+  -webkit-transition: all 800ms cubic-bezier(1, 0, 0, 1);
+  transition: all 800ms cubic-bezier(1, 0, 0, 1);
+}
+.nav .header .ham-side-bar.open {
+  right: 0px;
+}
+.nav .header .ham-side-bar ul {
+  text-align: left;
+}
+.nav .header .ham-side-bar ul .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav .header .ham-side-bar ul .flex .sign {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+.nav .header .ham-side-bar ul .flex .fa-sign-out {
+  position: absolute;
+  right: 120px;
+}
+.nav .header .ham-side-bar ul .drop-down {
+  position: relative;
+  width: 180px;
+}
+.nav .header .ham-side-bar ul .drop-down .fa-caret-down {
+  color: white;
+  margin-bottom: 33px;
+  font-size: 29px;
+  position: absolute;
+  right: 55px;
+  top: 25.5px;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.nav .header .ham-side-bar ul .drop-down .fa-caret-down.show {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.nav .header .ham-side-bar ul .nav-logout:not(:last-child) {
+  padding: 15px 20px;
+}
+.nav .header .ham-side-bar ul .nav-item {
+  list-style: none;
+  padding: 30px 20px;
+  overflow: hidden;
+  position: relative;
+}
+.nav .header .ham-side-bar ul .nav-item .drop-down-items {
+  color: white;
+  list-style: none;
+  width: 160px;
+  font-size: 19px;
+  text-align: center;
+  margin: 35px 0px 0px 5px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.nav .header .ham-side-bar ul .nav-item .drop-down-items.show {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  opacity: 1;
+  position: relative;
+}
+.nav .header .ham-side-bar ul .nav-item .drop-down-items li {
+  padding: 10px 20px;
+}
+.nav .header .ham-side-bar ul .nav-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 3px 0px;
+  position: relative;
+  font-size: 19px;
+}
+.nav .header .ham-side-bar ul .nav-item a::before, .nav .header .ham-side-bar ul .nav-item a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0px;
+  width: 100%;
+  background-color: chocolate;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
+}
+.nav .header .ham-side-bar ul .nav-item a::after {
+  bottom: 0px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+.nav .header .ham-side-bar ul .nav-item a::before {
+  top: 0px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+.nav .header .ham-side-bar ul .nav-item a:hover::before,
+.nav .header .ham-side-bar ul .nav-item a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.nav .header .ham-side-bar .cart-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.nav .header .ham-side-bar .cart-btn .sign {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+.nav .header .ham-side-bar .cart-btn .counter {
+  position: absolute;
+  top: -40px;
+  left: 35px;
+}
+.nav .header .ham-side-bar .cart-btn .counter p {
+  font-size: 28px;
+  font-weight: 600;
+  -webkit-text-stroke: 0.5px black;
+  color: aqua;
+}
+.nav .header .ham-side-bar .ham {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  height: 40px;
+  width: 45px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.nav .header .ham-side-bar .ham .hamburger-menu {
+  z-index: 2;
+  width: 50px;
+  height: 6px;
+  background-color: black;
+  border-radius: 5px;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2);
+          box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2);
+}
+.nav .header .ham-side-bar .ham .hamburger-menu::before, .nav .header .ham-side-bar .ham .hamburger-menu::after {
+  background-color: black;
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2);
+          box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.nav .header .ham-side-bar .ham .hamburger-menu::before {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+}
+.nav .header .ham-side-bar .ham .hamburger-menu::after {
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+}
+.nav .header .ham-side-bar .ham.open .hamburger-menu {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.nav .header .ham-side-bar .ham.open .hamburger-menu::before {
+  background-color: white;
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+.nav .header .ham-side-bar .ham.open .hamburger-menu::after {
+  background-color: white;
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
+}

@@ -1,0 +1,52 @@
+.login-main
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 100vh
+    .login-setup
+        height: 350px
+        width: 350px
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 1px solid black
+        border-radius: 20px
+        h2
+            text-align: center
+        .user-input
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            margin: 30px
+            .ref
+                position: relative
+                h5
+                    position: absolute
+                    left: 20px
+                    top: -15px
+                    transition: all 500ms ease
+                    font-weight: 500
+                .input
+                    height: 30px
+                    width: 250px
+                    padding: 0px 10px
+                    border: none
+                    margin: 0px 0px 0px 10px
+                    box-shadow: 0px 6px 11px 1px rgba(0, 0, 0, 0.1)
+                    &:focus
+                        outline: none
+            .focus
+                h5
+                    transition: all 500ms ease
+                    top: -45px
+                    left: 10px
+        .btn
+            text-align: center
+            button
+                font-size: 15px
+                cursor: pointer
+                height: 30px
+                width: 150px
+                border: none
+                background-color: aqua

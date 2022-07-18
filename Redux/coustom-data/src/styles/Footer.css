@@ -1,0 +1,95 @@
+.footer-background {
+  background-color: aqua;
+}
+.footer-background .footer-container {
+  width: 1200px;
+  margin: auto;
+  padding: 20px 0px;
+}
+.footer-background .footer-container h2 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.footer-background .footer-container .footer-items {
+  margin: 30px 0px;
+  width: 75%;
+  margin: 50px auto 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.footer-background .footer-container .footer-items .logo {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-background .footer-container .footer-items .logo i {
+  margin: 20px 0px;
+  font-size: 39px;
+  cursor: pointer;
+}
+.footer-background .footer-container .footer-items .logo a {
+  letter-spacing: 1.5px;
+  font-size: 19px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-background .footer-container .form-main {
+  width: 800px;
+  margin: 70px auto;
+}
+.footer-background .footer-container .form-main .form-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+.footer-background .footer-container .form-main .form-side input {
+  width: 50%;
+  padding: 10px 5px;
+}
+.footer-background .footer-container .form-main .form-comp {
+  margin: 10px 0px 7px 0px;
+}
+.footer-background .footer-container .form-main .form-comp textarea {
+  padding: 10px 5px;
+  width: 100%;
+  resize: none;
+}
+.footer-background .footer-container .form-main button {
+  cursor: pointer;
+  padding: 10px 25px;
+}
+
+.bottom {
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bottom .bottom-text {
+  color: white;
+  font-weight: 500;
+}
