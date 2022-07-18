@@ -5,7 +5,7 @@ export default function Nav() {
     return (
         <div>
             <Link to='/owner'>owner info</Link> 
-            <Link to='/owner'>products</Link> 
+            <Link to='/products'>products</Link> 
         </div>
     )
 }
