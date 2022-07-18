@@ -5,7 +5,7 @@ export default function OwnerInfo() {
 
     const data = ownerData.map((info) => {
 
-        const { name, age, hobby, sources, experience, languages } = info
+        const { name, age, hobby, sources, experience, languages, activities } = info
         
         return(
             <>
@@ -27,6 +27,9 @@ export default function OwnerInfo() {
                 <h5>
                     languages : {languages}
                 </h5>
+                <h5>
+                    activities : {activities}
+                </h5>
             </>
         )
 
@@ -35,7 +38,7 @@ export default function OwnerInfo() {
 
     return (
         <div>
-            
+            {data}
         </div>
     )
 }
