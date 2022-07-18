@@ -2,7 +2,6 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { cartActions } from '../../Store/Cart-Store.js';
 import YoursCart from './YoursCart.js';
-import Bottom from '../Bottom.js';
 
 export default function CartItems() {
 
@@ -90,7 +89,6 @@ export default function CartItems() {
                         Clear Cart
                     </button>
                     </ul>
-                    <Bottom />
                 </> : (
                     <div className='center'> 
                         <h2>
@@ -100,7 +98,6 @@ export default function CartItems() {
                     </div>
                 )
             }
-            {<Bottom />}
             <>
                 {screen ? 
                     <div className='modal-container'>
