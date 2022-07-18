@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
     return (
         <div>
-            <a href="/owner">Owner</a>
+            <Link to='/owner'>owner info</Link> 
+            <Link to='/owner'>products</Link> 
         </div>
     )
 }
