@@ -22,6 +22,25 @@ export default function Button() {
         cursor: pointer;
         padding: 5px 30px;
         `
+
+    const Div = styled.div`
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .heading-top {
+            font-weight: 500;
+        }
+        .para-bottom {
+            padding-top: 9px;
+        }
+    `
+    const Heading = styled.h2`
+        font-size: 39px;
+    `
+
+    const Para = styled.p`
+        font-size: 29px;
+    `
     
     const Wrapper = styled.section`
         display: flex;
@@ -39,6 +58,14 @@ export default function Button() {
                 <Link>
                     anchor tag
                 </Link>
+                <Div>
+                    <Heading className='heading-top'>
+                        this is Heading
+                    </Heading>
+                    <Para className='para-bottom'>
+                        This is paragraph
+                    </Para>
+                </Div>
             </Wrapper>
         </>
     )
