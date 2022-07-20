@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
 export default function Button() {
 
@@ -63,22 +63,24 @@ export default function Button() {
 
     return (
         <>
-            <Wrapper>
-                <Button>
-                    test
-                </Button>
-                <Link>
-                    anchor tag
-                </Link>
-                <Div>
-                    <Heading className='heading-top'>
-                        this is Heading
-                    </Heading>
-                    <Para className='para-bottom'>
-                        This is paragraph
-                    </Para>
-                </Div>
-            </Wrapper>
+            <ThemeProvider >
+                <Wrapper>
+                    <Button>
+                        test
+                    </Button>
+                    <Link>
+                        anchor tag
+                    </Link>
+                    <Div>
+                        <Heading className='heading-top'>
+                            this is Heading
+                        </Heading>
+                        <Para className='para-bottom'>
+                            This is paragraph
+                        </Para>
+                    </Div>
+                </Wrapper>
+            </ThemeProvider>
         </>
     )
 }
