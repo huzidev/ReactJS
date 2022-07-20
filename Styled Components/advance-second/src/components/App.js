@@ -8,7 +8,7 @@ export default function App() {
 
     const theme = {
         colors : {
-            fontColor : "black",
+            fontColor : "blue",
             backgroundColor : "aqua",
             hoverColorBG : "purple",
             hoverColorF : "white"
