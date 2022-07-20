@@ -3,24 +3,27 @@ import styled from 'styled-components';
 
 export default function Button() {
 
+    let color = "black";
+    let fontColor = "white";
+    let border = "blue";
+
     const Button = styled.button`
         background-color: aqua;
-        border: 1px solid black;
+        border: 1px solid ${border};
         font-size: 21px;
-        color: white;
+        color: ${color};
         border-radius: 3px;
         cursor: pointer;
         padding: 5px 30px;
         transition: all 500ms ease-in-out;
         &:hover {
-            background-color: black;
-            color: white;
+            background-color: ${color};
+            color: ${fontColor};
         }
-
     `
 
     const Link = styled.a`
-        background-color: black;
+        background-color: ${color};
         border: 1px solid black;
         font-size: 21px;
         color: white;
