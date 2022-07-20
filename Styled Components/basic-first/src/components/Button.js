@@ -11,6 +11,12 @@ export default function Button() {
         border-radius: 3px;
         cursor: pointer;
         padding: 5px 30px;
+        transition: all 500ms ease-in-out;
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+
     `
 
     const Link = styled.a`
