@@ -3,6 +3,9 @@ import styled from 'styled-components';
 
 export default function Button() {
 
+    // important to do because if we wanted to change a color at thousand of places so it'll take too much time for changing color at
+    // every single places one by one hence it is good practice to just assign the color to the variable so when we wanted to change color
+    // at thousand of places it'll be changed automatically since we've used that specific variables at all places
     let color = "black";
     let fontColor = "white";
     let border = "blue";
