@@ -1,6 +1,7 @@
 import React from 'react';
 import { Wrapper } from './styledComponents/Main.styled';
 import { Button } from './styledComponents/Button.styled';
+import { Img } from './styledComponents/Main.styled.js';
 
 export default function Home() {
     return (
@@ -8,7 +9,7 @@ export default function Home() {
             <h3>
                 Home Page
             </h3>
-            <img src="../../assets/first.jpeg" alt="img" className='img'/>
+            <Img src="../../assets/first.jpeg" alt="img" ></Img>
             <Button>
                 Same Button
             </Button>

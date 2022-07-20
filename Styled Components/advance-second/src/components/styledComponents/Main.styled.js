@@ -11,8 +11,9 @@ export const Wrapper = styled.div`
     margin: auto;
     text-align: center;
     margin-top: 50px;
-    .img {
-        height: 300px;
-        width: 350px;
-    }
+    `
+
+export const Img = styled.img`
+    height: 300px;
+    width: 350px;
 `
