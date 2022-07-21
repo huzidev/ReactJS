@@ -5,6 +5,8 @@ import { Wrapper, MenuStyle, LogoStyle } from './styled-components/Header.styled
 export default function App() {
     const { Header } = Layout;
 
+    let array = ["test"]
+
     return ( 
         <div>
             <Layout className="layout">
@@ -19,7 +21,7 @@ export default function App() {
                                     const key = index + 1;
                                     return {
                                         key,
-                                        label: `Home ${key}`,
+                                        label: `${array} ${key}`,
                                     };
                                 })}
                             />
