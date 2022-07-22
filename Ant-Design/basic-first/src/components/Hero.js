@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel } from 'antd';
 import { Button } from 'antd';
+import { FireOutlined } from '@ant-design/icons';
 import { HeroWrapper } from './styled-components/Hero.styled';
 
 export default function Hero() {
@@ -38,6 +39,7 @@ export default function Hero() {
                                     Test Button
                                 </Button>
                                 <Button size='large'>
+                                    <FireOutlined />
                                     Test Button 2
                                 </Button>
                             </div>
