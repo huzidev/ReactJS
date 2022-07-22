@@ -1,28 +1,50 @@
 import React from 'react';
 import { Carousel } from 'antd';
+import { Button } from 'antd';
 import { HeroWrapper } from './styled-components/Hero.styled';
 
 export default function Hero() {
 
-    const onChange = (currentSlide) => {
-        console.log(currentSlide);
-      };
+    const items = [{
+        key: 1,
+        title: "Slide-1",
+        content: "nice web slider carousel Ant-design"
+    },
+    {
+        key: 2,
+        title: "Slide-2",
+        content: "nice web slider carousel Ant-design"
+    },
+    {
+        key: 3,
+        title: "Slide-3",
+        content: "nice web slider carousel Ant-design"
+    }]
 
     return (
         <>
-            <Carousel afterChange={onChange}>
-                <HeroWrapper>
-                    <h3 className="contentStyle">1</h3>
-                </HeroWrapper>
-                <HeroWrapper>
-                    <h3 className="contentStyle">2</h3>
-                </HeroWrapper>
-                <HeroWrapper>
-                    <h3 className="contentStyle">3</h3>
-                </HeroWrapper>
-                <HeroWrapper>
-                    <h3 className="contentStyle">4</h3>
-                </HeroWrapper>
+            <Carousel>
+                {items.map((data) => {
+                    return (
+                        <HeroWrapper>
+                            <h3>
+                                {data.title}
+                            </h3>
+                            <p>
+                                {data.content}
+                            </p>
+                            <div>
+                                <Button type='primary' size='large'>
+                                    Test Button
+                                </Button>
+                                <Button size='large'>
+                                    Test Button 2
+                                </Button>
+                            </div>
+                        </HeroWrapper>
+                    )
+                })}
+                <h3 className="contentStyle">1</h3>
             </Carousel>
         </>
     )
