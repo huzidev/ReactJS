@@ -9,6 +9,8 @@ export default function App() {
 
     const dec = useStore((state) => state.dec)
 
+    const reset = useStore((state) => state.reset)
+
     return ( 
         <div>
             <h1>
@@ -21,9 +23,14 @@ export default function App() {
                 count === 0
                     ? '' 
                     : (
-                        <button onClick={dec}>
-                            Decrease Count
-                        </button>
+                        <>
+                            <button onClick={dec}>
+                                Decrease Count
+                            </button>
+                            <button onClick={reset}>
+                                Reset Count
+                            </button>
+                        </>
                     )
             }
         </div>

@@ -9,6 +9,9 @@ const useStore = create((set) => ({
     dec: () => set((state) => ({
         count: state.count - 1
     })),
+    reset: () => set((state) => ({
+        count: 0
+    }))
 }))
 
 export default useStore;
