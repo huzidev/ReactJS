@@ -1,5 +1,6 @@
 import React from 'react';
 import useStore from './Store';
+import { NavBar } from './styled-components/Nav.styled';
 
 export default function App() {
 
@@ -11,8 +12,19 @@ export default function App() {
 
     const reset = useStore((state) => state.reset)
 
+    const dark = useStore((state) => state.dark)
+
+    const toggleState = useStore((state) => state.toggle)
+
+    let State = dark ? "light" : "dark"
+
     return ( 
         <div>
+            <NavBar>
+                <button onClick={toggleState}>
+                    Toggle to {State} mode
+                </button>
+            </NavBar>
             <h1>
                 Initial Count : {count}
             </h1>
