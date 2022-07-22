@@ -1,6 +1,7 @@
 import React from 'react';
 import useStore from './Store';
 import { NavBar } from './styled-components/Nav.styled';
+import { GlobalStyles } from './styled-components/Global.styled';
 
 export default function App() {
 
@@ -20,7 +21,8 @@ export default function App() {
 
     return ( 
         <div>
-            <NavBar>
+            <GlobalStyles />
+            <NavBar dark={dark}>
                 <button onClick={toggleState}>
                     Toggle to {State} mode
                 </button>

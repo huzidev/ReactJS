@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const NavBar = styled.nav`
     height: 60px;
     width: 100%;
-    background-color: aqua;
+    background-color: ${(props) => props.dark ? "black" : "aqua"};
     display: flex;
     align-items: center;
     justify-content: center;
