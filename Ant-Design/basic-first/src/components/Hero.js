@@ -7,17 +7,14 @@ import { HeroWrapper } from './styled-components/Hero.styled';
 export default function Hero() {
 
     const items = [{
-        key: 1,
         title: "Slide-1",
         content: "nice web slider carousel Ant-design"
     },
     {
-        key: 2,
         title: "Slide-2",
         content: "nice web slider carousel Ant-design"
     },
     {
-        key: 3,
         title: "Slide-3",
         content: "nice web slider carousel Ant-design"
     }]
@@ -25,9 +22,9 @@ export default function Hero() {
     return (
         <>
             <Carousel>
-                {items.map((data) => {
+                {items.map((data, index) => {
                     return (
-                        <HeroWrapper>
+                        <HeroWrapper key={index+1}>
                             <h3>
                                 {data.title}
                             </h3>
