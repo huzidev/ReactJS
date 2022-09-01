@@ -15,9 +15,9 @@ export default function App() {
             <Router>
                 <Nav />
                 <Routes>
-                    <Route exact path='/'  element={<Home />}/>
-                    <Route exact path='/owner'  element={<OwnerInfo />}/>
-                    <Route exact path='/products'  element={<ShowProducts />}/>
+                    <Route exact path='/' element={<Home />}/>
+                    <Route exact path='/owner' element={<OwnerInfo />}/>
+                    <Route exact path='/products' gitelement={<ShowProducts />}/>
                 </Routes>
             </Router>
         </div>
