@@ -17,7 +17,7 @@ export default function App() {
                 <Routes>
                     <Route exact path='/' element={<Home />}/>
                     <Route exact path='/owner' element={<OwnerInfo />}/>
-                    <Route exact path='/products' gitelement={<ShowProducts />}/>
+                    <Route exact path='/products' element={<ShowProducts />}/>
                 </Routes>
             </Router>
         </div>

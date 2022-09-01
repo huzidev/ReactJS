@@ -5,7 +5,7 @@ export default [
         hobby : "learning, programming, gaming and outing",
         sources : "self-taught",
         experience : "10 months",
-        languages : "Jade(PUG), sass, html, htmlCanvas, css, bootstrap, javascript, reactJS, redux, styled-components, nodeJS, mongoose, mongoDB, mySQL, sequelize, C, python and Git",
+        languages : "Jade(PUG), sass, html, html-Canvas, css, bootstrap, javascript, typescript, adonisJS reactJS, redux, zustand, styled-components, ant-design, material-UI, nodeJS, expressJS, mongoose, mongoDB, mySQL, sequelize, C, python and Git",
         activities : "Football, cricket, badminton and foosball"
     }
 ]
